@@ -1,0 +1,342 @@
+{
+  "HiddenPaths": [],
+  "ExpandedPaths": [],
+  "ShowHidden": false,
+  "ShowAllFiles": false,
+  "CurrentPath": "",
+  "SaveDisabled": false,
+  "SSoTmeProjectId": "6ff40e9e-a2b3-49f0-a5cb-2b1a097cfab0",
+  "Name": "TicTacToeChallenge",
+  "RootPath": "C:\\Users\\auto1\\go\\src\\github.com\\eejai42\\tic-tac-toe-challenge",
+  "ProjectSettings": [
+    {
+      "ProjectSettingId": "7fecb2b3-b0fd-4f58-8e4d-4571be7c9c9b",
+      "Name": "project-name",
+      "Value": "TicTacToeChallenge"
+    }
+  ],
+  "ProjectTranspilers": [
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "19d8142a-2f4d-46ac-9de6-77441f233192",
+        "AccountHolderId": "c2bb89f9-26da-4ebf-9d35-0c4547eb89e2",
+        "Name": "AirtableToXml",
+        "DisplayName": "Airtable To Xml",
+        "Description": "Extracts the contents of an airtable base as a single Xml file.",
+        "CreatedOn": "2018-04-07T21:28:06.273",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-2dkJ2DuOEttKHj50NWdWjA",
+        "LowerName": "airtabletoxml",
+        "UpperName": "AIRTABLETOXML",
+        "LowerHyphenName": "airtable-to-xml",
+        "InputDescriptionMD": "-p baseId={the base id} -p apiKey={your api key} -p ignore-to-name=false\r\n\r\nYou can either provide a full entities.json or specify an individual tab as follows...\r\n            var airtable = this.GetParameterByName(\"airtable\");\r\n            var singular = this.GetParameterByName(\"singular\");\r\n            var plural = this.GetParameterByName(\"plural\");\r\n\r\nYou can also specify an optional view to use\r\n            var view = this.GetParameterByName(\"view\");",
+        "OutputDescriptionMD": "Airtable.xml",
+        "ExampleMD": "ssotme airtable/airtable-to-xml -p baseId=12345",
+        "InputFileTypeId": "2748dae4-2e34-44b1-a268-554f2b1c3330",
+        "OutputFileTypeId": "8c1bfcc6-a4de-4604-b785-9aa677c5302a",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7f5dec02-6a37-4a68-9f32-ba0b5c79b495",
+            "TranspilerId": "19d8142a-2f4d-46ac-9de6-77441f233192",
+            "Name": "v1",
+            "CreatedOn": "2018-04-07T21:28:32.023",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "eb4860d5-7010-4789-8966-23ef20119db8",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT",
+      "CommandLine": "airtable/airtable-to-xml -p baseId=appF5XTR7XzrfTgqs"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlXsltTransform",
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "8475b925-8e74-416d-a84b-15c5c8978315",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/SSoT/PreProcessCellPatterns",
+      "CommandLine": "codee42/xml-xslt-transform -i ..\\Airtable.xml -i .\\PreProcessCellPatterns.xslt"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlXsltTransform",
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "57c36bd4-bfeb-4933-bfba-a024485f207c",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/docs/DescribeAI",
+      "CommandLine": "codee42/xml-xslt-transform -i ..\\..\\SSoT\\Airtable.xml -i .\\DescribeAI.xslt -i ..\\..\\SSoT\\PreProcessCellPatterns\\PreProcessedCellPatterns.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlXsltTransform",
+        "DisplayName": "Xml Xslt Transform",
+        "Description": "Given an Xml and Xslt file, will process and \"split\" a resulting fileset.",
+        "CreatedOn": "2017-08-30T15:45:09.907",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-pwRUdyqwEq8fPN8gkK7ADg",
+        "LowerName": "xmlxslttransform",
+        "UpperName": "XMLXSLTTRANSFORM",
+        "LowerHyphenName": "xml-xslt-transform",
+        "ReadMeMD": "The tool processes the first text file it finds (which is presumed to be in xml format), with the first Xslt file provided, and includes any parameters that are passed to ssotme as well.\r\n\r\nThe output is expected to be a FileSet Xml blob with the results of the transform.",
+        "InputDescriptionMD": "At least 1 input Xml file, An Xslt file to use for the Transform operation and any additional parameters that the Xslt file uses for it's transpiling functionality.  These could be options, values, namespaces, etc.",
+        "OutputDescriptionMD": "A fileset with the result of the Xslt transform, usually including at least 1 or more files.  The example command might produce an HTML Document that describes (in english) the contents of the Xml file.  Essentially a \"report\" about the xml file. ",
+        "ExampleMD": "ssotme -install xml-xslt-transform -i MyData.xml -i CreateDocs.xslt",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "952e47eb-3448-4627-8dc4-93dab494c957",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "7e941388-752b-4b0f-9631-939b790be10f",
+            "TranspilerId": "4b713f03-1d9f-42f2-b02f-e3cdbd237bb3",
+            "Name": "v1",
+            "CreatedOn": "2017-08-30T15:45:10.653",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "c911d6ca-e914-46bb-bb22-7fe63ec0d067",
+      "Name": "XmlXsltTransform",
+      "RelativePath": "/docs/TTTJS",
+      "CommandLine": "codee42/xml-xslt-transform -i ..\\..\\SSoT\\Airtable.xml -i .\\CreateTTTJS.xslt -i ..\\..\\SSoT\\PreProcessCellPatterns\\PreProcessedCellPatterns.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+        "AccountHolderId": "1e876e4f-d63b-4698-bd68-3bc27876e41e",
+        "Name": "XmlToJson",
+        "DisplayName": "Xml To Json",
+        "Description": "Converts XML to JSON using the NewtonSoft C# conversion tools.",
+        "CreatedOn": "2017-06-02T15:52:50.193",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-oTOwWY09y9fflImFqdwieA",
+        "LowerName": "xmltojson",
+        "UpperName": "XMLTOJSON",
+        "LowerHyphenName": "xml-to-json",
+        "ReadMeMD": "Converts an emil file into a json file with exactly the same data, just in a Jsony sort of syntax.",
+        "InputDescriptionMD": "An XML file\r\n\r\nMyData.Xml\r\n<Foo>\r\n   <Item1>Item value</Item1>\r\n   <Item2>Item value</Item2>\r\n</Foo>",
+        "OutputDescriptionMD": "A Json file with exactly the same data, but in JSon format.\r\n\r\n{\r\n 'foo' : \r\n   { 'item1' : 'value 1',\r\n     'Item2: \"value 2'\r\n  }\r\n}",
+        "ExampleMD": "ssotme XmlToJson -i MyData.xml",
+        "InputFileTypeId": "f1b92a2a-3f83-4000-9b37-57f920e14419",
+        "OutputFileTypeId": "e827499f-f215-4b35-8dae-6bd423a75e4c",
+        "Category": "type-conversion",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "2d32ee25-12f8-47c5-bd9a-3940985bb6af",
+            "TranspilerId": "ba509977-74bf-486e-a405-1b2125bd5d15",
+            "Name": "v1",
+            "CreatedOn": "2017-06-02T15:52:51.377",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "2729537b-9792-4eab-abc3-d3267e0bb7aa",
+      "Name": "XmlToJson",
+      "RelativePath": "/docs/json",
+      "CommandLine": "codee42/xml-to-json -i ..\\..\\SSoT\\Airtable.xml -o Airtable.xml.json"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "115c5d82-5cb8-4765-80df-32468b589fd5",
+        "AccountHolderId": "c2bb89f9-26da-4ebf-9d35-0c4547eb89e2",
+        "Name": "AirtableXmlToOdxml",
+        "DisplayName": "Airtable Xml To Odxml",
+        "Description": "Airtable Xml To Odxml",
+        "CreatedOn": "2018-04-08T14:09:08.08",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-mIe_VtmO3yP4cmVU1sbgfg",
+        "LowerName": "airtablexmltoodxml",
+        "UpperName": "AIRTABLEXMLTOODXML",
+        "LowerHyphenName": "airtable-xml-to-odxml",
+        "ReadMeMD": "$include-system-entities = 'false'\r\n$project-name = 'dbo'",
+        "InputFileTypeId": "8c1bfcc6-a4de-4604-b785-9aa677c5302a",
+        "OutputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "c9eeec93-8f40-472c-8828-d92830e5d9c0",
+            "TranspilerId": "115c5d82-5cb8-4765-80df-32468b589fd5",
+            "Name": "v1",
+            "CreatedOn": "2018-04-08T14:09:47.173",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "69d79c4d-fffc-48f3-8acd-4fecbfcd92e6",
+      "Name": "AirtableXmlToOdxml",
+      "RelativePath": "/ODXML",
+      "CommandLine": "airtable/airtable-xml-to-odxml -i ..\\SSoT\\Airtable.xml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToNodeJSDocs",
+        "DisplayName": "Odxml To Node J S Docs",
+        "Description": "Creates easy to read/navigate html documentation for an Odxml Schema.",
+        "CreatedOn": "2017-08-29T21:18:01.293",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltonodejsdocs",
+        "UpperName": "ODXMLTONODEJSDOCS",
+        "LowerHyphenName": "odxml-to-node-j-s-docs",
+        "ReadMeMD": "Examines the schema defined by an Odxml file and creates an interactive DataModel explorer for exploring the structure of the data model defined. \r\n\r\nCreates both a single page version of the docs, as well as a Node.JS website that can be started on demand to explore the data model more interactively.",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "d8fc84b7-442d-4c7a-92a0-eefc11391934",
+        "Category": "documentation",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "26af4ad8-fb5d-4027-8e4b-2260c62f3f24",
+            "TranspilerId": "8defe7a3-89cf-4989-b679-d9226519f622",
+            "Name": "v1",
+            "CreatedOn": "2017-08-29T21:18:03.463",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "3f596211-ea4f-457f-aab6-24ea9bb78e40",
+      "Name": "OdxmlToNodeJSDocs",
+      "RelativePath": "/ODXML",
+      "CommandLine": "odxml42/odxml-to-nodejs-docs -i .\\Airtable.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "048e2c30-9123-458c-b9b3-fe67347b2a4a",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToTypeScriptModels",
+        "DisplayName": "Odxml To Type Script Models",
+        "Description": "Odxml to TypeScript Models",
+        "CreatedOn": "2017-10-12T23:20:30.27",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltotypescriptmodels",
+        "UpperName": "ODXMLTOTYPESCRIPTMODELS",
+        "LowerHyphenName": "odxml-to-type-script-models",
+        "ReadMeMD": "Creates a set of typescript types based on the schema defined by the Odxml file.",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "f8391567-b3d9-4e34-8a45-3d6bd9da4b9b",
+        "Category": "typescript",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "ba97f1a4-38f8-4264-9f31-00152d43ffd1",
+            "TranspilerId": "048e2c30-9123-458c-b9b3-fe67347b2a4a",
+            "Name": "v1",
+            "CreatedOn": "2017-10-12T23:20:31.953",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "c31b3e01-42bc-487a-97c7-49c3506129d2",
+      "Name": "OdxmlToTypeScriptModels",
+      "RelativePath": "/docs/data",
+      "CommandLine": "odxml42/odxml-to-typescript-models -i ..\\..\\ODXML\\Airtable.odxml"
+    }
+  ]
+}

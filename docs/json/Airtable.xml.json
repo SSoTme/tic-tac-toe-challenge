@@ -1,0 +1,1734 @@
+{
+  "Airtable": {
+    "Entities": {
+      "Entity": [
+        {
+          "EntityId": "rec5CTsiJR6Xdxslf",
+          "createdTime": "2020-11-26T21:15:34Z",
+          "Name": "CellPatternTranslation",
+          "PluralName": "CellPatternTranslations",
+          "AirtableName": "CellPatternTranslations"
+        },
+        {
+          "EntityId": "recAWOgja5ZyIFuQp",
+          "createdTime": "2020-11-26T21:14:31Z",
+          "Name": "LanguageToken",
+          "PluralName": "LanguageTokens",
+          "AirtableName": "LanguageTokens"
+        },
+        {
+          "EntityId": "recBFSJ9xt8TSaDcs",
+          "createdTime": "2020-11-26T21:14:31Z",
+          "Name": "AILevel",
+          "PluralName": "AILevels",
+          "AirtableName": "AILevels"
+        },
+        {
+          "EntityId": "recE60WOJMdkFz521",
+          "createdTime": "2020-11-26T21:15:27Z",
+          "Name": "CellPattern",
+          "PluralName": "CellPatterns",
+          "AirtableName": "CellPatterns"
+        },
+        {
+          "EntityId": "recMjqgnvie3zkeqL",
+          "createdTime": "2020-11-26T21:14:31Z",
+          "Name": "AIStrategy",
+          "PluralName": "AIStrategies",
+          "AirtableName": "AIStrategies"
+        },
+        {
+          "EntityId": "recNJ6QD2b3l7yodW",
+          "createdTime": "2020-11-26T21:15:27Z",
+          "Name": "CellPatternCell",
+          "PluralName": "CellPatternCells",
+          "AirtableName": "CellPatternCells"
+        },
+        {
+          "EntityId": "recOshv4aBOtAhL9c",
+          "createdTime": "2020-11-26T21:15:27Z",
+          "Name": "Cell",
+          "PluralName": "Cells",
+          "AirtableName": "Cells"
+        },
+        {
+          "EntityId": "recQMV5zL3kK2ZJu3",
+          "createdTime": "2020-11-26T21:15:47Z",
+          "Name": "TargetPlatform",
+          "PluralName": "TargetPlatforms",
+          "AirtableName": "TargetPlatforms"
+        },
+        {
+          "EntityId": "recXLMGfF7EPE8afM",
+          "createdTime": "2020-11-26T21:16:17Z",
+          "Name": "AdditionalResource",
+          "PluralName": "AdditionalResources",
+          "AirtableName": "Additional Resources"
+        },
+        {
+          "EntityId": "recg2BWutwt40yMpU",
+          "createdTime": "2020-11-26T21:15:20Z",
+          "Name": "Translation",
+          "PluralName": "Translations",
+          "AirtableName": "Translations"
+        },
+        {
+          "EntityId": "recr7hRnb8KeiqDEb",
+          "createdTime": "2020-11-26T21:15:54Z",
+          "Name": "GlobalSetting",
+          "PluralName": "GlobalSettings",
+          "AirtableName": "Global Settings"
+        },
+        {
+          "EntityId": "recvjej0ICJm2Z1El",
+          "createdTime": "2020-11-26T21:15:20Z",
+          "Name": "CellState",
+          "PluralName": "CellStates",
+          "AirtableName": "CellStates"
+        }
+      ]
+    },
+    "CellPatternTranslations": {
+      "CellPatternTranslation": [
+        {
+          "CellPatternTranslationId": "rec9PRnE4xpUCcMit",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recZCV8dlP1pNK9kK",
+          "Count": "3",
+          "SortOrder": "1",
+          "Name": "1-TwoInARowDiagonal:Rotate:3",
+          "CellPatternName": "TwoInARowDiagonal",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        },
+        {
+          "CellPatternTranslationId": "recD87U0swUjjhnTj",
+          "createdTime": "2020-11-26T20:39:24Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recBDK2nzNlGSJNgJ",
+          "Count": "3",
+          "SortOrder": "1",
+          "Name": "1-EdgeWin:Rotate:3",
+          "CellPatternName": "EdgeWin",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        },
+        {
+          "CellPatternTranslationId": "recJjgKw24kaBFH0i",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recqn6vuQrx71nQii",
+          "Count": "3",
+          "SortOrder": "1",
+          "Name": "1-TwoInARowMiddle:Rotate:3",
+          "CellPatternName": "TwoInARowMiddle",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        },
+        {
+          "CellPatternTranslationId": "recNz0LuN77HIXjmB",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recodVK2HKbzC26Db",
+          "Count": "1",
+          "SortOrder": "1",
+          "Name": "1-MiddleWin:Rotate:1",
+          "CellPatternName": "MiddleWin",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "10"
+        },
+        {
+          "CellPatternTranslationId": "recUD9c7vXgkNLQi9",
+          "createdTime": "2020-11-26T21:13:00Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "Count": "3",
+          "SortOrder": "3",
+          "Name": "3-TwoInARowTop:Rotate:3",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        },
+        {
+          "CellPatternTranslationId": "recafoRwqvCh5HZOd",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recobCShOEyZjP8bY",
+          "Count": "1",
+          "SortOrder": "1",
+          "Name": "1-TwoOutsideMiddle:Rotate:1",
+          "CellPatternName": "TwoOutsideMiddle",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "10"
+        },
+        {
+          "CellPatternTranslationId": "recoPtQQ8QZtClJK0",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recg1ttw7l3n96PDG",
+          "Count": "1",
+          "SortOrder": "1",
+          "Name": "1-TowOutsideDiagonal:Rotate:1",
+          "CellPatternName": "TowOutsideDiagonal",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "10"
+        },
+        {
+          "CellPatternTranslationId": "recqJB1goFBhhsIVZ",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "Count": "3",
+          "SortOrder": "1",
+          "Name": "1-TwoInARowTop:Rotate:3",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        },
+        {
+          "CellPatternTranslationId": "recwuYqQZ0iCw2WfQ",
+          "createdTime": "2020-11-26T21:11:07Z",
+          "Translation": "recQ0PgyWBky0wm32",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "Count": "1",
+          "SortOrder": "2",
+          "Name": "2-TwoInARowTop:Flip:1",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Flip",
+          "TranslationId": "1",
+          "CPTCode": "11"
+        },
+        {
+          "CellPatternTranslationId": "reczr6h68ZUdkDIZb",
+          "createdTime": "2020-11-26T20:39:35Z",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "CellPattern": "recYmKv2dBpnAA1gs",
+          "Count": "3",
+          "SortOrder": "1",
+          "Name": "1-TwoOutsideTop:Rotate:3",
+          "CellPatternName": "TwoOutsideTop",
+          "TranslationName": "Rotate",
+          "TranslationId": "0",
+          "CPTCode": "30"
+        }
+      ]
+    },
+    "LanguageTokens": {
+      "LanguageToken": [
+        {
+          "LanguageTokenId": "rec1au6Wnbaf3oO1u",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "GameOver",
+          "DisplayName": "Game Over",
+          "SortOrder": "3"
+        },
+        {
+          "LanguageTokenId": "recFy1FsoP1ORWYWj",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "YourTurn",
+          "DisplayName": "It's your turn",
+          "SortOrder": "4"
+        },
+        {
+          "LanguageTokenId": "recNnnObNV1wEGXUI",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "Title",
+          "DisplayName": "Suzanne's Tic Tac Toe",
+          "SortOrder": "1"
+        },
+        {
+          "LanguageTokenId": "recOqDsQXph2jV645",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "TheyWon",
+          "DisplayName": "Loser",
+          "SortOrder": "7"
+        },
+        {
+          "LanguageTokenId": "recPamDrUmmMfoUtj",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "YouWon",
+          "DisplayName": "Winner",
+          "SortOrder": "6"
+        },
+        {
+          "LanguageTokenId": "recTxNSWmH6qLLtgj",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "GameOn",
+          "DisplayName": "Game On",
+          "SortOrder": "2"
+        },
+        {
+          "LanguageTokenId": "recdK8VdwOgWPXEf4",
+          "createdTime": "2020-11-26T20:01:30Z",
+          "Token": "TheirTurn",
+          "DisplayName": "It's their turn",
+          "SortOrder": "5"
+        }
+      ]
+    },
+    "AILevels": {
+      "AILevel": [
+        {
+          "AILevelId": "rec6OhVu8y6RKPscT",
+          "createdTime": "2020-11-26T20:02:01Z",
+          "Name": "Advanced",
+          "PlayerType": "SimpleRules",
+          "MinAILevelIndex": "0",
+          "AILevelIndex": "3",
+          "Description": "The best - all strategies are employed.  This AI should never lose.  It will only win if the opponent makes a mistake, but otherwise, it at least tie.",
+          "SortOrder": "3"
+        },
+        {
+          "AILevelId": "recPPp5z8K4EAA2FW",
+          "createdTime": "2020-11-26T20:02:01Z",
+          "Name": "Intermediate",
+          "PlayerType": "SimpleRules",
+          "MinAILevelIndex": "0",
+          "AILevelIndex": "2",
+          "Description": "This guy's pretty good - but not the best",
+          "SortOrder": "2"
+        },
+        {
+          "AILevelId": "recmMBaevl2jHl0hC",
+          "createdTime": "2020-11-26T20:02:01Z",
+          "Name": "Beginner",
+          "PlayerType": "SimpleRules",
+          "MinAILevelIndex": "0",
+          "AILevelIndex": "1",
+          "Description": "Wins, prevents a win or plays randomly.",
+          "SortOrder": "1"
+        }
+      ]
+    },
+    "CellPatterns": {
+      "CellPattern": [
+        {
+          "CellPatternId": "rec55PqGhtUYK5Rcb",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TwoInARowTop",
+          "Description": "Two marks top left, top middle with top right empty - and then a full rotation/flip scheme.",
+          "CellPatternCells": [
+            "recclaJuN3LJWLC4N",
+            "recFITGoLxBQs1ocD",
+            "reccnHG0Yfk8tgTt6"
+          ],
+          "CellPatternTranslations": [
+            "recqJB1goFBhhsIVZ",
+            "recwuYqQZ0iCw2WfQ",
+            "recUD9c7vXgkNLQi9"
+          ],
+          "TargetCell": "recTGnKjXTE8LfT3C",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "3",
+          "TargetCellIndex": "2",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": [
+            "30",
+            "11",
+            "30"
+          ],
+          "Cells": "00;10;22",
+          "CellPatternCellStates": [
+            "00",
+            "10",
+            "22"
+          ],
+          "Target": "22",
+          "Translations": "30;11;30"
+        },
+        {
+          "CellPatternId": "recBDK2nzNlGSJNgJ",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "EdgeWin",
+          "Description": "Starting with the top row, 3 additional rotates will find all edge wins.",
+          "IsWinPattern": "true",
+          "CellPatternCells": [
+            "recU9O3yxyMeQ1eU4",
+            "recf1uu1YY0iPps8E",
+            "recPHA9ppFH8cjenC"
+          ],
+          "CellPatternTranslations": "recD87U0swUjjhnTj",
+          "SortOrder": "1",
+          "CellPatternTranslationCodes": "30",
+          "Cells": "00;10;20",
+          "CellPatternCellStates": [
+            "00",
+            "10",
+            "20"
+          ],
+          "Translations": "30"
+        },
+        {
+          "CellPatternId": "recYmKv2dBpnAA1gs",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TwoOutsideTop",
+          "Description": "Top left and top right filled, middle empty - finds all positions with 3 rotations.",
+          "CellPatternCells": [
+            "recKj18pU9k6V6MAx",
+            "recljMfqekOodaaWx",
+            "rec8bt4pVcy9OY8XO"
+          ],
+          "CellPatternTranslations": "reczr6h68ZUdkDIZb",
+          "TargetCell": "recpPYOZtnp3lTOua",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "6",
+          "TargetCellIndex": "1",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": "30",
+          "Cells": "00;12;20",
+          "CellPatternCellStates": [
+            "00",
+            "12",
+            "20"
+          ],
+          "Target": "12",
+          "Translations": "30"
+        },
+        {
+          "CellPatternId": "recZCV8dlP1pNK9kK",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TwoInARowDiagonal",
+          "Description": "Two in a row on the diagonal, with the third cell empty - finds all positions with 3 rotations.",
+          "CellPatternCells": [
+            "rec91aKNdkT2cw93v",
+            "recwQ3ZI5MBVHPKgl",
+            "rec5D3fwk2h5GzjIB"
+          ],
+          "CellPatternTranslations": "rec9PRnE4xpUCcMit",
+          "TargetCell": "recczW2Y4WMv9buZ8",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "5",
+          "TargetCellIndex": "8",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": "30",
+          "Cells": "00;40;82",
+          "CellPatternCellStates": [
+            "00",
+            "40",
+            "82"
+          ],
+          "Target": "82",
+          "Translations": "30"
+        },
+        {
+          "CellPatternId": "recg1ttw7l3n96PDG",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TowOutsideDiagonal",
+          "Description": "Top left and bottom right with middle empty  - 1 rotation finds the one variation of the starting pattern.",
+          "CellPatternCells": [
+            "recYR4cE90EOVnYD5",
+            "recWoh5Qk0b1xBV67",
+            "reclDV8jky7y1JNzH"
+          ],
+          "CellPatternTranslations": "recoPtQQ8QZtClJK0",
+          "TargetCell": "rec35HZOaRy6ge0jk",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "8",
+          "TargetCellIndex": "4",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": "10",
+          "Cells": "00;42;80",
+          "CellPatternCellStates": [
+            "00",
+            "42",
+            "80"
+          ],
+          "Target": "42",
+          "Translations": "10"
+        },
+        {
+          "CellPatternId": "recobCShOEyZjP8bY",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TwoOutsideMiddle",
+          "Description": "Middle left and right, center empty - 1 rotation finds the one variation of the starting pattern.",
+          "CellPatternCells": [
+            "recyZobcdc9yOkGuC",
+            "recaPLycHtpRQfWnE",
+            "rec6RGGCG5ORVBnA3"
+          ],
+          "CellPatternTranslations": "recafoRwqvCh5HZOd",
+          "TargetCell": "rec35HZOaRy6ge0jk",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "7",
+          "TargetCellIndex": "4",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": "10",
+          "Cells": "30;42;50",
+          "CellPatternCellStates": [
+            "30",
+            "42",
+            "50"
+          ],
+          "Target": "42",
+          "Translations": "10"
+        },
+        {
+          "CellPatternId": "recodVK2HKbzC26Db",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "MiddleWin",
+          "Description": "Starting with the middle row selected, a single rotations finds both middle wins",
+          "IsWinPattern": "true",
+          "CellPatternCells": [
+            "reckcKNNnyDSWpFrH",
+            "recGP80BxFCLlmgw7",
+            "recAy4XNSSKRZGZsh"
+          ],
+          "CellPatternTranslations": "recNz0LuN77HIXjmB",
+          "SortOrder": "2",
+          "CellPatternTranslationCodes": "10",
+          "Cells": "30;40;50",
+          "CellPatternCellStates": [
+            "30",
+            "40",
+            "50"
+          ],
+          "Translations": "10"
+        },
+        {
+          "CellPatternId": "recqn6vuQrx71nQii",
+          "createdTime": "2020-11-26T20:06:43Z",
+          "Name": "TwoInARowMiddle",
+          "Description": "Two in a row on the middle row, right side empty - finds all positions with 3 rotations.",
+          "CellPatternCells": [
+            "recxWA16nieZY83Sv",
+            "recPmKMMNhYSxBWJ0",
+            "rechiocdDSSkR1IFz"
+          ],
+          "CellPatternTranslations": "recJjgKw24kaBFH0i",
+          "TargetCell": "recfSe8zeEdCAtcGq",
+          "TargetCellState": "recJAi8YoTOQmzhfH",
+          "SortOrder": "4",
+          "TargetCellIndex": "5",
+          "TargetCellStateId": "2",
+          "CellPatternTranslationCodes": "30",
+          "Cells": "30;40;52",
+          "CellPatternCellStates": [
+            "30",
+            "40",
+            "52"
+          ],
+          "Target": "52",
+          "Translations": "30"
+        }
+      ]
+    },
+    "AIStrategies": {
+      "AIStrategy": [
+        {
+          "AIStrategyId": "rec9YSojkIl2F85fV",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "PreventWinIfPossible",
+          "Description": "Prevent opponent from using WinIfPossible strategy",
+          "PlayerLevel": "2",
+          "IsDefensive": "true",
+          "StrategyRank": "2",
+          "SortOrder": "5"
+        },
+        {
+          "AIStrategyId": "recGEVGA3ajKMQ2kD",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "ForceWinNextTurn",
+          "Description": "Check for a move that will force a win the next turn, regardless of what the opponent does.",
+          "PlayerLevel": "2",
+          "IsDefensive": "false",
+          "StrategyRank": "3",
+          "SortOrder": "6"
+        },
+        {
+          "AIStrategyId": "recMqBdImRECSijls",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "PreventForceWinNextTurn",
+          "Description": "Prevent opponent from using ForceWinNextTurn strategy",
+          "PlayerLevel": "2",
+          "IsDefensive": "true",
+          "StrategyRank": "4",
+          "SortOrder": "7"
+        },
+        {
+          "AIStrategyId": "recQQG2R7vnRDgWNW",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "WaitsForInstruction",
+          "Description": "Plays as proxy for a human.  A UI is needed to communicate the human's intentions.",
+          "PlayerLevel": "-1",
+          "StrategyRank": "1",
+          "SortOrder": "1"
+        },
+        {
+          "AIStrategyId": "recZDBLLFUvFztYzW",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "PlayInMiddleIfAvailable",
+          "Description": "If there are no other winning strategies, play in the middle cell",
+          "PlayerLevel": "1",
+          "StrategyRank": "90",
+          "SortOrder": "3"
+        },
+        {
+          "AIStrategyId": "reca1n3gYdwjbxrcn",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "Random",
+          "Description": "Choice from a random selection amongst available cells",
+          "PlayerLevel": "0",
+          "StrategyRank": "100",
+          "SortOrder": "2"
+        },
+        {
+          "AIStrategyId": "reccQN2uoTvoIlAQR",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "LearnFromMistakes",
+          "Description": "Plays randomly, but keeps track of what moves are made, and learn from mistakes",
+          "PlayerLevel": "8",
+          "StrategyRank": "200",
+          "SortOrder": "11"
+        },
+        {
+          "AIStrategyId": "reclttwLO9tNIHGlo",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "PlayInCornerIfAvailable",
+          "Description": "If there are any corner positions available, player there",
+          "PlayerLevel": "2",
+          "StrategyRank": "95",
+          "SortOrder": "8"
+        },
+        {
+          "AIStrategyId": "recuWctNLBYnhhsgj",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "PreventSetupForceWinNextTurn",
+          "Description": "Prevent opponent from using SetupForceWinNextTurn strategy",
+          "PlayerLevel": "3",
+          "IsDefensive": "true",
+          "StrategyRank": "6",
+          "SortOrder": "10"
+        },
+        {
+          "AIStrategyId": "recx2tCavviw3I7It",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "SetupForceWinNextTurn",
+          "Description": "Check if there's a move which will allow a force win next turn.",
+          "PlayerLevel": "3",
+          "IsDefensive": "false",
+          "StrategyRank": "5",
+          "SortOrder": "9"
+        },
+        {
+          "AIStrategyId": "recyOJc1noL5zIhmx",
+          "createdTime": "2020-11-26T20:02:26Z",
+          "Name": "WinIfPossible",
+          "Description": "If any two cells are already filled in by the AI, and the 3rd cell in that row is available, play there.",
+          "PlayerLevel": "1",
+          "IsDefensive": "false",
+          "StrategyRank": "1",
+          "SortOrder": "4"
+        }
+      ]
+    },
+    "CellPatternCells": {
+      "CellPatternCell": [
+        {
+          "CellPatternCellId": "rec5D3fwk2h5GzjIB",
+          "createdTime": "2020-11-26T20:43:48Z",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellPattern": "recZCV8dlP1pNK9kK",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TwoInARowDiagonal:NoPlayer:BottomRight",
+          "CellIndex": "8",
+          "CellStateId": "2",
+          "CellCellState": "82"
+        },
+        {
+          "CellPatternCellId": "rec6RGGCG5ORVBnA3",
+          "createdTime": "2020-11-26T20:44:11Z",
+          "Cell": "recfSe8zeEdCAtcGq",
+          "CellPattern": "recobCShOEyZjP8bY",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoOutsideMiddle:PlayerA:MiddleRight",
+          "CellIndex": "5",
+          "CellStateId": "0",
+          "CellCellState": "50"
+        },
+        {
+          "CellPatternCellId": "rec8bt4pVcy9OY8XO",
+          "createdTime": "2020-11-26T20:44:14Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "recYmKv2dBpnAA1gs",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoOutsideTop:PlayerA:TopRight",
+          "CellIndex": "2",
+          "CellStateId": "0",
+          "CellCellState": "20"
+        },
+        {
+          "CellPatternCellId": "rec91aKNdkT2cw93v",
+          "createdTime": "2020-11-26T20:37:58Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recZCV8dlP1pNK9kK",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowDiagonal:PlayerA:TopLeft",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00"
+        },
+        {
+          "CellPatternCellId": "recAy4XNSSKRZGZsh",
+          "createdTime": "2020-11-26T20:42:02Z",
+          "Cell": "recfSe8zeEdCAtcGq",
+          "CellPattern": "recodVK2HKbzC26Db",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "MiddleWin:PlayerA:MiddleRight",
+          "CellIndex": "5",
+          "CellStateId": "0",
+          "CellCellState": "50"
+        },
+        {
+          "CellPatternCellId": "recFITGoLxBQs1ocD",
+          "createdTime": "2020-11-26T20:44:06Z",
+          "Cell": "recpPYOZtnp3lTOua",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowTop:PlayerA:Top",
+          "CellIndex": "1",
+          "CellStateId": "0",
+          "CellCellState": "10"
+        },
+        {
+          "CellPatternCellId": "recGP80BxFCLlmgw7",
+          "createdTime": "2020-11-26T20:41:59Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recodVK2HKbzC26Db",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "MiddleWin:PlayerA:Middle",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40"
+        },
+        {
+          "CellPatternCellId": "recKj18pU9k6V6MAx",
+          "createdTime": "2020-11-26T20:37:58Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recYmKv2dBpnAA1gs",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoOutsideTop:PlayerA:TopLeft",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00"
+        },
+        {
+          "CellPatternCellId": "recPHA9ppFH8cjenC",
+          "createdTime": "2020-11-26T20:38:15Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "recBDK2nzNlGSJNgJ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "EdgeWin:PlayerA:TopRight",
+          "CellIndex": "2",
+          "CellStateId": "0",
+          "CellCellState": "20"
+        },
+        {
+          "CellPatternCellId": "recPmKMMNhYSxBWJ0",
+          "createdTime": "2020-11-26T20:44:04Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recqn6vuQrx71nQii",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowMiddle:PlayerA:Middle",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40"
+        },
+        {
+          "CellPatternCellId": "recU9O3yxyMeQ1eU4",
+          "createdTime": "2020-11-26T20:35:31Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recBDK2nzNlGSJNgJ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "EdgeWin:PlayerA:TopLeft",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00"
+        },
+        {
+          "CellPatternCellId": "recWoh5Qk0b1xBV67",
+          "createdTime": "2020-11-26T20:42:17Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recg1ttw7l3n96PDG",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TowOutsideDiagonal:NoPlayer:Middle",
+          "CellIndex": "4",
+          "CellStateId": "2",
+          "CellCellState": "42"
+        },
+        {
+          "CellPatternCellId": "recYR4cE90EOVnYD5",
+          "createdTime": "2020-11-26T20:37:58Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recg1ttw7l3n96PDG",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TowOutsideDiagonal:PlayerA:TopLeft",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00"
+        },
+        {
+          "CellPatternCellId": "recaPLycHtpRQfWnE",
+          "createdTime": "2020-11-26T20:44:11Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recobCShOEyZjP8bY",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TwoOutsideMiddle:NoPlayer:Middle",
+          "CellIndex": "4",
+          "CellStateId": "2",
+          "CellCellState": "42"
+        },
+        {
+          "CellPatternCellId": "recclaJuN3LJWLC4N",
+          "createdTime": "2020-11-26T20:35:31Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowTop:PlayerA:TopLeft",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00"
+        },
+        {
+          "CellPatternCellId": "reccnHG0Yfk8tgTt6",
+          "createdTime": "2020-11-26T20:44:07Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "rec55PqGhtUYK5Rcb",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TwoInARowTop:NoPlayer:TopRight",
+          "CellIndex": "2",
+          "CellStateId": "2",
+          "CellCellState": "22"
+        },
+        {
+          "CellPatternCellId": "recf1uu1YY0iPps8E",
+          "createdTime": "2020-11-26T20:38:12Z",
+          "Cell": "recpPYOZtnp3lTOua",
+          "CellPattern": "recBDK2nzNlGSJNgJ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "EdgeWin:PlayerA:Top",
+          "CellIndex": "1",
+          "CellStateId": "0",
+          "CellCellState": "10"
+        },
+        {
+          "CellPatternCellId": "rechiocdDSSkR1IFz",
+          "createdTime": "2020-11-26T20:44:04Z",
+          "Cell": "recfSe8zeEdCAtcGq",
+          "CellPattern": "recqn6vuQrx71nQii",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TwoInARowMiddle:NoPlayer:MiddleRight",
+          "CellIndex": "5",
+          "CellStateId": "2",
+          "CellCellState": "52"
+        },
+        {
+          "CellPatternCellId": "reckcKNNnyDSWpFrH",
+          "createdTime": "2020-11-26T20:35:31Z",
+          "Cell": "recxIf3GoDzEtonFU",
+          "CellPattern": "recodVK2HKbzC26Db",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "MiddleWin:PlayerA:MiddleLeft",
+          "CellIndex": "3",
+          "CellStateId": "0",
+          "CellCellState": "30"
+        },
+        {
+          "CellPatternCellId": "reclDV8jky7y1JNzH",
+          "createdTime": "2020-11-26T20:42:19Z",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellPattern": "recg1ttw7l3n96PDG",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TowOutsideDiagonal:PlayerA:BottomRight",
+          "CellIndex": "8",
+          "CellStateId": "0",
+          "CellCellState": "80"
+        },
+        {
+          "CellPatternCellId": "recljMfqekOodaaWx",
+          "createdTime": "2020-11-26T20:44:14Z",
+          "Cell": "recpPYOZtnp3lTOua",
+          "CellPattern": "recYmKv2dBpnAA1gs",
+          "CellState": "recJAi8YoTOQmzhfH",
+          "Name": "TwoOutsideTop:NoPlayer:Top",
+          "CellIndex": "1",
+          "CellStateId": "2",
+          "CellCellState": "12"
+        },
+        {
+          "CellPatternCellId": "recwQ3ZI5MBVHPKgl",
+          "createdTime": "2020-11-26T20:43:44Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recZCV8dlP1pNK9kK",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowDiagonal:PlayerA:Middle",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40"
+        },
+        {
+          "CellPatternCellId": "recxWA16nieZY83Sv",
+          "createdTime": "2020-11-26T20:37:58Z",
+          "Cell": "recxIf3GoDzEtonFU",
+          "CellPattern": "recqn6vuQrx71nQii",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoInARowMiddle:PlayerA:MiddleLeft",
+          "CellIndex": "3",
+          "CellStateId": "0",
+          "CellCellState": "30"
+        },
+        {
+          "CellPatternCellId": "recyZobcdc9yOkGuC",
+          "createdTime": "2020-11-26T20:37:58Z",
+          "Cell": "recxIf3GoDzEtonFU",
+          "CellPattern": "recobCShOEyZjP8bY",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "TwoOutsideMiddle:PlayerA:MiddleLeft",
+          "CellIndex": "3",
+          "CellStateId": "0",
+          "CellCellState": "30"
+        }
+      ]
+    },
+    "Cells": {
+      "Cell": [
+        {
+          "CellId": "rec35HZOaRy6ge0jk",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "Middle",
+          "Clockwise": "rec35HZOaRy6ge0jk",
+          "CounterClockwise": "rec35HZOaRy6ge0jk",
+          "Flip": "rec35HZOaRy6ge0jk",
+          "SampleValue": "e",
+          "Description": "Cell 1,1",
+          "X": "1",
+          "Y": "1",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "4",
+          "CellPatternCells": [
+            "recGP80BxFCLlmgw7",
+            "recWoh5Qk0b1xBV67",
+            "recwQ3ZI5MBVHPKgl",
+            "recPmKMMNhYSxBWJ0",
+            "recaPLycHtpRQfWnE"
+          ],
+          "CellPatterns": [
+            "recobCShOEyZjP8bY",
+            "recg1ttw7l3n96PDG"
+          ],
+          "CurrentCellState": "rec0xQjo4VL3DFTXg",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From Middle to Middle",
+          "RotateIndex": "4",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "PlayerA",
+          "RotateFrom": "Middle",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "Middle",
+          "CounterClockwiseRotateFrom": "Middle",
+          "FlipFromName": "Middle",
+          "FlipIndex": "4",
+          "ClockwiseRotateFromIndex": "4",
+          "CounterClockwiseRotateFromIndex": "4",
+          "FlipDescription": "No Movement"
+        },
+        {
+          "CellId": "rec3OzG8nTAkUhjVn",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "Bottom",
+          "Clockwise": "recfSe8zeEdCAtcGq",
+          "CounterClockwise": "recxIf3GoDzEtonFU",
+          "Flip": "rec3OzG8nTAkUhjVn",
+          "SampleValue": "h",
+          "Description": "Cell 2,1",
+          "X": "2",
+          "Y": "1",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "7",
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From MiddleLeft to Bottom",
+          "RotateIndex": "3",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "RotateFrom": "MiddleLeft",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "MiddleRight",
+          "CounterClockwiseRotateFrom": "MiddleLeft",
+          "FlipFromName": "Bottom",
+          "FlipIndex": "7",
+          "ClockwiseRotateFromIndex": "5",
+          "CounterClockwiseRotateFromIndex": "3",
+          "FlipDescription": "No Movement"
+        },
+        {
+          "CellId": "rec50MWM91QHzlEzO",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "TopLeft",
+          "Clockwise": "recmjtZPRUfoCU2sr",
+          "CounterClockwise": "recTGnKjXTE8LfT3C",
+          "Flip": "recTGnKjXTE8LfT3C",
+          "SampleValue": "A",
+          "Description": "Cell 0,0",
+          "X": "0",
+          "Y": "0",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "0",
+          "CellPatternCells": [
+            "recU9O3yxyMeQ1eU4",
+            "recYR4cE90EOVnYD5",
+            "rec91aKNdkT2cw93v",
+            "recclaJuN3LJWLC4N",
+            "recKj18pU9k6V6MAx"
+          ],
+          "CurrentCellState": "recw0SsqNfCk96xZs",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From TopRight to TopLeft",
+          "RotateIndex": "2",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "PlayerB",
+          "RotateFrom": "TopRight",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "BottomLeft",
+          "CounterClockwiseRotateFrom": "TopRight",
+          "FlipFromName": "TopRight",
+          "FlipIndex": "2",
+          "ClockwiseRotateFromIndex": "6",
+          "CounterClockwiseRotateFromIndex": "2",
+          "FlipDescription": "From TopRight to TopLeft"
+        },
+        {
+          "CellId": "recTGnKjXTE8LfT3C",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "TopRight",
+          "Clockwise": "rec50MWM91QHzlEzO",
+          "CounterClockwise": "recczW2Y4WMv9buZ8",
+          "Flip": "rec50MWM91QHzlEzO",
+          "SampleValue": "C",
+          "Description": "Cell 0,2",
+          "X": "0",
+          "Y": "2",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "2",
+          "CellPatternCells": [
+            "recPHA9ppFH8cjenC",
+            "reccnHG0Yfk8tgTt6",
+            "rec8bt4pVcy9OY8XO"
+          ],
+          "CellPatterns": "rec55PqGhtUYK5Rcb",
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From BottomRight to TopRight",
+          "RotateIndex": "8",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "RotateFrom": "BottomRight",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "TopLeft",
+          "CounterClockwiseRotateFrom": "BottomRight",
+          "FlipFromName": "TopLeft",
+          "FlipIndex": "0",
+          "ClockwiseRotateFromIndex": "0",
+          "CounterClockwiseRotateFromIndex": "8",
+          "FlipDescription": "From TopLeft to TopRight"
+        },
+        {
+          "CellId": "recczW2Y4WMv9buZ8",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "BottomRight",
+          "Clockwise": "recTGnKjXTE8LfT3C",
+          "CounterClockwise": "recmjtZPRUfoCU2sr",
+          "Flip": "recmjtZPRUfoCU2sr",
+          "SampleValue": "i",
+          "Description": "Cell 2,2",
+          "X": "2",
+          "Y": "2",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "8",
+          "CellPatternCells": [
+            "reclDV8jky7y1JNzH",
+            "rec5D3fwk2h5GzjIB"
+          ],
+          "CellPatterns": "recZCV8dlP1pNK9kK",
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From BottomLeft to BottomRight",
+          "RotateIndex": "6",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "RotateFrom": "BottomLeft",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "TopRight",
+          "CounterClockwiseRotateFrom": "BottomLeft",
+          "FlipFromName": "BottomLeft",
+          "FlipIndex": "6",
+          "ClockwiseRotateFromIndex": "2",
+          "CounterClockwiseRotateFromIndex": "6",
+          "FlipDescription": "From BottomLeft to BottomRight"
+        },
+        {
+          "CellId": "recfSe8zeEdCAtcGq",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "MiddleRight",
+          "Clockwise": "recpPYOZtnp3lTOua",
+          "CounterClockwise": "rec3OzG8nTAkUhjVn",
+          "Flip": "recxIf3GoDzEtonFU",
+          "SampleValue": "f",
+          "Description": "Cell 1,2",
+          "X": "1",
+          "Y": "2",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "5",
+          "CellPatternCells": [
+            "recAy4XNSSKRZGZsh",
+            "rechiocdDSSkR1IFz",
+            "rec6RGGCG5ORVBnA3"
+          ],
+          "CellPatterns": "recqn6vuQrx71nQii",
+          "CurrentCellState": "rec0xQjo4VL3DFTXg",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From Bottom to MiddleRight",
+          "RotateIndex": "7",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "PlayerA",
+          "RotateFrom": "Bottom",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "Top",
+          "CounterClockwiseRotateFrom": "Bottom",
+          "FlipFromName": "MiddleLeft",
+          "FlipIndex": "3",
+          "ClockwiseRotateFromIndex": "1",
+          "CounterClockwiseRotateFromIndex": "7",
+          "FlipDescription": "From MiddleLeft to MiddleRight"
+        },
+        {
+          "CellId": "recmjtZPRUfoCU2sr",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "BottomLeft",
+          "Clockwise": "recczW2Y4WMv9buZ8",
+          "CounterClockwise": "rec50MWM91QHzlEzO",
+          "Flip": "recczW2Y4WMv9buZ8",
+          "SampleValue": "g",
+          "Description": "Cell 2,0",
+          "X": "2",
+          "Y": "0",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "6",
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From TopLeft to BottomLeft",
+          "RotateIndex": "0",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "RotateFrom": "TopLeft",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "BottomRight",
+          "CounterClockwiseRotateFrom": "TopLeft",
+          "FlipFromName": "BottomRight",
+          "FlipIndex": "8",
+          "ClockwiseRotateFromIndex": "8",
+          "CounterClockwiseRotateFromIndex": "0",
+          "FlipDescription": "From BottomRight to BottomLeft"
+        },
+        {
+          "CellId": "recpPYOZtnp3lTOua",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "Top",
+          "Clockwise": "recxIf3GoDzEtonFU",
+          "CounterClockwise": "recfSe8zeEdCAtcGq",
+          "Flip": "recpPYOZtnp3lTOua",
+          "SampleValue": "B",
+          "Description": "Cell 0,1",
+          "X": "0",
+          "Y": "1",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "1",
+          "CellPatternCells": [
+            "recf1uu1YY0iPps8E",
+            "recFITGoLxBQs1ocD",
+            "recljMfqekOodaaWx"
+          ],
+          "CellPatterns": "recYmKv2dBpnAA1gs",
+          "CurrentCellState": "recw0SsqNfCk96xZs",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From MiddleRight to Top",
+          "RotateIndex": "5",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "PlayerB",
+          "RotateFrom": "MiddleRight",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "MiddleLeft",
+          "CounterClockwiseRotateFrom": "MiddleRight",
+          "FlipFromName": "Top",
+          "FlipIndex": "1",
+          "ClockwiseRotateFromIndex": "3",
+          "CounterClockwiseRotateFromIndex": "5",
+          "FlipDescription": "No Movement"
+        },
+        {
+          "CellId": "recxIf3GoDzEtonFU",
+          "createdTime": "2020-11-26T20:06:06Z",
+          "Name": "MiddleLeft",
+          "Clockwise": "rec3OzG8nTAkUhjVn",
+          "CounterClockwise": "recpPYOZtnp3lTOua",
+          "Flip": "recfSe8zeEdCAtcGq",
+          "SampleValue": "d",
+          "Description": "Cell 1,0",
+          "X": "1",
+          "Y": "0",
+          "RotateTranslation": "recgdoYW4iJ8gaAha",
+          "CellIndex": "3",
+          "CellPatternCells": [
+            "reckcKNNnyDSWpFrH",
+            "recxWA16nieZY83Sv",
+            "recyZobcdc9yOkGuC"
+          ],
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "DefaultCellState": "recJAi8YoTOQmzhfH",
+          "RotateDescription": "From Top to MiddleLeft",
+          "RotateIndex": "1",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "RotateFrom": "Top",
+          "IsClockwise": null,
+          "ClockwiseRotateFrom": "Bottom",
+          "CounterClockwiseRotateFrom": "Top",
+          "FlipFromName": "MiddleRight",
+          "FlipIndex": "5",
+          "ClockwiseRotateFromIndex": "7",
+          "CounterClockwiseRotateFromIndex": "1",
+          "FlipDescription": "From MiddleRight to MiddleLeft"
+        }
+      ]
+    },
+    "TargetPlatforms": {
+      "TargetPlatform": [
+        {
+          "TargetPlatformId": "rec4ch22B23xyBKFE",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "Html",
+          "ShortDescription": "Documentation",
+          "Description": "The resulting HTML version of the wiki",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://eejai42.sdks.codeiverse.com/TicTacToeSDK/Docs/ReadMe.html",
+          "HasAnyUI": "FALSE",
+          "IsHumanyPlayable": "FALSE",
+          "HasAnyAI": "FALSE",
+          "DetectsWin": "FALSE",
+          "DetectsLoss": "FALSE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "FALSE",
+          "HasUIForHuman": "FALSE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "FALSE",
+          "ImplementsFlip": "FALSE",
+          "ImplementsCustomTranslations": "FALSE",
+          "SortOrder": "4"
+        },
+        {
+          "TargetPlatformId": "rec9TVW9uwN4omDSH",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "JSFiddle",
+          "ShortDescription": "Simple web client",
+          "Description": "A JSFiddle implementation of every aspect of the specification.",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://jsfiddle.net/eejai42/g5ndz2mp/",
+          "HasAnyUI": "TRUE",
+          "IsHumanyPlayable": "TRUE",
+          "HasAnyAI": "TRUE",
+          "DetectsWin": "TRUE",
+          "DetectsLoss": "TRUE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "TRUE",
+          "HasUIForHuman": "TRUE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "TRUE",
+          "ImplementsFlip": "TRUE",
+          "ImplementsCustomTranslations": "TRUE",
+          "SortOrder": "1"
+        },
+        {
+          "TargetPlatformId": "recma037MKuzvQ5Gn",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "Windows",
+          "ShortDescription": "Windows App",
+          "Description": "A windows forms version of the game, which also implements every aspect of the game.",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://eejai42.sdks.codeiverse.com/ClickOnce/TicTacToe/publish.htm",
+          "HasAnyUI": "FALSE",
+          "IsHumanyPlayable": "FALSE",
+          "HasAnyAI": "FALSE",
+          "DetectsWin": "FALSE",
+          "DetectsLoss": "FALSE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "FALSE",
+          "HasUIForHuman": "FALSE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "FALSE",
+          "ImplementsFlip": "FALSE",
+          "ImplementsCustomTranslations": "FALSE",
+          "SortOrder": "2"
+        },
+        {
+          "TargetPlatformId": "recn4ZBd69hcEBkIl",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "CSharp",
+          "ShortDescription": "TTT Library",
+          "Description": "A csharp library which implements the SDK",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://eejai42.sdks.codeiverse.com/ClickOnce/TicTacToe/publish.htm",
+          "HasAnyUI": "FALSE",
+          "IsHumanyPlayable": "FALSE",
+          "HasAnyAI": "FALSE",
+          "DetectsWin": "FALSE",
+          "DetectsLoss": "FALSE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "FALSE",
+          "HasUIForHuman": "FALSE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "FALSE",
+          "ImplementsFlip": "FALSE",
+          "ImplementsCustomTranslations": "FALSE",
+          "SortOrder": "6"
+        },
+        {
+          "TargetPlatformId": "recqb7MghLHT7bidn",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "GDocs",
+          "ShortDescription": "Documentation",
+          "Description": "The original source documentation (not really a target I guess :) )",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=0",
+          "HasAnyUI": "FALSE",
+          "IsHumanyPlayable": "FALSE",
+          "HasAnyAI": "FALSE",
+          "DetectsWin": "FALSE",
+          "DetectsLoss": "FALSE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "FALSE",
+          "HasUIForHuman": "FALSE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "FALSE",
+          "ImplementsFlip": "FALSE",
+          "ImplementsCustomTranslations": "FALSE",
+          "SortOrder": "3"
+        },
+        {
+          "TargetPlatformId": "recvHhGpUR9sun8YL",
+          "createdTime": "2020-11-26T20:07:32Z",
+          "Name": "Javascript",
+          "ShortDescription": "TTT Library",
+          "Description": "A javascript library (which implements the SDK)",
+          "Implemented": "TRUE",
+          "DemoUrl": "https://eejai42.sdks.codeiverse.com/TicTacToeSDK/Docs/Translations.html",
+          "HasAnyUI": "FALSE",
+          "IsHumanyPlayable": "FALSE",
+          "HasAnyAI": "FALSE",
+          "DetectsWin": "FALSE",
+          "DetectsLoss": "FALSE",
+          "DetectsTie": "FALSE",
+          "HasRuleFollowingAI": "FALSE",
+          "HasUIForHuman": "FALSE",
+          "FullSimpleRules": "FALSE",
+          "FullMLAI": "FALSE",
+          "ImplementsRotate": "FALSE",
+          "ImplementsFlip": "FALSE",
+          "ImplementsCustomTranslations": "FALSE",
+          "SortOrder": "5"
+        }
+      ]
+    },
+    "AdditionalResources": {
+      "AdditionalResource": [
+        {
+          "AdditionalResourceId": "recHcwHGoetrVzZl2",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "ProjectIntro",
+          "Description": "An introduction to the project",
+          "Type": "GDoc",
+          "GoogleKey": "1LVxFmVcm2DgzH2AGNQ4c9buus16l42a6aNhEmwqjWzs",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recSwRg5YB2sQj3Dn",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "LanguageTokens",
+          "Description": "A list of language tokens used in the app.",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "112651157",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recSzeONBNQyGam4a",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "AIStrategies",
+          "Description": "A list of strategies used by the AI, and which AI levels that start be used at.",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "780350443",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recTnaatiHVKftVNt",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "TranslationTests",
+          "Description": "These values validate the rotate and flip index values",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "1640541132",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recYXFpjsUJpxDAtz",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Entities",
+          "Description": "A list of entities in the project (Player, Opponent, Game, Mark, Win, Loss, etc)",
+          "Type": "GSheet",
+          "GoogleKey": "1C_awugxQh7vQx4cCKGK7YKynOEUNdvT0htLzESZqhHA",
+          "GID": "0"
+        },
+        {
+          "AdditionalResourceId": "recat8Ojn2epezalz",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "CellPatterns",
+          "Description": "A list of cells and a target if a match is found.",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "412235242",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "receQpkmZcWMKHTQy",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Cells",
+          "Description": "A formal list of the cells in the 3x3 game of tic tac toe.",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "1934124403",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "receawL0rBK391VX5",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "TargetPlatforms",
+          "Description": "A list of target platforms that the SDK will support",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "2077194606",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "reciUfmmPt7wX7Ey7",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "AILevels",
+          "Description": "A list of AI Levels which the game supports starting with None (no ai) and working up to an AI that will win or tie every game.",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "260512170",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "reco9SceAeSSTdk7l",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "AdditionalResources",
+          "Description": "A list of additional resources used by the project",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "1887184744"
+        },
+        {
+          "AdditionalResourceId": "rect8IKCh05pywdx3",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "CellStates",
+          "Description": "A list of states that a cell can have",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "194238261",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recvL0ljpLGaPyUJX",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Translations",
+          "Description": "A list of transaltions which any implementation of this game needs to support",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "1319606678",
+          "IsActiveDownload": "true"
+        },
+        {
+          "AdditionalResourceId": "recz3Z6BkBERUjDP7",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Settings",
+          "Description": "Global settings for the entire TicTacToe project",
+          "Type": "GSheet",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "0"
+        }
+      ]
+    },
+    "Translations": {
+      "Translation": [
+        {
+          "TranslationId": "recQ0PgyWBky0wm32",
+          "createdTime": "2020-11-26T20:02:48Z",
+          "Name": "Flip",
+          "CustomDescription": "Flip the board along the vertical axis",
+          "Id": "1",
+          "CellPatternTranslations": "recwuYqQZ0iCw2WfQ",
+          "Description": "Flip the board along the vertical axis"
+        },
+        {
+          "TranslationId": "recgdoYW4iJ8gaAha",
+          "createdTime": "2020-11-26T20:02:48Z",
+          "Name": "Rotate",
+          "Id": "0",
+          "Cells": [
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recczW2Y4WMv9buZ8",
+            "recTGnKjXTE8LfT3C",
+            "recxIf3GoDzEtonFU",
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq",
+            "recmjtZPRUfoCU2sr",
+            "rec3OzG8nTAkUhjVn"
+          ],
+          "CellPatternTranslations": [
+            "recD87U0swUjjhnTj",
+            "recNz0LuN77HIXjmB",
+            "recqJB1goFBhhsIVZ",
+            "recJjgKw24kaBFH0i",
+            "rec9PRnE4xpUCcMit",
+            "reczr6h68ZUdkDIZb",
+            "recafoRwqvCh5HZOd",
+            "recoPtQQ8QZtClJK0",
+            "recUD9c7vXgkNLQi9"
+          ],
+          "Description": "Rotate 3x3 \"board\" 90 degrees LEFT-hand (Counter-Clockwise) around the middle cell"
+        }
+      ]
+    },
+    "GlobalSettings": {
+      "GlobalSetting": [
+        {
+          "GlobalSettingId": "rec2UsqxDo27MB0tS",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "GoogleResourceList",
+          "Value": "ExampleData",
+          "Description": "A list of sample values",
+          "Prefix": "SampleValues",
+          "GoogleKey": "1C_awugxQh7vQx4cCKGK7YKynOEUNdvT0htLzESZqhHA",
+          "GID": "0"
+        },
+        {
+          "GlobalSettingId": "rec4PYXvquNHrdkEm",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "GoogleResourceList",
+          "Value": "Descriptions",
+          "Description": "A list of description resources",
+          "Prefix": "Description",
+          "GoogleKey": "1C_awugxQh7vQx4cCKGK7YKynOEUNdvT0htLzESZqhHA",
+          "GID": "0"
+        },
+        {
+          "GlobalSettingId": "rec6rBbwkMlBgkC7Y",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "ChameleonCodeHostUri",
+          "Value": "https://eejai42.sdks.codeiverse.com/",
+          "Description": "The root path to the SDK Doc Host"
+        },
+        {
+          "GlobalSettingId": "recCJ8WknVZI8eBoL",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "GoogleResourceList",
+          "Value": "Properties",
+          "Description": "A list of attribute resource",
+          "Prefix": "Attributes",
+          "GoogleKey": "1C_awugxQh7vQx4cCKGK7YKynOEUNdvT0htLzESZqhHA",
+          "GID": "0"
+        },
+        {
+          "GlobalSettingId": "recGXKYpNkpkMIAY5",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "BaseNamespace",
+          "Value": "CODEiverse.Projects.TicTacToe",
+          "Description": "A reasonable base Namespace (to be used as a base namespace for code)"
+        },
+        {
+          "GlobalSettingId": "recO4hw3TPGZxFqSJ",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "GoogleResourceList",
+          "Value": "AdditionalResources",
+          "Description": "A list of additional resources",
+          "GoogleKey": "1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90",
+          "GID": "1887184744"
+        },
+        {
+          "GlobalSettingId": "recO7Lsgh9rJLgojo",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Language1",
+          "Value": "EN",
+          "Description": "The primary language",
+          "DefaultValue": "EN"
+        },
+        {
+          "GlobalSettingId": "recOb5NWYwez7gF9t",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "Language2",
+          "Description": "Additional languages",
+          "DefaultValue": "NA"
+        },
+        {
+          "GlobalSettingId": "recPhjZpPVPkwJsGq",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "DisplayName",
+          "Value": "3x3 Tic-Tac-Toe",
+          "Description": "A \"friendly\" display name for the project which can be changed at any time."
+        },
+        {
+          "GlobalSettingId": "recmBbQmUKdbqmMzk",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "ChameleonCodeSDKUri",
+          "Value": "TicTacToeSDK/",
+          "Description": "The relative path within the dochost",
+          "DefaultValue": "ChameleonCode/",
+          "AssociatedLink": "https://eejai42.sdks.codeiverse.com/TicTacToeSDK/Docs/ReadMe.html"
+        },
+        {
+          "GlobalSettingId": "recnP7mBv8TxwPbJ3",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "ProjectName",
+          "Value": "TicTacToe",
+          "Description": "The name of the project"
+        },
+        {
+          "GlobalSettingId": "recu7jbuZGXLaz6aN",
+          "createdTime": "2020-11-26T20:08:44Z",
+          "Name": "ChameleonCodeSDKPath",
+          "Value": "TicTacToeChallenge/ChameleonCodeSDK/",
+          "Description": "The physical path to the doc host folder relative to the CODEE_ROOT_PATH",
+          "DefaultValue": "ChameleonCodeSDK\\"
+        }
+      ]
+    },
+    "CellStates": {
+      "CellState": [
+        {
+          "CellStateId": "rec0xQjo4VL3DFTXg",
+          "createdTime": "2020-11-26T20:04:48Z",
+          "Name": "PlayerA",
+          "Code": "P",
+          "Description": "This cell has been marked by the active player",
+          "DefaultMark": "A",
+          "SortOrder": "1",
+          "Id": "0",
+          "CellPatternCells": [
+            "recU9O3yxyMeQ1eU4",
+            "recf1uu1YY0iPps8E",
+            "recPHA9ppFH8cjenC",
+            "reckcKNNnyDSWpFrH",
+            "recGP80BxFCLlmgw7",
+            "recAy4XNSSKRZGZsh",
+            "recYR4cE90EOVnYD5",
+            "reclDV8jky7y1JNzH",
+            "rec91aKNdkT2cw93v",
+            "recwQ3ZI5MBVHPKgl",
+            "recxWA16nieZY83Sv",
+            "recPmKMMNhYSxBWJ0",
+            "recclaJuN3LJWLC4N",
+            "recFITGoLxBQs1ocD",
+            "recyZobcdc9yOkGuC",
+            "rec6RGGCG5ORVBnA3",
+            "recKj18pU9k6V6MAx",
+            "rec8bt4pVcy9OY8XO"
+          ],
+          "CurrentStateCells": [
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq"
+          ],
+          "Cursor": "Default",
+          "FontColor": "black",
+          "Color": "yellow"
+        },
+        {
+          "CellStateId": "recJAi8YoTOQmzhfH",
+          "createdTime": "2020-11-26T20:04:48Z",
+          "Name": "NoPlayer",
+          "Code": "N",
+          "Description": "The space has not yet been played in",
+          "Cursor": "Pointer",
+          "SortOrder": "3",
+          "Id": "2",
+          "CellPatternCells": [
+            "recWoh5Qk0b1xBV67",
+            "rec5D3fwk2h5GzjIB",
+            "rechiocdDSSkR1IFz",
+            "reccnHG0Yfk8tgTt6",
+            "recaPLycHtpRQfWnE",
+            "recljMfqekOodaaWx"
+          ],
+          "CellPatterns": [
+            "rec55PqGhtUYK5Rcb",
+            "recqn6vuQrx71nQii",
+            "recZCV8dlP1pNK9kK",
+            "recYmKv2dBpnAA1gs",
+            "recobCShOEyZjP8bY",
+            "recg1ttw7l3n96PDG"
+          ],
+          "CurrentStateCells": [
+            "recxIf3GoDzEtonFU",
+            "recmjtZPRUfoCU2sr",
+            "rec3OzG8nTAkUhjVn",
+            "recTGnKjXTE8LfT3C",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "DefaultStateCells": [
+            "recxIf3GoDzEtonFU",
+            "recfSe8zeEdCAtcGq",
+            "recmjtZPRUfoCU2sr",
+            "rec3OzG8nTAkUhjVn",
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recTGnKjXTE8LfT3C",
+            "rec35HZOaRy6ge0jk",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "FontColor": "darkgray",
+          "Color": "white"
+        },
+        {
+          "CellStateId": "recw0SsqNfCk96xZs",
+          "createdTime": "2020-11-26T20:04:48Z",
+          "Name": "PlayerB",
+          "Code": "O",
+          "Description": "This cell has been marked by thhe active player's opponent.",
+          "DefaultMark": "B",
+          "Cursor": "Default",
+          "SortOrder": "2",
+          "Id": "1",
+          "CurrentStateCells": [
+            "recpPYOZtnp3lTOua",
+            "rec50MWM91QHzlEzO"
+          ],
+          "FontColor": "white",
+          "Color": "red"
+        }
+      ]
+    }
+  }
+}

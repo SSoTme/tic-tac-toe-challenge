@@ -1,0 +1,2546 @@
+
+{
+  "Ontology": {
+    "OntologyGroups": {
+      "OntologyGroup": {
+        "Name": "TicTacToeChallenge",
+        "ObjectDefs": {
+          "ObjectDef": [
+            {
+              "EntityId": "rec5CTsiJR6Xdxslf",
+              "createdTime": "2020-11-26T21:15:34Z",
+              "Name": "CellPatternTranslation",
+              "PluralName": "CellPatternTranslations",
+              "AirtableName": "CellPatternTranslations",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "CellPatternTranslationId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Translation",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Translation",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Translation",
+                        "ReferencedPropertyDef": "TranslationId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recQ0PgyWBky0wm32",
+                          "recgdoYW4iJ8gaAha"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellPattern",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPattern",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPattern",
+                        "ReferencedPropertyDef": "CellPatternId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recZCV8dlP1pNK9kK",
+                          "recBDK2nzNlGSJNgJ",
+                          "recqn6vuQrx71nQii",
+                          "recodVK2HKbzC26Db",
+                          "rec55PqGhtUYK5Rcb",
+                          "recobCShOEyZjP8bY",
+                          "recg1ttw7l3n96PDG",
+                          "rec55PqGhtUYK5Rcb",
+                          "rec55PqGhtUYK5Rcb",
+                          "recYmKv2dBpnAA1gs"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "Count",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "18",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TranslationName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TranslationId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "17",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CPTCode",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recAWOgja5ZyIFuQp",
+              "createdTime": "2020-11-26T21:14:31Z",
+              "Name": "LanguageToken",
+              "PluralName": "LanguageTokens",
+              "AirtableName": "LanguageTokens",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "LanguageTokenId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Token",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "9",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DisplayName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "22",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recBFSJ9xt8TSaDcs",
+              "createdTime": "2020-11-26T21:14:31Z",
+              "Name": "AILevel",
+              "PluralName": "AILevels",
+              "AirtableName": "AILevels",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "AILevelId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "PlayerType",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "MinAILevelIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AILevelIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recE60WOJMdkFz521",
+              "createdTime": "2020-11-26T21:15:27Z",
+              "Name": "CellPattern",
+              "PluralName": "CellPatterns",
+              "AirtableName": "CellPatterns",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "CellPatternId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsWinPattern",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPatternCell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPatternCell",
+                        "ReferencedPropertyDef": "CellPatternCellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recclaJuN3LJWLC4N",
+                          "recFITGoLxBQs1ocD",
+                          "reccnHG0Yfk8tgTt6",
+                          "recU9O3yxyMeQ1eU4",
+                          "recf1uu1YY0iPps8E",
+                          "recPHA9ppFH8cjenC",
+                          "recKj18pU9k6V6MAx",
+                          "recljMfqekOodaaWx",
+                          "rec8bt4pVcy9OY8XO",
+                          "rec91aKNdkT2cw93v",
+                          "recwQ3ZI5MBVHPKgl",
+                          "rec5D3fwk2h5GzjIB",
+                          "recYR4cE90EOVnYD5",
+                          "recWoh5Qk0b1xBV67",
+                          "reclDV8jky7y1JNzH",
+                          "recyZobcdc9yOkGuC",
+                          "recaPLycHtpRQfWnE",
+                          "rec6RGGCG5ORVBnA3",
+                          "reckcKNNnyDSWpFrH",
+                          "recGP80BxFCLlmgw7",
+                          "recAy4XNSSKRZGZsh",
+                          "recxWA16nieZY83Sv",
+                          "recPmKMMNhYSxBWJ0",
+                          "rechiocdDSSkR1IFz"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellPatternTranslations",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPatternTranslation",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPatternTranslation",
+                        "ReferencedPropertyDef": "CellPatternTranslationId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recqJB1goFBhhsIVZ",
+                          "recwuYqQZ0iCw2WfQ",
+                          "recUD9c7vXgkNLQi9",
+                          "recD87U0swUjjhnTj",
+                          "reczr6h68ZUdkDIZb",
+                          "rec9PRnE4xpUCcMit",
+                          "recoPtQQ8QZtClJK0",
+                          "recafoRwqvCh5HZOd",
+                          "recNz0LuN77HIXjmB",
+                          "recJjgKw24kaBFH0i"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TargetCell",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recTGnKjXTE8LfT3C",
+                          "recpPYOZtnp3lTOua",
+                          "recczW2Y4WMv9buZ8",
+                          "rec35HZOaRy6ge0jk",
+                          "rec35HZOaRy6ge0jk",
+                          "recfSe8zeEdCAtcGq"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "TargetCellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellState",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellState",
+                        "ReferencedPropertyDef": "CellStateId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TargetCellIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TargetCellStateId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternTranslationCodes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1"
+                  },
+                  {
+                    "Name": "Cells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternCellStates",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1"
+                  },
+                  {
+                    "Name": "Target",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Translations",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recMjqgnvie3zkeqL",
+              "createdTime": "2020-11-26T21:14:31Z",
+              "Name": "AIStrategy",
+              "PluralName": "AIStrategies",
+              "AirtableName": "AIStrategies",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "AIStrategyId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "PlayerLevel",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT16",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsDefensive",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "5",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "StrategyRank",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "3",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recNJ6QD2b3l7yodW",
+              "createdTime": "2020-11-26T21:15:27Z",
+              "Name": "CellPatternCell",
+              "PluralName": "CellPatternCells",
+              "AirtableName": "CellPatternCells",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "CellPatternCellId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Cell",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recczW2Y4WMv9buZ8",
+                          "recfSe8zeEdCAtcGq",
+                          "recTGnKjXTE8LfT3C",
+                          "rec50MWM91QHzlEzO",
+                          "recfSe8zeEdCAtcGq",
+                          "recpPYOZtnp3lTOua",
+                          "rec35HZOaRy6ge0jk",
+                          "rec50MWM91QHzlEzO",
+                          "recTGnKjXTE8LfT3C",
+                          "rec35HZOaRy6ge0jk",
+                          "rec50MWM91QHzlEzO",
+                          "rec35HZOaRy6ge0jk",
+                          "rec50MWM91QHzlEzO",
+                          "rec35HZOaRy6ge0jk",
+                          "rec50MWM91QHzlEzO",
+                          "recTGnKjXTE8LfT3C",
+                          "recpPYOZtnp3lTOua",
+                          "recfSe8zeEdCAtcGq",
+                          "recxIf3GoDzEtonFU",
+                          "recczW2Y4WMv9buZ8",
+                          "recpPYOZtnp3lTOua",
+                          "rec35HZOaRy6ge0jk",
+                          "recxIf3GoDzEtonFU",
+                          "recxIf3GoDzEtonFU"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellPattern",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPattern",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPattern",
+                        "ReferencedPropertyDef": "CellPatternId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recZCV8dlP1pNK9kK",
+                          "recobCShOEyZjP8bY",
+                          "recYmKv2dBpnAA1gs",
+                          "recZCV8dlP1pNK9kK",
+                          "recodVK2HKbzC26Db",
+                          "rec55PqGhtUYK5Rcb",
+                          "recodVK2HKbzC26Db",
+                          "recYmKv2dBpnAA1gs",
+                          "recBDK2nzNlGSJNgJ",
+                          "recqn6vuQrx71nQii",
+                          "recBDK2nzNlGSJNgJ",
+                          "recg1ttw7l3n96PDG",
+                          "recg1ttw7l3n96PDG",
+                          "recobCShOEyZjP8bY",
+                          "rec55PqGhtUYK5Rcb",
+                          "rec55PqGhtUYK5Rcb",
+                          "recBDK2nzNlGSJNgJ",
+                          "recqn6vuQrx71nQii",
+                          "recodVK2HKbzC26Db",
+                          "recg1ttw7l3n96PDG",
+                          "recYmKv2dBpnAA1gs",
+                          "recZCV8dlP1pNK9kK",
+                          "recqn6vuQrx71nQii",
+                          "recobCShOEyZjP8bY"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellState",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellState",
+                        "ReferencedPropertyDef": "CellStateId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellStateId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "17",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellCellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recOshv4aBOtAhL9c",
+              "createdTime": "2020-11-26T21:15:27Z",
+              "Name": "Cell",
+              "PluralName": "Cells",
+              "AirtableName": "Cells",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "CellId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Clockwise",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec35HZOaRy6ge0jk",
+                          "recfSe8zeEdCAtcGq",
+                          "recmjtZPRUfoCU2sr",
+                          "rec50MWM91QHzlEzO",
+                          "recTGnKjXTE8LfT3C",
+                          "recpPYOZtnp3lTOua",
+                          "recczW2Y4WMv9buZ8",
+                          "recxIf3GoDzEtonFU",
+                          "rec3OzG8nTAkUhjVn"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CounterClockwise",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec35HZOaRy6ge0jk",
+                          "recxIf3GoDzEtonFU",
+                          "recTGnKjXTE8LfT3C",
+                          "recczW2Y4WMv9buZ8",
+                          "recmjtZPRUfoCU2sr",
+                          "rec3OzG8nTAkUhjVn",
+                          "rec50MWM91QHzlEzO",
+                          "recfSe8zeEdCAtcGq",
+                          "recpPYOZtnp3lTOua"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "Flip",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec35HZOaRy6ge0jk",
+                          "rec3OzG8nTAkUhjVn",
+                          "recTGnKjXTE8LfT3C",
+                          "rec50MWM91QHzlEzO",
+                          "recmjtZPRUfoCU2sr",
+                          "recxIf3GoDzEtonFU",
+                          "recczW2Y4WMv9buZ8",
+                          "recpPYOZtnp3lTOua",
+                          "recfSe8zeEdCAtcGq"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "SampleValue",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "1",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "X",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Y",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RotateTranslation",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Translation",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Translation",
+                        "ReferencedPropertyDef": "TranslationId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha",
+                          "recgdoYW4iJ8gaAha"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPatternCell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPatternCell",
+                        "ReferencedPropertyDef": "CellPatternCellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recGP80BxFCLlmgw7",
+                          "recWoh5Qk0b1xBV67",
+                          "recwQ3ZI5MBVHPKgl",
+                          "recPmKMMNhYSxBWJ0",
+                          "recaPLycHtpRQfWnE",
+                          "recU9O3yxyMeQ1eU4",
+                          "recYR4cE90EOVnYD5",
+                          "rec91aKNdkT2cw93v",
+                          "recclaJuN3LJWLC4N",
+                          "recKj18pU9k6V6MAx",
+                          "recPHA9ppFH8cjenC",
+                          "reccnHG0Yfk8tgTt6",
+                          "rec8bt4pVcy9OY8XO",
+                          "reclDV8jky7y1JNzH",
+                          "rec5D3fwk2h5GzjIB",
+                          "recAy4XNSSKRZGZsh",
+                          "rechiocdDSSkR1IFz",
+                          "rec6RGGCG5ORVBnA3",
+                          "recf1uu1YY0iPps8E",
+                          "recFITGoLxBQs1ocD",
+                          "recljMfqekOodaaWx",
+                          "reckcKNNnyDSWpFrH",
+                          "recxWA16nieZY83Sv",
+                          "recyZobcdc9yOkGuC"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellPatterns",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPattern",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPattern",
+                        "ReferencedPropertyDef": "CellPatternId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recobCShOEyZjP8bY",
+                          "recg1ttw7l3n96PDG",
+                          "rec55PqGhtUYK5Rcb",
+                          "recZCV8dlP1pNK9kK",
+                          "recqn6vuQrx71nQii",
+                          "recYmKv2dBpnAA1gs"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CurrentCellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellState",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellState",
+                        "ReferencedPropertyDef": "CellStateId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "recw0SsqNfCk96xZs",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "recw0SsqNfCk96xZs",
+                          "recJAi8YoTOQmzhfH"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DefaultCellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellState",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellState",
+                        "ReferencedPropertyDef": "CellStateId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "RotateDescription",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "30",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RotateIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DefaultState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CurrentState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FlipFromName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FlipIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FlipDescription",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "30",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recQMV5zL3kK2ZJu3",
+              "createdTime": "2020-11-26T21:15:47Z",
+              "Name": "TargetPlatform",
+              "PluralName": "TargetPlatforms",
+              "AirtableName": "TargetPlatforms",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "TargetPlatformId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ShortDescription",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Implemented",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "4",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DemoUrl",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "94",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "HasAnyUI",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsHumanyPlayable",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "HasAnyAI",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DetectsWin",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DetectsLoss",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DetectsTie",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "HasRuleFollowingAI",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "HasUIForHuman",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FullSimpleRules",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FullMLAI",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ImplementsRotate",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ImplementsFlip",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ImplementsCustomTranslations",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "5",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recXLMGfF7EPE8afM",
+              "createdTime": "2020-11-26T21:16:17Z",
+              "Name": "AdditionalResource",
+              "PluralName": "AdditionalResources",
+              "AirtableName": "Additional Resources",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "AdditionalResourceId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Type",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "GoogleKey",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "44",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "GID",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "10",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsActiveDownload",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recg2BWutwt40yMpU",
+              "createdTime": "2020-11-26T21:15:20Z",
+              "Name": "Translation",
+              "PluralName": "Translations",
+              "AirtableName": "Translations",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "TranslationId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CustomDescription",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Id",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Cells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec50MWM91QHzlEzO",
+                          "recpPYOZtnp3lTOua",
+                          "recczW2Y4WMv9buZ8",
+                          "recTGnKjXTE8LfT3C",
+                          "recxIf3GoDzEtonFU",
+                          "rec35HZOaRy6ge0jk",
+                          "recfSe8zeEdCAtcGq",
+                          "recmjtZPRUfoCU2sr",
+                          "rec3OzG8nTAkUhjVn"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CellPatternTranslations",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPatternTranslation",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPatternTranslation",
+                        "ReferencedPropertyDef": "CellPatternTranslationId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recwuYqQZ0iCw2WfQ",
+                          "recD87U0swUjjhnTj",
+                          "recNz0LuN77HIXjmB",
+                          "recqJB1goFBhhsIVZ",
+                          "recJjgKw24kaBFH0i",
+                          "rec9PRnE4xpUCcMit",
+                          "reczr6h68ZUdkDIZb",
+                          "recafoRwqvCh5HZOd",
+                          "recoPtQQ8QZtClJK0",
+                          "recUD9c7vXgkNLQi9"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recr7hRnb8KeiqDEb",
+              "createdTime": "2020-11-26T21:15:54Z",
+              "Name": "GlobalSetting",
+              "PluralName": "GlobalSettings",
+              "AirtableName": "Global Settings",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "GlobalSettingId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Value",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "36",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DefaultValue",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "AssociatedLink",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "65",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Prefix",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "12",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "GoogleKey",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "44",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "GID",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "10",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            },
+            {
+              "EntityId": "recvjej0ICJm2Z1El",
+              "createdTime": "2020-11-26T21:15:20Z",
+              "Name": "CellState",
+              "PluralName": "CellStates",
+              "AirtableName": "CellStates",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "IsPrimaryKey": "1",
+                    "Name": "CellStateId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsAttribute": "0",
+                    "IsCollection": "0",
+                    "IsNullable": "0"
+                  },
+                  {
+                    "Name": "createdTime",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "DATETIME",
+                    "Length": "",
+                    "MaxLength": "20",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Name",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "38",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Code",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "1",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Description",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "200",
+                    "MaxLength": "150",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "DefaultMark",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "1",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Id",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPatternCell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPatternCell",
+                        "ReferencedPropertyDef": "CellPatternCellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recU9O3yxyMeQ1eU4",
+                          "recf1uu1YY0iPps8E",
+                          "recPHA9ppFH8cjenC",
+                          "reckcKNNnyDSWpFrH",
+                          "recGP80BxFCLlmgw7",
+                          "recAy4XNSSKRZGZsh",
+                          "recYR4cE90EOVnYD5",
+                          "reclDV8jky7y1JNzH",
+                          "rec91aKNdkT2cw93v",
+                          "recwQ3ZI5MBVHPKgl",
+                          "recxWA16nieZY83Sv",
+                          "recPmKMMNhYSxBWJ0",
+                          "recclaJuN3LJWLC4N",
+                          "recFITGoLxBQs1ocD",
+                          "recyZobcdc9yOkGuC",
+                          "rec6RGGCG5ORVBnA3",
+                          "recKj18pU9k6V6MAx",
+                          "rec8bt4pVcy9OY8XO",
+                          "recWoh5Qk0b1xBV67",
+                          "rec5D3fwk2h5GzjIB",
+                          "rechiocdDSSkR1IFz",
+                          "reccnHG0Yfk8tgTt6",
+                          "recaPLycHtpRQfWnE",
+                          "recljMfqekOodaaWx"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CurrentStateCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec35HZOaRy6ge0jk",
+                          "recfSe8zeEdCAtcGq",
+                          "recxIf3GoDzEtonFU",
+                          "recmjtZPRUfoCU2sr",
+                          "rec3OzG8nTAkUhjVn",
+                          "recTGnKjXTE8LfT3C",
+                          "recczW2Y4WMv9buZ8",
+                          "recpPYOZtnp3lTOua",
+                          "rec50MWM91QHzlEzO"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "Cursor",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "7",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "FontColor",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "Color",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatterns",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPattern",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPattern",
+                        "ReferencedPropertyDef": "CellPatternId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec55PqGhtUYK5Rcb",
+                          "recqn6vuQrx71nQii",
+                          "recZCV8dlP1pNK9kK",
+                          "recYmKv2dBpnAA1gs",
+                          "recobCShOEyZjP8bY",
+                          "recg1ttw7l3n96PDG"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "DefaultStateCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "recxIf3GoDzEtonFU",
+                          "recfSe8zeEdCAtcGq",
+                          "recmjtZPRUfoCU2sr",
+                          "rec3OzG8nTAkUhjVn",
+                          "rec50MWM91QHzlEzO",
+                          "recpPYOZtnp3lTOua",
+                          "recTGnKjXTE8LfT3C",
+                          "rec35HZOaRy6ge0jk",
+                          "recczW2Y4WMv9buZ8"
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "Name": "AirtableAttachment",
+              "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema",
+              "PropertyDefs": {
+                "PropertyDef": [
+                  {
+                    "Name": "AttachmentsId",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "url",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "filename",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "size",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "type",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+                    
