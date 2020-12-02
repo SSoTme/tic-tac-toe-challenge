@@ -9,11 +9,9 @@ namespace ConsoleApp
         {
             Console.WriteLine("TicTacToe DotNet!");
             var tttBoard = new TicTacToeBoard();
-            tttBoard.PrintConsoleBoard();
-            tttBoard.Rotate();
-            tttBoard.PrintConsoleBoard();
-            tttBoard.Flip();
-            tttBoard.PrintConsoleBoard();
+            tttBoard.AddPlayer(new HumanPlayer("ej"));
+            tttBoard.AddPlayer(new BeginnerPlayer());
+            tttBoard.NewGame();
             Console.ReadKey();
         }
     }
