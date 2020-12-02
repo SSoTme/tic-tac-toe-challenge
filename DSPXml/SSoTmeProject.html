@@ -1,0 +1,280 @@
+<html><head><title>TicTacToeChallenge Project Summary</title><link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /><style>
+body {
+    padding: 1em;
+}
+
+.ssotme-root {
+    color: #EE2222;
+}
+
+.relative-path {
+    font-style: italics;
+    color: #2222EE;
+}
+
+.command-line {
+    text-indent: 5em;
+}
+
+.project-transpiler-link-box {
+    max-width: 70em;
+    font-size: 1.2em; 
+    font-weight; bold; 
+    padding: 0.25em;
+    border: solid #EEEEEE 1px;
+    margin: 0.25em;
+    margin-bottom: 0.8s5em;
+}
+
+.pre {
+    font-family: monospace;
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+
+}
+        </style></head><body><h1>TicTacToeChallenge Project Summary</h1><h2>Build Plan</h2><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/SSoT/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">airtable/airtable-to-xml -p baseId=appF5XTR7XzrfTgqs</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/SSoT/PreProcessCellPatterns/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">codee42/xml-xslt-transform -i ..\Airtable.xml -i .\PreProcessCellPatterns.xslt</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/docs/DescribeAI/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">codee42/xml-xslt-transform -i ..\..\SSoT\Airtable.xml -i .\DescribeAI.xslt -i ..\..\SSoT\PreProcessCellPatterns\PreProcessedCellPatterns.xml</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/docs/TTTJS/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">codee42/xml-xslt-transform -i ..\..\SSoT\Airtable.xml -i .\CreateTTTJS.xslt -i ..\..\SSoT\PreProcessCellPatterns\PreProcessedCellPatterns.xml</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/docs/json/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">codee42/xml-to-json -i ..\..\SSoT\Airtable.xml -o Airtable.xml.json</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/ODXML/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">airtable/airtable-xml-to-odxml -i ..\SSoT\Airtable.xml</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/ODXML/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">odxml42/odxml-to-nodejs-docs -i .\Airtable.odxml</div></div><div style="margin-top: 0.75em;"><b>[SSoTme-root] </b>/docs/data/>
+            <div class="pre" style="padding-left: 15em; text-indent:-15em; font-size: 0.8em;">odxml42/odxml-to-typescript-models -i ..\..\ODXML\Airtable.odxml</div></div><h2>Input Files</h2><div><h3>Airtable.xml</h3><div style="background-color: #EEEEEE; margin: 0.25em; border: solid #CCCCCC 1px;"><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/SSoT/PreProcessCellPatterns</span><br />/> <b>ssotme </b> <a href="#8475b925-8e74-416d-a84b-15c5c8978315" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /./PreProcessedCellPatterns.xml</div></div></div></div></div><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/DescribeAI</span><br />/> <b>ssotme </b> <a href="#57c36bd4-bfeb-4933-bfba-a024485f207c" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /
+                        ../TheBoard.html
+                    </div><div>
+                                /../PlayerLevels.html</div><div>
+                                /../Player_Beginner.html</div>
+                        .../ (+21 more)
+                    </div></div></div></div><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/TTTJS</span><br />/> <b>ssotme </b> <a href="#c911d6ca-e914-46bb-bb22-7fe63ec0d067" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /../Derived_TicTacToe.js</div><div>
+                                /../advancedBrain.js</div><div>
+                                /../intermediateBrain.js</div>
+                        .../ (+1 more)
+                    </div></div></div></div><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/json.png"  />
+            </div></div><h3>Xml To Json</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/json</span><br />/> <b>ssotme </b> <a href="#2729537b-9792-4eab-abc3-d3267e0bb7aa" >xml-to-json</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /Airtable.xml.json</div></div></div></div></div><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/airtable-xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div></div><h3>Airtable Xml To Odxml</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/ODXML</span><br />/> <b>ssotme </b> <a href="#69d79c4d-fffc-48f3-8acd-4fecbfcd92e6" >airtable-xml-to-odxml</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /Xsd.odxml</div><div>
+                                /Airtable.odxml</div></div></div></div></div></div></div><div><h3>Airtable.odxml</h3><div style="background-color: #EEEEEE; margin: 0.25em; border: solid #CCCCCC 1px;"><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/html.png"  />
+            </div></div><h3>Odxml To Node J S Docs</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/ODXML</span><br />/> <b>ssotme </b> <a href="#3f596211-ea4f-457f-aab6-24ea9bb78e40" >odxml-to-node-j-s-docs</a> -i " /ODXML/Airtable.odxml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /app.js</div><div>
+                                /Index.html</div><div>
+                                /SinglePageDocs.html</div>
+                        .../ (+19 more)
+                    </div></div></div></div><div style="margin-left: 1em;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/typescript.png"  />
+            </div></div><h3>Odxml To Type Script Models</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/data</span><br />/> <b>ssotme </b> <a href="#c31b3e01-42bc-487a-97c7-49c3506129d2" >odxml-to-type-script-models</a> -i " /ODXML/Airtable.odxml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /cellPatternTranslation.ts</div><div>
+                                /languageToken.ts</div><div>
+                                /aILevel.ts</div>
+                        .../ (+10 more)
+                    </div></div></div></div></div></div><hr /><H3>All Transpilers</H3>
+        
+        <hr id="eb4860d5-7010-4789-8966-23ef20119db8 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/airtable.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/airtable-xml.png"  />
+            </div></div><h3>Airtable To Xml</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/SSoT</span><br />/> <b>ssotme </b> <a href="#eb4860d5-7010-4789-8966-23ef20119db8" >airtable-to-xml</a> -i " /SSoT, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /Airtable.xml</div></div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Extracts the contents of an airtable base as a single Xml file.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">airtable/airtable-to-xml -p baseId=appF5XTR7XzrfTgqs</span></div><div style="margin-left: 1em; padding: 0.5em;">baseId=appF5XTR7XzrfTgqs ----->
+                </div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> SSoT/Airtable.xml</div></div>
+        <hr id="8475b925-8e74-416d-a84b-15c5c8978315 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/SSoT/PreProcessCellPatterns</span><br />/> <b>ssotme </b> <a href="#8475b925-8e74-416d-a84b-15c5c8978315" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /./PreProcessedCellPatterns.xml</div></div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Given an Xml and Xslt file, will process and "split" a resulting fileset.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">codee42/xml-xslt-transform -i ..\Airtable.xml -i .\PreProcessCellPatterns.xslt</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/SSoT/Airtable.xml ----->
+                        </div><div>/SSoT/PreProcessCellPatterns/PreProcessCellPatterns.xslt ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> SSoT/PreProcessCellPatterns/./PreProcessedCellPatterns.xml</div></div>
+        <hr id="57c36bd4-bfeb-4933-bfba-a024485f207c 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/DescribeAI</span><br />/> <b>ssotme </b> <a href="#57c36bd4-bfeb-4933-bfba-a024485f207c" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /
+                        ../TheBoard.html
+                    </div><div>
+                                /../PlayerLevels.html</div><div>
+                                /../Player_Beginner.html</div>
+                        .../ (+21 more)
+                    </div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Given an Xml and Xslt file, will process and "split" a resulting fileset.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">codee42/xml-xslt-transform -i ..\..\SSoT\Airtable.xml -i .\DescribeAI.xslt -i ..\..\SSoT\PreProcessCellPatterns\PreProcessedCellPatterns.xml</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/SSoT/Airtable.xml ----->
+                        </div><div>/docs/DescribeAI/DescribeAI.xslt ----->
+                        </div><div>/SSoT/PreProcessCellPatterns/PreProcessedCellPatterns.xml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> docs/DescribeAI/../TheBoard.html</div><div>
+                    -> docs/DescribeAI/../PlayerLevels.html</div><div>
+                    -> docs/DescribeAI/../Player_Beginner.html</div><div>
+                    -> docs/DescribeAI/../Player_Intermediate.html</div><div>
+                    -> docs/DescribeAI/../Player_Advanced.html</div><div>
+                    -> docs/DescribeAI/../Translations.html</div><div>
+                    -> docs/DescribeAI/../Translation_Flip.html</div><div>
+                    -> docs/DescribeAI/../Translation_Rotate.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatforms.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_Html.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_JSFiddle.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_Windows.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_CSharp.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_GDocs.html</div><div>
+                    -> docs/DescribeAI/../TargetPlatform_Javascript.html</div><div>
+                    -> docs/DescribeAI/../CellPatterns.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TwoInARowTop.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_EdgeWin.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TwoOutsideTop.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TwoInARowDiagonal.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TowOutsideDiagonal.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TwoOutsideMiddle.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_MiddleWin.html</div><div>
+                    -> docs/DescribeAI/../CellPattern_TwoInARowMiddle.html</div></div>
+        <hr id="c911d6ca-e914-46bb-bb22-7fe63ec0d067 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/fileset.png"  />
+            </div></div><h3>Xml Xslt Transform</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/TTTJS</span><br />/> <b>ssotme </b> <a href="#c911d6ca-e914-46bb-bb22-7fe63ec0d067" >xml-xslt-transform</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /../Derived_TicTacToe.js</div><div>
+                                /../advancedBrain.js</div><div>
+                                /../intermediateBrain.js</div>
+                        .../ (+1 more)
+                    </div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Given an Xml and Xslt file, will process and "split" a resulting fileset.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">codee42/xml-xslt-transform -i ..\..\SSoT\Airtable.xml -i .\CreateTTTJS.xslt -i ..\..\SSoT\PreProcessCellPatterns\PreProcessedCellPatterns.xml</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/SSoT/Airtable.xml ----->
+                        </div><div>/docs/TTTJS/CreateTTTJS.xslt ----->
+                        </div><div>/SSoT/PreProcessCellPatterns/PreProcessedCellPatterns.xml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> docs/TTTJS/../Derived_TicTacToe.js</div><div>
+                    -> docs/TTTJS/../advancedBrain.js</div><div>
+                    -> docs/TTTJS/../intermediateBrain.js</div><div>
+                    -> docs/TTTJS/../beginnerBrain.js</div></div>
+        <hr id="2729537b-9792-4eab-abc3-d3267e0bb7aa 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/json.png"  />
+            </div></div><h3>Xml To Json</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/json</span><br />/> <b>ssotme </b> <a href="#2729537b-9792-4eab-abc3-d3267e0bb7aa" >xml-to-json</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /Airtable.xml.json</div></div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Converts XML to JSON using the NewtonSoft C# conversion tools.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">codee42/xml-to-json -i ..\..\SSoT\Airtable.xml -o Airtable.xml.json</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/SSoT/Airtable.xml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> docs/json/Airtable.xml.json</div></div>
+        <hr id="69d79c4d-fffc-48f3-8acd-4fecbfcd92e6 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/airtable-xml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div></div><h3>Airtable Xml To Odxml</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/ODXML</span><br />/> <b>ssotme </b> <a href="#69d79c4d-fffc-48f3-8acd-4fecbfcd92e6" >airtable-xml-to-odxml</a> -i " /SSoT/Airtable.xml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /Xsd.odxml</div><div>
+                                /Airtable.odxml</div></div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Airtable Xml To Odxml</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">airtable/airtable-xml-to-odxml -i ..\SSoT\Airtable.xml</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/SSoT/Airtable.xml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> ODXML/Xsd.odxml</div><div>
+                    -> ODXML/Airtable.odxml</div></div>
+        <hr id="3f596211-ea4f-457f-aab6-24ea9bb78e40 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/html.png"  />
+            </div></div><h3>Odxml To Node J S Docs</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/ODXML</span><br />/> <b>ssotme </b> <a href="#3f596211-ea4f-457f-aab6-24ea9bb78e40" >odxml-to-node-j-s-docs</a> -i " /ODXML/Airtable.odxml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /app.js</div><div>
+                                /Index.html</div><div>
+                                /SinglePageDocs.html</div>
+                        .../ (+19 more)
+                    </div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Creates easy to read/navigate html documentation for an Odxml Schema.</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">odxml42/odxml-to-nodejs-docs -i .\Airtable.odxml</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/ODXML/Airtable.odxml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> ODXML/app.js</div><div>
+                    -> ODXML/Index.html</div><div>
+                    -> ODXML/SinglePageDocs.html</div><div>
+                    -> ODXML/StartServer.sh</div><div>
+                    -> ODXML/DataSchema.json</div><div>
+                    -> ODXML/Images/create.png</div><div>
+                    -> ODXML/Images/delete.png</div><div>
+                    -> ODXML/Images/primary-key.png</div><div>
+                    -> ODXML/Images/read.png</div><div>
+                    -> ODXML/Images/update.png</div><div>
+                    -> ODXML/Images/DataTypes/ft-assoc.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-bool.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-date.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-dec.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-doc.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-email.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-fn.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-htm.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-img.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-lov.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-txt.gif</div><div>
+                    -> ODXML/Images/DataTypes/ft-txtml.gif</div></div>
+        <hr id="c31b3e01-42bc-487a-97c7-49c3506129d2 6/>
+
+        <div style="clear: both;"><div class="project-transpiler-link-box"><div class="pull-left"><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/odxml.png"  />
+            </div><div class="pull-left" style="height: 3em; width: 3em;">
+                <img  style="width: 2.5em; height: 2.5em;" src="FileTypeImages/typescript.png"  />
+            </div></div><h3>Odxml To Type Script Models</h3><div style="font-weight: bold; padding-after: 1em;"><div style="padding: 0.2em; white-space: pre-wrap; font-family: monospace"><span class="ssotme-root">[SSoTme-root]</span><span class="relative-path">/docs/data</span><br />/> <b>ssotme </b> <a href="#c31b3e01-42bc-487a-97c7-49c3506129d2" >odxml-to-type-script-models</a> -i " /ODXML/Airtable.odxml, ..."
+                </div><div style="padding-left: 2em;"><div>
+                                /cellPatternTranslation.ts</div><div>
+                                /languageToken.ts</div><div>
+                                /aILevel.ts</div>
+                        .../ (+10 more)
+                    </div></div></div></div><div style="clear: both;"><div style="white-space: pre-wrap; font-size: 0.8em; margin-top: -1.2em; padding: 0.2em;">Odxml to TypeScript Models</div></div><div style="white-space: pre-wrap; clear: both"><span class="command-line">odxml42/odxml-to-typescript-models -i ..\..\ODXML\Airtable.odxml</span></div><div style="margin-left: 1em; padding: 0.5em;"><div>/ODXML/Airtable.odxml ----->
+                        </div></div><div style="margin-left: 2em; padding: 0.5em;"><div>
+                    -> docs/data/cellPatternTranslation.ts</div><div>
+                    -> docs/data/languageToken.ts</div><div>
+                    -> docs/data/aILevel.ts</div><div>
+                    -> docs/data/cellPattern.ts</div><div>
+                    -> docs/data/aIStrategy.ts</div><div>
+                    -> docs/data/cellPatternCell.ts</div><div>
+                    -> docs/data/cell.ts</div><div>
+                    -> docs/data/targetPlatform.ts</div><div>
+                    -> docs/data/additionalResource.ts</div><div>
+                    -> docs/data/translation.ts</div><div>
+                    -> docs/data/globalSetting.ts</div><div>
+                    -> docs/data/cellState.ts</div><div>
+                    -> docs/data/airtableAttachment.ts</div></div></body></html>
