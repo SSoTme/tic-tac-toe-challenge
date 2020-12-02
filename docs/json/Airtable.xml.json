@@ -97,7 +97,7 @@
           "CellPattern": "recZCV8dlP1pNK9kK",
           "Count": "3",
           "SortOrder": "1",
-          "Name": "1-TwoInARowDiagonal:Rotate:3",
+          "Name": "T1-TwoInARowDiagonal:Rotate:3",
           "CellPatternName": "TwoInARowDiagonal",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -110,7 +110,7 @@
           "CellPattern": "recBDK2nzNlGSJNgJ",
           "Count": "3",
           "SortOrder": "1",
-          "Name": "1-EdgeWin:Rotate:3",
+          "Name": "T1-EdgeWin:Rotate:3",
           "CellPatternName": "EdgeWin",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -123,7 +123,7 @@
           "CellPattern": "recqn6vuQrx71nQii",
           "Count": "3",
           "SortOrder": "1",
-          "Name": "1-TwoInARowMiddle:Rotate:3",
+          "Name": "T1-TwoInARowMiddle:Rotate:3",
           "CellPatternName": "TwoInARowMiddle",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -136,7 +136,7 @@
           "CellPattern": "recodVK2HKbzC26Db",
           "Count": "1",
           "SortOrder": "1",
-          "Name": "1-MiddleWin:Rotate:1",
+          "Name": "T1-MiddleWin:Rotate:1",
           "CellPatternName": "MiddleWin",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -149,7 +149,7 @@
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "Count": "3",
           "SortOrder": "3",
-          "Name": "3-TwoInARowTop:Rotate:3",
+          "Name": "T3-TwoInARowTop:Rotate:3",
           "CellPatternName": "TwoInARowTop",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -162,7 +162,7 @@
           "CellPattern": "recobCShOEyZjP8bY",
           "Count": "1",
           "SortOrder": "1",
-          "Name": "1-TwoOutsideMiddle:Rotate:1",
+          "Name": "T1-TwoOutsideMiddle:Rotate:1",
           "CellPatternName": "TwoOutsideMiddle",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -175,7 +175,7 @@
           "CellPattern": "recg1ttw7l3n96PDG",
           "Count": "1",
           "SortOrder": "1",
-          "Name": "1-TowOutsideDiagonal:Rotate:1",
+          "Name": "T1-TowOutsideDiagonal:Rotate:1",
           "CellPatternName": "TowOutsideDiagonal",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -188,7 +188,7 @@
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "Count": "3",
           "SortOrder": "1",
-          "Name": "1-TwoInARowTop:Rotate:3",
+          "Name": "T1-TwoInARowTop:Rotate:3",
           "CellPatternName": "TwoInARowTop",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -201,7 +201,7 @@
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "Count": "1",
           "SortOrder": "2",
-          "Name": "2-TwoInARowTop:Flip:1",
+          "Name": "T2-TwoInARowTop:Flip:1",
           "CellPatternName": "TwoInARowTop",
           "TranslationName": "Flip",
           "TranslationId": "1",
@@ -214,7 +214,7 @@
           "CellPattern": "recYmKv2dBpnAA1gs",
           "Count": "3",
           "SortOrder": "1",
-          "Name": "1-TwoOutsideTop:Rotate:3",
+          "Name": "T1-TwoOutsideTop:Rotate:3",
           "CellPatternName": "TwoOutsideTop",
           "TranslationName": "Rotate",
           "TranslationId": "0",
@@ -227,51 +227,58 @@
         {
           "LanguageTokenId": "rec1au6Wnbaf3oO1u",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "GameOver",
+          "Name": "GameOver",
           "DisplayName": "Game Over",
-          "SortOrder": "3"
+          "SortOrder": "3",
+          "Token": "GameOver"
         },
         {
           "LanguageTokenId": "recFy1FsoP1ORWYWj",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "YourTurn",
+          "Name": "YourTurn",
           "DisplayName": "It's your turn",
-          "SortOrder": "4"
+          "SortOrder": "4",
+          "Token": "YourTurn"
         },
         {
           "LanguageTokenId": "recNnnObNV1wEGXUI",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "Title",
+          "Name": "Title",
           "DisplayName": "Suzanne's Tic Tac Toe",
-          "SortOrder": "1"
+          "SortOrder": "1",
+          "Token": "Title"
         },
         {
           "LanguageTokenId": "recOqDsQXph2jV645",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "TheyWon",
+          "Name": "TheyWon",
           "DisplayName": "Loser",
-          "SortOrder": "7"
+          "SortOrder": "7",
+          "Token": "TheyWon"
         },
         {
           "LanguageTokenId": "recPamDrUmmMfoUtj",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "YouWon",
+          "Name": "YouWon",
           "DisplayName": "Winner",
-          "SortOrder": "6"
+          "SortOrder": "6",
+          "Token": "YouWon"
         },
         {
           "LanguageTokenId": "recTxNSWmH6qLLtgj",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "GameOn",
+          "Name": "GameOn",
           "DisplayName": "Game On",
-          "SortOrder": "2"
+          "SortOrder": "2",
+          "Token": "GameOn"
         },
         {
           "LanguageTokenId": "recdK8VdwOgWPXEf4",
           "createdTime": "2020-11-26T20:01:30Z",
-          "Token": "TheirTurn",
+          "Name": "TheirTurn",
           "DisplayName": "It's their turn",
-          "SortOrder": "5"
+          "SortOrder": "5",
+          "Token": "TheirTurn"
         }
       ]
     },
@@ -1528,7 +1535,7 @@
         {
           "GlobalSettingId": "rec2UsqxDo27MB0tS",
           "createdTime": "2020-11-26T20:08:44Z",
-          "Name": "GoogleResourceList",
+          "Name": "ExampleData",
           "Value": "ExampleData",
           "Description": "A list of sample values",
           "Prefix": "SampleValues",
@@ -1538,7 +1545,7 @@
         {
           "GlobalSettingId": "rec4PYXvquNHrdkEm",
           "createdTime": "2020-11-26T20:08:44Z",
-          "Name": "GoogleResourceList",
+          "Name": "Descriptions",
           "Value": "Descriptions",
           "Description": "A list of description resources",
           "Prefix": "Description",
@@ -1555,7 +1562,7 @@
         {
           "GlobalSettingId": "recCJ8WknVZI8eBoL",
           "createdTime": "2020-11-26T20:08:44Z",
-          "Name": "GoogleResourceList",
+          "Name": "Properties",
           "Value": "Properties",
           "Description": "A list of attribute resource",
           "Prefix": "Attributes",
@@ -1634,7 +1641,10 @@
           "Name": "PlayerA",
           "Code": "P",
           "Description": "This cell has been marked by the active player",
+          "Color": "yellow",
+          "FontColor": "black",
           "DefaultMark": "A",
+          "Cursor": "Default",
           "SortOrder": "1",
           "Id": "0",
           "CellPatternCells": [
@@ -1660,10 +1670,7 @@
           "CurrentStateCells": [
             "rec35HZOaRy6ge0jk",
             "recfSe8zeEdCAtcGq"
-          ],
-          "Cursor": "Default",
-          "FontColor": "black",
-          "Color": "yellow"
+          ]
         },
         {
           "CellStateId": "recJAi8YoTOQmzhfH",
@@ -1671,6 +1678,8 @@
           "Name": "NoPlayer",
           "Code": "N",
           "Description": "The space has not yet been played in",
+          "Color": "white",
+          "FontColor": "darkgray",
           "Cursor": "Pointer",
           "SortOrder": "3",
           "Id": "2",
@@ -1707,9 +1716,7 @@
             "recTGnKjXTE8LfT3C",
             "rec35HZOaRy6ge0jk",
             "recczW2Y4WMv9buZ8"
-          ],
-          "FontColor": "darkgray",
-          "Color": "white"
+          ]
         },
         {
           "CellStateId": "recw0SsqNfCk96xZs",
@@ -1717,6 +1724,8 @@
           "Name": "PlayerB",
           "Code": "O",
           "Description": "This cell has been marked by thhe active player's opponent.",
+          "Color": "red",
+          "FontColor": "white",
           "DefaultMark": "B",
           "Cursor": "Default",
           "SortOrder": "2",
@@ -1724,9 +1733,7 @@
           "CurrentStateCells": [
             "recpPYOZtnp3lTOua",
             "rec50MWM91QHzlEzO"
-          ],
-          "FontColor": "white",
-          "Color": "red"
+          ]
         }
       ]
     }
