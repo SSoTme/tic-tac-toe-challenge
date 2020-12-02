@@ -67,6 +67,7 @@
                           "recgdoYW4iJ8gaAha",
                           "recgdoYW4iJ8gaAha",
                           "recQ0PgyWBky0wm32",
+                          "recgdoYW4iJ8gaAha",
                           "recgdoYW4iJ8gaAha"
                         ]
                       }
@@ -101,6 +102,7 @@
                           "recg1ttw7l3n96PDG",
                           "rec55PqGhtUYK5Rcb",
                           "rec55PqGhtUYK5Rcb",
+                          "recjHQghxgtsx3sDU",
                           "recYmKv2dBpnAA1gs"
                         ]
                       }
@@ -226,6 +228,18 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "Token",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "9",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "Name",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -256,18 +270,6 @@
                     "Length": "",
                     "MaxLength": "2",
                     "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "Token",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "9",
-                    "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -486,6 +488,9 @@
                           "recYR4cE90EOVnYD5",
                           "recWoh5Qk0b1xBV67",
                           "reclDV8jky7y1JNzH",
+                          "recgARZ3wIo6805jL",
+                          "recXIhNnjJIZf7xNR",
+                          "recma9mMG2XEkgQlm",
                           "recyZobcdc9yOkGuC",
                           "recaPLycHtpRQfWnE",
                           "rec6RGGCG5ORVBnA3",
@@ -526,6 +531,7 @@
                           "reczr6h68ZUdkDIZb",
                           "rec9PRnE4xpUCcMit",
                           "recoPtQQ8QZtClJK0",
+                          "reczqRQfkr9YbrQPO",
                           "recafoRwqvCh5HZOd",
                           "recNz0LuN77HIXjmB",
                           "recJjgKw24kaBFH0i"
@@ -863,15 +869,18 @@
                           "rec35HZOaRy6ge0jk",
                           "rec50MWM91QHzlEzO",
                           "rec35HZOaRy6ge0jk",
+                          "rec35HZOaRy6ge0jk",
                           "rec50MWM91QHzlEzO",
                           "rec35HZOaRy6ge0jk",
                           "rec50MWM91QHzlEzO",
                           "recTGnKjXTE8LfT3C",
                           "recpPYOZtnp3lTOua",
+                          "rec50MWM91QHzlEzO",
                           "recfSe8zeEdCAtcGq",
                           "recxIf3GoDzEtonFU",
                           "recczW2Y4WMv9buZ8",
                           "recpPYOZtnp3lTOua",
+                          "recczW2Y4WMv9buZ8",
                           "rec35HZOaRy6ge0jk",
                           "recxIf3GoDzEtonFU",
                           "recxIf3GoDzEtonFU"
@@ -911,15 +920,18 @@
                           "recqn6vuQrx71nQii",
                           "recBDK2nzNlGSJNgJ",
                           "recg1ttw7l3n96PDG",
+                          "recjHQghxgtsx3sDU",
                           "recg1ttw7l3n96PDG",
                           "recobCShOEyZjP8bY",
                           "rec55PqGhtUYK5Rcb",
                           "rec55PqGhtUYK5Rcb",
                           "recBDK2nzNlGSJNgJ",
+                          "recjHQghxgtsx3sDU",
                           "recqn6vuQrx71nQii",
                           "recodVK2HKbzC26Db",
                           "recg1ttw7l3n96PDG",
                           "recYmKv2dBpnAA1gs",
+                          "recjHQghxgtsx3sDU",
                           "recZCV8dlP1pNK9kK",
                           "recqn6vuQrx71nQii",
                           "recobCShOEyZjP8bY"
@@ -960,7 +972,6 @@
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
                           "rec0xQjo4VL3DFTXg",
-                          "recJAi8YoTOQmzhfH",
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
                           "rec0xQjo4VL3DFTXg",
@@ -968,6 +979,10 @@
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg"
@@ -1287,16 +1302,19 @@
                           "recwQ3ZI5MBVHPKgl",
                           "recPmKMMNhYSxBWJ0",
                           "recaPLycHtpRQfWnE",
+                          "recXIhNnjJIZf7xNR",
                           "recU9O3yxyMeQ1eU4",
                           "recYR4cE90EOVnYD5",
                           "rec91aKNdkT2cw93v",
                           "recclaJuN3LJWLC4N",
                           "recKj18pU9k6V6MAx",
+                          "recgARZ3wIo6805jL",
                           "recPHA9ppFH8cjenC",
                           "reccnHG0Yfk8tgTt6",
                           "rec8bt4pVcy9OY8XO",
                           "reclDV8jky7y1JNzH",
                           "rec5D3fwk2h5GzjIB",
+                          "recma9mMG2XEkgQlm",
                           "recAy4XNSSKRZGZsh",
                           "rechiocdDSSkR1IFz",
                           "rec6RGGCG5ORVBnA3",
@@ -1405,18 +1423,6 @@
                         ]
                       }
                     }
-                  },
-                  {
-                    "Name": "IsClockwise",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "BOOLEAN",
-                    "Length": "",
-                    "MaxLength": "4",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
                   },
                   {
                     "Name": "ClockwiseRotateFrom",
@@ -2016,18 +2022,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "IsClockwise",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "BOOLEAN",
-                    "Length": "",
-                    "MaxLength": "4",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "Cells",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2089,7 +2083,8 @@
                           "reczr6h68ZUdkDIZb",
                           "recafoRwqvCh5HZOd",
                           "recoPtQQ8QZtClJK0",
-                          "recUD9c7vXgkNLQi9"
+                          "recUD9c7vXgkNLQi9",
+                          "reczqRQfkr9YbrQPO"
                         ]
                       }
                     }
@@ -2418,6 +2413,9 @@
                           "rec6RGGCG5ORVBnA3",
                           "recKj18pU9k6V6MAx",
                           "rec8bt4pVcy9OY8XO",
+                          "recgARZ3wIo6805jL",
+                          "recXIhNnjJIZf7xNR",
+                          "recma9mMG2XEkgQlm",
                           "recWoh5Qk0b1xBV67",
                           "rec5D3fwk2h5GzjIB",
                           "rechiocdDSSkR1IFz",

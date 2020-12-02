@@ -24,7 +24,6 @@ export interface cell
     CellPatterns? : string[];
     CurrentCellState? : string[];
     DefaultCellState? : string[];
-    IsClockwise? : boolean;
     ClockwiseRotateFrom? : string;
     CounterClockwiseRotateFrom? : string;
     RotateFrom? : string;
