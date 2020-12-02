@@ -337,6 +337,83 @@
       "Name": "OdxmlToTypeScriptModels",
       "RelativePath": "/docs/data",
       "CommandLine": "odxml42/odxml-to-typescript-models -i ..\\..\\ODXML\\Airtable.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToCSharpPOCOs",
+        "DisplayName": "Odxml To C Sharp P O C Os",
+        "Description": "Odxml To CSharp POCOs",
+        "CreatedOn": "2017-09-07T17:35:30.24",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltocsharppocos",
+        "UpperName": "ODXMLTOCSHARPPOCOS",
+        "LowerHyphenName": "odxml-to-c-sharp-p-o-c-os",
+        "ReadMeMD": "param name=\"include-list-prefix\" select=\"true\"\r\nWill include the fieldname of the referenced object before lists so that if a child object has multiple references to an object, the collections on the parent will be distinguished by the name of the child properties.\r\n\r\nparam name=include-sdm-expand=false\r\nparam name=include-load-methods=true\r\n\r\nparam name=\"include-inheritance\" select=\"true\"\r\nIf a relationship exists on the primary key fo the object, it will be infered to \"descend\" from the refrenced object.\r\n\r\nparam name=\"pluralize-json-references\" select=\"true\"\r\nDetermines if the \"original name\" should be pluraized in the Json serialization header.\r\n\r\nparam name=sdm--namespace = 'using KP.ODXML7.SqlDataManager.{project-name}.SqlDataManagement;'\r\n\r\n\r\nparam name=extensions-namespace = 'CoreLibrary.Extensions'\r\n\r\nparam name=serialize-to-original-names=\"'false\"  \r\nInidicates if the json formatting should use original names\r\n\r\nparam name=\"csproj-filename\" = ''\r\nparam name=\"output-csproj-filename\" = ''\r\nparam name=\"relative-path\" = ''\r\n",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "47f5fc9f-0c22-4f73-8d18-0544a7f05d7b",
+        "Category": "dot-net",
+        "IsRecommended": true,
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "a52a5130-bd3c-4974-8def-374cd52a4592",
+            "TranspilerId": "595b7fe7-7f64-44c2-b48c-d096d997211f",
+            "Name": "v1",
+            "CreatedOn": "2017-09-07T17:35:33.567",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "07b2c44d-3879-42e4-83e2-a2b3d35921ec",
+      "Name": "OdxmlToCSharpPOCOs",
+      "RelativePath": "/DotNet/TicTacToe.Lib/DataClasses",
+      "CommandLine": "odxml42/odxml-to-csharp-pocos -i ..\\..\\..\\ODXML\\Airtable.odxml -p include-load-methods=false  -p airtable=true -p list-suffix=Expanded"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "3d6e27dc-74f7-4b61-8e88-1c886cbd64b1",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToCSharpStaticData",
+        "DisplayName": "Odxml To C Sharp Static Data",
+        "Description": "Odxml To C Sharp Static Data",
+        "CreatedOn": "2020-12-02T08:32:46.533",
+        "IsActive": true,
+        "CurrentRoutingKey": "",
+        "LowerName": "odxmltocsharpstaticdata",
+        "UpperName": "ODXMLTOCSHARPSTATICDATA",
+        "LowerHyphenName": "odxml-to-c-sharp-static-data",
+        "ReadMeMD": "If thehre is a TokenName it will create an enumeration\r\nOtherwise, If there is a Name column - it will create an enumeration\r\nIf there is a SortOrder will will order them by that field, and make that the numeration value.\r\nIt will then create a dictionary per type of the values.\r\n",
+        "InputDescriptionMD": "Include\r\n\r\n -i staticdata.xml\r\n",
+        "ExampleMD": "ssotme odxml42/odxml-to-csharp-static-datas -i DataSchema.odxml -iStaticdata.xml",
+        "OutputFileTypeId": "47f5fc9f-0c22-4f73-8d18-0544a7f05d7b",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "095dd32f-0fea-4137-994e-dff409dac39f",
+            "TranspilerId": "3d6e27dc-74f7-4b61-8e88-1c886cbd64b1",
+            "Name": "v1",
+            "CreatedOn": "2020-12-02T08:32:53.39",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "6c14f847-9e6b-424d-b35d-0f40a2569a7f",
+      "Name": "OdxmlToCSharpStaticData",
+      "RelativePath": "/DotNet/TicTacToe.Lib/StaticData",
+      "CommandLine": "odxml42/odxml-to-csharp-static-data -i ..\\..\\..\\ODXML\\Airtable.odxml -i ..\\..\\..\\SSoT\\Airtable.xml"
     }
   ]
 }

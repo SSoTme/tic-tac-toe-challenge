@@ -1,0 +1,28 @@
+test
+                    
+                    -- CellPatternTranslation
+                    
+                    -- LanguageToken
+                    
+                    -- AILevel
+                    
+                    -- CellPattern
+                    
+                    -- AIStrategy
+                    
+                    -- CellPatternCell
+                    
+                    -- Cell
+                    
+                    -- TargetPlatform
+                    
+                    -- AdditionalResource
+                    
+                    -- Translation
+                    
+                    -- GlobalSetting
+                    
+                    -- CellState
+                    
+                    -- AirtableAttachment
+                    
