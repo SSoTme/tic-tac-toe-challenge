@@ -294,6 +294,7 @@
                             <xsl:call-template name="bootstrap-links" />
                             <script src="Derived_TicTacToe.js" type="text/javascript"></script>
                             <script src="TicTacToe.js" type="text/javascript"></script>
+                            <script src="beginnerBrain.js" type="text/javascript"></script>
                             <head>
                             </head>
                             <body style="padding: 1em;">
