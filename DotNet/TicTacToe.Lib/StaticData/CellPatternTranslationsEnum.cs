@@ -8,7 +8,6 @@ public enum CellPatternTranslationsEnum
     T1_TwoOutsideMiddleRotate1,
     T1_TowOutsideDiagonalRotate1,
     T1_TwoInARowTopRotate3,
-    T1_DiagonalWinRotate1,
     T1_TwoOutsideTopRotate3,
     T2_TwoInARowTopFlip1,
     T3_TwoInARowTopRotate3

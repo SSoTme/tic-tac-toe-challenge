@@ -5,10 +5,10 @@ export interface languageToken
 {
     LanguageTokenId : string;
     createdTime? : Date;
-    Token? : string;
     Name? : string;
     DisplayName? : string;
     SortOrder? : number;
+    Token? : string;
     
     
 }
