@@ -1549,6 +1549,18 @@
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
                     "IsCollection": "0"
+                  },
+                  {
+                    "Name": "SortOrder",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
                   }
                 ]
               }

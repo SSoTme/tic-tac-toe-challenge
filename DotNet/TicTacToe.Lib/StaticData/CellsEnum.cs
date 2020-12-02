@@ -1,14 +1,14 @@
 
 public enum CellsEnum
 {
-    Middle,
-    Bottom,
     TopLeft,
+    Top,
     TopRight,
-    BottomRight,
+    MiddleLeft,
+    Middle,
     MiddleRight,
     BottomLeft,
-    Top,
-    MiddleLeft
+    Bottom,
+    BottomRight
 }
                     

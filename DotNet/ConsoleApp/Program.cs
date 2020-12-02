@@ -10,7 +10,10 @@ namespace ConsoleApp
             Console.WriteLine("TicTacToe DotNet!");
             var tttBoard = new TicTacToeBoard();
             tttBoard.PrintConsoleBoard();
-
+            tttBoard.Rotate();
+            tttBoard.PrintConsoleBoard();
+            tttBoard.Flip();
+            tttBoard.PrintConsoleBoard();
             Console.ReadKey();
         }
     }
