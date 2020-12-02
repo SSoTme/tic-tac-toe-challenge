@@ -13,6 +13,7 @@ export interface translation
     Cells? : string[];
     CellPatternTranslations? : string[];
     Description? : string;
+    IsClockwise? : boolean;
     
     Translation_CellPatternTranslations : cellPatternTranslation[];
     RotateTranslation_Cells : cell[];

@@ -29,6 +29,7 @@ export interface cell
     DefaultState? : string;
     CurrentState? : string;
     RotateFrom? : string;
+    IsClockwise? : boolean;
     ClockwiseRotateFrom? : string;
     CounterClockwiseRotateFrom? : string;
     FlipFromName? : string;
@@ -36,6 +37,7 @@ export interface cell
     ClockwiseRotateFromIndex? : number;
     CounterClockwiseRotateFromIndex? : number;
     FlipDescription? : string;
+    SortOrder? : number;
     
     TargetCell_CellPatterns : cellPattern[];
     Cell_CellPatternCells : cellPatternCell[];
