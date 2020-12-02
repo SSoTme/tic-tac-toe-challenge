@@ -11,15 +11,15 @@ export interface cellState
     Name? : string;
     Code? : string;
     Description? : string;
-    Color? : string;
     FontColor? : string;
     DefaultMark? : string;
     Cursor? : string;
     SortOrder? : number;
     Id? : number;
     CellPatternCells? : string[];
-    CellPatterns? : string[];
     CurrentStateCells? : string[];
+    Color? : string;
+    CellPatterns? : string[];
     DefaultStateCells? : string[];
     
     TargetCellState_CellPatterns : cellPattern[];
