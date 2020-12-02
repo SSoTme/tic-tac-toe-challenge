@@ -877,7 +877,7 @@
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>Middle</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Middle</CounterClockwiseRotateFrom>
       <RotateFrom>Middle</RotateFrom>
@@ -907,14 +907,14 @@
       <CellIndex>7</CellIndex>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>MiddleRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleLeft</CounterClockwiseRotateFrom>
-      <RotateFrom>MiddleRight</RotateFrom>
-      <RotateDescription>From MiddleRight to Bottom</RotateDescription>
+      <RotateFrom>MiddleLeft</RotateFrom>
+      <RotateDescription>From MiddleLeft to Bottom</RotateDescription>
       <ClockwiseRotateFromIndex>5</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>3</CounterClockwiseRotateFromIndex>
-      <RotateIndex>5</RotateIndex>
+      <RotateIndex>3</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>7</FlipIndex>
@@ -942,14 +942,14 @@
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>BottomLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopRight</CounterClockwiseRotateFrom>
-      <RotateFrom>BottomLeft</RotateFrom>
-      <RotateDescription>From BottomLeft to TopLeft</RotateDescription>
+      <RotateFrom>TopRight</RotateFrom>
+      <RotateDescription>From TopRight to TopLeft</RotateDescription>
       <ClockwiseRotateFromIndex>6</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>2</CounterClockwiseRotateFromIndex>
-      <RotateIndex>6</RotateIndex>
+      <RotateIndex>2</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>PlayerB</CurrentState>
       <FlipIndex>2</FlipIndex>
@@ -976,14 +976,14 @@
       <CellPatterns>rec55PqGhtUYK5Rcb</CellPatterns>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>TopLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomRight</CounterClockwiseRotateFrom>
-      <RotateFrom>TopLeft</RotateFrom>
-      <RotateDescription>From TopLeft to TopRight</RotateDescription>
+      <RotateFrom>BottomRight</RotateFrom>
+      <RotateDescription>From BottomRight to TopRight</RotateDescription>
       <ClockwiseRotateFromIndex>0</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>8</CounterClockwiseRotateFromIndex>
-      <RotateIndex>0</RotateIndex>
+      <RotateIndex>8</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>0</FlipIndex>
@@ -1009,14 +1009,14 @@
       <CellPatterns>recZCV8dlP1pNK9kK</CellPatterns>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>TopRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomLeft</CounterClockwiseRotateFrom>
-      <RotateFrom>TopRight</RotateFrom>
-      <RotateDescription>From TopRight to BottomRight</RotateDescription>
+      <RotateFrom>BottomLeft</RotateFrom>
+      <RotateDescription>From BottomLeft to BottomRight</RotateDescription>
       <ClockwiseRotateFromIndex>2</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>6</CounterClockwiseRotateFromIndex>
-      <RotateIndex>2</RotateIndex>
+      <RotateIndex>6</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>6</FlipIndex>
@@ -1043,14 +1043,14 @@
       <CellPatterns>recqn6vuQrx71nQii</CellPatterns>
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>Top</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Bottom</CounterClockwiseRotateFrom>
-      <RotateFrom>Top</RotateFrom>
-      <RotateDescription>From Top to MiddleRight</RotateDescription>
+      <RotateFrom>Bottom</RotateFrom>
+      <RotateDescription>From Bottom to MiddleRight</RotateDescription>
       <ClockwiseRotateFromIndex>1</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>7</CounterClockwiseRotateFromIndex>
-      <RotateIndex>1</RotateIndex>
+      <RotateIndex>7</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>PlayerA</CurrentState>
       <FlipIndex>3</FlipIndex>
@@ -1073,14 +1073,14 @@
       <CellIndex>6</CellIndex>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>BottomRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopLeft</CounterClockwiseRotateFrom>
-      <RotateFrom>BottomRight</RotateFrom>
-      <RotateDescription>From BottomRight to BottomLeft</RotateDescription>
+      <RotateFrom>TopLeft</RotateFrom>
+      <RotateDescription>From TopLeft to BottomLeft</RotateDescription>
       <ClockwiseRotateFromIndex>8</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>0</CounterClockwiseRotateFromIndex>
-      <RotateIndex>8</RotateIndex>
+      <RotateIndex>0</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>8</FlipIndex>
@@ -1107,14 +1107,14 @@
       <CellPatterns>recYmKv2dBpnAA1gs</CellPatterns>
       <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>MiddleLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleRight</CounterClockwiseRotateFrom>
-      <RotateFrom>MiddleLeft</RotateFrom>
-      <RotateDescription>From MiddleLeft to Top</RotateDescription>
+      <RotateFrom>MiddleRight</RotateFrom>
+      <RotateDescription>From MiddleRight to Top</RotateDescription>
       <ClockwiseRotateFromIndex>3</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>5</CounterClockwiseRotateFromIndex>
-      <RotateIndex>3</RotateIndex>
+      <RotateIndex>5</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>PlayerB</CurrentState>
       <FlipIndex>1</FlipIndex>
@@ -1140,14 +1140,14 @@
       <CellPatternCells>recyZobcdc9yOkGuC</CellPatternCells>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
-      <IsClockwise>true</IsClockwise>
+      <IsClockwise />
       <ClockwiseRotateFrom>Bottom</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Top</CounterClockwiseRotateFrom>
-      <RotateFrom>Bottom</RotateFrom>
-      <RotateDescription>From Bottom to MiddleLeft</RotateDescription>
+      <RotateFrom>Top</RotateFrom>
+      <RotateDescription>From Top to MiddleLeft</RotateDescription>
       <ClockwiseRotateFromIndex>7</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>1</CounterClockwiseRotateFromIndex>
-      <RotateIndex>7</RotateIndex>
+      <RotateIndex>1</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
       <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>5</FlipIndex>
@@ -1439,7 +1439,6 @@
       <createdTime>2020-11-26T20:02:48Z</createdTime>
       <Name>Rotate</Name>
       <Id>0</Id>
-      <IsClockwise>true</IsClockwise>
       <Cells>rec50MWM91QHzlEzO</Cells>
       <Cells>recpPYOZtnp3lTOua</Cells>
       <Cells>recczW2Y4WMv9buZ8</Cells>
@@ -1458,7 +1457,7 @@
       <CellPatternTranslations>recafoRwqvCh5HZOd</CellPatternTranslations>
       <CellPatternTranslations>recoPtQQ8QZtClJK0</CellPatternTranslations>
       <CellPatternTranslations>recUD9c7vXgkNLQi9</CellPatternTranslations>
-      <Description>Rotate 3x3 "board" 90 degrees RIGHT-hand (Clockwise) around the middle cell</Description>
+      <Description>Rotate 3x3 "board" 90 degrees LEFT-hand (Counter-Clockwise) around the middle cell</Description>
     </Translation>
   </Translations>
   <GlobalSettings>

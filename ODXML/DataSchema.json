@@ -1407,18 +1407,6 @@
                     }
                   },
                   {
-                    "Name": "IsClockwise",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "BOOLEAN",
-                    "Length": "",
-                    "MaxLength": "4",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "ClockwiseRotateFrom",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2009,18 +1997,6 @@
                     "DataType": "INT32",
                     "Length": "",
                     "MaxLength": "1",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "IsClockwise",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "BOOLEAN",
-                    "Length": "",
-                    "MaxLength": "4",
                     "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",

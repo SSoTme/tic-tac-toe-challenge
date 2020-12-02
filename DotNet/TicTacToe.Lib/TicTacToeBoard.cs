@@ -51,7 +51,7 @@ namespace TicTacToe.DotNet.Lib
             for (var i = 0; i < 9; i++)
             {
                 var rotateFrom = Cells.List[i].RotateIndex.Value;
-                this.BoardCells[i] = tempCells[rotateFrom];
+                this.BoardCells[i].CurrentState = tempCells[rotateFrom].CurrentState;
             }
         }
         public void Flip()
@@ -59,8 +59,8 @@ namespace TicTacToe.DotNet.Lib
             var tempCells = JsonConvert.DeserializeObject<List<Cell>>(JsonConvert.SerializeObject(this.BoardCells));
             for (var i = 0; i < 9; i++)
             {
-                var rotateFrom = Cells.List[i].FlipIndex.Value;
-                this.BoardCells[i] = tempCells[rotateFrom];
+                var flipFrom = Cells.List[i].FlipIndex.Value;
+                this.BoardCells[i].CurrentState = tempCells[flipFrom].CurrentState;
             }
         }
 
