@@ -3,10 +3,10 @@ using TicTacToeChallenge.Lib.DataClasses;
 
 namespace TicTacToe.DotNet.Lib
 {
-    public class AdvancedPlayer : Player
+    public class GodPlayer : Player
     {
-        public AdvancedPlayer() 
-            : base("Advanced")
+        public GodPlayer() 
+            : base("God")
         {
 
         }

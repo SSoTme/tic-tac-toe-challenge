@@ -3,6 +3,7 @@ public enum AILevelsEnum
 {
     Beginner,
     Intermediate,
-    Advanced
+    Advanced,
+    God
 }
                     

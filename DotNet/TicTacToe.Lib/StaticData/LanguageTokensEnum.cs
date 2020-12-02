@@ -1,6 +1,7 @@
 
 public enum LanguageTokensEnum
 {
+    Banner,
     Title,
     GameOn,
     GameOver,
