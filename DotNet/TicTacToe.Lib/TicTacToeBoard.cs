@@ -100,10 +100,11 @@ namespace TicTacToe.DotNet.Lib
 
         public void PrintConsoleBoard()
         {
-            Console.WriteLine(" ---");
+            Console.WriteLine();
+            Console.WriteLine("   | | |");
             for (int i = 0; i < 9; i++)
             {
-                if (i % 3 == 0) Console.Write("-");
+                if (i % 3 == 0) Console.Write("--");
                 this.PrintCell(i);
                 if (i % 3 == 2) Console.WriteLine("");
             }
@@ -112,6 +113,7 @@ namespace TicTacToe.DotNet.Lib
 
         private void PrintCell(int i)
         {
+            Console.Write(" ");
             if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerA].Name) Console.Write("A");
             else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerB].Name) Console.Write("B");
             else Console.Write(" ");

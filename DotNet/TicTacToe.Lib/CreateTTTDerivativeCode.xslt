@@ -35,12 +35,10 @@ namespace TicTacToe.DotNet.Lib
 
         }
 
-        Random random = new Random();
         public override Cell Play(TicTacToeBoard board)
         {
-            // Play randomly for now
-            var randomCell = this.random.Next(board.AvailableCells.Count);
-            var cell = board.AvailableCells[randomCell];
+            // Play randomly for now until a Human changes this code to do something more specific
+            var randomCell = board.GetRandomAvailableCell();
             Console.WriteLine("{0} player, playing at {1}", this.Name, cell.Name);
             return cell;
         }

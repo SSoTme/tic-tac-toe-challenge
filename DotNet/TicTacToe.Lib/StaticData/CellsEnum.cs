@@ -11,4 +11,3 @@ public enum CellsEnum
     Bottom,
     BottomRight
 }
-                    

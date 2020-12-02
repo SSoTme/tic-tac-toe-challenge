@@ -19,22 +19,13 @@ namespace TicTacToe.DotNet.Lib
 
             while (true)
             {
-                var availableCellNames = string.Join(", ", board.AvailableCells.Select(cell => cell.CellIndex + 1));
+                var availableCellList = board.AvailableCells.Select(cell => cell.GetDisplayName());
+                var availableCellNames = string.Join(", ", availableCellList);
                 Console.WriteLine();
                 Console.WriteLine("Which cell would you like to play in? {0}", availableCellNames);
                 Console.Write("Cell #: ");
                 var cmdKey = Console.ReadKey().KeyChar.ToString();
-                if (cmdKey == "r")
-                {
-                    board.Rotate();
-                    board.PrintConsoleBoard();
-                }
-                else if (cmdKey == "f")
-                {
-                    board.Rotate();
-                    board.PrintConsoleBoard();
-                }
-                else if (Int32.TryParse(cmdKey, out var cellIndex))
+                if (Int32.TryParse(cmdKey, out var cellIndex))
                 {
                     Console.WriteLine();
                     var selectedCell = board.AvailableCells.FirstOrDefault(cell => cell.CellIndex == cellIndex - 1);
@@ -45,9 +36,20 @@ namespace TicTacToe.DotNet.Lib
                         return selectedCell;
                     }
                 }
-                else Console.WriteLine("\r\nInvalid selection...");
+                else
+                {
+                    if (cmdKey == "r")
+                    {
+                        board.Rotate();
+                    }
+                    else if (cmdKey == "f")
+                    {
+                        board.Rotate();
+                    }
+                    else Console.WriteLine("\r\nInvalid selection...");
+                    board.PrintConsoleBoard();
+                }
             }
         }
-
     }
 }
