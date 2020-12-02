@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotNet.Lib.Strategies;
+using System;
 using TicTacToeChallenge.Lib.DataClasses;
 
 namespace TicTacToe.DotNet.Lib
@@ -11,13 +12,12 @@ namespace TicTacToe.DotNet.Lib
 
         }
 
-        Random random = new Random();
         public override Cell Play(TicTacToeBoard board)
         {
-            // Play randomly for now
-            var randomCell = this.random.Next(board.AvailableCells.Count);
-            var cell = board.AvailableCells[randomCell];
-            Console.WriteLine("{0} player, playing at {1}", this.Name, cell.Name);
+            var cell = board.UseStrategy<WinIfPossibleStrategy>();
+            if (cell is null) cell = board.UseStrategy<PlayInMiddleIfAvailableStrategy>();
+            if (cell is null) cell = board.UseStrategy<RandomStrategy>();
+            this.DisplayCellChoice(cell);
             return cell;
         }
     }

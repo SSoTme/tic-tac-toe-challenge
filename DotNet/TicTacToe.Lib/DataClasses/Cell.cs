@@ -16,6 +16,8 @@ namespace TicTacToeChallenge.Lib.DataClasses
             this.InitPoco();
         }
 
+        public static Cell None { get { return null; } }
+
         public override String ToString()
         {
             return String.Format("Cell: {0}", this.Name);

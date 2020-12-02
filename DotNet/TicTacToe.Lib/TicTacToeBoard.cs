@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using DotNet.Lib.Strategies;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,26 @@ namespace TicTacToe.DotNet.Lib
     {
         public TicTacToeBoard()
         {
+            this.Random = new Random();
             this.BoardCells = JsonConvert.DeserializeObject<List<Cell>>(JsonConvert.SerializeObject(Cells.List));
         }
+
+        public Cell UseStrategy<T>()
+            where T : StrategyBase, new()
+        {
+            var strategyHandler = new T();
+            var cell = strategyHandler.CheckBoard(this);
+            if (!(cell is null)) Console.WriteLine("Successfully used strategy: {0} to play {1}.", typeof(T).Name, cell.Name);
+            return cell;
+        }
+
+        public Cell GetRandomAvailableCell()
+        {
+            var randomCell = this.Random.Next(this.AvailableCells.Count);
+            var randomAvailableCell = this.AvailableCells[randomCell];
+            return randomAvailableCell;
+        }
+
 
         public void NewGame()
         {
@@ -32,6 +51,7 @@ namespace TicTacToe.DotNet.Lib
 
         private void InitBoard()
         {
+            this.IsYourTurn = true;
             this.BoardCells.ForEach(cell => cell.CurrentState = CellStatesEnum.NoPlayer.ToString());
             Console.WriteLine("Player1: {0}", this.Player1.Name);
             Console.WriteLine("Player2: {0}", this.Player2.Name);
@@ -64,6 +84,7 @@ namespace TicTacToe.DotNet.Lib
             }
         }
 
+        public Random Random { get; }
         public List<Cell> BoardCells { get; }
         public Player Player1 { get; private set; }
         public Player Player2 { get; private set; }
