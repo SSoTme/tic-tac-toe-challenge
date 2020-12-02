@@ -93,7 +93,7 @@
       <CellPattern>recZCV8dlP1pNK9kK</CellPattern>
       <Count>3</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TwoInARowDiagonal:Rotate:3</Name>
+      <Name>T1-TwoInARowDiagonal:Rotate:3</Name>
       <CellPatternName>TwoInARowDiagonal</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -106,7 +106,7 @@
       <CellPattern>recBDK2nzNlGSJNgJ</CellPattern>
       <Count>3</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-EdgeWin:Rotate:3</Name>
+      <Name>T1-EdgeWin:Rotate:3</Name>
       <CellPatternName>EdgeWin</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -119,7 +119,7 @@
       <CellPattern>recqn6vuQrx71nQii</CellPattern>
       <Count>3</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TwoInARowMiddle:Rotate:3</Name>
+      <Name>T1-TwoInARowMiddle:Rotate:3</Name>
       <CellPatternName>TwoInARowMiddle</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -132,7 +132,7 @@
       <CellPattern>recodVK2HKbzC26Db</CellPattern>
       <Count>1</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-MiddleWin:Rotate:1</Name>
+      <Name>T1-MiddleWin:Rotate:1</Name>
       <CellPatternName>MiddleWin</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -145,7 +145,7 @@
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <Count>3</Count>
       <SortOrder>3</SortOrder>
-      <Name>3-TwoInARowTop:Rotate:3</Name>
+      <Name>T3-TwoInARowTop:Rotate:3</Name>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -158,7 +158,7 @@
       <CellPattern>recobCShOEyZjP8bY</CellPattern>
       <Count>1</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TwoOutsideMiddle:Rotate:1</Name>
+      <Name>T1-TwoOutsideMiddle:Rotate:1</Name>
       <CellPatternName>TwoOutsideMiddle</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -171,7 +171,7 @@
       <CellPattern>recg1ttw7l3n96PDG</CellPattern>
       <Count>1</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TowOutsideDiagonal:Rotate:1</Name>
+      <Name>T1-TowOutsideDiagonal:Rotate:1</Name>
       <CellPatternName>TowOutsideDiagonal</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -184,7 +184,7 @@
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <Count>3</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TwoInARowTop:Rotate:3</Name>
+      <Name>T1-TwoInARowTop:Rotate:3</Name>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -197,7 +197,7 @@
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <Count>1</Count>
       <SortOrder>2</SortOrder>
-      <Name>2-TwoInARowTop:Flip:1</Name>
+      <Name>T2-TwoInARowTop:Flip:1</Name>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Flip</TranslationName>
       <TranslationId>1</TranslationId>
@@ -210,7 +210,7 @@
       <CellPattern>recYmKv2dBpnAA1gs</CellPattern>
       <Count>3</Count>
       <SortOrder>1</SortOrder>
-      <Name>1-TwoOutsideTop:Rotate:3</Name>
+      <Name>T1-TwoOutsideTop:Rotate:3</Name>
       <CellPatternName>TwoOutsideTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
@@ -221,51 +221,58 @@
     <LanguageToken>
       <LanguageTokenId>rec1au6Wnbaf3oO1u</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>GameOver</Token>
+      <Name>GameOver</Name>
       <DisplayName>Game Over</DisplayName>
       <SortOrder>3</SortOrder>
+      <Token>GameOver</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recFy1FsoP1ORWYWj</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>YourTurn</Token>
+      <Name>YourTurn</Name>
       <DisplayName>It's your turn</DisplayName>
       <SortOrder>4</SortOrder>
+      <Token>YourTurn</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recNnnObNV1wEGXUI</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>Title</Token>
+      <Name>Title</Name>
       <DisplayName>Suzanne's Tic Tac Toe</DisplayName>
       <SortOrder>1</SortOrder>
+      <Token>Title</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recOqDsQXph2jV645</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>TheyWon</Token>
+      <Name>TheyWon</Name>
       <DisplayName>Loser</DisplayName>
       <SortOrder>7</SortOrder>
+      <Token>TheyWon</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recPamDrUmmMfoUtj</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>YouWon</Token>
+      <Name>YouWon</Name>
       <DisplayName>Winner</DisplayName>
       <SortOrder>6</SortOrder>
+      <Token>YouWon</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recTxNSWmH6qLLtgj</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>GameOn</Token>
+      <Name>GameOn</Name>
       <DisplayName>Game On</DisplayName>
       <SortOrder>2</SortOrder>
+      <Token>GameOn</Token>
     </LanguageToken>
     <LanguageToken>
       <LanguageTokenId>recdK8VdwOgWPXEf4</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
-      <Token>TheirTurn</Token>
+      <Name>TheirTurn</Name>
       <DisplayName>It's their turn</DisplayName>
       <SortOrder>5</SortOrder>
+      <Token>TheirTurn</Token>
     </LanguageToken>
   </LanguageTokens>
   <AILevels>
@@ -1448,7 +1455,7 @@
     <GlobalSetting>
       <GlobalSettingId>rec2UsqxDo27MB0tS</GlobalSettingId>
       <createdTime>2020-11-26T20:08:44Z</createdTime>
-      <Name>GoogleResourceList</Name>
+      <Name>ExampleData</Name>
       <Value>ExampleData</Value>
       <Description>A list of sample values</Description>
       <Prefix>SampleValues</Prefix>
@@ -1458,7 +1465,7 @@
     <GlobalSetting>
       <GlobalSettingId>rec4PYXvquNHrdkEm</GlobalSettingId>
       <createdTime>2020-11-26T20:08:44Z</createdTime>
-      <Name>GoogleResourceList</Name>
+      <Name>Descriptions</Name>
       <Value>Descriptions</Value>
       <Description>A list of description resources</Description>
       <Prefix>Description</Prefix>
@@ -1475,7 +1482,7 @@
     <GlobalSetting>
       <GlobalSettingId>recCJ8WknVZI8eBoL</GlobalSettingId>
       <createdTime>2020-11-26T20:08:44Z</createdTime>
-      <Name>GoogleResourceList</Name>
+      <Name>Properties</Name>
       <Value>Properties</Value>
       <Description>A list of attribute resource</Description>
       <Prefix>Attributes</Prefix>
@@ -1552,7 +1559,10 @@
       <Name>PlayerA</Name>
       <Code>P</Code>
       <Description>This cell has been marked by the active player</Description>
+      <Color>yellow</Color>
+      <FontColor>black</FontColor>
       <DefaultMark>A</DefaultMark>
+      <Cursor>Default</Cursor>
       <SortOrder>1</SortOrder>
       <Id>0</Id>
       <CellPatternCells>recU9O3yxyMeQ1eU4</CellPatternCells>
@@ -1575,9 +1585,6 @@
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
       <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
       <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
-      <Cursor>Default</Cursor>
-      <FontColor>black</FontColor>
-      <Color>yellow</Color>
     </CellState>
     <CellState>
       <CellStateId>recJAi8YoTOQmzhfH</CellStateId>
@@ -1585,6 +1592,8 @@
       <Name>NoPlayer</Name>
       <Code>N</Code>
       <Description>The space has not yet been played in</Description>
+      <Color>white</Color>
+      <FontColor>darkgray</FontColor>
       <Cursor>Pointer</Cursor>
       <SortOrder>3</SortOrder>
       <Id>2</Id>
@@ -1614,8 +1623,6 @@
       <DefaultStateCells>recTGnKjXTE8LfT3C</DefaultStateCells>
       <DefaultStateCells>rec35HZOaRy6ge0jk</DefaultStateCells>
       <DefaultStateCells>recczW2Y4WMv9buZ8</DefaultStateCells>
-      <FontColor>darkgray</FontColor>
-      <Color>white</Color>
     </CellState>
     <CellState>
       <CellStateId>recw0SsqNfCk96xZs</CellStateId>
@@ -1623,14 +1630,14 @@
       <Name>PlayerB</Name>
       <Code>O</Code>
       <Description>This cell has been marked by thhe active player's opponent.</Description>
+      <Color>red</Color>
+      <FontColor>white</FontColor>
       <DefaultMark>B</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>2</SortOrder>
       <Id>1</Id>
       <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
       <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
-      <FontColor>white</FontColor>
-      <Color>red</Color>
     </CellState>
   </CellStates>
 </Airtable>
