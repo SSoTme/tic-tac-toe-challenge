@@ -1365,39 +1365,6 @@
                     }
                   },
                   {
-                    "Name": "CurrentCellState",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "17",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "1",
-                    "Relationships": {
-                      "Relationship": {
-                        "AirtableName": "CellState",
-                        "MatchingEntitiesFound": "1",
-                        "ReferencedObjectDef": "CellState",
-                        "ReferencedPropertyDef": "CellStateId"
-                      },
-                      "IDRefs": {
-                        "REF": [
-                          "recw0SsqNfCk96xZs",
-                          "recJAi8YoTOQmzhfH",
-                          "rec0xQjo4VL3DFTXg",
-                          "recJAi8YoTOQmzhfH",
-                          "recJAi8YoTOQmzhfH",
-                          "recw0SsqNfCk96xZs",
-                          "recJAi8YoTOQmzhfH",
-                          "rec0xQjo4VL3DFTXg",
-                          "recJAi8YoTOQmzhfH"
-                        ]
-                      }
-                    }
-                  },
-                  {
                     "Name": "DefaultCellState",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -1609,6 +1576,39 @@
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
                     "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CurrentCellState",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellState",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellState",
+                        "ReferencedPropertyDef": "CellStateId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec0xQjo4VL3DFTXg",
+                          "recw0SsqNfCk96xZs",
+                          "rec0xQjo4VL3DFTXg",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recw0SsqNfCk96xZs",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH"
+                        ]
+                      }
+                    }
                   }
                 ]
               }
@@ -2515,14 +2515,14 @@
                       "IDRefs": {
                         "REF": [
                           "rec50MWM91QHzlEzO",
-                          "recpPYOZtnp3lTOua",
+                          "rec35HZOaRy6ge0jk",
                           "recxIf3GoDzEtonFU",
                           "recmjtZPRUfoCU2sr",
-                          "rec3OzG8nTAkUhjVn",
                           "recTGnKjXTE8LfT3C",
                           "recczW2Y4WMv9buZ8",
-                          "rec35HZOaRy6ge0jk",
-                          "recfSe8zeEdCAtcGq"
+                          "recpPYOZtnp3lTOua",
+                          "recfSe8zeEdCAtcGq",
+                          "rec3OzG8nTAkUhjVn"
                         ]
                       }
                     }

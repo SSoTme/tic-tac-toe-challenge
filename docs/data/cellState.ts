@@ -24,7 +24,7 @@ export interface cellState
     
     TargetCellState_CellPatterns : cellPattern[];
     CellState_CellPatternCells : cellPatternCell[];
-    CurrentCellState_Cells : cell[];
     DefaultCellState_Cells : cell[];
+    CurrentCellState_Cells : cell[];
     
 }
