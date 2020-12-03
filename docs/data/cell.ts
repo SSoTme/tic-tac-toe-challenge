@@ -24,6 +24,7 @@ export interface cell
     CellPatterns? : string[];
     CurrentCellState? : string[];
     DefaultCellState? : string[];
+    CellKey? : number;
     RotateDescription? : string;
     RotateIndex? : number;
     DefaultState? : string;

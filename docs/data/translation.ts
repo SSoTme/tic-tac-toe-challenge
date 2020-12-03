@@ -10,10 +10,10 @@ export interface translation
     Name? : string;
     CustomDescription? : string;
     Id? : number;
+    IsClockwise? : boolean;
     Cells? : string[];
     CellPatternTranslations? : string[];
     Description? : string;
-    IsClockwise? : boolean;
     
     Translation_CellPatternTranslations : cellPatternTranslation[];
     RotateTranslation_Cells : cell[];
