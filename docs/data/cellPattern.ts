@@ -17,12 +17,12 @@ export interface cellPattern
     TargetCell? : string[];
     TargetCellState? : string[];
     SortOrder? : number;
-    TargetCellIndex? : number;
     TargetCellStateId? : number;
-    CellPatternTranslationCodes? : number[];
-    Cells? : string;
     CellPatternCellStates? : number[];
+    Cells? : string;
+    TargetCellIndex? : number;
     Target? : number;
+    CellPatternTranslationCodes? : number[];
     Translations? : string;
     
     CellPattern_CellPatternTranslations : cellPatternTranslation[];

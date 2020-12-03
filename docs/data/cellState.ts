@@ -12,14 +12,14 @@ export interface cellState
     Code? : string;
     Description? : string;
     Color? : string;
-    FontColor? : string;
     DefaultMark? : string;
     Cursor? : string;
     SortOrder? : number;
     Id? : number;
     CellPatternCells? : string[];
-    CellPatterns? : string[];
     CurrentStateCells? : string[];
+    FontColor? : string;
+    CellPatterns? : string[];
     DefaultStateCells? : string[];
     
     TargetCellState_CellPatterns : cellPattern[];
