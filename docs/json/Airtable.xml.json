@@ -169,6 +169,19 @@
           "TranslationName": "Rotate"
         },
         {
+          "CellPatternTranslationId": "reck5rrUr3TtO7Xbx",
+          "createdTime": "2020-12-03T20:20:26Z",
+          "Name": "T1-Diagaonal:Rotate:1",
+          "CPTCode": "10",
+          "CellPattern": "recfN5fhc2fVqzUC7",
+          "CellPatternName": "Diagaonal",
+          "Count": "1",
+          "Translation": "recgdoYW4iJ8gaAha",
+          "TranslationId": "0",
+          "TranslationName": "Rotate",
+          "SortOrder": "1"
+        },
+        {
           "CellPatternTranslationId": "recoPtQQ8QZtClJK0",
           "createdTime": "2020-11-26T20:39:35Z",
           "Translation": "recgdoYW4iJ8gaAha",
@@ -427,6 +440,28 @@
           "Translations": "30"
         },
         {
+          "CellPatternId": "recfN5fhc2fVqzUC7",
+          "createdTime": "2020-12-03T20:20:16Z",
+          "IsWinPattern": "true",
+          "SortOrder": "20",
+          "Cells": "00;40;80",
+          "Translations": "10",
+          "Name": "Diagaonal",
+          "Description": "win",
+          "CellPatternCells": [
+            "rec50mVjEdQZEZQYw",
+            "recgEASIRl67trnVo",
+            "recc7o6on6KJC5hrh"
+          ],
+          "CellPatternCellStates": [
+            "00",
+            "40",
+            "80"
+          ],
+          "CellPatternTranslations": "reck5rrUr3TtO7Xbx",
+          "CellPatternTranslationCodes": "10"
+        },
+        {
           "CellPatternId": "recg1ttw7l3n96PDG",
           "createdTime": "2020-11-26T20:06:43Z",
           "Name": "TwoOutsideDiagonal",
@@ -640,6 +675,19 @@
     "CellPatternCells": {
       "CellPatternCell": [
         {
+          "CellPatternCellId": "rec50mVjEdQZEZQYw",
+          "createdTime": "2020-12-03T20:20:24Z",
+          "Name": "Diagaonal:PlayerA:TopLeft",
+          "CellCellState": "00",
+          "CellPattern": "recfN5fhc2fVqzUC7",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "CellStateId": "0",
+          "CellStateName": "PlayerA",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellIndex": "0",
+          "CellName": "TopLeft"
+        },
+        {
           "CellPatternCellId": "rec5D3fwk2h5GzjIB",
           "createdTime": "2020-11-26T20:43:48Z",
           "Cell": "recczW2Y4WMv9buZ8",
@@ -822,6 +870,19 @@
           "CellStateName": "NoPlayer"
         },
         {
+          "CellPatternCellId": "recc7o6on6KJC5hrh",
+          "createdTime": "2020-12-03T20:20:43Z",
+          "CellPattern": "recfN5fhc2fVqzUC7",
+          "Name": "Diagaonal:PlayerA:BottomRight",
+          "CellCellState": "80",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "CellStateId": "0",
+          "CellStateName": "PlayerA",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellIndex": "8",
+          "CellName": "BottomRight"
+        },
+        {
           "CellPatternCellId": "recclaJuN3LJWLC4N",
           "createdTime": "2020-11-26T20:35:31Z",
           "Cell": "rec50MWM91QHzlEzO",
@@ -859,6 +920,19 @@
           "CellCellState": "10",
           "CellName": "Top",
           "CellStateName": "PlayerA"
+        },
+        {
+          "CellPatternCellId": "recgEASIRl67trnVo",
+          "createdTime": "2020-12-03T20:20:43Z",
+          "CellPattern": "recfN5fhc2fVqzUC7",
+          "Name": "Diagaonal:PlayerA:Middle",
+          "CellCellState": "40",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "CellStateId": "0",
+          "CellStateName": "PlayerA",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellIndex": "4",
+          "CellName": "Middle"
         },
         {
           "CellPatternCellId": "rechiocdDSSkR1IFz",
@@ -973,7 +1047,8 @@
             "recWoh5Qk0b1xBV67",
             "recwQ3ZI5MBVHPKgl",
             "recPmKMMNhYSxBWJ0",
-            "recaPLycHtpRQfWnE"
+            "recaPLycHtpRQfWnE",
+            "recgEASIRl67trnVo"
           ],
           "CellPatterns": [
             "recobCShOEyZjP8bY",
@@ -1046,7 +1121,8 @@
             "recYR4cE90EOVnYD5",
             "rec91aKNdkT2cw93v",
             "recclaJuN3LJWLC4N",
-            "recKj18pU9k6V6MAx"
+            "recKj18pU9k6V6MAx",
+            "rec50mVjEdQZEZQYw"
           ],
           "CurrentCellState": "rec0xQjo4VL3DFTXg",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
@@ -1118,7 +1194,8 @@
           "CellIndex": "8",
           "CellPatternCells": [
             "reclDV8jky7y1JNzH",
-            "rec5D3fwk2h5GzjIB"
+            "rec5D3fwk2h5GzjIB",
+            "recc7o6on6KJC5hrh"
           ],
           "CellPatterns": "recZCV8dlP1pNK9kK",
           "CurrentCellState": "recJAi8YoTOQmzhfH",
@@ -1591,7 +1668,8 @@
             "reczr6h68ZUdkDIZb",
             "recafoRwqvCh5HZOd",
             "recoPtQQ8QZtClJK0",
-            "recUD9c7vXgkNLQi9"
+            "recUD9c7vXgkNLQi9",
+            "reck5rrUr3TtO7Xbx"
           ],
           "Description": "Rotate 3x3 \"board\" 90 degrees RIGHT-hand (Clockwise) around the middle cell"
         }
@@ -1732,7 +1810,10 @@
             "recyZobcdc9yOkGuC",
             "rec6RGGCG5ORVBnA3",
             "recKj18pU9k6V6MAx",
-            "rec8bt4pVcy9OY8XO"
+            "rec8bt4pVcy9OY8XO",
+            "rec50mVjEdQZEZQYw",
+            "recgEASIRl67trnVo",
+            "recc7o6on6KJC5hrh"
           ],
           "CurrentStateCells": [
             "rec50MWM91QHzlEzO",

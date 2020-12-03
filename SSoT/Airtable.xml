@@ -165,6 +165,19 @@
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
+      <CellPatternTranslationId>reck5rrUr3TtO7Xbx</CellPatternTranslationId>
+      <createdTime>2020-12-03T20:20:26Z</createdTime>
+      <Name>T1-Diagaonal:Rotate:1</Name>
+      <CPTCode>10</CPTCode>
+      <CellPattern>recfN5fhc2fVqzUC7</CellPattern>
+      <CellPatternName>Diagaonal</CellPatternName>
+      <Count>1</Count>
+      <Translation>recgdoYW4iJ8gaAha</Translation>
+      <TranslationId>0</TranslationId>
+      <TranslationName>Rotate</TranslationName>
+      <SortOrder>1</SortOrder>
+    </CellPatternTranslation>
+    <CellPatternTranslation>
       <CellPatternTranslationId>recoPtQQ8QZtClJK0</CellPatternTranslationId>
       <createdTime>2020-11-26T20:39:35Z</createdTime>
       <Translation>recgdoYW4iJ8gaAha</Translation>
@@ -397,6 +410,24 @@
       <Translations>30</Translations>
     </CellPattern>
     <CellPattern>
+      <CellPatternId>recfN5fhc2fVqzUC7</CellPatternId>
+      <createdTime>2020-12-03T20:20:16Z</createdTime>
+      <IsWinPattern>true</IsWinPattern>
+      <SortOrder>20</SortOrder>
+      <Cells>00;40;80</Cells>
+      <Translations>10</Translations>
+      <Name>Diagaonal</Name>
+      <Description>win</Description>
+      <CellPatternCells>rec50mVjEdQZEZQYw</CellPatternCells>
+      <CellPatternCells>recgEASIRl67trnVo</CellPatternCells>
+      <CellPatternCells>recc7o6on6KJC5hrh</CellPatternCells>
+      <CellPatternCellStates>00</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>80</CellPatternCellStates>
+      <CellPatternTranslations>reck5rrUr3TtO7Xbx</CellPatternTranslations>
+      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
+    </CellPattern>
+    <CellPattern>
       <CellPatternId>recg1ttw7l3n96PDG</CellPatternId>
       <createdTime>2020-11-26T20:06:43Z</createdTime>
       <Name>TwoOutsideDiagonal</Name>
@@ -590,6 +621,19 @@
   </AIStrategies>
   <CellPatternCells>
     <CellPatternCell>
+      <CellPatternCellId>rec50mVjEdQZEZQYw</CellPatternCellId>
+      <createdTime>2020-12-03T20:20:24Z</createdTime>
+      <Name>Diagaonal:PlayerA:TopLeft</Name>
+      <CellCellState>00</CellCellState>
+      <CellPattern>recfN5fhc2fVqzUC7</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <CellStateId>0</CellStateId>
+      <CellStateName>PlayerA</CellStateName>
+      <Cell>rec50MWM91QHzlEzO</Cell>
+      <CellIndex>0</CellIndex>
+      <CellName>TopLeft</CellName>
+    </CellPatternCell>
+    <CellPatternCell>
       <CellPatternCellId>rec5D3fwk2h5GzjIB</CellPatternCellId>
       <createdTime>2020-11-26T20:43:48Z</createdTime>
       <Cell>recczW2Y4WMv9buZ8</Cell>
@@ -772,6 +816,19 @@
       <CellStateName>NoPlayer</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
+      <CellPatternCellId>recc7o6on6KJC5hrh</CellPatternCellId>
+      <createdTime>2020-12-03T20:20:43Z</createdTime>
+      <CellPattern>recfN5fhc2fVqzUC7</CellPattern>
+      <Name>Diagaonal:PlayerA:BottomRight</Name>
+      <CellCellState>80</CellCellState>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <CellStateId>0</CellStateId>
+      <CellStateName>PlayerA</CellStateName>
+      <Cell>recczW2Y4WMv9buZ8</Cell>
+      <CellIndex>8</CellIndex>
+      <CellName>BottomRight</CellName>
+    </CellPatternCell>
+    <CellPatternCell>
       <CellPatternCellId>recclaJuN3LJWLC4N</CellPatternCellId>
       <createdTime>2020-11-26T20:35:31Z</createdTime>
       <Cell>rec50MWM91QHzlEzO</Cell>
@@ -809,6 +866,19 @@
       <CellCellState>10</CellCellState>
       <CellName>Top</CellName>
       <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recgEASIRl67trnVo</CellPatternCellId>
+      <createdTime>2020-12-03T20:20:43Z</createdTime>
+      <CellPattern>recfN5fhc2fVqzUC7</CellPattern>
+      <Name>Diagaonal:PlayerA:Middle</Name>
+      <CellCellState>40</CellCellState>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <CellStateId>0</CellStateId>
+      <CellStateName>PlayerA</CellStateName>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellIndex>4</CellIndex>
+      <CellName>Middle</CellName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>rechiocdDSSkR1IFz</CellPatternCellId>
@@ -921,6 +991,7 @@
       <CellPatternCells>recwQ3ZI5MBVHPKgl</CellPatternCells>
       <CellPatternCells>recPmKMMNhYSxBWJ0</CellPatternCells>
       <CellPatternCells>recaPLycHtpRQfWnE</CellPatternCells>
+      <CellPatternCells>recgEASIRl67trnVo</CellPatternCells>
       <CellPatterns>recobCShOEyZjP8bY</CellPatterns>
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
       <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
@@ -990,6 +1061,7 @@
       <CellPatternCells>rec91aKNdkT2cw93v</CellPatternCells>
       <CellPatternCells>recclaJuN3LJWLC4N</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
+      <CellPatternCells>rec50mVjEdQZEZQYw</CellPatternCells>
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>7</CellKey>
@@ -1058,6 +1130,7 @@
       <CellIndex>8</CellIndex>
       <CellPatternCells>reclDV8jky7y1JNzH</CellPatternCells>
       <CellPatternCells>rec5D3fwk2h5GzjIB</CellPatternCells>
+      <CellPatternCells>recc7o6on6KJC5hrh</CellPatternCells>
       <CellPatterns>recZCV8dlP1pNK9kK</CellPatterns>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
@@ -1515,6 +1588,7 @@
       <CellPatternTranslations>recafoRwqvCh5HZOd</CellPatternTranslations>
       <CellPatternTranslations>recoPtQQ8QZtClJK0</CellPatternTranslations>
       <CellPatternTranslations>recUD9c7vXgkNLQi9</CellPatternTranslations>
+      <CellPatternTranslations>reck5rrUr3TtO7Xbx</CellPatternTranslations>
       <Description>Rotate 3x3 "board" 90 degrees RIGHT-hand (Clockwise) around the middle cell</Description>
     </Translation>
   </Translations>
@@ -1650,6 +1724,9 @@
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
+      <CellPatternCells>rec50mVjEdQZEZQYw</CellPatternCells>
+      <CellPatternCells>recgEASIRl67trnVo</CellPatternCells>
+      <CellPatternCells>recc7o6on6KJC5hrh</CellPatternCells>
       <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
       <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
     </CellState>

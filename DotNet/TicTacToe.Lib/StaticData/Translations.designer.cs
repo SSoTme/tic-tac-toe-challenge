@@ -32,7 +32,7 @@ public static partial class Translations
             Id = 0,
             IsClockwise = Boolean.Parse("true"),
             Cells = new string[] { @"rec50MWM91QHzlEzO", "recpPYOZtnp3lTOua", "recczW2Y4WMv9buZ8", "recTGnKjXTE8LfT3C", "recxIf3GoDzEtonFU", "rec35HZOaRy6ge0jk", "recfSe8zeEdCAtcGq", "recmjtZPRUfoCU2sr", "rec3OzG8nTAkUhjVn" },
-            CellPatternTranslations = new string[] { @"recD87U0swUjjhnTj", "recNz0LuN77HIXjmB", "recqJB1goFBhhsIVZ", "recJjgKw24kaBFH0i", "rec9PRnE4xpUCcMit", "reczr6h68ZUdkDIZb", "recafoRwqvCh5HZOd", "recoPtQQ8QZtClJK0", "recUD9c7vXgkNLQi9" },
+            CellPatternTranslations = new string[] { @"recD87U0swUjjhnTj", "recNz0LuN77HIXjmB", "recqJB1goFBhhsIVZ", "recJjgKw24kaBFH0i", "rec9PRnE4xpUCcMit", "reczr6h68ZUdkDIZb", "recafoRwqvCh5HZOd", "recoPtQQ8QZtClJK0", "recUD9c7vXgkNLQi9", "reck5rrUr3TtO7Xbx" },
             Description = @"Rotate 3x3 'board' 90 degrees RIGHT-hand (Clockwise) around the middle cell"
         };
 

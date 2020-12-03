@@ -210,21 +210,21 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                         </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
                         CellPatternCellId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
-                                    <a href="#Cell">Cell</a>
-                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
-                                    
                                     <a href="#CellPattern">CellPattern</a>
                                 </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
                                     
                                     <a href="#CellState">CellState</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#Cell">Cell</a>
                                 </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         createdTime</td><td>DATETIME</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CellIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CellStateId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CellCellState</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CellName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CellStateName</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPatternCell Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternCellId, createdTime, Cell, CellPattern, CellState, Name, CellIndex, CellStateId, CellCellState, CellName, CellStateName
+                        CellStateId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CellStateName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CellIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CellName</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPatternCell Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternCellId, createdTime, Name, CellCellState, CellPattern, CellState, CellStateId, CellStateName, Cell, CellIndex, CellName
 
 <b>FROM</b> CellPatternCell
 

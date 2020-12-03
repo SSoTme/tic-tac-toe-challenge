@@ -22,7 +22,7 @@ public static partial class CellStates
             Cursor = @"Default",
             SortOrder = 1,
             Id = 0,
-            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recf1uu1YY0iPps8E", "recPHA9ppFH8cjenC", "reckcKNNnyDSWpFrH", "recGP80BxFCLlmgw7", "recAy4XNSSKRZGZsh", "recYR4cE90EOVnYD5", "reclDV8jky7y1JNzH", "rec91aKNdkT2cw93v", "recwQ3ZI5MBVHPKgl", "recxWA16nieZY83Sv", "recPmKMMNhYSxBWJ0", "recclaJuN3LJWLC4N", "recFITGoLxBQs1ocD", "recyZobcdc9yOkGuC", "rec6RGGCG5ORVBnA3", "recKj18pU9k6V6MAx", "rec8bt4pVcy9OY8XO" },
+            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recf1uu1YY0iPps8E", "recPHA9ppFH8cjenC", "reckcKNNnyDSWpFrH", "recGP80BxFCLlmgw7", "recAy4XNSSKRZGZsh", "recYR4cE90EOVnYD5", "reclDV8jky7y1JNzH", "rec91aKNdkT2cw93v", "recwQ3ZI5MBVHPKgl", "recxWA16nieZY83Sv", "recPmKMMNhYSxBWJ0", "recclaJuN3LJWLC4N", "recFITGoLxBQs1ocD", "recyZobcdc9yOkGuC", "rec6RGGCG5ORVBnA3", "recKj18pU9k6V6MAx", "rec8bt4pVcy9OY8XO", "rec50mVjEdQZEZQYw", "recgEASIRl67trnVo", "recc7o6on6KJC5hrh" },
             CurrentStateCells = new string[] { @"rec50MWM91QHzlEzO", "recpPYOZtnp3lTOua" },
             
         };
