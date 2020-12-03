@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.Lib", "TicTacToe.Lib\DotNet.Lib.csproj", "{1697FC9F-3ACF-461D-AD29-543B95C8CF00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSoT", "SSoT", "{471C30F5-A414-48CF-99A5-B7805A2E7680}"
 	ProjectSection(SolutionItems) = preProject

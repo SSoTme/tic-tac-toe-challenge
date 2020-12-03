@@ -843,7 +843,7 @@ var b = jQueryBoard(function() {
             </xsl:if>
         </h1>
         <p>
-            <a href="ReadMe.html">&lt;&lt; Home</a>
+            <a href="index.html">&lt;&lt; Home</a>
             <xsl:call-template name="print-link">
                 <xsl:with-param name="current" select="$name" />
                 <xsl:with-param name="name" select="'Target Platforms'" />
@@ -874,6 +874,14 @@ var b = jQueryBoard(function() {
                 <xsl:with-param name="name" select="'Cell Patterns'" />
             </xsl:call-template>
 
+            <xsl:call-template name="print-link">
+                <xsl:with-param name="current" select="$name" />
+                <xsl:with-param name="display-name" select="'Challenge Rules'" />
+                <xsl:with-param name="name" select="'ReadMe'" />
+            </xsl:call-template>
+
+            
+
         </p>
     </xsl:template>
 
@@ -884,9 +892,16 @@ var b = jQueryBoard(function() {
         <xsl:text> | </xsl:text>
         <xsl:choose>
             <xsl:when test="$current = $name">
-                <xsl:call-template name="camel-to-title-case">
-                    <xsl:with-param name="text" select="$name" />
-                </xsl:call-template>
+                  <xsl:choose>
+                    <xsl:when test="normalize-space($display-name) != ''">
+                      <xsl:value-of select="$display-name"/>
+                    </xsl:when>
+                    <xsl:otherwise>
+                      <xsl:call-template name="camel-to-title-case">
+                        <xsl:with-param name="text" select="$name" />
+                      </xsl:call-template>
+                    </xsl:otherwise>
+                  </xsl:choose>
             </xsl:when>
             <xsl:otherwise>
                 <a>
