@@ -541,6 +541,19 @@ var b = jQueryBoard(function() {
                                     language/platform/context.  Where - once implemented, it will behave consistently
                                     with the other clients written against this SDK.
                                 </p>
+
+
+                                <h3>JS Fiddle example </h3>
+                                <p>This uses the javascript portion of the sdk.  The JSFiddle references <b>http://localhost:8080/TicTacToe.js</b>, among
+                                other files.</p>
+                                <pre> # After cloning this repository, run the documentation as an http server on localhost.
+ $ npm install -g http-server
+ $ cd /docs
+ $ http-server .
+                                </pre>
+                                <iframe width="100%" height="1000" src="https://jsfiddle.net/eejai42/bpwf1xto/9/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+                                <h3>Other Environments/Languages</h3>
                                 <xsl:for-each select="$target-platforms">
                                     <xsl:sort select="SortOrder" />
                                     <div style="font-size: 1.1em; font-weight: bold">
@@ -565,9 +578,6 @@ var b = jQueryBoard(function() {
 
                                 </xsl:for-each>
 
-                                <h3>JS Fiddle example </h3>
-                                <p>This uses the javascript portion of the sdk</p>
-                                <iframe width="100%" height="1000" src="https://jsfiddle.net/eejai42/bpwf1xto/9/embedded/result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
                             </body>
                         </html>
                     </FileContents>
@@ -643,7 +653,7 @@ var b = jQueryBoard(function() {
 
                                 </xsl:for-each>
 
-                                <h3>General Strategy Patterns</h3>
+                                <h3>Possible Win Matching Strategies</h3>
                                 <p>
                                     There are <xsl:value-of select="count($general-patterns)"  /> general patterns which
                                     are useful for a variety of strategies outlined.
@@ -864,14 +874,15 @@ var b = jQueryBoard(function() {
                 <xsl:with-param name="current" select="$name" />
                 <xsl:with-param name="name" select="'Cells'" />
             </xsl:call-template>-->
-            <xsl:call-template name="print-link">
-                <xsl:with-param name="current" select="$name" />
-                <xsl:with-param name="name" select="'Translations'" />
-            </xsl:call-template>
 
             <xsl:call-template name="print-link">
                 <xsl:with-param name="current" select="$name" />
                 <xsl:with-param name="name" select="'Cell Patterns'" />
+            </xsl:call-template>
+
+            <xsl:call-template name="print-link">
+                <xsl:with-param name="current" select="$name" />
+                <xsl:with-param name="name" select="'Translations'" />
             </xsl:call-template>
 
             <xsl:call-template name="print-link">

@@ -923,13 +923,13 @@
       <CellPatternCells>recaPLycHtpRQfWnE</CellPatternCells>
       <CellPatterns>recobCShOEyZjP8bY</CellPatterns>
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
-      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
+      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>5</CellKey>
       <RotateDescription>From Middle to Middle</RotateDescription>
       <RotateIndex>4</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <RotateFrom>Middle</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Middle</ClockwiseRotateFrom>
@@ -990,13 +990,13 @@
       <CellPatternCells>rec91aKNdkT2cw93v</CellPatternCells>
       <CellPatternCells>recclaJuN3LJWLC4N</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>7</CellKey>
       <RotateDescription>From BottomLeft to TopLeft</RotateDescription>
       <RotateIndex>6</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <RotateFrom>BottomLeft</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>BottomLeft</ClockwiseRotateFrom>
@@ -1094,13 +1094,13 @@
       <CellPatternCells>rechiocdDSSkR1IFz</CellPatternCells>
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatterns>recqn6vuQrx71nQii</CellPatterns>
-      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
+      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>6</CellKey>
       <RotateDescription>From Top to MiddleRight</RotateDescription>
       <RotateIndex>1</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <RotateFrom>Top</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Top</ClockwiseRotateFrom>
@@ -1160,13 +1160,13 @@
       <CellPatternCells>recFITGoLxBQs1ocD</CellPatternCells>
       <CellPatternCells>recljMfqekOodaaWx</CellPatternCells>
       <CellPatterns>recYmKv2dBpnAA1gs</CellPatterns>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>8</CellKey>
       <RotateDescription>From MiddleLeft to Top</RotateDescription>
       <RotateIndex>3</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <RotateFrom>MiddleLeft</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>MiddleLeft</ClockwiseRotateFrom>
@@ -1628,7 +1628,7 @@
       <Description>This cell has been marked by the active player</Description>
       <Color>yellow</Color>
       <FontColor>black</FontColor>
-      <DefaultMark>X</DefaultMark>
+      <DefaultMark>A</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>1</SortOrder>
       <Id>0</Id>
@@ -1650,8 +1650,8 @@
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
-      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
-      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
+      <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
+      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
     </CellState>
     <CellState>
       <CellStateId>recJAi8YoTOQmzhfH</CellStateId>
@@ -1699,12 +1699,12 @@
       <Description>This cell has been marked by thhe active player's opponent.</Description>
       <Color>black</Color>
       <FontColor>white</FontColor>
-      <DefaultMark>O</DefaultMark>
+      <DefaultMark>B</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>2</SortOrder>
       <Id>1</Id>
-      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
-      <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
+      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
+      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
     </CellState>
   </CellStates>
 </Airtable>
