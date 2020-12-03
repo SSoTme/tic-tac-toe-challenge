@@ -923,13 +923,12 @@
       <CellPatternCells>recaPLycHtpRQfWnE</CellPatternCells>
       <CellPatterns>recobCShOEyZjP8bY</CellPatterns>
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>5</CellKey>
       <RotateDescription>From Middle to Middle</RotateDescription>
       <RotateIndex>4</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <RotateFrom>Middle</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Middle</ClockwiseRotateFrom>
@@ -940,6 +939,7 @@
       <CounterClockwiseRotateFromIndex>4</CounterClockwiseRotateFromIndex>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>4</SortOrder>
+      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
     </Cell>
     <Cell>
       <CellId>rec3OzG8nTAkUhjVn</CellId>
@@ -954,13 +954,12 @@
       <Y>1</Y>
       <RotateTranslation>recgdoYW4iJ8gaAha</RotateTranslation>
       <CellIndex>7</CellIndex>
-      <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>2</CellKey>
       <RotateDescription>From MiddleRight to Bottom</RotateDescription>
       <RotateIndex>5</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <RotateFrom>MiddleRight</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>MiddleRight</ClockwiseRotateFrom>
@@ -971,6 +970,7 @@
       <CounterClockwiseRotateFromIndex>3</CounterClockwiseRotateFromIndex>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>7</SortOrder>
+      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
     </Cell>
     <Cell>
       <CellId>rec50MWM91QHzlEzO</CellId>
@@ -1160,13 +1160,12 @@
       <CellPatternCells>recFITGoLxBQs1ocD</CellPatternCells>
       <CellPatternCells>recljMfqekOodaaWx</CellPatternCells>
       <CellPatterns>recYmKv2dBpnAA1gs</CellPatterns>
-      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>8</CellKey>
       <RotateDescription>From MiddleLeft to Top</RotateDescription>
       <RotateIndex>3</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
+      <CurrentState>NoPlayer</CurrentState>
       <RotateFrom>MiddleLeft</RotateFrom>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>MiddleLeft</ClockwiseRotateFrom>
@@ -1177,6 +1176,7 @@
       <CounterClockwiseRotateFromIndex>5</CounterClockwiseRotateFromIndex>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>1</SortOrder>
+      <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
     </Cell>
     <Cell>
       <CellId>recxIf3GoDzEtonFU</CellId>
@@ -1651,7 +1651,7 @@
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
       <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
-      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
+      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
     </CellState>
     <CellState>
       <CellStateId>recJAi8YoTOQmzhfH</CellStateId>
@@ -1678,9 +1678,9 @@
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
       <CurrentStateCells>recxIf3GoDzEtonFU</CurrentStateCells>
       <CurrentStateCells>recmjtZPRUfoCU2sr</CurrentStateCells>
-      <CurrentStateCells>rec3OzG8nTAkUhjVn</CurrentStateCells>
       <CurrentStateCells>recTGnKjXTE8LfT3C</CurrentStateCells>
       <CurrentStateCells>recczW2Y4WMv9buZ8</CurrentStateCells>
+      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
       <DefaultStateCells>recxIf3GoDzEtonFU</DefaultStateCells>
       <DefaultStateCells>recfSe8zeEdCAtcGq</DefaultStateCells>
       <DefaultStateCells>recmjtZPRUfoCU2sr</DefaultStateCells>
@@ -1703,8 +1703,8 @@
       <Cursor>Default</Cursor>
       <SortOrder>2</SortOrder>
       <Id>1</Id>
-      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
       <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
+      <CurrentStateCells>rec3OzG8nTAkUhjVn</CurrentStateCells>
     </CellState>
   </CellStates>
 </Airtable>

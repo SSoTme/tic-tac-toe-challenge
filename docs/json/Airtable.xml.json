@@ -979,13 +979,12 @@
             "recobCShOEyZjP8bY",
             "recg1ttw7l3n96PDG"
           ],
-          "CurrentCellState": "recw0SsqNfCk96xZs",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "5",
           "RotateDescription": "From Middle to Middle",
           "RotateIndex": "4",
           "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerB",
+          "CurrentState": "PlayerA",
           "RotateFrom": "Middle",
           "IsClockwise": "true",
           "ClockwiseRotateFrom": "Middle",
@@ -995,7 +994,8 @@
           "ClockwiseRotateFromIndex": "4",
           "CounterClockwiseRotateFromIndex": "4",
           "FlipDescription": "No Movement",
-          "SortOrder": "4"
+          "SortOrder": "4",
+          "CurrentCellState": "rec0xQjo4VL3DFTXg"
         },
         {
           "CellId": "rec3OzG8nTAkUhjVn",
@@ -1010,13 +1010,12 @@
           "Y": "1",
           "RotateTranslation": "recgdoYW4iJ8gaAha",
           "CellIndex": "7",
-          "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "2",
           "RotateDescription": "From MiddleRight to Bottom",
           "RotateIndex": "5",
           "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
+          "CurrentState": "PlayerB",
           "RotateFrom": "MiddleRight",
           "IsClockwise": "true",
           "ClockwiseRotateFrom": "MiddleRight",
@@ -1026,7 +1025,8 @@
           "ClockwiseRotateFromIndex": "5",
           "CounterClockwiseRotateFromIndex": "3",
           "FlipDescription": "No Movement",
-          "SortOrder": "7"
+          "SortOrder": "7",
+          "CurrentCellState": "recw0SsqNfCk96xZs"
         },
         {
           "CellId": "rec50MWM91QHzlEzO",
@@ -1226,13 +1226,12 @@
             "recljMfqekOodaaWx"
           ],
           "CellPatterns": "recYmKv2dBpnAA1gs",
-          "CurrentCellState": "rec0xQjo4VL3DFTXg",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "8",
           "RotateDescription": "From MiddleLeft to Top",
           "RotateIndex": "3",
           "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerA",
+          "CurrentState": "NoPlayer",
           "RotateFrom": "MiddleLeft",
           "IsClockwise": "true",
           "ClockwiseRotateFrom": "MiddleLeft",
@@ -1242,7 +1241,8 @@
           "ClockwiseRotateFromIndex": "3",
           "CounterClockwiseRotateFromIndex": "5",
           "FlipDescription": "No Movement",
-          "SortOrder": "1"
+          "SortOrder": "1",
+          "CurrentCellState": "recJAi8YoTOQmzhfH"
         },
         {
           "CellId": "recxIf3GoDzEtonFU",
@@ -1736,7 +1736,7 @@
           ],
           "CurrentStateCells": [
             "rec50MWM91QHzlEzO",
-            "recpPYOZtnp3lTOua"
+            "rec35HZOaRy6ge0jk"
           ]
         },
         {
@@ -1769,9 +1769,9 @@
           "CurrentStateCells": [
             "recxIf3GoDzEtonFU",
             "recmjtZPRUfoCU2sr",
-            "rec3OzG8nTAkUhjVn",
             "recTGnKjXTE8LfT3C",
-            "recczW2Y4WMv9buZ8"
+            "recczW2Y4WMv9buZ8",
+            "recpPYOZtnp3lTOua"
           ],
           "DefaultStateCells": [
             "recxIf3GoDzEtonFU",
@@ -1798,8 +1798,8 @@
           "SortOrder": "2",
           "Id": "1",
           "CurrentStateCells": [
-            "rec35HZOaRy6ge0jk",
-            "recfSe8zeEdCAtcGq"
+            "recfSe8zeEdCAtcGq",
+            "rec3OzG8nTAkUhjVn"
           ]
         }
       ]
