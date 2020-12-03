@@ -1627,7 +1627,7 @@
       <Code>P</Code>
       <Description>This cell has been marked by the active player</Description>
       <Color>yellow</Color>
-      <FontColor>black</FontColor>
+      <FontColor>red</FontColor>
       <DefaultMark>X</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>1</SortOrder>
@@ -1697,7 +1697,7 @@
       <Name>PlayerB</Name>
       <Code>O</Code>
       <Description>This cell has been marked by thhe active player's opponent.</Description>
-      <Color>black</Color>
+      <Color>blue</Color>
       <FontColor>white</FontColor>
       <DefaultMark>O</DefaultMark>
       <Cursor>Default</Cursor>

@@ -92,7 +92,7 @@ namespace TicTacToe.DotNet.Lib
         private void CheckForWin()
         {
             if (this.CheckForWin<EdgeWinPattern>() ||
-                this.CheckForWin<DiagonalWinPattern>() ||
+                //this.CheckForWin<DiagonalWinPattern>() ||
                 this.CheckForWin<MiddleWinPattern>())
             {
                 var gameOverStr = LanguageTokens.ByEnum[LanguageTokensEnum.GameOver].DisplayName;
