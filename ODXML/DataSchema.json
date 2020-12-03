@@ -1022,6 +1022,30 @@
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
                     "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellStateName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
                   }
                 ]
               }
@@ -1405,6 +1429,18 @@
                         ]
                       }
                     }
+                  },
+                  {
+                    "Name": "CellKey",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
                   },
                   {
                     "Name": "RotateDescription",
@@ -2016,6 +2052,18 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "IsClockwise",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "Cells",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2089,18 +2137,6 @@
                     "Length": "200",
                     "MaxLength": "150",
                     "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "IsClockwise",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "BOOLEAN",
-                    "Length": "",
-                    "MaxLength": "4",
-                    "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -2309,6 +2345,18 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "Color",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "FontColor",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2417,6 +2465,36 @@
                     }
                   },
                   {
+                    "Name": "CellPatterns",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "CellPattern",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "CellPattern",
+                        "ReferencedPropertyDef": "CellPatternId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec55PqGhtUYK5Rcb",
+                          "recqn6vuQrx71nQii",
+                          "recZCV8dlP1pNK9kK",
+                          "recYmKv2dBpnAA1gs",
+                          "recobCShOEyZjP8bY",
+                          "recg1ttw7l3n96PDG"
+                        ]
+                      }
+                    }
+                  },
+                  {
                     "Name": "CurrentStateCells",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2445,48 +2523,6 @@
                           "recczW2Y4WMv9buZ8",
                           "recpPYOZtnp3lTOua",
                           "rec50MWM91QHzlEzO"
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "Name": "Color",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "6",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "CellPatterns",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "17",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "1",
-                    "Relationships": {
-                      "Relationship": {
-                        "AirtableName": "CellPattern",
-                        "MatchingEntitiesFound": "1",
-                        "ReferencedObjectDef": "CellPattern",
-                        "ReferencedPropertyDef": "CellPatternId"
-                      },
-                      "IDRefs": {
-                        "REF": [
-                          "rec55PqGhtUYK5Rcb",
-                          "recqn6vuQrx71nQii",
-                          "recZCV8dlP1pNK9kK",
-                          "recYmKv2dBpnAA1gs",
-                          "recobCShOEyZjP8bY",
-                          "recg1ttw7l3n96PDG"
                         ]
                       }
                     }
