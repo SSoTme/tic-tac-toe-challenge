@@ -923,7 +923,7 @@
       <CellPatternCells>recaPLycHtpRQfWnE</CellPatternCells>
       <CellPatterns>recobCShOEyZjP8bY</CellPatterns>
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
-      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
+      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>5</CellKey>
       <IsClockwise>true</IsClockwise>
@@ -935,7 +935,7 @@
       <CounterClockwiseRotateFromIndex>4</CounterClockwiseRotateFromIndex>
       <RotateIndex>4</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <FlipIndex>4</FlipIndex>
       <FlipFromName>Middle</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
@@ -990,7 +990,7 @@
       <CellPatternCells>rec91aKNdkT2cw93v</CellPatternCells>
       <CellPatternCells>recclaJuN3LJWLC4N</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>7</CellKey>
       <IsClockwise>true</IsClockwise>
@@ -1002,7 +1002,7 @@
       <CounterClockwiseRotateFromIndex>2</CounterClockwiseRotateFromIndex>
       <RotateIndex>6</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <FlipIndex>2</FlipIndex>
       <FlipFromName>TopRight</FlipFromName>
       <FlipDescription>From TopRight to TopLeft</FlipDescription>
@@ -1094,7 +1094,7 @@
       <CellPatternCells>rechiocdDSSkR1IFz</CellPatternCells>
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatterns>recqn6vuQrx71nQii</CellPatterns>
-      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
+      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>6</CellKey>
       <IsClockwise>true</IsClockwise>
@@ -1106,7 +1106,7 @@
       <CounterClockwiseRotateFromIndex>7</CounterClockwiseRotateFromIndex>
       <RotateIndex>1</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <FlipIndex>3</FlipIndex>
       <FlipFromName>MiddleLeft</FlipFromName>
       <FlipDescription>From MiddleLeft to MiddleRight</FlipDescription>
@@ -1160,7 +1160,7 @@
       <CellPatternCells>recFITGoLxBQs1ocD</CellPatternCells>
       <CellPatternCells>recljMfqekOodaaWx</CellPatternCells>
       <CellPatterns>recYmKv2dBpnAA1gs</CellPatterns>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>8</CellKey>
       <IsClockwise>true</IsClockwise>
@@ -1172,7 +1172,7 @@
       <CounterClockwiseRotateFromIndex>5</CounterClockwiseRotateFromIndex>
       <RotateIndex>3</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <FlipIndex>1</FlipIndex>
       <FlipFromName>Top</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
@@ -1627,6 +1627,7 @@
       <Code>P</Code>
       <Description>This cell has been marked by the active player</Description>
       <Color>yellow</Color>
+      <FontColor>black</FontColor>
       <DefaultMark>A</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>1</SortOrder>
@@ -1649,9 +1650,8 @@
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
-      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
-      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
-      <FontColor>black</FontColor>
+      <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
+      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
     </CellState>
     <CellState>
       <CellStateId>recJAi8YoTOQmzhfH</CellStateId>
@@ -1703,8 +1703,8 @@
       <Cursor>Default</Cursor>
       <SortOrder>2</SortOrder>
       <Id>1</Id>
-      <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
-      <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
+      <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
+      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
     </CellState>
   </CellStates>
 </Airtable>

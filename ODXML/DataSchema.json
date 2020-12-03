@@ -1384,14 +1384,14 @@
                       },
                       "IDRefs": {
                         "REF": [
-                          "rec0xQjo4VL3DFTXg",
-                          "recJAi8YoTOQmzhfH",
                           "recw0SsqNfCk96xZs",
-                          "recJAi8YoTOQmzhfH",
                           "recJAi8YoTOQmzhfH",
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
+                          "recJAi8YoTOQmzhfH",
                           "recw0SsqNfCk96xZs",
+                          "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH"
                         ]
                       }
@@ -2357,6 +2357,18 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "FontColor",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "8",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "DefaultMark",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2453,51 +2465,6 @@
                     }
                   },
                   {
-                    "Name": "CurrentStateCells",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "17",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "1",
-                    "Relationships": {
-                      "Relationship": {
-                        "AirtableName": "Cell",
-                        "MatchingEntitiesFound": "1",
-                        "ReferencedObjectDef": "Cell",
-                        "ReferencedPropertyDef": "CellId"
-                      },
-                      "IDRefs": {
-                        "REF": [
-                          "rec35HZOaRy6ge0jk",
-                          "recfSe8zeEdCAtcGq",
-                          "recxIf3GoDzEtonFU",
-                          "recmjtZPRUfoCU2sr",
-                          "rec3OzG8nTAkUhjVn",
-                          "recTGnKjXTE8LfT3C",
-                          "recczW2Y4WMv9buZ8",
-                          "recpPYOZtnp3lTOua",
-                          "rec50MWM91QHzlEzO"
-                        ]
-                      }
-                    }
-                  },
-                  {
-                    "Name": "FontColor",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "8",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "CellPatterns",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2523,6 +2490,39 @@
                           "recYmKv2dBpnAA1gs",
                           "recobCShOEyZjP8bY",
                           "recg1ttw7l3n96PDG"
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "Name": "CurrentStateCells",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "17",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1",
+                    "Relationships": {
+                      "Relationship": {
+                        "AirtableName": "Cell",
+                        "MatchingEntitiesFound": "1",
+                        "ReferencedObjectDef": "Cell",
+                        "ReferencedPropertyDef": "CellId"
+                      },
+                      "IDRefs": {
+                        "REF": [
+                          "rec50MWM91QHzlEzO",
+                          "recpPYOZtnp3lTOua",
+                          "recxIf3GoDzEtonFU",
+                          "recmjtZPRUfoCU2sr",
+                          "rec3OzG8nTAkUhjVn",
+                          "recTGnKjXTE8LfT3C",
+                          "recczW2Y4WMv9buZ8",
+                          "rec35HZOaRy6ge0jk",
+                          "recfSe8zeEdCAtcGq"
                         ]
                       }
                     }

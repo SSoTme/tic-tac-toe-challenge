@@ -10,7 +10,7 @@ using TicTacToeChallenge.Lib.DataClasses;
 
 namespace TicTacToe.DotNet.Lib
 {
-    public class TicTacToeBoard
+    public partial class TicTacToeBoard
     {
         public List<Cell> BoardCells { get; private set; }
         public Player Player1 { get; private set; }
@@ -85,25 +85,15 @@ namespace TicTacToe.DotNet.Lib
 
         }
 
-        private void ResetOrientation()
+        private void HandleWin()
         {
-        }
-
-        private void CheckForWin()
-        {
-            if (this.CheckForWin<EdgeWinPattern>() ||
-                //this.CheckForWin<DiagonalWinPattern>() ||
-                this.CheckForWin<MiddleWinPattern>())
-            {
-                var gameOverStr = LanguageTokens.ByEnum[LanguageTokensEnum.GameOver].DisplayName;
-                var youWon = LanguageTokens.ByEnum[LanguageTokensEnum.YouWon].DisplayName;
-                var theyWon = LanguageTokens.ByEnum[LanguageTokensEnum.TheyWon].DisplayName;
-                var wonStr = this.IsYourTurn ? youWon : theyWon;
-                Console.WriteLine("{2} ({3}) - " +
-                    "{0}: {1} - ", gameOverStr, wonStr, this.GetCurrentPlayer().Name, this.GetCurrentPlayerState());
-                this.IsGameOver = true;
-            }
-            this.RestorPosition();
+            var gameOverStr = LanguageTokens.ByEnum[LanguageTokensEnum.GameOver].DisplayName;
+            var youWon = LanguageTokens.ByEnum[LanguageTokensEnum.YouWon].DisplayName;
+            var theyWon = LanguageTokens.ByEnum[LanguageTokensEnum.TheyWon].DisplayName;
+            var wonStr = this.IsYourTurn ? youWon : theyWon;
+            Console.WriteLine("{2} ({3}) - " +
+                "{0}: {1} - ", gameOverStr, wonStr, this.GetCurrentPlayer().Name, this.GetCurrentPlayerState());
+            this.IsGameOver = true;
         }
 
         private Player GetCurrentPlayer()

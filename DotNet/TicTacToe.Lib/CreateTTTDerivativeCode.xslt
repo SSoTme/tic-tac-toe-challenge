@@ -5,7 +5,7 @@
     <xsl:output method="xml" indent="yes"/>
 
     <xsl:param name="output-filename" select="'output.txt'" />
-
+    <xsl:variable name="win-patterns" select="//CellPatterns/CellPattern[normalize-space(IsWinPattern) = 'true']" />
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -14,7 +14,25 @@
 
     <xsl:template match="/*">
         <FileSet>
-            <FileSetFiles>
+            <FileSetFiles>                
+                <FileSetFile>
+                    <RelativePath>TicTacToeBoard.designer.cs</RelativePath>
+                    <FileContents>using DotNet.Lib.CellPatterns;
+namespace TicTacToe.DotNet.Lib
+{
+    public partial class TicTacToeBoard 
+    {
+        private void CheckForWin()
+        { 
+            if (<xsl:for-each select="$win-patterns"> this.CheckForWin&lt;<xsl:value-of select="Name"/>Pattern>()<xsl:if test="position() &lt; count($win-patterns)"> ||
+                </xsl:if></xsl:for-each>)
+            {
+                this.HandleWin();
+            }
+        }
+    }
+}</FileContents>
+                </FileSetFile>
                 <xsl:for-each select="//AILevels/AILevel">
                 <FileSetFile>
                     <RelativePath>
