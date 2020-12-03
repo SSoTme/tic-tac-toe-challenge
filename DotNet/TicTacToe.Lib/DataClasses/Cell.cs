@@ -16,16 +16,14 @@ namespace TicTacToeChallenge.Lib.DataClasses
             this.InitPoco();
         }
 
-        public static Cell None { get { return null; } }
-
-        public string GetDisplayName()
-        {
-            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, this.CurrentState);
-        }
-
+        public static Cell None { get { return null; } }        
         public override String ToString()
         {
-            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, this.CurrentState);
+            return this.ToString(false);
+        }
+        public String ToString(bool excludeState = false)
+        {
+            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, excludeState ? "" : this.CurrentState);
         }
 
     }

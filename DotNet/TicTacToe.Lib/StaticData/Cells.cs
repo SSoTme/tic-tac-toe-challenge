@@ -7,7 +7,6 @@ public static partial class Cells
 {
     public static Dictionary<CellsEnum, Cell> ByEnum { get; }
     public static List<Cell> List { get; }
-
     static Cells()
     {
         Cells.ByEnum = new Dictionary<CellsEnum, Cell>();

@@ -19,7 +19,7 @@ namespace TicTacToe.DotNet.Lib
 
             while (true)
             {
-                var availableCellList = board.AvailableCells.Select(cell => cell.GetDisplayName());
+                var availableCellList = board.AvailableCells.Select(cell => cell.ToString(true));
                 var availableCellNames = string.Join(Environment.NewLine, availableCellList);
                 Console.WriteLine();
                 Console.WriteLine("Which cell would you like to play in? {0}{1}", Environment.NewLine, availableCellNames);

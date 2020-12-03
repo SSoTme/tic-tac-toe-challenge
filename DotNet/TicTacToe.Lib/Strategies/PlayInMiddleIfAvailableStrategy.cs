@@ -10,9 +10,9 @@ namespace DotNet.Lib.Strategies
     {
         public override Cell CheckBoard(TicTacToeBoard ticTacToeBoard)
         {
-            if (ticTacToeBoard.BoardCells[4].CurrentState == CellStatesEnum.NoPlayer.ToString())
+            if (ticTacToeBoard.BoardCells[(int)CellsEnum.Middle].CurrentState == CellStatesEnum.NoPlayer.ToString())
             {
-                return ticTacToeBoard.BoardCells[4];
+                return ticTacToeBoard.BoardCells[(int)CellsEnum.Middle];
             }
             else return Cell.None;
         }

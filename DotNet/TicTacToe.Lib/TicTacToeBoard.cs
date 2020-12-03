@@ -3,6 +3,7 @@ using DotNet.Lib.Strategies;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using TicTacToeChallenge.Lib.DataClasses;
@@ -24,7 +25,6 @@ namespace TicTacToe.DotNet.Lib
         public Player Player2 { get; private set; }
         public bool IsYourTurn { get; private set; }
         public bool IsGameOver { get; set; }
-        private string SavedPosition { get; set; }
         public Random Random { get; }
 
         public TicTacToeBoard()
@@ -66,6 +66,7 @@ namespace TicTacToe.DotNet.Lib
                 var player = default(Player);
                 if (this.IsYourTurn) player = this.Player1;
                 else player = this.Player2;
+                this.SavePosition();
                 var cell = player.Play(this);
                 if (cell is null)
                 {
@@ -78,14 +79,18 @@ namespace TicTacToe.DotNet.Lib
                     this.CheckForWin();
                     this.IsYourTurn = !this.IsYourTurn;
                 }
+                this.RestorPosition();
                 this.PrintConsoleBoard();
             }
 
         }
 
+        private void ResetOrientation()
+        {
+        }
+
         private void CheckForWin()
         {
-            this.SavePosition();
             if (this.CheckForWin<EdgeWinPattern>() ||
                 this.CheckForWin<DiagonalWinPattern>() ||
                 this.CheckForWin<MiddleWinPattern>())
@@ -108,12 +113,14 @@ namespace TicTacToe.DotNet.Lib
 
         public void RestorPosition()
         {
-            this.BoardCells = JsonConvert.DeserializeObject<List<Cell>>(this.SavedPosition);
+            if (this.IsFlipped) this.Flip();
+            while (this.Rotation != 0) this.Rotate();
         }
 
         public void SavePosition()
         {
-            this.SavedPosition = JsonConvert.SerializeObject(this.BoardCells);
+            this.Rotation = 0;
+            this.IsFlipped = false;
         }
 
         private bool CheckForWin<T>()
@@ -142,6 +149,8 @@ namespace TicTacToe.DotNet.Lib
 
         public void Rotate()
         {
+            this.Rotation = (this.Rotation + 90) % 360;
+            // Console.WriteLine("   - ROTATE: {0}/{1}", this.IsFlipped, this.Rotation);
             var tempCells = JsonConvert.DeserializeObject<List<Cell>>(JsonConvert.SerializeObject(this.BoardCells));
             for (var i = 0; i < 9; i++)
             {
@@ -151,6 +160,9 @@ namespace TicTacToe.DotNet.Lib
         }
         public void Flip()
         {
+            this.IsFlipped = !this.IsFlipped;
+            if ((this.Rotation == 90) || (this.Rotation == 270)) this.Rotation = (this.Rotation + 180) % 360;
+            // Console.WriteLine("   - FLIP: {0}/{1}", this.IsFlipped, this.Rotation);
             var tempCells = JsonConvert.DeserializeObject<List<Cell>>(JsonConvert.SerializeObject(this.BoardCells));
             for (var i = 0; i < 9; i++)
             {
@@ -163,6 +175,10 @@ namespace TicTacToe.DotNet.Lib
         {
             get { return this.BoardCells.Where(cell => cell.CurrentState == CellStatesEnum.NoPlayer.ToString()).ToList(); }
         }
+
+        public int Rotation { get; private set; }
+        public bool IsFlipped { get; private set; }
+
         public void PrintConsoleBoard()
         {
             Console.WriteLine("   | | |");
@@ -173,14 +189,43 @@ namespace TicTacToe.DotNet.Lib
                 if (i % 3 == 2) Console.WriteLine("");
             }
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
         }
 
         private void PrintCell(int i)
         {
             Console.Write(" ");
-            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerA].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.PlayerA].DefaultMark);
-            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerB].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.PlayerB].DefaultMark);
+            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerA].Name)
+            {
+                var state = CellStates.ByEnum[CellStatesEnum.PlayerA];
+                Console.ForegroundColor = this.GetConsoleColor(state.FontColor);
+                Console.BackgroundColor = this.GetConsoleColor(state.Color);
+                Console.Write(state.DefaultMark);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.BackgroundColor = ConsoleColor.Black;
+            }
+            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerB].Name)
+            {
+                var state = CellStates.ByEnum[CellStatesEnum.PlayerB];
+                Console.ForegroundColor = this.GetConsoleColor(state.FontColor);
+                Console.BackgroundColor = this.GetConsoleColor(state.Color);
+                Console.Write(state.DefaultMark);
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.BackgroundColor = ConsoleColor.Black;
+            }
             else Console.Write(" ");
+        }
+
+        private ConsoleColor GetConsoleColor(string fontColor)
+        {
+            var cc = new ColorConverter();
+            var color = (Color)cc.ConvertFromString(fontColor);
+            int index = (color.R > 128 | color.G > 128 | color.B > 128) ? 8 : 0; // Bright bit
+            index |= (color.R > 64) ? 4 : 0; // Red bit
+            index |= (color.G > 64) ? 2 : 0; // Green bit
+            index |= (color.B > 64) ? 1 : 0; // Blue bit
+            return (System.ConsoleColor)index;
         }
     }
 }

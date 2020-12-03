@@ -12,7 +12,6 @@ namespace ConsoleApp
             tttBoard.AddPlayer(new HumanPlayer("ej"));
             tttBoard.AddPlayer(new BeginnerPlayer());
             tttBoard.NewGame();
-            Console.ReadKey();
         }
     }
 }

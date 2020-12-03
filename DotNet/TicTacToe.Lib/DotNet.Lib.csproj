@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="DataClasses\" />
+    <Folder Include="StaticData\" />
   </ItemGroup>
 
   <ItemGroup>
