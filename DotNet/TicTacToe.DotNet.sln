@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet.Lib", "TicTacToe.Lib\DotNet.Lib.csproj", "{1697FC9F-3ACF-461D-AD29-543B95C8CF00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SSoT", "SSoT", "{471C30F5-A414-48CF-99A5-B7805A2E7680}"
+	ProjectSection(SolutionItems) = preProject
+		..\ODXML\Airtable.odxml = ..\ODXML\Airtable.odxml
+		..\SSoT\Airtable.xml = ..\SSoT\Airtable.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1697FC9F-3ACF-461D-AD29-543B95C8CF00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1697FC9F-3ACF-461D-AD29-543B95C8CF00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1697FC9F-3ACF-461D-AD29-543B95C8CF00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1697FC9F-3ACF-461D-AD29-543B95C8CF00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F30BC7D7-C2EC-4FB9-80D6-1773944E68DA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FEEF930-2436-4CD5-9221-ADF74EB8503A}
+	EndGlobalSection
+EndGlobal
