@@ -19,9 +19,9 @@ public static partial class CellPatterns
             CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recf1uu1YY0iPps8E", "recPHA9ppFH8cjenC" },
             CellPatternTranslations = new string[] { @"recD87U0swUjjhnTj" },
             SortOrder = 1,
-            CellPatternCellStates = new int[] { 00, 10, 20 },
-            Cells = @"00;10;20",
             CellPatternTranslationCodes = new int[] { 30 },
+            Cells = @"00;10;20",
+            CellPatternCellStates = new int[] { 00, 10, 20 },
             Translations = @"30"
         };
 
@@ -39,9 +39,9 @@ public static partial class CellPatterns
             CellPatternCells = new string[] { @"reckcKNNnyDSWpFrH", "recGP80BxFCLlmgw7", "recAy4XNSSKRZGZsh" },
             CellPatternTranslations = new string[] { @"recNz0LuN77HIXjmB" },
             SortOrder = 2,
-            CellPatternCellStates = new int[] { 30, 40, 50 },
-            Cells = @"30;40;50",
             CellPatternTranslationCodes = new int[] { 10 },
+            Cells = @"30;40;50",
+            CellPatternCellStates = new int[] { 30, 40, 50 },
             Translations = @"10"
         };
 
@@ -60,12 +60,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"recTGnKjXTE8LfT3C" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 3,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 00, 10, 22 },
-            Cells = @"00;10;22",
             TargetCellIndex = 2,
-            Target = 22,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 30, 11, 30 },
+            Cells = @"00;10;22",
+            CellPatternCellStates = new int[] { 00, 10, 22 },
+            Target = 22,
             Translations = @"30;11;30"
         };
 
@@ -84,12 +84,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"recfSe8zeEdCAtcGq" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 4,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 30, 40, 52 },
-            Cells = @"30;40;52",
             TargetCellIndex = 5,
-            Target = 52,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 30 },
+            Cells = @"30;40;52",
+            CellPatternCellStates = new int[] { 30, 40, 52 },
+            Target = 52,
             Translations = @"30"
         };
 
@@ -108,12 +108,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"recczW2Y4WMv9buZ8" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 5,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 00, 40, 82 },
-            Cells = @"00;40;82",
             TargetCellIndex = 8,
-            Target = 82,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 30 },
+            Cells = @"00;40;82",
+            CellPatternCellStates = new int[] { 00, 40, 82 },
+            Target = 82,
             Translations = @"30"
         };
 
@@ -132,12 +132,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"recpPYOZtnp3lTOua" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 6,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 00, 12, 20 },
-            Cells = @"00;12;20",
             TargetCellIndex = 1,
-            Target = 12,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 30 },
+            Cells = @"00;12;20",
+            CellPatternCellStates = new int[] { 00, 12, 20 },
+            Target = 12,
             Translations = @"30"
         };
 
@@ -156,12 +156,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"rec35HZOaRy6ge0jk" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 7,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 30, 42, 50 },
-            Cells = @"30;42;50",
             TargetCellIndex = 4,
-            Target = 42,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 10 },
+            Cells = @"30;42;50",
+            CellPatternCellStates = new int[] { 30, 42, 50 },
+            Target = 42,
             Translations = @"10"
         };
 
@@ -180,12 +180,12 @@ public static partial class CellPatterns
             TargetCell = new string[] { @"rec35HZOaRy6ge0jk" },
             TargetCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             SortOrder = 8,
-            TargetCellStateId = 2,
-            CellPatternCellStates = new int[] { 00, 42, 80 },
-            Cells = @"00;42;80",
             TargetCellIndex = 4,
-            Target = 42,
+            TargetCellStateId = 2,
             CellPatternTranslationCodes = new int[] { 10 },
+            Cells = @"00;42;80",
+            CellPatternCellStates = new int[] { 00, 42, 80 },
+            Target = 42,
             Translations = @"10"
         };
 

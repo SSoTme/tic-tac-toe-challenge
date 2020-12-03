@@ -14,7 +14,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recNnnObNV1wEGXUI",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"Title",
-            DisplayName = @"Suzanne's Tic Tac Toe",
+            DisplayName = @"Bob's 3x3 Tic-Tac-Toe",
             SortOrder = 1,
             Token = @"Title"
         };

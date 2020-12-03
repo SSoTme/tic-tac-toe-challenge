@@ -92,26 +92,8 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellKey")]
         public Nullable<Int32> CellKey { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsClockwise")]
-        public Nullable<Boolean> IsClockwise { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ClockwiseRotateFrom")]
-        public String ClockwiseRotateFrom { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CounterClockwiseRotateFrom")]
-        public String CounterClockwiseRotateFrom { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RotateFrom")]
-        public String RotateFrom { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RotateDescription")]
         public String RotateDescription { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ClockwiseRotateFromIndex")]
-        public Nullable<Int32> ClockwiseRotateFromIndex { get; set; }
-    
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CounterClockwiseRotateFromIndex")]
-        public Nullable<Int32> CounterClockwiseRotateFromIndex { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RotateIndex")]
         public Nullable<Int32> RotateIndex { get; set; }
@@ -122,11 +104,29 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CurrentState")]
         public String CurrentState { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FlipIndex")]
-        public Nullable<Int32> FlipIndex { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "RotateFrom")]
+        public String RotateFrom { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsClockwise")]
+        public Nullable<Boolean> IsClockwise { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ClockwiseRotateFrom")]
+        public String ClockwiseRotateFrom { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CounterClockwiseRotateFrom")]
+        public String CounterClockwiseRotateFrom { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FlipFromName")]
         public String FlipFromName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FlipIndex")]
+        public Nullable<Int32> FlipIndex { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ClockwiseRotateFromIndex")]
+        public Nullable<Int32> ClockwiseRotateFromIndex { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CounterClockwiseRotateFromIndex")]
+        public Nullable<Int32> CounterClockwiseRotateFromIndex { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "FlipDescription")]
         public String FlipDescription { get; set; }

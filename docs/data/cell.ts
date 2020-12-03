@@ -25,18 +25,18 @@ export interface cell
     CurrentCellState? : string[];
     DefaultCellState? : string[];
     CellKey? : number;
-    IsClockwise? : boolean;
-    ClockwiseRotateFrom? : string;
-    CounterClockwiseRotateFrom? : string;
-    RotateFrom? : string;
     RotateDescription? : string;
-    ClockwiseRotateFromIndex? : number;
-    CounterClockwiseRotateFromIndex? : number;
     RotateIndex? : number;
     DefaultState? : string;
     CurrentState? : string;
-    FlipIndex? : number;
+    RotateFrom? : string;
+    IsClockwise? : boolean;
+    ClockwiseRotateFrom? : string;
+    CounterClockwiseRotateFrom? : string;
     FlipFromName? : string;
+    FlipIndex? : number;
+    ClockwiseRotateFromIndex? : number;
+    CounterClockwiseRotateFromIndex? : number;
     FlipDescription? : string;
     SortOrder? : number;
     
