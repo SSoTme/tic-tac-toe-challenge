@@ -104,25 +104,6 @@ public static partial class CellPatternTranslations
         ByEnum[CellPatternTranslationsEnum.T1_TwoOutsideMiddleRotate1] = T1_TwoOutsideMiddleRotate1;
         
             
-        var T1_DiagaonalRotate1 = new CellPatternTranslation()
-        {
-            CellPatternTranslationId = @"reck5rrUr3TtO7Xbx",
-            createdTime = DateTime.Parse("2020-12-03T20:20:26Z"),
-            Name = @"T1-Diagaonal:Rotate:1",
-            CPTCode = 10,
-            CellPattern = new string[] { @"recfN5fhc2fVqzUC7" },
-            CellPatternName = @"Diagaonal",
-            Count = 1,
-            Translation = new string[] { @"recgdoYW4iJ8gaAha" },
-            TranslationId = 0,
-            TranslationName = @"Rotate",
-            SortOrder = 1
-        };
-
-        List.Add(T1_DiagaonalRotate1);
-        ByEnum[CellPatternTranslationsEnum.T1_DiagaonalRotate1] = T1_DiagaonalRotate1;
-        
-            
         var T1_TwoOutsideDiagonalRotate1 = new CellPatternTranslation()
         {
             CellPatternTranslationId = @"recoPtQQ8QZtClJK0",

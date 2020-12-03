@@ -80,15 +80,6 @@ function addDerivedCode(newBoard) {
     }
     
 
-    newBoard.checkDiagaonalStep = function (testBoard, cellStateToFind) {
-        
-        if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
-        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
-        else if ((testBoard.values[BottomRightCell].CurrentState !== cellStateToFind)) return false;
-        else return true;
-    }
-    
-
     newBoard.checkMiddleWinStep = function (testBoard, cellStateToFind) {
         
         if ((testBoard.values[MiddleLeftCell].CurrentState !== cellStateToFind)) return false;
@@ -118,19 +109,6 @@ function addDerivedCode(newBoard) {
         return false;
     }
     
-    newBoard.checkDiagaonal = function () {
-        var testBoard = this;
-        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
-        
-        // Check for a match...
-        if (testBoard.checkDiagaonalStep(testBoard, cellStateToFind)) return true;
-        // Rotate the test board to try another test...
-        testBoard.rotate();
-        // Check for a match...
-        if (testBoard.checkDiagaonalStep(testBoard, cellStateToFind)) return true;
-        return false;
-    }
-    
     newBoard.checkMiddleWin = function () {
         var testBoard = this;
         var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
@@ -150,7 +128,6 @@ function addDerivedCode(newBoard) {
         var testBoard = jQuery.extend(true, {}, newBoard);
 
         if (testBoard.checkEdgeWin()) return true;
-        else if (testBoard.checkDiagaonal()) return true;
         else if (testBoard.checkMiddleWin()) return true;
         
         else return false;

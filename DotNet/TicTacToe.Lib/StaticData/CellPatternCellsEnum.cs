@@ -1,7 +1,6 @@
 
 public enum CellPatternCellsEnum
 {
-    DiagaonalPlayerATopLeft,
     TwoInARowDiagonalNoPlayerBottomRight,
     TwoOutsideMiddlePlayerAMiddleRight,
     TwoOutsideTopPlayerATopRight,
@@ -16,11 +15,9 @@ public enum CellPatternCellsEnum
     TwoOutsideDiagonalNoPlayerMiddle,
     TwoOutsideDiagonalPlayerATopLeft,
     TwoOutsideMiddleNoPlayerMiddle,
-    DiagaonalPlayerABottomRight,
     TwoInARowTopPlayerATopLeft,
     TwoInARowTopNoPlayerTopRight,
     EdgeWinPlayerATop,
-    DiagaonalPlayerAMiddle,
     TwoInARowMiddleNoPlayerMiddleRight,
     MiddleWinPlayerAMiddleLeft,
     TwoOutsideDiagonalPlayerABottomRight,

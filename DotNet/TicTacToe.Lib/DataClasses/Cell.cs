@@ -16,14 +16,19 @@ namespace TicTacToeChallenge.Lib.DataClasses
             this.InitPoco();
         }
 
-        public static Cell None { get { return null; } }        
+        public static Cell None { get { return null; } }
+
+        public string ChosenUsingStrategy { get; internal set; }
+
         public override String ToString()
         {
             return this.ToString(false);
         }
         public String ToString(bool excludeState = false)
         {
-            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, excludeState ? "" : this.CurrentState);
+            var state = excludeState ? "" : $" - {this.CurrentState}";
+            var strategy = excludeState || String.IsNullOrEmpty(this.ChosenUsingStrategy) ? "" : $" - {this.ChosenUsingStrategy}";
+            return String.Format("{0}. {1}{2}{3}", this.CellKey, this.Name, state, strategy);
         }
 
     }

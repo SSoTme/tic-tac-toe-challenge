@@ -8,7 +8,6 @@ public enum CellPatternsEnum
     TwoInARowDiagonal,
     TwoOutsideTop,
     TwoOutsideMiddle,
-    TwoOutsideDiagonal,
-    Diagaonal
+    TwoOutsideDiagonal
 }
                     

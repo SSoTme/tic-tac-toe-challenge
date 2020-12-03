@@ -43,7 +43,10 @@ namespace TicTacToe.DotNet.Lib
         {
             var strategyHandler = new T();
             var cell = strategyHandler.CheckBoard(this);
-            if (!(cell is null)) Console.WriteLine("Successfully used strategy: {0} to play {1}.", typeof(T).Name, cell.Name);
+            if (!(cell is null)) {
+                cell.ChosenUsingStrategy = typeof(T).Name;
+                Console.WriteLine("Successfully used strategy: {0} to play {1}.", typeof(T).Name, cell.Name);
+            }
             return cell;
         }
 

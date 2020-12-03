@@ -9,25 +9,6 @@ public static partial class CellPatternCells
         // setup each one...
         
             
-        var DiagaonalPlayerATopLeft = new CellPatternCell()
-        {
-            CellPatternCellId = @"rec50mVjEdQZEZQYw",
-            createdTime = DateTime.Parse("2020-12-03T20:20:24Z"),
-            Name = @"Diagaonal:PlayerA:TopLeft",
-            CellCellState = 00,
-            CellPattern = new string[] { @"recfN5fhc2fVqzUC7" },
-            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            CellStateId = 0,
-            CellStateName = @"PlayerA",
-            Cell = new string[] { @"rec50MWM91QHzlEzO" },
-            CellIndex = 0,
-            CellName = @"TopLeft"
-        };
-
-        List.Add(DiagaonalPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.DiagaonalPlayerATopLeft] = DiagaonalPlayerATopLeft;
-        
-            
         var TwoInARowDiagonalNoPlayerBottomRight = new CellPatternCell()
         {
             CellPatternCellId = @"rec5D3fwk2h5GzjIB",
@@ -294,25 +275,6 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoOutsideMiddleNoPlayerMiddle] = TwoOutsideMiddleNoPlayerMiddle;
         
             
-        var DiagaonalPlayerABottomRight = new CellPatternCell()
-        {
-            CellPatternCellId = @"recc7o6on6KJC5hrh",
-            createdTime = DateTime.Parse("2020-12-03T20:20:43Z"),
-            CellPattern = new string[] { @"recfN5fhc2fVqzUC7" },
-            Name = @"Diagaonal:PlayerA:BottomRight",
-            CellCellState = 80,
-            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            CellStateId = 0,
-            CellStateName = @"PlayerA",
-            Cell = new string[] { @"recczW2Y4WMv9buZ8" },
-            CellIndex = 8,
-            CellName = @"BottomRight"
-        };
-
-        List.Add(DiagaonalPlayerABottomRight);
-        ByEnum[CellPatternCellsEnum.DiagaonalPlayerABottomRight] = DiagaonalPlayerABottomRight;
-        
-            
         var TwoInARowTopPlayerATopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recclaJuN3LJWLC4N",
@@ -368,25 +330,6 @@ public static partial class CellPatternCells
 
         List.Add(EdgeWinPlayerATop);
         ByEnum[CellPatternCellsEnum.EdgeWinPlayerATop] = EdgeWinPlayerATop;
-        
-            
-        var DiagaonalPlayerAMiddle = new CellPatternCell()
-        {
-            CellPatternCellId = @"recgEASIRl67trnVo",
-            createdTime = DateTime.Parse("2020-12-03T20:20:43Z"),
-            CellPattern = new string[] { @"recfN5fhc2fVqzUC7" },
-            Name = @"Diagaonal:PlayerA:Middle",
-            CellCellState = 40,
-            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            CellStateId = 0,
-            CellStateName = @"PlayerA",
-            Cell = new string[] { @"rec35HZOaRy6ge0jk" },
-            CellIndex = 4,
-            CellName = @"Middle"
-        };
-
-        List.Add(DiagaonalPlayerAMiddle);
-        ByEnum[CellPatternCellsEnum.DiagaonalPlayerAMiddle] = DiagaonalPlayerAMiddle;
         
             
         var TwoInARowMiddleNoPlayerMiddleRight = new CellPatternCell()

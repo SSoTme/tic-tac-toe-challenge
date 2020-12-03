@@ -19,7 +19,10 @@ namespace TicTacToe.DotNet.Lib
         protected void DisplayCellChoice(Cell cell)
         {
             if (cell is null) Console.WriteLine("\r\nNo cell chosen");
-            else Console.WriteLine("{0} player, playing at {1}", this.Name, cell.Name);
+            else {
+                var strategyIfPresent = String.IsNullOrEmpty(cell.ChosenUsingStrategy) ? "" : $"Chosen using {cell.ChosenUsingStrategy}";
+                Console.WriteLine($"{this.Name} player, playing at {cell.Name}{strategyIfPresent}");
+            }
         }
 
     }

@@ -8,15 +8,15 @@ export interface cellPatternCell
 {
     CellPatternCellId : string;
     createdTime? : Date;
-    Name? : string;
-    CellCellState? : number;
+    Cell? : string[];
     CellPattern? : string[];
     CellState? : string[];
-    CellStateId? : number;
-    CellStateName? : string;
-    Cell? : string[];
+    Name? : string;
     CellIndex? : number;
+    CellStateId? : number;
+    CellCellState? : number;
     CellName? : string;
+    CellStateName? : string;
     
     CellPatternCells_CellPatterns : cellPattern[];
     CellPatternCells_Cells : cell[];
