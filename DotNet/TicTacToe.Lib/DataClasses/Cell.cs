@@ -20,12 +20,12 @@ namespace TicTacToeChallenge.Lib.DataClasses
 
         public string GetDisplayName()
         {
-            return String.Format("{0}. {1}", this.CellIndex + 1, this.Name);
+            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, this.CurrentState);
         }
 
         public override String ToString()
         {
-            return String.Format("Cell: {0}", this.Name);
+            return String.Format("{0}. {1} - {2}", this.CellKey, this.Name, this.CurrentState);
         }
 
     }

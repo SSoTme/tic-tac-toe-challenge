@@ -1,4 +1,5 @@
-﻿using DotNet.Lib.Strategies;
+﻿using DotNet.Lib.CellPatterns;
+using DotNet.Lib.Strategies;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -10,10 +11,31 @@ namespace TicTacToe.DotNet.Lib
 {
     public class TicTacToeBoard
     {
+        public List<Cell> BoardCells { get; private set; }
+        public Player Player1 { get; private set; }
+
+        internal Cell TryToMatchCellPattern<T>()
+            where T : MatchingPatternBase, new()
+        {
+            var matchingPattern = new T();
+            return matchingPattern.CheckForMatch(this);
+        }
+
+        public Player Player2 { get; private set; }
+        public bool IsYourTurn { get; private set; }
+        public bool IsGameOver { get; set; }
+        private string SavedPosition { get; set; }
+        public Random Random { get; }
+
         public TicTacToeBoard()
         {
             this.Random = new Random();
             this.BoardCells = JsonConvert.DeserializeObject<List<Cell>>(JsonConvert.SerializeObject(Cells.List));
+        }
+
+        internal string GetCurrentPlayerState()
+        {
+            return CellStates.List[this.IsYourTurn ? 0 : 1].Name;
         }
 
         public Cell UseStrategy<T>()
@@ -27,11 +49,14 @@ namespace TicTacToe.DotNet.Lib
 
         public Cell GetRandomAvailableCell()
         {
-            var randomCell = this.Random.Next(this.AvailableCells.Count);
-            var randomAvailableCell = this.AvailableCells[randomCell];
-            return randomAvailableCell;
+            if (!this.AvailableCells.Any()) return default(Cell);
+            else
+            {
+                var randomCell = this.Random.Next(this.AvailableCells.Count);
+                var randomAvailableCell = this.AvailableCells[randomCell];
+                return randomAvailableCell;
+            }
         }
-
 
         public void NewGame()
         {
@@ -42,15 +67,65 @@ namespace TicTacToe.DotNet.Lib
                 if (this.IsYourTurn) player = this.Player1;
                 else player = this.Player2;
                 var cell = player.Play(this);
-                cell.CurrentState = CellStates.List[this.IsYourTurn ? 0 : 1].Name;
-                this.IsYourTurn = !this.IsYourTurn;
+                if (cell is null)
+                {
+                    Console.WriteLine("Game over");
+                    this.IsGameOver = true;
+                }
+                else
+                {
+                    cell.CurrentState = CellStates.List[this.IsYourTurn ? 0 : 1].Name;
+                    this.CheckForWin();
+                    this.IsYourTurn = !this.IsYourTurn;
+                }
                 this.PrintConsoleBoard();
             }
 
         }
 
+        private void CheckForWin()
+        {
+            this.SavePosition();
+            if (this.CheckForWin<EdgeWinPattern>() ||
+                this.CheckForWin<DiagonalWinPattern>() ||
+                this.CheckForWin<MiddleWinPattern>())
+            {
+                var gameOverStr = LanguageTokens.ByEnum[LanguageTokensEnum.GameOver].DisplayName;
+                var youWon = LanguageTokens.ByEnum[LanguageTokensEnum.YouWon].DisplayName;
+                var theyWon = LanguageTokens.ByEnum[LanguageTokensEnum.TheyWon].DisplayName;
+                var wonStr = this.IsYourTurn ? youWon : theyWon;
+                Console.WriteLine("{2} ({3}) - " +
+                    "{0}: {1} - ", gameOverStr, wonStr, this.GetCurrentPlayer().Name, this.GetCurrentPlayerState());
+                this.IsGameOver = true;
+            }
+            this.RestorPosition();
+        }
+
+        private Player GetCurrentPlayer()
+        {
+            return this.IsYourTurn ? this.Player1 : this.Player2;
+        }
+
+        public void RestorPosition()
+        {
+            this.BoardCells = JsonConvert.DeserializeObject<List<Cell>>(this.SavedPosition);
+        }
+
+        public void SavePosition()
+        {
+            this.SavedPosition = JsonConvert.SerializeObject(this.BoardCells);
+        }
+
+        private bool CheckForWin<T>()
+            where T : WinningPatternBase, new()
+        {
+            var winPattern = new T();
+            return winPattern.CheckForWin(this);
+        }
+
         private void InitBoard()
         {
+            this.IsGameOver = false;
             this.IsYourTurn = true;
             this.BoardCells.ForEach(cell => cell.CurrentState = CellStatesEnum.NoPlayer.ToString());
             Console.WriteLine("Player1: {0}", this.Player1.Name);
@@ -84,23 +159,12 @@ namespace TicTacToe.DotNet.Lib
             }
         }
 
-        public Random Random { get; }
-        public List<Cell> BoardCells { get; }
-        public Player Player1 { get; private set; }
-        public Player Player2 { get; private set; }
         public List<Cell> AvailableCells
         {
             get { return this.BoardCells.Where(cell => cell.CurrentState == CellStatesEnum.NoPlayer.ToString()).ToList(); }
         }
-        public bool IsYourTurn { get; private set; }
-        public bool IsGameOver
-        {
-            get { return !this.AvailableCells.Any(); }
-        }
-
         public void PrintConsoleBoard()
         {
-            Console.WriteLine();
             Console.WriteLine("   | | |");
             for (int i = 0; i < 9; i++)
             {
@@ -114,8 +178,8 @@ namespace TicTacToe.DotNet.Lib
         private void PrintCell(int i)
         {
             Console.Write(" ");
-            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.Player].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.Player].DefaultMark);
-            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.Opponent].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.Opponent].DefaultMark);
+            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerA].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.PlayerA].DefaultMark);
+            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerB].Name) Console.Write(CellStates.ByEnum[CellStatesEnum.PlayerB].DefaultMark);
             else Console.Write(" ");
         }
     }

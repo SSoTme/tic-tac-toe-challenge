@@ -70,6 +70,102 @@ namespace DotNet.Lib.Strategies
 </FileContents>
                     </FileSetFile>
                 </xsl:for-each>
+                <xsl:for-each select="//CellPatterns/CellPattern">
+                    <xsl:variable name="cell-pattern" select="." />
+                    <FileSetFile>
+                        <RelativePath>
+                            <xsl:text>CellPatterns/</xsl:text>
+                            <xsl:value-of select="Name"/>
+                            <xsl:text>Pattern.cs</xsl:text>
+                        </RelativePath>
+                        <FileContents>using System;
+using System.Collections.Generic;
+using System.Text;
+using TicTacToe.DotNet.Lib;
+using TicTacToeChallenge.Lib.DataClasses;
+
+namespace DotNet.Lib.CellPatterns
+{
+    public class <xsl:value-of select="Name"/>Pattern : <xsl:choose>
+        <xsl:when test="normalize-space(IsWinPattern) = 'true'">WinningPatternBase
+    {
+        public override bool CheckForWin(TicTacToeBoard ticTacToeBoard)
+        {
+            this.CurrentPlayerState = ticTacToeBoard.GetCurrentPlayerState();
+
+            if (this.CheckForWinStep(ticTacToeBoard)) return true;
+            <xsl:for-each select="//CellPatternTranslations/CellPatternTranslation[CellPattern=$cell-pattern/CellPatternId]">
+            // TRANSLATION: <xsl:value-of select="Name"/>
+            <xsl:variable name="cpt" select="." />
+            <xsl:for-each select="//Entities/Entity[position() &lt;= $cpt/Count]">
+            ticTacToeBoard.<xsl:value-of select="$cpt/TranslationName" />();
+            if (this.CheckForWinStep(ticTacToeBoard)) return true;
+            </xsl:for-each>
+            </xsl:for-each>
+            
+            return false;
+        }
+
+        private bool CheckForWinStep(TicTacToeBoard ticTacToeBoard)
+        {
+            <xsl:variable name="cpcs" select="//CellPatternCells/CellPatternCell[CellPattern = $cell-pattern/CellPatternId]" />
+            if (<xsl:for-each select="$cpcs">
+                <xsl:sort select="CellIndex" data-type="number" />
+                (ticTacToeBoard.BoardCells[(int)CellsEnum.<xsl:value-of select="CellName" />].CurrentState == <xsl:choose>
+                    <xsl:when test="CellStateName = 'PlayerA'">this.CurrentPlayerState</xsl:when>
+                    <xsl:otherwise>"NoPlayer"</xsl:otherwise>
+                </xsl:choose> ) <xsl:if test="position() &lt; count($cpcs)">&amp;&amp;</xsl:if>
+                </xsl:for-each>)
+            {
+                return true;
+            }
+            else return false;
+        }
+    }
+    </xsl:when>
+        <xsl:otherwise>MatchingPatternBase
+    {
+
+        public override Cell CheckForMatch(TicTacToeBoard ticTacToeBoard)
+        {
+            this.CurrentPlayerState = ticTacToeBoard.GetCurrentPlayerState();
+
+            var cell = (this.CheckForMatchStep(ticTacToeBoard));
+            if (!(cell is null)) return cell;
+
+            <xsl:for-each select="//CellPatternTranslations/CellPatternTranslation[CellPattern=$cell-pattern/CellPatternId]">
+                <xsl:sort select="SortOrder" data-type="number" />
+            // TRANSLATION: <xsl:value-of select="Name"/>
+            <xsl:variable name="cpt" select="." />
+            <xsl:for-each select="//Entities/Entity[position() &lt;= $cpt/Count]">
+            ticTacToeBoard.<xsl:value-of select="$cpt/TranslationName" />();
+            cell = (this.CheckForMatchStep(ticTacToeBoard));
+            if (!(cell is null)) return cell;
+            </xsl:for-each>
+            </xsl:for-each>
+            return cell;
+        }
+
+        private Cell CheckForMatchStep(TicTacToeBoard ticTacToeBoard)
+        {
+            <xsl:variable name="cpcs" select="//CellPatternCells/CellPatternCell[CellPattern = $cell-pattern/CellPatternId]" />
+            if (<xsl:for-each select="$cpcs">
+                <xsl:sort select="CellIndex" data-type="number" />
+                (ticTacToeBoard.BoardCells[(int)CellsEnum.<xsl:value-of select="CellName" />].CurrentState == <xsl:choose>
+                    <xsl:when test="CellStateName = 'PlayerA'">this.CurrentPlayerState</xsl:when>
+                    <xsl:otherwise>"NoPlayer"</xsl:otherwise>
+                </xsl:choose> ) <xsl:if test="position() &lt; count($cpcs)">&amp;&amp;</xsl:if>
+                </xsl:for-each>)
+            {
+                return ticTacToeBoard.BoardCells[(int)CellsEnum.<xsl:value-of select="$cpcs[CellStateName='NoPlayer']/CellName" />];
+            }
+            else return null;
+        }        
+    }</xsl:otherwise>
+    </xsl:choose> 
+}</FileContents>
+                    </FileSetFile>
+                </xsl:for-each>
             </FileSetFiles>
         </FileSet>
     </xsl:template>

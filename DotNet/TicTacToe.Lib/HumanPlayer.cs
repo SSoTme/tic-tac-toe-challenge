@@ -20,18 +20,19 @@ namespace TicTacToe.DotNet.Lib
             while (true)
             {
                 var availableCellList = board.AvailableCells.Select(cell => cell.GetDisplayName());
-                var availableCellNames = string.Join(", ", availableCellList);
+                var availableCellNames = string.Join(Environment.NewLine, availableCellList);
                 Console.WriteLine();
-                Console.WriteLine("Which cell would you like to play in? {0}", availableCellNames);
+                Console.WriteLine("Which cell would you like to play in? {0}{1}", Environment.NewLine, availableCellNames);
                 Console.Write("Cell #: ");
                 var cmdKey = Console.ReadKey().KeyChar.ToString();
-                if (Int32.TryParse(cmdKey, out var cellIndex))
+                if (Int32.TryParse(cmdKey, out var cellKey))
                 {
                     Console.WriteLine();
-                    var selectedCell = board.AvailableCells.FirstOrDefault(cell => cell.CellIndex == cellIndex - 1);
+                    var selectedCell = board.AvailableCells.FirstOrDefault(cell => cell.CellKey == cellKey);
                     if (selectedCell is null) Console.WriteLine("That is not a valid choice - sorry.");
                     else
                     {
+                        Console.Clear();
                         Console.WriteLine("You selected Cell: {0}", selectedCell.Name);
                         return selectedCell;
                     }

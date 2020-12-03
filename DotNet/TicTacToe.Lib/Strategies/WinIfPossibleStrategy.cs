@@ -1,3 +1,4 @@
+using DotNet.Lib.CellPatterns;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,13 +11,17 @@ namespace DotNet.Lib.Strategies
     {
         public override Cell CheckBoard(TicTacToeBoard board)
         {
-            if ((board.BoardCells[0].CurrentState == CellStatesEnum.Opponent.ToString()) &&
-                (board.BoardCells[1].CurrentState == CellStatesEnum.Opponent.ToString()) &&
-                (board.BoardCells[2].CurrentState == CellStatesEnum.NoPlayer.ToString()))
+            var cell = board.TryToMatchCellPattern<TwoInARowTopPattern>();
+            if (cell is null) cell = board.TryToMatchCellPattern<TwoInARowMiddlePattern>();
+            if (cell is null) cell = board.TryToMatchCellPattern<TwoInARowDiagonalPattern>();
+            if (cell is null) cell = board.TryToMatchCellPattern<TwoOutsideMiddlePattern>();
+            if (cell is null) cell = board.TryToMatchCellPattern<TwoOutsideDiagonalPattern>();
+            if (cell is null) cell = board.TryToMatchCellPattern<TwoOutsideTopPattern>();
+            if (cell != null)
             {
-                return board.BoardCells[2];
+                object o = 1;
             }
-            else return Cell.None;
+            return cell;
         }
     }
 }
