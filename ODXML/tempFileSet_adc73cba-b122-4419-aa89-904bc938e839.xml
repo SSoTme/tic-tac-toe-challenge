@@ -1,4 +1,659 @@
+<?xml version="1.0"?>
+<FileSet xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <FileSetId>8defe7a3-89cf-4989-b679-d9226519f622</FileSetId>
+  <CreatedOn xsi:nil="true" />
+  <FileSetFiles>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>app.js</RelativePath>
+      <FileContents>
 
+function TodoCtrl($scope, $http, $location, $anchorScroll) {
+    $http.get('DataSchema.json')
+        .success(function (result) {
+            $scope.objectDefs = result.Ontology.OntologyGroups.OntologyGroup.ObjectDefs.ObjectDef;
+            for (var i = 0; i &lt; $scope.objectDefs.length; i++) {
+            var od = $scope.objectDefs[i];
+            od.$childObjects = [];
+            for (var ci = 0; ci &lt; $scope.objectDefs.length; ci++) {
+                var childOD = $scope.objectDefs[ci];
+                childOD.$parentObjects = childOD.$parentObjects || [];
+                for (var pi = 0; pi &lt; childOD.PropertyDefs.PropertyDef.length; pi++) {
+                    var p = childOD.PropertyDefs.PropertyDef[pi];
+                    if (p.Relationships &amp;&amp; p.Relationships.Relationship) {
+                        if (p.Relationships.Relationship.ReferencedObjectDef == od.Name) {
+                            od.$childObjects.push(childOD);
+                            childOD.$parentObjects.push(od);
+                            if (p.IsCollection == 1) childOD.$isCollection = true;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    $scope.expandAll = function() {
+        for (var i = 0; i &lt; $scope.objectDefs.length; i++) {
+            $scope.objectDefs[i].$expanded = true;   
+        }
+    }
+
+    $scope.collapseAll = function() {
+        for (var i = 0; i &lt; $scope.objectDefs.length; i++) {
+            $scope.objectDefs[i].$expanded = false;   
+        }
+    }
+
+    $scope.focusObject = function(objectDef) {
+        objectDef.$expanded = true;
+        $location.hash(objectDef.Name);
+        $anchorScroll();
+    }
+}
+
+    </FileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Index.html</RelativePath>
+      <FileContents>&lt;html style="font-size: 0.8em;" ng-app="" ng-controller="TodoCtrl"&gt;&lt;head&gt;&lt;title&gt;Interactive Object Explorer&lt;/title&gt;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /&gt;&lt;script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.3/angular.min.js"&gt;&lt;/script&gt;&lt;script type="text/javascript" src="app.js"&gt;&lt;/script&gt;&lt;style&gt;
+        .done-true {
+            text-decoration: line-through;
+            color: grey;
+        }
+    &lt;/style&gt;&lt;/head&gt;&lt;body style="margin-bottom: 10em; padding: 1em;"&gt;&lt;h1&gt;Interactive Object Explorer&lt;/h1&gt;&lt;div style="padding-bottom: 1em;"&gt;&lt;a href="SinglePageDocs.html"&gt;Raw Single Page Docs&lt;/a&gt; | &lt;a ng-click="expandAll()"&gt;expand all&lt;/a&gt; | &lt;a ng-click="collapseAll()"&gt;collapse all&lt;/a&gt;&lt;/div&gt;&lt;hr /&gt;&lt;div&gt;&lt;div&gt;&lt;div ng-repeat="objectDef in objectDefs"&gt;&lt;div ng-init="objectDef.$expanded = false"&gt;
+                    &lt;h3 id="{{ objectDef.Name }}"&gt;{{ objectDef.Name }}
+                        &lt;small&gt;&lt;a ng-click="objectDef.$expanded = false" ng-show="objectDef.$expanded"&gt;-&lt;/a&gt;&lt;a ng-click="objectDef.$expanded = true" ng-hide="objectDef.$expanded"&gt;+&lt;/a&gt;&lt;/small&gt;
+                    &lt;/h3&gt;
+                    &lt;div ng-show="objectDef.$expanded"&gt;&lt;div ng-show="objectDef.$parentObjects.length &gt; 0"&gt;
+                            {{ objectDef.Name }} is "contained" by 
+                            &lt;span ng-repeat="parentObject in objectDef.$parentObjects"&gt;&lt;a ng-click="focusObject(parentObject)"&gt;{{ parentObject.Name }}&lt;/a&gt;&lt;span ng-show="$index &lt; objectDef.$parentObjects.length - 1"&gt;, &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li ng-hide="propertyDef.Relationships || propertyDef.IsPrimaryKey == 1" ng-repeat="propertyDef in objectDef.PropertyDefs.PropertyDef"&gt;&lt;span style="min-width: 10em;"&gt;{{ propertyDef.DataType }} &lt;/span&gt; :: {{ propertyDef.Name }}
+                                &lt;span ng-show="propertyDef.IsCollection"&gt;[...]&lt;/span&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;div ng-show="objectDef.$childObjects.length &gt; 0"&gt;&lt;div&gt;&lt;b&gt;Related Entities&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;ol&gt;&lt;li ng-repeat="childObject in objectDef.$childObjects"&gt;&lt;a ng-click="focusObject(childObject)"&gt;{{ childObject.Name }}&lt;span ng-show="childObject.$isCollection"&gt;[...]&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</FileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>SinglePageDocs.html</RelativePath>
+      <FileContents>&lt;html&gt;&lt;head&gt;&lt;title&gt;TicTacToeChallenge - Single Page Doc s&lt;/title&gt;&lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" /&gt;&lt;/head&gt;&lt;body style="padding: 0.8em;"&gt;&lt;h1&gt;        
+TicTacToeChallenge  Data model&lt;/h1&gt;&lt;a class="btn btn-sm btn-primary" href="Index.html"&gt;&lt;&lt;&amp;nbsp;Back Interactive Object Explorer&lt;/a&gt;&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;&lt;a href="#CellPatternTranslation"&gt;CellPatternTranslation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#LanguageToken"&gt;LanguageToken&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#AILevel"&gt;AILevel&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#CellPattern"&gt;CellPattern&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#AIStrategy"&gt;AIStrategy&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#CellPatternCell"&gt;CellPatternCell&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Cell"&gt;Cell&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#TargetPlatform"&gt;TargetPlatform&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#AdditionalResource"&gt;AdditionalResource&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#Translation"&gt;Translation&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#GlobalSetting"&gt;GlobalSetting&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#CellState"&gt;CellState&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href="#AirtableAttachment"&gt;AirtableAttachment&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;table style="width: 100%"&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="CellPatternTranslation" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="CellPatternTranslation"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            CellPatternTranslation  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each CellPatternTranslation may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPattern"&gt;
+                                
+                                    CellPatterns
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Translation"&gt;
+                                
+                                    Translations
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternTranslationId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Translation"&gt;Translation&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPattern"&gt;CellPattern&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Count&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        TranslationId&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CPTCode&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        TranslationName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;CellPatternTranslation Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; CellPatternTranslationId, createdTime, Translation, CellPattern, Count, SortOrder, Name, TranslationId, CPTCode, CellPatternName, TranslationName
+
+&lt;b&gt;FROM&lt;/b&gt; CellPatternTranslation
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="LanguageToken" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="LanguageToken"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            LanguageToken  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        LanguageTokenId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DisplayName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Token&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;LanguageToken Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; LanguageTokenId, createdTime, Name, DisplayName, SortOrder, Token
+
+&lt;b&gt;FROM&lt;/b&gt; LanguageToken
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="AILevel" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="AILevel"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            AILevel  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        AILevelId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        PlayerType&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        MinAILevelIndex&lt;/td&gt;&lt;td&gt;INT16&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        AILevelIndex&lt;/td&gt;&lt;td&gt;INT16&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT16&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;AILevel Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; AILevelId, createdTime, Name, PlayerType, MinAILevelIndex, AILevelIndex, Description, SortOrder
+
+&lt;b&gt;FROM&lt;/b&gt; AILevel
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="CellPattern" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="CellPattern"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            CellPattern  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each CellPattern may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPatternTranslation"&gt;
+                                
+                                    CellPatternTranslations
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellPatternCell"&gt;
+                                
+                                    CellPatternCells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellState"&gt;
+                                
+                                    CellStates
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPatternCell"&gt;CellPatternCells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPatternTranslation"&gt;CellPatternTranslations&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;TargetCell&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellState"&gt;TargetCellState&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsWinPattern&lt;/td&gt;&lt;td&gt;BOOLEAN&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        TargetCellStateId&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternCellStates&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Cells&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        TargetCellIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Target&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternTranslationCodes&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Translations&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;CellPattern Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; CellPatternId, createdTime, Name, Description, IsWinPattern, CellPatternCells, CellPatternTranslations, TargetCell, TargetCellState, SortOrder, TargetCellStateId, CellPatternCellStates, Cells, TargetCellIndex, Target, CellPatternTranslationCodes, Translations
+
+&lt;b&gt;FROM&lt;/b&gt; CellPattern
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="AIStrategy" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="AIStrategy"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            AIStrategy  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        AIStrategyId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        PlayerLevel&lt;/td&gt;&lt;td&gt;INT16&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsDefensive&lt;/td&gt;&lt;td&gt;BOOLEAN&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        StrategyRank&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;AIStrategy Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; AIStrategyId, createdTime, Name, Description, PlayerLevel, IsDefensive, StrategyRank, SortOrder
+
+&lt;b&gt;FROM&lt;/b&gt; AIStrategy
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="CellPatternCell" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="CellPatternCell"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            CellPatternCell  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each CellPatternCell may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPattern"&gt;
+                                
+                                    CellPatterns
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellState"&gt;
+                                
+                                    CellStates
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        CellPatternCellId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;Cell&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPattern"&gt;CellPattern&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellState"&gt;CellState&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellStateId&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellCellState&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellStateName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;CellPatternCell Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; CellPatternCellId, createdTime, Cell, CellPattern, CellState, Name, CellIndex, CellStateId, CellCellState, CellName, CellStateName
+
+&lt;b&gt;FROM&lt;/b&gt; CellPatternCell
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="Cell" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="Cell"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            Cell  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each Cell may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPattern"&gt;
+                                
+                                    CellPatterns
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellPatternCell"&gt;
+                                
+                                    CellPatternCells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Translation"&gt;
+                                
+                                    Translations
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellState"&gt;
+                                
+                                    CellStates
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellState"&gt;
+                                
+                                    CellStates
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        CellId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;Clockwise&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;CounterClockwise&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;Flip&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Translation"&gt;RotateTranslation&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPatternCell"&gt;CellPatternCells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPattern"&gt;CellPatterns&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellState"&gt;CurrentCellState&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellState"&gt;DefaultCellState&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SampleValue&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        X&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Y&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CellKey&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsClockwise&lt;/td&gt;&lt;td&gt;BOOLEAN&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ClockwiseRotateFrom&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CounterClockwiseRotateFrom&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        RotateFrom&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        RotateDescription&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ClockwiseRotateFromIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CounterClockwiseRotateFromIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        RotateIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DefaultState&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CurrentState&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FlipIndex&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FlipFromName&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FlipDescription&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;Cell Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; CellId, createdTime, Name, Clockwise, CounterClockwise, Flip, SampleValue, Description, X, Y, RotateTranslation, CellIndex, CellPatternCells, CellPatterns, CurrentCellState, DefaultCellState, CellKey, IsClockwise, ClockwiseRotateFrom, CounterClockwiseRotateFrom, RotateFrom, RotateDescription, ClockwiseRotateFromIndex, CounterClockwiseRotateFromIndex, RotateIndex, DefaultState, CurrentState, FlipIndex, FlipFromName, FlipDescription, SortOrder
+
+&lt;b&gt;FROM&lt;/b&gt; Cell
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="TargetPlatform" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="TargetPlatform"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            TargetPlatform  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        TargetPlatformId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ShortDescription&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Implemented&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DemoUrl&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        HasAnyUI&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsHumanyPlayable&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        HasAnyAI&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DetectsWin&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DetectsLoss&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DetectsTie&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        HasRuleFollowingAI&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        HasUIForHuman&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FullSimpleRules&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FullMLAI&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ImplementsRotate&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ImplementsFlip&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        ImplementsCustomTranslations&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;TargetPlatform Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; TargetPlatformId, createdTime, Name, ShortDescription, Description, Implemented, DemoUrl, HasAnyUI, IsHumanyPlayable, HasAnyAI, DetectsWin, DetectsLoss, DetectsTie, HasRuleFollowingAI, HasUIForHuman, FullSimpleRules, FullMLAI, ImplementsRotate, ImplementsFlip, ImplementsCustomTranslations, SortOrder
+
+&lt;b&gt;FROM&lt;/b&gt; TargetPlatform
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="AdditionalResource" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="AdditionalResource"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            AdditionalResource  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        AdditionalResourceId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Type&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        GoogleKey&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        GID&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsActiveDownload&lt;/td&gt;&lt;td&gt;BOOLEAN&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;AdditionalResource Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; AdditionalResourceId, createdTime, Name, Description, Type, GoogleKey, GID, IsActiveDownload
+
+&lt;b&gt;FROM&lt;/b&gt; AdditionalResource
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="Translation" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="Translation"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            Translation  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each Translation may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPatternTranslation"&gt;
+                                
+                                    CellPatternTranslations
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        TranslationId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;Cells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPatternTranslation"&gt;CellPatternTranslations&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        CustomDescription&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Id&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        IsClockwise&lt;/td&gt;&lt;td&gt;BOOLEAN&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;Translation Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; TranslationId, createdTime, Name, CustomDescription, Id, IsClockwise, Cells, CellPatternTranslations, Description
+
+&lt;b&gt;FROM&lt;/b&gt; Translation
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="GlobalSetting" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="GlobalSetting"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            GlobalSetting  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        GlobalSettingId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Value&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DefaultValue&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        AssociatedLink&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Prefix&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        GoogleKey&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        GID&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;GlobalSetting Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; GlobalSettingId, createdTime, Name, Value, Description, DefaultValue, AssociatedLink, Prefix, GoogleKey, GID
+
+&lt;b&gt;FROM&lt;/b&gt; GlobalSetting
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="CellState" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="CellState"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            CellState  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;div style="padding: 1em;"&gt;
+                            Each CellState may have zero or more associated
+                          
+                            
+                                &lt;a href="#CellPattern"&gt;
+                                
+                                    CellPatterns
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#CellPatternCell"&gt;
+                                
+                                    CellPatternCells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                            
+                                , &lt;a href="#Cell"&gt;
+                                
+                                    Cells
+                                    
+                                &lt;/a&gt;
+                        
+                        &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;img style="width: 1em;" src="images/primary-key.png" /&gt;&lt;/td&gt;&lt;td&gt;
+                        CellStateId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPatternCell"&gt;CellPatternCells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#CellPattern"&gt;CellPatterns&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;CurrentStateCells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;span&gt;&lt;/span&gt;&lt;/td&gt;&lt;td&gt;
+                                    
+                                    &lt;a href="#Cell"&gt;DefaultStateCells&lt;/a&gt;
+                                &lt;/td&gt;&lt;td&gt;Parent&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        createdTime&lt;/td&gt;&lt;td&gt;DATETIME&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Name&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Code&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Description&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Color&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        FontColor&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        DefaultMark&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Cursor&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        SortOrder&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        Id&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;CellState Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; CellStateId, createdTime, Name, Code, Description, Color, FontColor, DefaultMark, Cursor, SortOrder, Id, CellPatternCells, CellPatterns, CurrentStateCells, DefaultStateCells
+
+&lt;b&gt;FROM&lt;/b&gt; CellState
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;span id="AirtableAttachment" /&gt;
+                &lt;div style="clear: both"&gt;&lt;/div&gt;&lt;div class="row"&gt;&lt;div class="col-md-12"&gt;
+                        &lt;a name="AirtableAttachment"&gt;&lt;/a&gt;
+                        &lt;hr /&gt;&lt;h2&gt;
+                            
+                            
+                            
+                            
+                            AirtableAttachment  
+                        &lt;/h2&gt;&lt;div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th align="left" style="width: 5em;"&gt;CRUD&lt;/th&gt;&lt;th align="left"&gt;Name&lt;/th&gt;&lt;th align="left"&gt;Type&lt;/th&gt;&lt;th align="left"&gt;Original Name&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        AttachmentsId&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        url&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        filename&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        size&lt;/td&gt;&lt;td&gt;INT32&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="padding: 0.25em; width: 5em;"&gt;&lt;/td&gt;&lt;td&gt;
+                        type&lt;/td&gt;&lt;td&gt;TEXT&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;th colspan="3" style="padding-top: 1em;"&gt;AirtableAttachment Query&lt;/th&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"&gt;&lt;b&gt;SELECT&lt;/b&gt; AttachmentsId, url, filename, size, type
+
+&lt;b&gt;FROM&lt;/b&gt; AirtableAttachment
+
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3" style="font-size: 0.8em; padding: 0.25em;"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/body&gt;&lt;/html&gt;</FileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>StartServer.sh</RelativePath>
+      <FileContents>
+npm install http-server
+./node_modules/.bin/http-server -o</FileContents>
+      <AlwaysOverwrite>false</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>DataSchema.json</RelativePath>
+      <FileContents>
 {
   "Ontology": {
     "OntologyGroups": {
@@ -2627,4 +3282,145 @@
     }
   }
 }
-                    
+                    </FileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/create.png</RelativePath>
+      <BinaryFileContents>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBxgWLBpsLf5fAAAC20lEQVRIx6XVX0iddRgH8I9nbnNuq7OGnRlbOisSgk0Pejq0rIsgmHgRgZG7Maig7lY3FkY3pW7BkF146fWQxa6ChEBWQdhwU6kRKxaz0+KonXQX5xzcTLs47/mnHkn23Lzv+3ve5/v8nn/fh+2k04wZnXYo1cGzR9pZZ6X1bNBs6zMla8IFFyXEQVzCRRdMyErpKjeo2vB116dueEqTiPPmg/OIPvN+d1vUkIi1Sv7bJe0O3g+qQ4cOROwPTndLipWahMoAzhj1AAfwiss47TTGvIqDeGC0kBHlQDHDljUgZEmzsE9Qpw4fC2u2JIQGy4a1lwffZdGCIY3qteJ9bZtctHkPreo1GJD0V2l5U961B7S65+mKNTrhntYgF+9IFeueFS381OKRigB7nCi8R2WLfTGh206l20TOO0xrEvKMW4HysBTiwuBvU8KWS4wPWdJkughQLeI5U2JmwXdex7d+AUmf+8IL2C9jHT9rF7Erj9cjIaLFupv2gTtatLhT8HjYir247ByOW1YlIpHriE5pcbSYM25kSwB+E3dAxh+qvOkbEJfWWW1Qv0mw7i2zvvZVIdJzSBjBNTHH/eSouJhrYFK/wfIBTXrbqJNb5PxHz6s1ptEbYs6Xqooh5K48YtzcphDiEjKe1OFPGUeKIZQmMWewz03rmwD2WjGJkLvmIJ/EEC65ok9WGmSdcd+/surNmDFjXLUVN4xhzZd+AH2uuJTvg1ULbnkp8DbrpF+tebnQSKvosgQ+UgPmPV684EO0cq4PS4epSW1Fo9qSSQ2GKYRVGdGAyk6Z9kRFgCOuF8Y5KmM1r+iyKGlAg8ecQm/JjfLSphcvOhYQymI5P+cprRE1/tEs7EN5SvtgE6XFNrBpIMOGwCF0u4pBg7jqNdSDAcOVMxuzEFAbNY7K0/qxyrRePgtTqvS67lltHtWP78F9nxUWyy5T21W3a6erbSt5qOVaLv9jvf8HqwTiVI3F/7YAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDctMjRUMjI6NDQ6MjYrMDI6MDA69XYWAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA3LTI0VDIyOjQ0OjI2KzAyOjAwS6jOqgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAAASUVORK5CYII=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/delete.png</RelativePath>
+      <BinaryFileContents>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBxgWLQMRXWfeAAABU0lEQVRIx+2VzUoCURTHf4mCiIit+liMiGBGK/EtAiPatwrSR5hHaO0yaGMgLkSkJ/AFWklErUyYyoVm4k7stpivO8403aFV4Lmbc39zzv/M/cPMhaDI0WGCkNaEDrmg0q0Ats0De7zz4pHc5Y0jPlAIHUGDuIfFaSDQVdqhjaDoo0UEbX+xOeeEfYmVgFPma5UZoERdIq/cmYnmsSvK0sw3GHHMDjoHXLJUOGKCa564YsxIxn0ESSWPkgj69iam5uvP8ZtAhUp0gTxVJ2/SdPIq+TAp14MWK7IWHTK0siwrWmoepIgF2JkkRiq6B382cSOwEfjHAgMMpj46xWAQJiX/0lzZLl3fMM/n7F4fn4DGMwBfDj2TRthUs6rXZt0DNaVj16zqtSiwYEaddGhzmjozFhRsIF+u59yQYM5jiMAhGZZccBv8uEwPI/QuMuhRllu+AYW4edMJkHxzAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA3LTI0VDIyOjQ1OjAzKzAyOjAwxSo18gAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNy0yNFQyMjo0NTowMyswMjowMLR3jU4AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/primary-key.png</RelativePath>
+      <BinaryFileContents>R0lGODlhEAAQANUAAP/0ev/0e/Lphf/3mf/5rv/mAP/pFP/oFf/pFf/rM//sNP/wV//zev/ze//2meLLS+zUUf/fP9OyKtOxK9m5OtO2UtO3U8ihLLaIH6ZxE6Z4IqZ4JqZ5JqZ5KqeEQptiDKSDV6qLYKuLYbCSaLCSabSXboxlNpBqO5BqPJZxQ5VxQ5ZxRJVxRJ15TZx5TaSCV1Q4MP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAADEALAAAAAAQABAAAAZhwJhwSCwaj8ikciksOZklAkFQUpIGA8dAQBp1vSRhqGHpVBhoBoDRCDBEsdeCA9tAHpQLJvNZLEAxLQkTGhIKhxQUHhEXLkMpBggHCBQqKzEsl0UnBQUUKEwmokykpaZDQQA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/read.png</RelativePath>
+      <BinaryFileContents>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBxgWKiYVGCVeAAABeklEQVRIx+3Uv0pcURAG8J8gEQsRxCIPsFfr7QJ2CkGstrLdRix9AysRwUe4FpJCUAsRCwUhrcRifYG7hZVot42ggfWkyPG6e/+EiJg0zmnOmZnvg/lm5vBh/99GKr2fLUg0JBroynRlvrv9G8oZqQeh4jxIzfwZ3HSkXwl+Pn1HmnXwtseB1Hv3NSSP2lVabA6k9KyZNGlNr4Zkc1i9cYcxcOlMsJ1HtgvAM5fxdmj8hSCNzl1jLgSNPNIoEFwYsxvv6XPSUnSsg55gMSdYLBD0wHp8LcGUG0GwFyFdwUlOcFIg6Eb/niC4McW+IOjkFR0IgisrVlyVxDvIVesIgv3RUj86ltG0U9nqTtlVLGHaXe0Y3Zkul1AUkVYtQStmDIlYbCNseSqBn2xBVRuHB2kWzLsegl+bB7PVgzQ4yn3H5jChZcOpUxtaJjDnOF+1fJQHJ7ot9SnefziXyWRIJBJffYmxn1Z9q97HN67zb3vlh/IOX9qH/Xv7BVxfOB9o4gQxAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE4LTA3LTI0VDIyOjQyOjM4KzAyOjAwq359kgAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOC0wNy0yNFQyMjo0MjozOCswMjowMNojxS4AAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/update.png</RelativePath>
+      <BinaryFileContents>iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBxgWKxWz03UJAAABZklEQVRIx83UvUvUcRzA8ddJNLQINTk01EFm4BMWhCH0F4hLQ7M0RjXVpj1wjTe5WENro+AQIgS6tORag15DD1eeIqGgRPFp8Dp+pf78/k4CP9/l+8DrPX5L0qfTHVcN+eGtRVN2CliM+iyEhk0hvHetCJ8QtlV0oUOPF8IvI6l8Ugh1FzN3N4Vlp1L5qud7EtPCgzTe0Iun/yTKwkw6tydR8t3HIpyTlv9KNHw7nPdl+IxQbyW6hFdF+ZLTHjUTFeFxHl/bl8MToW7bV2fyeP8BHJ4JYaxd3mtVmGifN4TJPD5wFL6ey/uOOx/M4f3W/hu/dTTOrFDXfSAfyOe8E8IXF9rjHXZ8UBU+ubQPX8/nnBXmURV+FudcF6ZpJsJw62UwhTMu3G/uq5kPK5FTEW60Tn8SyZyXwlDmvJtI5ieUseGy88rOee0e7uJhWoANkVkL4LbxNEzJnCtqalbU1LyxlUp35zfQ2fNuN9xWagAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNy0yNFQyMjo0MzoyMSswMjowMB2OU+EAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDctMjRUMjI6NDM6MjErMDI6MDBs0+tdAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg==</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-assoc.gif</RelativePath>
+      <BinaryFileContents>iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAK3RFWHRDcmVhdGlvbiBUaW1lAE1vIDIwIFNlcCAyMDEwIDE5OjE1OjI1ICswMTAwzAx18wAAAAd0SU1FB9oJFBEUJztanCkAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAEZ0FNQQAAsY8L/GEFAAAAZUlEQVR42mNgoBU4cODAfyCFDVMEMAxgIlcjugH4nPkf6B2cJrMg+Rku6ODggKIZyGck6ERooBEUIzYMcNnMSIwB2DQTDEQUW7D5GYt38HqBaDDwBsDTATTuSU7rMAMYcQUSzQEAAn40C8R9PjIAAAAASUVORK5CYII=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-bool.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAAEBAQEL/QoCAgMDAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAAUABIAAAhmAAMIHEiwoMGDCBMqTCigocOHDQkcFECgosWLAyQapHixY8aJHS0CIPBxY0gCAEaWLMhxZMWUKjWyfDkSZsWVBFvCdElSZk6RKTH6HMjxpcehAouexEl0gNOnUJkKPBlyodWrBwMCADs=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-date.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAAAD/AJIHB5gbG7QFBbUMDLweHr0nJ8cAAM8AAMwICM4TE9ACAtIGBtcAANwAANoKCtcREdsTE9wQENwWFt4VFd0aGt8aGt0dHd8dHeYAAOENDe0BAe0DA+sODuEREfMSEuEiIuMnJ+csLOgyMuk6OpGRkZWVlZiYmJ+fn66enq6fn6enp66hoa6urq+vr7CwsLi4uLq6ury8vL6+vr+/v8mzs8u1tc22ts64uMLCwsPDw8TExMXFxcfHx8jIyMnJycrKysvLy8zMzNXExNbExNbFxdjY2Nvb293d3d/f3+Dg4OLi4uPj4+Xl5ebm5ujo6Ovr6+zs7O7u7u/v7/Pz8/X19fb29vf39/j4+Pn5+fr6+vv7+/z8/P39/f7+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAAALAAAAAAUABIAAAjlAAEIHEiwoMGDCBPqWEGDoJAXOhA6OGDDSY0DDibicHIDo0EHDIgwGbJgwwYERZgQQeDg4wMWSlQo8KAhQQolKRq0LOiggwEBBS5YoACBQIABGXYSdPCBxAgRIUBgqDAhggQOSgf+4MK1K5ctV6584fLD4FauVYJIAdIDxhcvZM12DeJiS5YnObZoweJD7hauLfbKaGKFypS+BbduWRz4SQwlSZAc6eGXcZYZSpBw6aIkiNnFoLFQgXKky5IvQgzKmPKXaxYrUYwo+XKFckETNHTo3q17B48cJgyiKEG8uHHiJwYGBAA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-dec.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASALMAAEBAQAD/AICAgMDAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAAUABIAAARMMMhJq7046yu6/x9RCURpnuUgUiQBvChAqKNryiVMs3buy7sJCdfzBSXD2wm4EhaJtmMg6VNKWy+cdtZEor7c0WBMLpO7AbB6w25fIgA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-doc.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAADRouzRpuzVpvDZpvDZqvDdrvTptvTxzwT9wwD92wUB5w0F7w0d/w0R/x0V/xkx5w018xAD/AEeEx0eEyEqGx0uGxkqGyEuHyEyIyE6MyE+MyFCNyFKNyFSPyFSQyVSRyVSQylmSyVqUy06y91Cy91Gz91O191W091Ky+FK0+FS0+F++/GGJyGWMy2iczWmW3GqY3HKh0Xup1WC8+2K9+2G8/GG9/GO+/GS++2a9/Ge//Xyw4Xyy4m3C/YKm1I6v3IS24qe+4Ku/4ZPU/5TV/5XW/5bW/5jX/5vW/57X/6DY/7bL5bPS8bXU87TY9rjW9LrW9bvW9bvY9rzZ9r3a9sHb+MLc+MPd+cTd+cXf+cbf+sff+sfg+sjg+cjg+sjg+8jh+8ng+8nh+8ni+8rh+svh+8vi+8nl+szh+8zj+83j+87j+8zi/M3i/M3j/M7i/M/j/M3m/M/k/Nfm8tDk+9Hk/NPl/NPl/dLm/NPm/NPn/dXl/tTm/NTm/dXm/dXn/dbn/dbn/tfn/tbo/tfo/tzq9t/p9N/r9d7q9t7r9t/s99jo/uPt9+nv9ebw9+zy9+3z9+jx+Ovx+Ovy+Ory+uvz+uzy+Ozz+e3z+O30+O30+e30+u70+O/0+e/0+vD0+PD0+fH1+fL2+vL3+/P3+/P3/PT3+/T4/PX5/Pf6/fj7/fj7//3+/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABEALAAAAAAUABIAAAj+ACMIHEiwoMGDCA8ukSEChAcPH0B0cPEjYQxInDJh2mjp0RweMBCGEMVFzJgvWao8WeVkx4uDHEK5WaPGTBcrUFTFOQPEh8ENoeDQkeOGDJYphh6RasTgJ6g8fPTUUePFSpQmTD5VMKihkyBAf/rgQbPFChUpni4YzKBp0SJCge7UQcPlipVNFgxiuDSIECCwd+ik2aKF0gSDFCYF+gvIj9w2ZcSMamBQQqQ9d+7YsVPnDZswYFIpMOjAkYoTJlKgKFGCxIgRqA4YXMCoh5IkSI4YKUJkCA5TBQwmOKQjB44bN2zQmLGihioCBiFIUpQIUaFClSpRKnWK1QODQVoQICBAfoCAAAEAGGAhZGBAAAA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-email.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAAD1stTxvvjtyvD54v0txr197qUV1wkJ8wkR/w098xQD/AFaDtlqHtluHul2Jt0eCw0mExE6DxEuIxEyIxE2JxE+JxE+MyE+MyU+NyFKHw1GFxVSHxlCIwFCLx1aJx1CMyFqGyViLyFuMyV2NymCPy2KPzGWOzGSQzG+W0HGZ0Hud04eo3Iup14mq3Juy1IWq4oqu4o2w45a045a145e245i245y/7ZW88KC23KC/6aK/6Z7B8KTD7KfF7KnF6qvG7bDK67PK67PL6rnP7LHN8bLM8bzQ7LfX/L3T9L3V9M3a6sLa+MDb/MTb+Mbf/Mne983g+NDh+NDh+dLj+dPl/dbk+dTm/dbn/dfo/dnk8d3n997o99jo/djp/drp/dvq/dvr/tzo+d7p+dzq/dzr/t3q/t7r/t/r/t7s/d/s/uPr8+Ts9eDq+ePs+eHt/eXt+ebu+eTv/urv+Ofx/uzx9+rz/uzy+O3z+O7z+Oz0+O30/u71/vD1+/H3+/L2+/P2+/P3+/H1/PH3/vT4+/X5/PX5//b5/Pf5/Pf6/Pb6//f6//j6/fj7/fn7/fn7//n8//r8//v8//v9//z9/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAoALAAAAAAUABIAAAjkABUIHEiwoMGDCBMqXMiwocOHAl2wSHGiBIkRIkJ42KAhQoYGBQjiWBTokclHkFJGkjTpjxwHBFX4kRFmj5cxaNzEmZOIzYssHwiiaERkhhhBOufUUdQGxo08FgiaaESlyAw2herocfQmxo4jd6IOBNEIi5UfLdo4ggRnhQ0mTMISTNCoi5QgPWpo2UKDh48lTu5gIGiA0ZQhUa4kyaEDiZUnQJrYuUAwACEjVdKcMQOGTJkvXKAIUdOBIAE8a/j0ATSIECFDhxAhoqOEAcECAAQMOIDgAQQJEyhQqMBhQUiIBQMCADs=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-fn.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASALMAAC0tLTc3N0tLS1VVVV1dXWJiYmtra3FxcXx8fAD/AIiIiJeXl6mpqbKysry8vNvb2yH5BAEAAAkALAAAAAAUABIAAARFMMlJq704a/0QWotyGMqWLM7SMOxiJsryTMjbLPVLfY0+OQWXL2EwDGEHYSJgchQpTM5gAFIIAISNY2QoeAmlo3hM3kQAADs=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-htm.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAABEytBE0thI4txI7txM9uRRAuxRCvRRGvRVNwBZSwhdYxBdYxhlfyBlhyRpkySJtzTR4zjh6zzR20j190AD/AD2A1kKB0kOD0kKE1keF00iF2EyJ1VCM1lKM1VON1VKN11aP11GL2VKO21aP2FiP11qR11mR2ViQ3V2U2V2U2l+V22GX22KX2mWZ2meZ22aa3Gib3Wqd3Wyd3Gye3W2e3mGX4Wqb4nCh3nWj33ak3m2g4m+g4nOj4Hak4Xak5nim4Xqn4nin5nqo4X6p4Hup6ICq4oCq44Gr44Gs44Ot44au44St5Yev5ICr6omw5Iiw5oyz546z5Y6054+05o606JC155S36JO46Zi66pm76pi8656/7J+/7J7A66HB7KPC7aLC7qbE76jG7qjH7qnG76zJ77TN7rDL8LPO8bXP8rrR77fQ8rfQ877T8Mnb9M7e89bk9trm993o997p9+Dr+OPs+eXu+enw+urx+uvy+u3z++70/PH1/PL2/PP3/PP3/fT3/PT3/fT4/fX4/fb5/ff6/fj6/vz9/gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABQALAAAAAAUABIAAAjeACkIHEiwoMGDCBMqXMiwocOHAptInEjExw4bNU6E0FBBAsEmbEKuQXOmjJgvXbJYmeLkwUc2ZMKA2aLlCpUnSIDwoFGkwcc0e7joERTIjxspcZLAWYFDAcEgZwZhEQRlkBE7ZgZFITRiBgKCOsYc+mMICSAedfIIUoJnQwsDBGt48bOkTw8/MOi0eTPkzgUUAwiKyNLnB58YfVLM4aAmRyE5JAIQxFBl5wsVJj5syGBhQgQIHgAQlMDkiBAcN2S4YIGiBAgPHTqIHvjAAYMFCRAcKEBAQAAAwIFDNBgQADs=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-img.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAADA1OykuRDg/TzxCQkRFP0VNNkJNPUVGQUhKR0lMVUhQU0pZVFBRSVRUXFFYUUZVbFFXZ0hgZE1kdEpifl1sb1lqclt1dF97fGNuclBqhmx0ggD/AGudZHuefHevRn2tXHOyTHuzTHOlbXWsb3upZ3qpaHCheGKdhH6XinSOrX2TsGyujn2tgX6sj3S0iYKdZYOuVIetX4W1UIS3UYW0VYC4XoSgZIeuboCpcICrdISod4usdo2pd4+qdIG7Y4eyfIi2d4uyeoTAW8zQXszKdsjWfdfZaufeUujVde3edoqNkoOQmYCQnYOYkYyQkYKmjI2vjoiygpCohI+ho4ulvIunv5qmsqO4s6ixurC6spisxKGzwbDBt7rFt7zKuZ/b5pzb7bvOyL3bz67M6KPe5qvR6KjQ/6/U/6rZ86vZ87Df77De9bTf/77f8Kvq17vw0qfk96vk/6vo/7Hj7rPi7Lfm7r7m5rzp7L/s6bvi8bzm9r7u+rb057zx6dXNhOzZle7lvursu/n0tMTQxsTRx8LaysbbysTS08bS0sPd1Mfb0srZ0srZ1M3a08DS6sfb4sXc/8Dg1cDl08jh3sLx0cjw2Nbvx9Dg3dPn29fv2dzu1tXxyNr2zt3z3Mbp4sPi98Xh/8fi/8vl/M7u/8v25cPy/N3s79Ht8NDv/9rv/93q/d/v/9f65tL46dv04d7z5Nzz69755tH0/9by/9P6993y9dzx/+nm0+P13eX+1+X43Pnvy/bxy//3webt9+D06eb85eD28+b1/Of98Or/9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABsALAAAAAAUABIAAAj9ADcIHEiwoMGDCBMqRHiJESEvXLZooVIlhQomGJQYbHQLkKBAplCV2iNrVjBFFQwO2vUnCZEwZch8YTMmETEJBrv0QnJkSKE0YOSYATUJVgaDWXj5MVIkEho4cc6EelRrgkEsvhAZEpNnzRw1oyA5WvXAoBVbn/TQqXMHj502olKpgmBwCq0+fNy8oVRJUitPp4Q1MHiF1IkVLkaUwPFDBIsnmA4YRMGqhQkOH2jMCAHCBxBOBQw2idVBx40YMGR4EFKDxCYDBpe8kvLCRg8eO4LkiAJlmACDGhYBy2VJFy5NnTK5+nUogEEnFCJcsLDAAQMCCAYoAJBgofeAAAA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-lov.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASAPcAAAICAgYGBgsLCxERERYWFh0dHSMjIyUlJSoqKiwsLDMzMzs7O0JCQklJSVBQUFJSUldXV1hYWF9fX2RkZGpqam9vb3Nzc3Z2dgD/AHKj4qamprm5uYSu5oWw6I+26ZW56pe766a96ae96aLC7aXE7avB67DI7LHK7rXP8bjQ8LzT8MPDw/z8/P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAABgALAAAAAAUABIAAAiDADEIHEiwoMGDCAu2YMGwocOHLAYuhEiRoUQWKkaoqOjw4ggUI1isuGChAoUJEiI8sChwYcaNHFlimBizY8uaDy+mAHEC58UPJDqw2ADBQQMGCxQkOCBzoQkOJXzexNnwItWmLERkCCF1JosMHjKw0IDAQAECAwQEAIA1xNauNKkKDAgAOw==</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-txt.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASALMAAEBAQAD/AICAgMDAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAAUABIAAARJMMhJq7046yu6/x9RCURpnuUgUiTqqqMLnADMyrQ9tcBM9L7aavcrzYI/nYTXKxaFMaRUGWAem8nh0vXSVgfgsDjs5Zo36PQlAgA7</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+    <FileSetFile>
+      <FileSetFileId>00000000-0000-0000-0000-000000000000</FileSetFileId>
+      <FileSetId>00000000-0000-0000-0000-000000000000</FileSetId>
+      <RelativePath>Images/DataTypes/ft-txtml.gif</RelativePath>
+      <BinaryFileContents>R0lGODlhFAASALMAAAAAAEBAQAD/AICAgMDAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAIALAAAAAAUABIAAARUUMhJqxUj671LHUUojiHhUSAZkOYXBmsBx0WLyi9eAOU5gbFVjFfzSVIzGUxk+5GeRReU1jy+gsueixZkGjE6HfWLxAqjN+ioiiG43/D3Vw292O0RADs=</BinaryFileContents>
+      <AlwaysOverwrite>true</AlwaysOverwrite>
+      <SkipClean>false</SkipClean>
+    </FileSetFile>
+  </FileSetFiles>
+</FileSet>
