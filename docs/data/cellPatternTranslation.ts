@@ -12,10 +12,10 @@ export interface cellPatternTranslation
     Count? : number;
     SortOrder? : number;
     Name? : string;
-    CellPatternName? : string;
-    TranslationName? : string;
     TranslationId? : number;
     CPTCode? : number;
+    CellPatternName? : string;
+    TranslationName? : string;
     
     CellPatternTranslations_CellPatterns : cellPattern[];
     CellPatternTranslations_Translations : translation[];

@@ -56,7 +56,7 @@
 
                                 <xsl:call-template name="page-header">
                                     <xsl:with-param name="name" select="'TheBoard'" />
-                                    <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=1934124403'" />
+                                    <xsl:with-param name="edit-link" select="'https://airtable.com/tblKnVgLBllRGF80z/viwCkYHx0mUk3W986?blocks=hide'" />
                                 </xsl:call-template>
                                 <p>
                                     The board has 9 cells.
@@ -177,7 +177,7 @@
 
                                 <xsl:call-template name="page-header">
                                     <xsl:with-param name="name" select="'PlayerLevels'" />
-                                    <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=260512170'" />
+                                    <xsl:with-param name="edit-link" select="'https://airtable.com/tblc2u9AaoC7CCbl4/viwzCywB1NedsrSDh?blocks=hide'" />
                                 </xsl:call-template>
                                 <p>
                                     An implementation of 3x3 Tic Tac Toe is expected to support a number of different kinds of players.  Human players,
@@ -237,7 +237,7 @@
                                 <body style="padding: 1em;">
                                     <xsl:call-template name="page-header">
                                         <xsl:with-param name="name" select="Name" />
-                                        <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=780350443'" />
+                                        <xsl:with-param name="edit-link" select="'https://airtable.com/tblc2u9AaoC7CCbl4/viwzCywB1NedsrSDh?blocks=hide'" />
                                     </xsl:call-template>
 
                                     <p>
@@ -300,7 +300,7 @@
                             <body style="padding: 1em;">
                                 <xsl:call-template name="page-header">
                                     <xsl:with-param name="name" select="'Translations'" />
-                                    <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=1319606678'" />
+                                    <xsl:with-param name="edit-link" select="'https://airtable.com/tblinXLfSQ2QLzcdC/viwzYolN6m6yrtm2F?blocks=hide'" />
                                 </xsl:call-template>
                                 <div>
                                     <a href="https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=1934124403"  target="_blank">Edit Map</a>
@@ -454,7 +454,7 @@ var b = jQueryBoard(function() {
                                 <body style="padding: 1em;">
                                     <xsl:call-template name="page-header">
                                         <xsl:with-param name="name" select="Name" />
-                                        <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=1319606678'" />
+                                        <xsl:with-param name="edit-link" select="'https://airtable.com/tblinXLfSQ2QLzcdC/viwzYolN6m6yrtm2F?blocks=hide'" />
                                     </xsl:call-template>
                                     <p>
                                         <xsl:value-of select="Description"/>
@@ -532,7 +532,7 @@ var b = jQueryBoard(function() {
                             <body style="padding: 1em;">
                                 <xsl:call-template name="page-header">
                                     <xsl:with-param name="name" select="'Target Platforms'" />
-                                    <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=1319606678'" />
+                                    <xsl:with-param name="edit-link" select="'https://airtable.com/tblAF2Un6SivOUBIt/viwveiMH6pJy4jtSP?blocks=hide'" />
                                 </xsl:call-template>
 
 
@@ -622,7 +622,7 @@ var b = jQueryBoard(function() {
                             <body style="padding: 1em;">
                                 <xsl:call-template name="page-header">
                                     <xsl:with-param name="name" select="'Cell Patterns'" />
-                                    <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=412235242'" />
+                                    <xsl:with-param name="edit-link" select="'https://airtable.com/tblmOthRhNZyNxuXL/viwvACq4rF7AMZlEr?blocks=hide'" />
                                 </xsl:call-template>
 
                                 <xsl:variable name="winning-patterns" select="$cell-patterns[normalize-space(IsWinPattern) = 'true']" />
@@ -708,7 +708,7 @@ var b = jQueryBoard(function() {
                                         </xsl:call-template>
                                         
                                       </xsl:with-param>
-                                        <xsl:with-param name="edit-link" select="'https://docs.google.com/spreadsheets/d/1xpLGHj6wHyot9Kp2lpKTG8AcKJNMSkxjp-aTQT7yB90/edit#gid=412235242'" />
+                                        <xsl:with-param name="edit-link" select="'https://airtable.com/tblmOthRhNZyNxuXL/viwvACq4rF7AMZlEr?blocks=hide'" />
                                     </xsl:call-template>
 
                                     <div>
@@ -766,7 +766,74 @@ var b = jQueryBoard(function() {
                         </FileContents>
                     </FileSetFile>
                 </xsl:for-each>
+                <FileSetFile>
+                    <RelativePath>
+                        <xsl:text>../AvailableStrategies.html</xsl:text>
+                    </RelativePath>
+                    <FileContents><html>
+    <head>
+                                <title>
+                                 Strategies Available for Level Configuration
+                                </title>
+                                <xsl:call-template name="bootstrap-links" />
+    </head>
 
+        <body style="padding: 1em;">
+            <xsl:call-template name="page-header">
+                <xsl:with-param name="name" select="'Available Strategies'" />
+                <xsl:with-param name="edit-link" select="'https://airtable.com/tbli1vk1OgW5aeMvj/viwIAh1d1ww4MxtCb?blocks=hide'" />
+            </xsl:call-template>
+
+                <xsl:for-each select="$strategies"><xsl:sort select="PlayerLevel" data-type="number" /><xsl:sort select="StrategyRank" data-type="number" />
+                 <div style="max-width: 40em;">
+                 <div style="float: right;">
+                    <xsl:text></xsl:text>
+                    <xsl:value-of select="$player-levels[AILevelIndex >= current()/PlayerLevel]/Name" />
+                    <xsl:if test="count($player-levels[sum(AILevelIndex) >= sum(current()/PlayerLevel)]) = 0">
+                    NO IMPLEMENTATION YET
+                    </xsl:if>
+                 </div>
+                    <b><xsl:value-of select="Name" /></b>
+                    <div style="font-size: 0.8em; padding: 0.25em;">
+                        <xsl:value-of select="Description" />
+                    </div>
+                 </div>
+                </xsl:for-each>
+    </body>
+</html></FileContents>
+                </FileSetFile>
+
+                <xsl:for-each select="$strategies">
+                <FileSetFile>
+                    <RelativePath>
+                        <xsl:text>../Strategy_</xsl:text>
+                        <xsl:value-of select="Name" />
+                        <xsl:text>.html</xsl:text>
+                    </RelativePath>
+                    <FileContents><html>
+    <head>
+                                <title>
+                                 Strategies Available for Level Configuration
+                                </title>
+                                <xsl:call-template name="bootstrap-links" />
+    </head>
+
+        <body style="padding: 1em;">
+            <xsl:call-template name="page-header">
+                <xsl:with-param name="name" select="Name" />
+                <xsl:with-param name="edit-link" select="'https://airtable.com/tbli1vk1OgW5aeMvj/viwIAh1d1ww4MxtCb?blocks=hide'" />
+            </xsl:call-template>
+
+                 <div>
+                    <b><xsl:value-of select="Name" /></b>
+                    <div style="font-size: 0.8em; padding: 0.25em;">
+                        <xsl:value-of select="Description" />
+                    </div>
+                 </div>
+    </body>
+</html></FileContents>
+                </FileSetFile>
+                </xsl:for-each>
             </FileSetFiles>
         </FileSet>
     </xsl:template>
@@ -883,6 +950,11 @@ var b = jQueryBoard(function() {
             <xsl:call-template name="print-link">
                 <xsl:with-param name="current" select="$name" />
                 <xsl:with-param name="name" select="'Translations'" />
+            </xsl:call-template>
+
+            <xsl:call-template name="print-link">
+                <xsl:with-param name="current" select="$name" />
+                <xsl:with-param name="name" select="'Available Strategies'" />
             </xsl:call-template>
 
             <xsl:call-template name="print-link">
