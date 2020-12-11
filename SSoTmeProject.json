@@ -337,6 +337,45 @@
       "Name": "OdxmlToTypeScriptModels",
       "RelativePath": "/docs/data",
       "CommandLine": "odxml42/odxml-to-typescript-models -i ..\\..\\ODXML\\Airtable.odxml"
+    },
+    {
+      "MatchedTranspiler": {
+        "TranspilerId": "bf3963ff-edde-4cf5-8ff7-69d89ae51176",
+        "AccountHolderId": "9aeb4f89-3c90-4972-927c-7deebfbb9de4",
+        "Name": "OdxmlToPythonDataClasses",
+        "DisplayName": "Odxml To Python Data Classes",
+        "Description": "Creates python data classes matching the odxml schema.",
+        "CreatedOn": "2017-11-06T16:45:09.1",
+        "IsActive": true,
+        "CurrentRoutingKey": "amq.gen-1udZlHg208qUf6jrCpeFVg",
+        "LowerName": "odxmltopythondataclasses",
+        "UpperName": "ODXMLTOPYTHONDATACLASSES",
+        "LowerHyphenName": "odxml-to-python-data-classes",
+        "ReadMeMD": "Creates python data classes with the same structure defined by the Odxml schema.",
+        "InputDescriptionMD": "If you want @dataclass decoarators on the dataclasses, add this parameter\r\n\r\n- p legacy=false",
+        "InputFileTypeId": "33de424c-cfe0-498e-ae70-44da375a8fb2",
+        "OutputFileTypeId": "1801a4c1-cfb6-44fb-8484-aff1c0b4b1aa",
+        "Category": "python",
+        "TranspileRequests": [],
+        "TranspilerInstances": [],
+        "TranspilerVersions": [
+          {
+            "TranspilerVersionId": "ac0a4bdd-eecf-4917-88bb-b401dc65329d",
+            "TranspilerId": "bf3963ff-edde-4cf5-8ff7-69d89ae51176",
+            "Name": "v1",
+            "CreatedOn": "2017-11-06T16:45:17.533",
+            "IsActive": true,
+            "TranspilerFileTypeId_TranspilerInputHints": [],
+            "TranspilerInstances": [],
+            "ReplacedByTranspilerVersionId_TranspilerVersions": []
+          }
+        ]
+      },
+      "CLIHandler": null,
+      "ProjectTranspilerId": "e2c6cd7d-dd6c-40f2-a99b-50f45f3b05ab",
+      "Name": "OdxmlToPythonDataClasses",
+      "RelativePath": "/Python/DataClasses",
+      "CommandLine": "odxml42/odxml-to-python-dataclasses -i ..\\..\\ODXML\\Airtable.odxml"
     }
   ]
 }
