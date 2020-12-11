@@ -13,6 +13,8 @@ namespace TicTacToeChallenge.Lib.DataClasses
         {
             
             
+                this.AIStrategies_AILevelsExpanded = new BindingList<AILevel>();
+            
 
         }
         
@@ -49,8 +51,17 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SortOrder")]
         public Nullable<Int32> SortOrder { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AILevels")]
+        public String[] AILevels { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AILevelNames")]
+        public String AILevelNames { get; set; }
+    
 
         
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AIStrategies_AILevelsExpanded")]
+        public BindingList<AILevel> AIStrategies_AILevelsExpanded { get; set; }
+            
 
         
         

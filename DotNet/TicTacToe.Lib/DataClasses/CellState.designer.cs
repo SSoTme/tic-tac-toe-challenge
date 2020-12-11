@@ -17,9 +17,9 @@ namespace TicTacToeChallenge.Lib.DataClasses
             
                 this.CellPatternCellsExpanded = new BindingList<CellPatternCell>();
             
-                this.DefaultCellState_CellsExpanded = new BindingList<Cell>();
-            
                 this.CurrentCellState_CellsExpanded = new BindingList<Cell>();
+            
+                this.DefaultCellState_CellsExpanded = new BindingList<Cell>();
             
 
         }
@@ -86,11 +86,11 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCellsExpanded")]
         public BindingList<CellPatternCell> CellPatternCellsExpanded { get; set; }
             
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "DefaultCellState_CellsExpanded")]
-        public BindingList<Cell> DefaultCellState_CellsExpanded { get; set; }
-            
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CurrentCellState_CellsExpanded")]
         public BindingList<Cell> CurrentCellState_CellsExpanded { get; set; }
+            
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "DefaultCellState_CellsExpanded")]
+        public BindingList<Cell> DefaultCellState_CellsExpanded { get; set; }
             
 
         

@@ -143,30 +143,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "18",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "TranslationName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "6",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "TranslationId",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -185,6 +161,30 @@
                     "Length": "",
                     "MaxLength": "2",
                     "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "18",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TranslationName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -688,18 +688,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "TargetCellIndex",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "TargetCellStateId",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -712,7 +700,7 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternTranslationCodes",
+                    "Name": "CellPatternCellStates",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
                     "Length": "",
@@ -736,16 +724,16 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternCellStates",
+                    "Name": "TargetCellIndex",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
                     "Length": "",
-                    "MaxLength": "2",
+                    "MaxLength": "1",
                     "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
-                    "IsCollection": "1"
+                    "IsCollection": "0"
                   },
                   {
                     "Name": "Target",
@@ -758,6 +746,18 @@
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
                     "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternTranslationCodes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1"
                   },
                   {
                     "Name": "Translations",
@@ -1580,12 +1580,72 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "ClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "RotateDescription",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
                     "Length": "150",
                     "MaxLength": "30",
                     "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -1628,54 +1688,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "RotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "ClockwiseRotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "CounterClockwiseRotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "FlipFromName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "FlipIndex",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -1688,24 +1700,12 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "ClockwiseRotateFromIndex",
+                    "Name": "FlipFromName",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "CounterClockwiseRotateFromIndex",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",

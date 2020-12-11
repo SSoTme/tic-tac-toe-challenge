@@ -13,6 +13,8 @@ namespace TicTacToeChallenge.Lib.DataClasses
         {
             
             
+                this.AILevels_AIStrategiesExpanded = new BindingList<AIStrategy>();
+            
 
         }
         
@@ -38,19 +40,31 @@ namespace TicTacToeChallenge.Lib.DataClasses
         public String PlayerType { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "MinAILevelIndex")]
-        public Nullable<Int32> MinAILevelIndex { get; set; }
+        public Nullable<Int16> MinAILevelIndex { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AILevelIndex")]
-        public Nullable<Int32> AILevelIndex { get; set; }
+        public Nullable<Int16> AILevelIndex { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Description")]
         public String Description { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SortOrder")]
-        public Nullable<Int32> SortOrder { get; set; }
+        public Nullable<Int16> SortOrder { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Users")]
+        public String[] Users { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AIStrategies")]
+        public String[] AIStrategies { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AIStrategyNames")]
+        public String AIStrategyNames { get; set; }
     
 
         
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "AILevels_AIStrategiesExpanded")]
+        public BindingList<AIStrategy> AILevels_AIStrategiesExpanded { get; set; }
+            
 
         
         

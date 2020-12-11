@@ -18,10 +18,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 1,
             Name = @"T1-TwoInARowDiagonal:Rotate:3",
-            CellPatternName = @"TwoInARowDiagonal",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"TwoInARowDiagonal",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoInARowDiagonalRotate3);
@@ -37,10 +37,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 1,
             Name = @"T1-EdgeWin:Rotate:3",
-            CellPatternName = @"EdgeWin",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"EdgeWin",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_EdgeWinRotate3);
@@ -56,10 +56,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 1,
             Name = @"T1-TwoInARowMiddle:Rotate:3",
-            CellPatternName = @"TwoInARowMiddle",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"TwoInARowMiddle",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoInARowMiddleRotate3);
@@ -75,10 +75,10 @@ public static partial class CellPatternTranslations
             Count = 1,
             SortOrder = 1,
             Name = @"T1-MiddleWin:Rotate:1",
-            CellPatternName = @"MiddleWin",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 10
+            CPTCode = 10,
+            CellPatternName = @"MiddleWin",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_MiddleWinRotate1);
@@ -94,10 +94,10 @@ public static partial class CellPatternTranslations
             Count = 1,
             SortOrder = 1,
             Name = @"T1-TwoOutsideMiddle:Rotate:1",
-            CellPatternName = @"TwoOutsideMiddle",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 10
+            CPTCode = 10,
+            CellPatternName = @"TwoOutsideMiddle",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoOutsideMiddleRotate1);
@@ -113,10 +113,10 @@ public static partial class CellPatternTranslations
             Count = 1,
             SortOrder = 1,
             Name = @"T1-TwoOutsideDiagonal:Rotate:1",
-            CellPatternName = @"TwoOutsideDiagonal",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 10
+            CPTCode = 10,
+            CellPatternName = @"TwoOutsideDiagonal",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoOutsideDiagonalRotate1);
@@ -132,10 +132,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 1,
             Name = @"T1-TwoInARowTop:Rotate:3",
-            CellPatternName = @"TwoInARowTop",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"TwoInARowTop",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoInARowTopRotate3);
@@ -151,10 +151,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 1,
             Name = @"T1-TwoOutsideTop:Rotate:3",
-            CellPatternName = @"TwoOutsideTop",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"TwoOutsideTop",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoOutsideTopRotate3);
@@ -170,10 +170,10 @@ public static partial class CellPatternTranslations
             Count = 1,
             SortOrder = 2,
             Name = @"T2-TwoInARowTop:Flip:1",
-            CellPatternName = @"TwoInARowTop",
-            TranslationName = @"Flip",
             TranslationId = 1,
-            CPTCode = 11
+            CPTCode = 11,
+            CellPatternName = @"TwoInARowTop",
+            TranslationName = @"Flip"
         };
 
         List.Add(T2_TwoInARowTopFlip1);
@@ -189,10 +189,10 @@ public static partial class CellPatternTranslations
             Count = 3,
             SortOrder = 3,
             Name = @"T3-TwoInARowTop:Rotate:3",
-            CellPatternName = @"TwoInARowTop",
-            TranslationName = @"Rotate",
             TranslationId = 0,
-            CPTCode = 30
+            CPTCode = 30,
+            CellPatternName = @"TwoInARowTop",
+            TranslationName = @"Rotate"
         };
 
         List.Add(T3_TwoInARowTopRotate3);

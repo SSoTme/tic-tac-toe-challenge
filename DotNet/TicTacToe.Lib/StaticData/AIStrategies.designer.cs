@@ -31,8 +31,10 @@ public static partial class AIStrategies
             Name = @"Random",
             Description = @"Choice from a random selection amongst available cells",
             PlayerLevel = null,
-            StrategyRank = 100,
-            SortOrder = 2
+            StrategyRank = 80,
+            SortOrder = 2,
+            AILevels = new string[] { @"recmMBaevl2jHl0hC", "recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Beginner, Intermediate, Advanced"
         };
 
         List.Add(Random);
@@ -46,8 +48,10 @@ public static partial class AIStrategies
             Name = @"PlayInMiddleIfAvailable",
             Description = @"If there are no other winning strategies, play in the middle cell",
             PlayerLevel = null,
-            StrategyRank = 90,
-            SortOrder = 3
+            StrategyRank = 50,
+            SortOrder = 3,
+            AILevels = new string[] { @"recmMBaevl2jHl0hC", "recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Beginner, Intermediate, Advanced"
         };
 
         List.Add(PlayInMiddleIfAvailable);
@@ -62,8 +66,10 @@ public static partial class AIStrategies
             Description = @"If any two cells are already filled in by the AI, and the 3rd cell in that row is available, play there.",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("false"),
-            StrategyRank = 1,
-            SortOrder = 4
+            StrategyRank = 2,
+            SortOrder = 4,
+            AILevels = new string[] { @"recmMBaevl2jHl0hC", "recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Beginner, Intermediate, Advanced"
         };
 
         List.Add(WinIfPossible);
@@ -78,8 +84,10 @@ public static partial class AIStrategies
             Description = @"Prevent opponent from using WinIfPossible strategy",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("true"),
-            StrategyRank = 2,
-            SortOrder = 5
+            StrategyRank = 5,
+            SortOrder = 5,
+            AILevels = new string[] { @"recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Intermediate, Advanced"
         };
 
         List.Add(PreventWinIfPossible);
@@ -94,8 +102,10 @@ public static partial class AIStrategies
             Description = @"Check for a move that will force a win the next turn, regardless of what the opponent does.",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("false"),
-            StrategyRank = 3,
-            SortOrder = 6
+            StrategyRank = 10,
+            SortOrder = 6,
+            AILevels = new string[] { @"recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Intermediate, Advanced"
         };
 
         List.Add(ForceWinNextTurn);
@@ -110,8 +120,10 @@ public static partial class AIStrategies
             Description = @"Prevent opponent from using ForceWinNextTurn strategy",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("true"),
-            StrategyRank = 4,
-            SortOrder = 7
+            StrategyRank = 14,
+            SortOrder = 7,
+            AILevels = new string[] { @"recPPp5z8K4EAA2FW", "rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Intermediate, Advanced"
         };
 
         List.Add(PreventForceWinNextTurn);
@@ -125,8 +137,10 @@ public static partial class AIStrategies
             Name = @"PlayInCornerIfAvailable",
             Description = @"If there are any corner positions available, player there",
             PlayerLevel = null,
-            StrategyRank = 95,
-            SortOrder = 8
+            StrategyRank = 53,
+            SortOrder = 8,
+            AILevels = new string[] { @"rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Advanced"
         };
 
         List.Add(PlayInCornerIfAvailable);
@@ -141,8 +155,10 @@ public static partial class AIStrategies
             Description = @"Check if there's a move which will allow a force win next turn.",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("false"),
-            StrategyRank = 5,
-            SortOrder = 9
+            StrategyRank = 16,
+            SortOrder = 9,
+            AILevels = new string[] { @"rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Advanced"
         };
 
         List.Add(SetupForceWinNextTurn);
@@ -157,8 +173,10 @@ public static partial class AIStrategies
             Description = @"Prevent opponent from using SetupForceWinNextTurn strategy",
             PlayerLevel = null,
             IsDefensive = Boolean.Parse("true"),
-            StrategyRank = 6,
-            SortOrder = 10
+            StrategyRank = 20,
+            SortOrder = 10,
+            AILevels = new string[] { @"rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Advanced"
         };
 
         List.Add(PreventSetupForceWinNextTurn);
@@ -173,7 +191,9 @@ public static partial class AIStrategies
             Description = @"Plays randomly, but keeps track of what moves are made, and learn from mistakes",
             PlayerLevel = null,
             StrategyRank = 200,
-            SortOrder = 11
+            SortOrder = 11,
+            AILevels = new string[] { @"rec6OhVu8y6RKPscT" },
+            AILevelNames = @"Advanced"
         };
 
         List.Add(LearnFromMistakes);

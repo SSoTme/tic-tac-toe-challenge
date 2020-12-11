@@ -94,10 +94,10 @@
       <Count>3</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoInARowDiagonal:Rotate:3</Name>
-      <CellPatternName>TwoInARowDiagonal</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>TwoInARowDiagonal</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recD87U0swUjjhnTj</CellPatternTranslationId>
@@ -107,10 +107,10 @@
       <Count>3</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-EdgeWin:Rotate:3</Name>
-      <CellPatternName>EdgeWin</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>EdgeWin</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recJjgKw24kaBFH0i</CellPatternTranslationId>
@@ -120,10 +120,10 @@
       <Count>3</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoInARowMiddle:Rotate:3</Name>
-      <CellPatternName>TwoInARowMiddle</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>TwoInARowMiddle</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recNz0LuN77HIXjmB</CellPatternTranslationId>
@@ -133,10 +133,10 @@
       <Count>1</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-MiddleWin:Rotate:1</Name>
-      <CellPatternName>MiddleWin</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <CellPatternName>MiddleWin</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recUD9c7vXgkNLQi9</CellPatternTranslationId>
@@ -146,10 +146,10 @@
       <Count>3</Count>
       <SortOrder>3</SortOrder>
       <Name>T3-TwoInARowTop:Rotate:3</Name>
-      <CellPatternName>TwoInARowTop</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>TwoInARowTop</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recafoRwqvCh5HZOd</CellPatternTranslationId>
@@ -159,10 +159,10 @@
       <Count>1</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoOutsideMiddle:Rotate:1</Name>
-      <CellPatternName>TwoOutsideMiddle</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <CellPatternName>TwoOutsideMiddle</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recoPtQQ8QZtClJK0</CellPatternTranslationId>
@@ -172,10 +172,10 @@
       <Count>1</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoOutsideDiagonal:Rotate:1</Name>
-      <CellPatternName>TwoOutsideDiagonal</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <CellPatternName>TwoOutsideDiagonal</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recqJB1goFBhhsIVZ</CellPatternTranslationId>
@@ -185,10 +185,10 @@
       <Count>3</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoInARowTop:Rotate:3</Name>
-      <CellPatternName>TwoInARowTop</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>TwoInARowTop</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recwuYqQZ0iCw2WfQ</CellPatternTranslationId>
@@ -198,10 +198,10 @@
       <Count>1</Count>
       <SortOrder>2</SortOrder>
       <Name>T2-TwoInARowTop:Flip:1</Name>
-      <CellPatternName>TwoInARowTop</CellPatternName>
-      <TranslationName>Flip</TranslationName>
       <TranslationId>1</TranslationId>
       <CPTCode>11</CPTCode>
+      <CellPatternName>TwoInARowTop</CellPatternName>
+      <TranslationName>Flip</TranslationName>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>reczr6h68ZUdkDIZb</CellPatternTranslationId>
@@ -211,10 +211,10 @@
       <Count>3</Count>
       <SortOrder>1</SortOrder>
       <Name>T1-TwoOutsideTop:Rotate:3</Name>
-      <CellPatternName>TwoOutsideTop</CellPatternName>
-      <TranslationName>Rotate</TranslationName>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <CellPatternName>TwoOutsideTop</CellPatternName>
+      <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
   </CellPatternTranslations>
   <LanguageTokens>
@@ -357,16 +357,16 @@
       <TargetCell>recTGnKjXTE8LfT3C</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>3</SortOrder>
-      <TargetCellIndex>2</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <CellPatternTranslationCodes>11</CellPatternTranslationCodes>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <Cells>00;10;22</Cells>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>10</CellPatternCellStates>
       <CellPatternCellStates>22</CellPatternCellStates>
+      <Cells>00;10;22</Cells>
+      <TargetCellIndex>2</TargetCellIndex>
       <Target>22</Target>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
+      <CellPatternTranslationCodes>11</CellPatternTranslationCodes>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30;11;30</Translations>
     </CellPattern>
     <CellPattern>
@@ -380,11 +380,11 @@
       <CellPatternCells>recPHA9ppFH8cjenC</CellPatternCells>
       <CellPatternTranslations>recD87U0swUjjhnTj</CellPatternTranslations>
       <SortOrder>1</SortOrder>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <Cells>00;10;20</Cells>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>10</CellPatternCellStates>
       <CellPatternCellStates>20</CellPatternCellStates>
+      <Cells>00;10;20</Cells>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
     </CellPattern>
     <CellPattern>
@@ -399,14 +399,14 @@
       <TargetCell>recpPYOZtnp3lTOua</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>6</SortOrder>
-      <TargetCellIndex>1</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <Cells>00;12;20</Cells>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>12</CellPatternCellStates>
       <CellPatternCellStates>20</CellPatternCellStates>
+      <Cells>00;12;20</Cells>
+      <TargetCellIndex>1</TargetCellIndex>
       <Target>12</Target>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
     </CellPattern>
     <CellPattern>
@@ -421,14 +421,14 @@
       <TargetCell>recczW2Y4WMv9buZ8</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>5</SortOrder>
-      <TargetCellIndex>8</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <Cells>00;40;82</Cells>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
       <CellPatternCellStates>82</CellPatternCellStates>
+      <Cells>00;40;82</Cells>
+      <TargetCellIndex>8</TargetCellIndex>
       <Target>82</Target>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
     </CellPattern>
     <CellPattern>
@@ -443,14 +443,14 @@
       <TargetCell>rec35HZOaRy6ge0jk</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>8</SortOrder>
-      <TargetCellIndex>4</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
-      <Cells>00;42;80</Cells>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>42</CellPatternCellStates>
       <CellPatternCellStates>80</CellPatternCellStates>
+      <Cells>00;42;80</Cells>
+      <TargetCellIndex>4</TargetCellIndex>
       <Target>42</Target>
+      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
     </CellPattern>
     <CellPattern>
@@ -465,14 +465,14 @@
       <TargetCell>rec35HZOaRy6ge0jk</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>7</SortOrder>
-      <TargetCellIndex>4</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
-      <Cells>30;42;50</Cells>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>42</CellPatternCellStates>
       <CellPatternCellStates>50</CellPatternCellStates>
+      <Cells>30;42;50</Cells>
+      <TargetCellIndex>4</TargetCellIndex>
       <Target>42</Target>
+      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
     </CellPattern>
     <CellPattern>
@@ -486,11 +486,11 @@
       <CellPatternCells>recAy4XNSSKRZGZsh</CellPatternCells>
       <CellPatternTranslations>recNz0LuN77HIXjmB</CellPatternTranslations>
       <SortOrder>2</SortOrder>
-      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
-      <Cells>30;40;50</Cells>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
       <CellPatternCellStates>50</CellPatternCellStates>
+      <Cells>30;40;50</Cells>
+      <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
     </CellPattern>
     <CellPattern>
@@ -505,14 +505,14 @@
       <TargetCell>recfSe8zeEdCAtcGq</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
       <SortOrder>4</SortOrder>
-      <TargetCellIndex>5</TargetCellIndex>
       <TargetCellStateId>2</TargetCellStateId>
-      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
-      <Cells>30;40;52</Cells>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
       <CellPatternCellStates>52</CellPatternCellStates>
+      <Cells>30;40;52</Cells>
+      <TargetCellIndex>5</TargetCellIndex>
       <Target>52</Target>
+      <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
     </CellPattern>
   </CellPatterns>
@@ -990,18 +990,18 @@
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>5</CellKey>
-      <RotateDescription>From Middle to Middle</RotateDescription>
-      <RotateIndex>4</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
-      <RotateFrom>Middle</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>Middle</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Middle</CounterClockwiseRotateFrom>
-      <FlipFromName>Middle</FlipFromName>
-      <FlipIndex>4</FlipIndex>
+      <RotateFrom>Middle</RotateFrom>
+      <RotateDescription>From Middle to Middle</RotateDescription>
       <ClockwiseRotateFromIndex>4</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>4</CounterClockwiseRotateFromIndex>
+      <RotateIndex>4</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>PlayerA</CurrentState>
+      <FlipIndex>4</FlipIndex>
+      <FlipFromName>Middle</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>4</SortOrder>
     </Cell>
@@ -1021,18 +1021,18 @@
       <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>2</CellKey>
-      <RotateDescription>From MiddleLeft to Bottom</RotateDescription>
-      <RotateIndex>3</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
-      <RotateFrom>MiddleLeft</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>MiddleRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleLeft</CounterClockwiseRotateFrom>
-      <FlipFromName>Bottom</FlipFromName>
-      <FlipIndex>7</FlipIndex>
+      <RotateFrom>MiddleLeft</RotateFrom>
+      <RotateDescription>From MiddleLeft to Bottom</RotateDescription>
       <ClockwiseRotateFromIndex>5</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>3</CounterClockwiseRotateFromIndex>
+      <RotateIndex>3</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>PlayerB</CurrentState>
+      <FlipIndex>7</FlipIndex>
+      <FlipFromName>Bottom</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>7</SortOrder>
     </Cell>
@@ -1057,18 +1057,18 @@
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>7</CellKey>
-      <RotateDescription>From TopRight to TopLeft</RotateDescription>
-      <RotateIndex>2</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerA</CurrentState>
-      <RotateFrom>TopRight</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>BottomLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopRight</CounterClockwiseRotateFrom>
-      <FlipFromName>TopRight</FlipFromName>
-      <FlipIndex>2</FlipIndex>
+      <RotateFrom>TopRight</RotateFrom>
+      <RotateDescription>From TopRight to TopLeft</RotateDescription>
       <ClockwiseRotateFromIndex>6</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>2</CounterClockwiseRotateFromIndex>
+      <RotateIndex>2</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>PlayerA</CurrentState>
+      <FlipIndex>2</FlipIndex>
+      <FlipFromName>TopRight</FlipFromName>
       <FlipDescription>From TopRight to TopLeft</FlipDescription>
       <SortOrder>0</SortOrder>
     </Cell>
@@ -1092,18 +1092,18 @@
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>9</CellKey>
-      <RotateDescription>From BottomRight to TopRight</RotateDescription>
-      <RotateIndex>8</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
-      <RotateFrom>BottomRight</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>TopLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomRight</CounterClockwiseRotateFrom>
-      <FlipFromName>TopLeft</FlipFromName>
-      <FlipIndex>0</FlipIndex>
+      <RotateFrom>BottomRight</RotateFrom>
+      <RotateDescription>From BottomRight to TopRight</RotateDescription>
       <ClockwiseRotateFromIndex>0</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>8</CounterClockwiseRotateFromIndex>
+      <RotateIndex>8</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>NoPlayer</CurrentState>
+      <FlipIndex>0</FlipIndex>
+      <FlipFromName>TopLeft</FlipFromName>
       <FlipDescription>From TopLeft to TopRight</FlipDescription>
       <SortOrder>2</SortOrder>
     </Cell>
@@ -1126,18 +1126,18 @@
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>3</CellKey>
-      <RotateDescription>From BottomLeft to BottomRight</RotateDescription>
-      <RotateIndex>6</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
-      <RotateFrom>BottomLeft</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>TopRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomLeft</CounterClockwiseRotateFrom>
-      <FlipFromName>BottomLeft</FlipFromName>
-      <FlipIndex>6</FlipIndex>
+      <RotateFrom>BottomLeft</RotateFrom>
+      <RotateDescription>From BottomLeft to BottomRight</RotateDescription>
       <ClockwiseRotateFromIndex>2</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>6</CounterClockwiseRotateFromIndex>
+      <RotateIndex>6</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>NoPlayer</CurrentState>
+      <FlipIndex>6</FlipIndex>
+      <FlipFromName>BottomLeft</FlipFromName>
       <FlipDescription>From BottomLeft to BottomRight</FlipDescription>
       <SortOrder>8</SortOrder>
     </Cell>
@@ -1161,18 +1161,18 @@
       <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>6</CellKey>
-      <RotateDescription>From Bottom to MiddleRight</RotateDescription>
-      <RotateIndex>7</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>PlayerB</CurrentState>
-      <RotateFrom>Bottom</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>Top</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Bottom</CounterClockwiseRotateFrom>
-      <FlipFromName>MiddleLeft</FlipFromName>
-      <FlipIndex>3</FlipIndex>
+      <RotateFrom>Bottom</RotateFrom>
+      <RotateDescription>From Bottom to MiddleRight</RotateDescription>
       <ClockwiseRotateFromIndex>1</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>7</CounterClockwiseRotateFromIndex>
+      <RotateIndex>7</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>PlayerB</CurrentState>
+      <FlipIndex>3</FlipIndex>
+      <FlipFromName>MiddleLeft</FlipFromName>
       <FlipDescription>From MiddleLeft to MiddleRight</FlipDescription>
       <SortOrder>5</SortOrder>
     </Cell>
@@ -1192,18 +1192,18 @@
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>1</CellKey>
-      <RotateDescription>From TopLeft to BottomLeft</RotateDescription>
-      <RotateIndex>0</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
-      <RotateFrom>TopLeft</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>BottomRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopLeft</CounterClockwiseRotateFrom>
-      <FlipFromName>BottomRight</FlipFromName>
-      <FlipIndex>8</FlipIndex>
+      <RotateFrom>TopLeft</RotateFrom>
+      <RotateDescription>From TopLeft to BottomLeft</RotateDescription>
       <ClockwiseRotateFromIndex>8</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>0</CounterClockwiseRotateFromIndex>
+      <RotateIndex>0</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>NoPlayer</CurrentState>
+      <FlipIndex>8</FlipIndex>
+      <FlipFromName>BottomRight</FlipFromName>
       <FlipDescription>From BottomRight to BottomLeft</FlipDescription>
       <SortOrder>6</SortOrder>
     </Cell>
@@ -1227,18 +1227,18 @@
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>8</CellKey>
-      <RotateDescription>From MiddleRight to Top</RotateDescription>
-      <RotateIndex>5</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
-      <RotateFrom>MiddleRight</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>MiddleLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleRight</CounterClockwiseRotateFrom>
-      <FlipFromName>Top</FlipFromName>
-      <FlipIndex>1</FlipIndex>
+      <RotateFrom>MiddleRight</RotateFrom>
+      <RotateDescription>From MiddleRight to Top</RotateDescription>
       <ClockwiseRotateFromIndex>3</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>5</CounterClockwiseRotateFromIndex>
+      <RotateIndex>5</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>NoPlayer</CurrentState>
+      <FlipIndex>1</FlipIndex>
+      <FlipFromName>Top</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>1</SortOrder>
     </Cell>
@@ -1261,18 +1261,18 @@
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>4</CellKey>
-      <RotateDescription>From Top to MiddleLeft</RotateDescription>
-      <RotateIndex>1</RotateIndex>
-      <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
-      <RotateFrom>Top</RotateFrom>
       <IsClockwise />
       <ClockwiseRotateFrom>Bottom</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Top</CounterClockwiseRotateFrom>
-      <FlipFromName>MiddleRight</FlipFromName>
-      <FlipIndex>5</FlipIndex>
+      <RotateFrom>Top</RotateFrom>
+      <RotateDescription>From Top to MiddleLeft</RotateDescription>
       <ClockwiseRotateFromIndex>7</ClockwiseRotateFromIndex>
       <CounterClockwiseRotateFromIndex>1</CounterClockwiseRotateFromIndex>
+      <RotateIndex>1</RotateIndex>
+      <DefaultState>NoPlayer</DefaultState>
+      <CurrentState>NoPlayer</CurrentState>
+      <FlipIndex>5</FlipIndex>
+      <FlipFromName>MiddleRight</FlipFromName>
       <FlipDescription>From MiddleRight to MiddleLeft</FlipDescription>
       <SortOrder>3</SortOrder>
     </Cell>
