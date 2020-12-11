@@ -12,7 +12,14 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                             Each CellPatternTranslation may have zero or more associated
                           
                             
-                                <a href="#CellPattern">
+                                <a href="#AILevel">
+                                
+                                    AILevels
+                                    
+                                </a>
+                        
+                            
+                                , <a href="#CellPattern">
                                 
                                     CellPatterns
                                     
@@ -37,10 +44,10 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                         Count</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         SortOrder</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        TranslationId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CPTCode</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CellPatternName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        TranslationName</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPatternTranslation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternTranslationId, createdTime, Translation, CellPattern, Count, SortOrder, Name, TranslationId, CPTCode, CellPatternName, TranslationName
+                        TranslationName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        TranslationId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CPTCode</td><td>INT32</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPatternTranslation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternTranslationId, createdTime, Translation, CellPattern, Count, SortOrder, Name, CellPatternName, TranslationName, TranslationId, CPTCode
 
 <b>FROM</b> CellPatternTranslation
 
@@ -72,15 +79,32 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                             
                             
                             AILevel  
-                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
-                        AILevelId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each AILevel may have zero or more associated
+                          
+                            
+                                <a href="#AIStrategy">
+                                
+                                    AIStrategies
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        AILevelId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#CellPatternTranslation">Users</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#AIStrategy">AIStrategies</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         createdTime</td><td>DATETIME</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         PlayerType</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         MinAILevelIndex</td><td>INT16</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         AILevelIndex</td><td>INT16</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Description</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        SortOrder</td><td>INT16</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">AILevel Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> AILevelId, createdTime, Name, PlayerType, MinAILevelIndex, AILevelIndex, Description, SortOrder
+                        SortOrder</td><td>INT16</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AIStrategyNames</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">AILevel Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> AILevelId, createdTime, Name, PlayerType, MinAILevelIndex, AILevelIndex, Description, SortOrder, Users, AIStrategies, AIStrategyNames
 
 <b>FROM</b> AILevel
 
@@ -143,13 +167,13 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                         Description</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         IsWinPattern</td><td>BOOLEAN</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         SortOrder</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        TargetCellStateId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CellPatternCellStates</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        Cells</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         TargetCellIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        Target</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        TargetCellStateId</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CellPatternTranslationCodes</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        Translations</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPattern Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternId, createdTime, Name, Description, IsWinPattern, CellPatternCells, CellPatternTranslations, TargetCell, TargetCellState, SortOrder, TargetCellStateId, CellPatternCellStates, Cells, TargetCellIndex, Target, CellPatternTranslationCodes, Translations
+                        Cells</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CellPatternCellStates</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Target</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        Translations</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">CellPattern Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellPatternId, createdTime, Name, Description, IsWinPattern, CellPatternCells, CellPatternTranslations, TargetCell, TargetCellState, SortOrder, TargetCellIndex, TargetCellStateId, CellPatternTranslationCodes, Cells, CellPatternCellStates, Target, Translations
 
 <b>FROM</b> CellPattern
 
@@ -162,15 +186,29 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                             
                             
                             AIStrategy  
-                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
-                        AIStrategyId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        </h2><div style="padding: 0.25em; font-size: 0.8em; font-weight: bold;"></div><div style="padding: 1em;">
+                            Each AIStrategy may have zero or more associated
+                          
+                            
+                                <a href="#AILevel">
+                                
+                                    AILevels
+                                    
+                                </a>
+                        
+                        </div></div></div></td></tr><tr><th align="left" style="width: 5em;">CRUD</th><th align="left">Name</th><th align="left">Type</th><th align="left">Original Name</th></tr><tr><td style="padding: 0.25em; width: 5em;"><img style="width: 1em;" src="images/primary-key.png" /></td><td>
+                        AIStrategyId</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"><span></span></td><td>
+                                    
+                                    <a href="#AILevel">AILevels</a>
+                                </td><td>Parent</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         createdTime</td><td>DATETIME</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Description</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         PlayerLevel</td><td>INT16</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         IsDefensive</td><td>BOOLEAN</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         StrategyRank</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        SortOrder</td><td>INT32</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">AIStrategy Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> AIStrategyId, createdTime, Name, Description, PlayerLevel, IsDefensive, StrategyRank, SortOrder
+                        SortOrder</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        AILevelNames</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">AIStrategy Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> AIStrategyId, createdTime, Name, Description, PlayerLevel, IsDefensive, StrategyRank, SortOrder, AILevels, AILevelNames
 
 <b>FROM</b> AIStrategy
 
@@ -330,20 +368,19 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                         Y</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CellIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CellKey</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        IsClockwise</td><td>BOOLEAN</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        ClockwiseRotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CounterClockwiseRotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        RotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         RotateDescription</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        ClockwiseRotateFromIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        CounterClockwiseRotateFromIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         RotateIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         DefaultState</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CurrentState</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        FlipIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        RotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        ClockwiseRotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CounterClockwiseRotateFrom</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         FlipFromName</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        FlipIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        ClockwiseRotateFromIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
+                        CounterClockwiseRotateFromIndex</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         FlipDescription</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        SortOrder</td><td>INT32</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Cell Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellId, createdTime, Name, Clockwise, CounterClockwise, Flip, SampleValue, Description, X, Y, RotateTranslation, CellIndex, CellPatternCells, CellPatterns, CurrentCellState, DefaultCellState, CellKey, IsClockwise, ClockwiseRotateFrom, CounterClockwiseRotateFrom, RotateFrom, RotateDescription, ClockwiseRotateFromIndex, CounterClockwiseRotateFromIndex, RotateIndex, DefaultState, CurrentState, FlipIndex, FlipFromName, FlipDescription, SortOrder
+                        SortOrder</td><td>INT32</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Cell Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> CellId, createdTime, Name, Clockwise, CounterClockwise, Flip, SampleValue, Description, X, Y, RotateTranslation, CellIndex, CellPatternCells, CellPatterns, CurrentCellState, DefaultCellState, CellKey, RotateDescription, RotateIndex, DefaultState, CurrentState, RotateFrom, ClockwiseRotateFrom, CounterClockwiseRotateFrom, FlipFromName, FlipIndex, ClockwiseRotateFromIndex, CounterClockwiseRotateFromIndex, FlipDescription, SortOrder
 
 <b>FROM</b> Cell
 
@@ -440,8 +477,7 @@ TicTacToeChallenge  Data model</h1><a class="btn btn-sm btn-primary" href="Index
                         Name</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         CustomDescription</td><td>TEXT</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
                         Id</td><td>INT32</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        IsClockwise</td><td>BOOLEAN</td><td></td></tr><tr><td style="padding: 0.25em; width: 5em;"></td><td>
-                        Description</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Translation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TranslationId, createdTime, Name, CustomDescription, Id, IsClockwise, Cells, CellPatternTranslations, Description
+                        Description</td><td>TEXT</td><td></td></tr><tr><th colspan="3" style="padding-top: 1em;">Translation Query</th></tr><tr><td colspan="3"><div style="white-space: pre-wrap; font-size: 0.9em; font-family: monospace; padding: 0.8em;"><b>SELECT</b> TranslationId, createdTime, Name, CustomDescription, Id, Cells, CellPatternTranslations, Description
 
 <b>FROM</b> Translation
 
