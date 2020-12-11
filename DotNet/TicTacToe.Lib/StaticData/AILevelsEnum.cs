@@ -4,6 +4,7 @@ public enum AILevelsEnum
     Human,
     Beginner,
     Intermediate,
-    Advanced
+    Advanced,
+    God
 }
                     

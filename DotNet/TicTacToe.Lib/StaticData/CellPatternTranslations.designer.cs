@@ -9,6 +9,25 @@ public static partial class CellPatternTranslations
         // setup each one...
         
             
+        var T1_DiagonalWinFlip1 = new CellPatternTranslation()
+        {
+            CellPatternTranslationId = @"rec7MeKnHind7FhXd",
+            createdTime = DateTime.Parse("2020-12-11T20:01:42Z"),
+            Name = @"T1-DiagonalWin:Flip:1",
+            CPTCode = 11,
+            CellPattern = new string[] { @"recg6YsAgLEBikQ3F" },
+            CellPatternName = @"DiagonalWin",
+            Count = 1,
+            Translation = new string[] { @"recQ0PgyWBky0wm32" },
+            TranslationId = 1,
+            TranslationName = @"Flip",
+            SortOrder = 1
+        };
+
+        List.Add(T1_DiagonalWinFlip1);
+        ByEnum[CellPatternTranslationsEnum.T1_DiagonalWinFlip1] = T1_DiagonalWinFlip1;
+        
+            
         var T1_TwoInARowDiagonalRotate3 = new CellPatternTranslation()
         {
             CellPatternTranslationId = @"rec9PRnE4xpUCcMit",

@@ -81,6 +81,23 @@ public static partial class AILevels
         List.Add(Advanced);
         ByEnum[AILevelsEnum.Advanced] = Advanced;
         
+            
+        var God = new AILevel()
+        {
+            AILevelId = @"rec9b05vxWWpxVyoy",
+            createdTime = DateTime.Parse("2020-12-11T20:00:24Z"),
+            Name = @"God",
+            PlayerType = @"AI",
+            MinAILevelIndex = null,
+            AILevelIndex = null,
+            Description = @"Learn from mistakes.",
+            SortOrder = null,
+            Users = new string[] { @"reciqoIN0xBrbCPsy" }
+        };
+
+        List.Add(God);
+        ByEnum[AILevelsEnum.God] = God;
+        
     }
 
 }

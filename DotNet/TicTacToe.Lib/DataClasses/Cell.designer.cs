@@ -92,6 +92,9 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellKey")]
         public Nullable<Int32> CellKey { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsClockwise")]
+        public Nullable<Boolean> IsClockwise { get; set; }
+    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "ClockwiseRotateFrom")]
         public String ClockwiseRotateFrom { get; set; }
     

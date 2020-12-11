@@ -1,6 +1,7 @@
 
 public enum CellPatternTranslationsEnum
 {
+    T1_DiagonalWinFlip1,
     T1_TwoInARowDiagonalRotate3,
     T1_EdgeWinRotate3,
     T1_TwoInARowMiddleRotate3,

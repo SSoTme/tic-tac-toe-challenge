@@ -192,6 +192,26 @@ public static partial class CellPatterns
         List.Add(TwoOutsideDiagonal);
         ByEnum[CellPatternsEnum.TwoOutsideDiagonal] = TwoOutsideDiagonal;
         
+            
+        var DiagonalWin = new CellPattern()
+        {
+            CellPatternId = @"recg6YsAgLEBikQ3F",
+            createdTime = DateTime.Parse("2020-12-11T20:01:30Z"),
+            IsWinPattern = Boolean.Parse("true"),
+            SortOrder = 20,
+            Cells = @"00;40;80",
+            Translations = @"11",
+            Name = @"DiagonalWin",
+            Description = @"Win along either diagonal",
+            CellPatternCells = new string[] { @"recqMa5gtwmjYgF2X", "recEX4e2JD90yYDDr", "recJzgHATmFMUyW7E" },
+            CellPatternCellStates = new int[] { 00, 40, 80 },
+            CellPatternTranslations = new string[] { @"rec7MeKnHind7FhXd" },
+            CellPatternTranslationCodes = new int[] { 11 }
+        };
+
+        List.Add(DiagonalWin);
+        ByEnum[CellPatternsEnum.DiagonalWin] = DiagonalWin;
+        
     }
 
 }

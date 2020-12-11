@@ -1,8 +1,8 @@
 
 public enum CellStatesEnum
 {
-    PlayerA,
-    PlayerB,
+    Player,
+    Opponent,
     NoPlayer
 }
                     

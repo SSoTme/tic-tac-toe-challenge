@@ -14,7 +14,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recNnnObNV1wEGXUI",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"Title",
-            DisplayName = @"Bob's 3x3 Tic-Tac-Toe",
+            DisplayName = @"Kris's 3x3 Tic-Tac-Toe",
             SortOrder = 1,
             Token = @"Title"
         };
@@ -84,7 +84,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recPamDrUmmMfoUtj",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"YouWon",
-            DisplayName = @"Winner",
+            DisplayName = @"You won!!",
             SortOrder = 6,
             Token = @"YouWon"
         };
@@ -98,7 +98,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recOqDsQXph2jV645",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"TheyWon",
-            DisplayName = @"Loser",
+            DisplayName = @"You a Loooser!!!",
             SortOrder = 7,
             Token = @"TheyWon"
         };

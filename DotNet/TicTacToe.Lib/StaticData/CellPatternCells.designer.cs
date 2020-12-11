@@ -28,194 +28,232 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoInARowDiagonalNoPlayerBottomRight] = TwoInARowDiagonalNoPlayerBottomRight;
         
             
-        var TwoOutsideMiddlePlayerAMiddleRight = new CellPatternCell()
+        var TwoOutsideMiddlePlayerMiddleRight = new CellPatternCell()
         {
             CellPatternCellId = @"rec6RGGCG5ORVBnA3",
             createdTime = DateTime.Parse("2020-11-26T20:44:11Z"),
             Cell = new string[] { @"recfSe8zeEdCAtcGq" },
             CellPattern = new string[] { @"recobCShOEyZjP8bY" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideMiddle:PlayerA:MiddleRight",
+            Name = @"TwoOutsideMiddle:Player:MiddleRight",
             CellIndex = 5,
             CellStateId = 0,
             CellCellState = 50,
             CellName = @"MiddleRight",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideMiddlePlayerAMiddleRight);
-        ByEnum[CellPatternCellsEnum.TwoOutsideMiddlePlayerAMiddleRight] = TwoOutsideMiddlePlayerAMiddleRight;
+        List.Add(TwoOutsideMiddlePlayerMiddleRight);
+        ByEnum[CellPatternCellsEnum.TwoOutsideMiddlePlayerMiddleRight] = TwoOutsideMiddlePlayerMiddleRight;
         
             
-        var TwoOutsideTopPlayerATopRight = new CellPatternCell()
+        var TwoOutsideTopPlayerTopRight = new CellPatternCell()
         {
             CellPatternCellId = @"rec8bt4pVcy9OY8XO",
             createdTime = DateTime.Parse("2020-11-26T20:44:14Z"),
             Cell = new string[] { @"recTGnKjXTE8LfT3C" },
             CellPattern = new string[] { @"recYmKv2dBpnAA1gs" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideTop:PlayerA:TopRight",
+            Name = @"TwoOutsideTop:Player:TopRight",
             CellIndex = 2,
             CellStateId = 0,
             CellCellState = 20,
             CellName = @"TopRight",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideTopPlayerATopRight);
-        ByEnum[CellPatternCellsEnum.TwoOutsideTopPlayerATopRight] = TwoOutsideTopPlayerATopRight;
+        List.Add(TwoOutsideTopPlayerTopRight);
+        ByEnum[CellPatternCellsEnum.TwoOutsideTopPlayerTopRight] = TwoOutsideTopPlayerTopRight;
         
             
-        var TwoInARowDiagonalPlayerATopLeft = new CellPatternCell()
+        var TwoInARowDiagonalPlayerTopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"rec91aKNdkT2cw93v",
             createdTime = DateTime.Parse("2020-11-26T20:37:58Z"),
             Cell = new string[] { @"rec50MWM91QHzlEzO" },
             CellPattern = new string[] { @"recZCV8dlP1pNK9kK" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowDiagonal:PlayerA:TopLeft",
+            Name = @"TwoInARowDiagonal:Player:TopLeft",
             CellIndex = 0,
             CellStateId = 0,
             CellCellState = 00,
             CellName = @"TopLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowDiagonalPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.TwoInARowDiagonalPlayerATopLeft] = TwoInARowDiagonalPlayerATopLeft;
+        List.Add(TwoInARowDiagonalPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.TwoInARowDiagonalPlayerTopLeft] = TwoInARowDiagonalPlayerTopLeft;
         
             
-        var MiddleWinPlayerAMiddleRight = new CellPatternCell()
+        var MiddleWinPlayerMiddleRight = new CellPatternCell()
         {
             CellPatternCellId = @"recAy4XNSSKRZGZsh",
             createdTime = DateTime.Parse("2020-11-26T20:42:02Z"),
             Cell = new string[] { @"recfSe8zeEdCAtcGq" },
             CellPattern = new string[] { @"recodVK2HKbzC26Db" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"MiddleWin:PlayerA:MiddleRight",
+            Name = @"MiddleWin:Player:MiddleRight",
             CellIndex = 5,
             CellStateId = 0,
             CellCellState = 50,
             CellName = @"MiddleRight",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(MiddleWinPlayerAMiddleRight);
-        ByEnum[CellPatternCellsEnum.MiddleWinPlayerAMiddleRight] = MiddleWinPlayerAMiddleRight;
+        List.Add(MiddleWinPlayerMiddleRight);
+        ByEnum[CellPatternCellsEnum.MiddleWinPlayerMiddleRight] = MiddleWinPlayerMiddleRight;
         
             
-        var TwoInARowTopPlayerATop = new CellPatternCell()
+        var DiagonalWinPlayerMiddle = new CellPatternCell()
+        {
+            CellPatternCellId = @"recEX4e2JD90yYDDr",
+            createdTime = DateTime.Parse("2020-12-11T20:02:08Z"),
+            CellPattern = new string[] { @"recg6YsAgLEBikQ3F" },
+            Name = @"DiagonalWin:Player:Middle",
+            CellCellState = 40,
+            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
+            CellStateId = 0,
+            CellStateName = @"Player",
+            Cell = new string[] { @"rec35HZOaRy6ge0jk" },
+            CellIndex = 4,
+            CellName = @"Middle"
+        };
+
+        List.Add(DiagonalWinPlayerMiddle);
+        ByEnum[CellPatternCellsEnum.DiagonalWinPlayerMiddle] = DiagonalWinPlayerMiddle;
+        
+            
+        var TwoInARowTopPlayerTop = new CellPatternCell()
         {
             CellPatternCellId = @"recFITGoLxBQs1ocD",
             createdTime = DateTime.Parse("2020-11-26T20:44:06Z"),
             Cell = new string[] { @"recpPYOZtnp3lTOua" },
             CellPattern = new string[] { @"rec55PqGhtUYK5Rcb" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowTop:PlayerA:Top",
+            Name = @"TwoInARowTop:Player:Top",
             CellIndex = 1,
             CellStateId = 0,
             CellCellState = 10,
             CellName = @"Top",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowTopPlayerATop);
-        ByEnum[CellPatternCellsEnum.TwoInARowTopPlayerATop] = TwoInARowTopPlayerATop;
+        List.Add(TwoInARowTopPlayerTop);
+        ByEnum[CellPatternCellsEnum.TwoInARowTopPlayerTop] = TwoInARowTopPlayerTop;
         
             
-        var MiddleWinPlayerAMiddle = new CellPatternCell()
+        var MiddleWinPlayerMiddle = new CellPatternCell()
         {
             CellPatternCellId = @"recGP80BxFCLlmgw7",
             createdTime = DateTime.Parse("2020-11-26T20:41:59Z"),
             Cell = new string[] { @"rec35HZOaRy6ge0jk" },
             CellPattern = new string[] { @"recodVK2HKbzC26Db" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"MiddleWin:PlayerA:Middle",
+            Name = @"MiddleWin:Player:Middle",
             CellIndex = 4,
             CellStateId = 0,
             CellCellState = 40,
             CellName = @"Middle",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(MiddleWinPlayerAMiddle);
-        ByEnum[CellPatternCellsEnum.MiddleWinPlayerAMiddle] = MiddleWinPlayerAMiddle;
+        List.Add(MiddleWinPlayerMiddle);
+        ByEnum[CellPatternCellsEnum.MiddleWinPlayerMiddle] = MiddleWinPlayerMiddle;
         
             
-        var TwoOutsideTopPlayerATopLeft = new CellPatternCell()
+        var DiagonalWinPlayerBottomRight = new CellPatternCell()
+        {
+            CellPatternCellId = @"recJzgHATmFMUyW7E",
+            createdTime = DateTime.Parse("2020-12-11T20:02:08Z"),
+            CellPattern = new string[] { @"recg6YsAgLEBikQ3F" },
+            Name = @"DiagonalWin:Player:BottomRight",
+            CellCellState = 80,
+            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
+            CellStateId = 0,
+            CellStateName = @"Player",
+            Cell = new string[] { @"recczW2Y4WMv9buZ8" },
+            CellIndex = 8,
+            CellName = @"BottomRight"
+        };
+
+        List.Add(DiagonalWinPlayerBottomRight);
+        ByEnum[CellPatternCellsEnum.DiagonalWinPlayerBottomRight] = DiagonalWinPlayerBottomRight;
+        
+            
+        var TwoOutsideTopPlayerTopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recKj18pU9k6V6MAx",
             createdTime = DateTime.Parse("2020-11-26T20:37:58Z"),
             Cell = new string[] { @"rec50MWM91QHzlEzO" },
             CellPattern = new string[] { @"recYmKv2dBpnAA1gs" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideTop:PlayerA:TopLeft",
+            Name = @"TwoOutsideTop:Player:TopLeft",
             CellIndex = 0,
             CellStateId = 0,
             CellCellState = 00,
             CellName = @"TopLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideTopPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.TwoOutsideTopPlayerATopLeft] = TwoOutsideTopPlayerATopLeft;
+        List.Add(TwoOutsideTopPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.TwoOutsideTopPlayerTopLeft] = TwoOutsideTopPlayerTopLeft;
         
             
-        var EdgeWinPlayerATopRight = new CellPatternCell()
+        var EdgeWinPlayerTopRight = new CellPatternCell()
         {
             CellPatternCellId = @"recPHA9ppFH8cjenC",
             createdTime = DateTime.Parse("2020-11-26T20:38:15Z"),
             Cell = new string[] { @"recTGnKjXTE8LfT3C" },
             CellPattern = new string[] { @"recBDK2nzNlGSJNgJ" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"EdgeWin:PlayerA:TopRight",
+            Name = @"EdgeWin:Player:TopRight",
             CellIndex = 2,
             CellStateId = 0,
             CellCellState = 20,
             CellName = @"TopRight",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(EdgeWinPlayerATopRight);
-        ByEnum[CellPatternCellsEnum.EdgeWinPlayerATopRight] = EdgeWinPlayerATopRight;
+        List.Add(EdgeWinPlayerTopRight);
+        ByEnum[CellPatternCellsEnum.EdgeWinPlayerTopRight] = EdgeWinPlayerTopRight;
         
             
-        var TwoInARowMiddlePlayerAMiddle = new CellPatternCell()
+        var TwoInARowMiddlePlayerMiddle = new CellPatternCell()
         {
             CellPatternCellId = @"recPmKMMNhYSxBWJ0",
             createdTime = DateTime.Parse("2020-11-26T20:44:04Z"),
             Cell = new string[] { @"rec35HZOaRy6ge0jk" },
             CellPattern = new string[] { @"recqn6vuQrx71nQii" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowMiddle:PlayerA:Middle",
+            Name = @"TwoInARowMiddle:Player:Middle",
             CellIndex = 4,
             CellStateId = 0,
             CellCellState = 40,
             CellName = @"Middle",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowMiddlePlayerAMiddle);
-        ByEnum[CellPatternCellsEnum.TwoInARowMiddlePlayerAMiddle] = TwoInARowMiddlePlayerAMiddle;
+        List.Add(TwoInARowMiddlePlayerMiddle);
+        ByEnum[CellPatternCellsEnum.TwoInARowMiddlePlayerMiddle] = TwoInARowMiddlePlayerMiddle;
         
             
-        var EdgeWinPlayerATopLeft = new CellPatternCell()
+        var EdgeWinPlayerTopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recU9O3yxyMeQ1eU4",
             createdTime = DateTime.Parse("2020-11-26T20:35:31Z"),
             Cell = new string[] { @"rec50MWM91QHzlEzO" },
             CellPattern = new string[] { @"recBDK2nzNlGSJNgJ" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"EdgeWin:PlayerA:TopLeft",
+            Name = @"EdgeWin:Player:TopLeft",
             CellIndex = 0,
             CellStateId = 0,
             CellCellState = 00,
             CellName = @"TopLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(EdgeWinPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.EdgeWinPlayerATopLeft] = EdgeWinPlayerATopLeft;
+        List.Add(EdgeWinPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.EdgeWinPlayerTopLeft] = EdgeWinPlayerTopLeft;
         
             
         var TwoOutsideDiagonalNoPlayerMiddle = new CellPatternCell()
@@ -237,23 +275,23 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoOutsideDiagonalNoPlayerMiddle] = TwoOutsideDiagonalNoPlayerMiddle;
         
             
-        var TwoOutsideDiagonalPlayerATopLeft = new CellPatternCell()
+        var TwoOutsideDiagonalPlayerTopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recYR4cE90EOVnYD5",
             createdTime = DateTime.Parse("2020-11-26T20:37:58Z"),
             Cell = new string[] { @"rec50MWM91QHzlEzO" },
             CellPattern = new string[] { @"recg1ttw7l3n96PDG" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideDiagonal:PlayerA:TopLeft",
+            Name = @"TwoOutsideDiagonal:Player:TopLeft",
             CellIndex = 0,
             CellStateId = 0,
             CellCellState = 00,
             CellName = @"TopLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideDiagonalPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.TwoOutsideDiagonalPlayerATopLeft] = TwoOutsideDiagonalPlayerATopLeft;
+        List.Add(TwoOutsideDiagonalPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.TwoOutsideDiagonalPlayerTopLeft] = TwoOutsideDiagonalPlayerTopLeft;
         
             
         var TwoOutsideMiddleNoPlayerMiddle = new CellPatternCell()
@@ -275,23 +313,23 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoOutsideMiddleNoPlayerMiddle] = TwoOutsideMiddleNoPlayerMiddle;
         
             
-        var TwoInARowTopPlayerATopLeft = new CellPatternCell()
+        var TwoInARowTopPlayerTopLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recclaJuN3LJWLC4N",
             createdTime = DateTime.Parse("2020-11-26T20:35:31Z"),
             Cell = new string[] { @"rec50MWM91QHzlEzO" },
             CellPattern = new string[] { @"rec55PqGhtUYK5Rcb" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowTop:PlayerA:TopLeft",
+            Name = @"TwoInARowTop:Player:TopLeft",
             CellIndex = 0,
             CellStateId = 0,
             CellCellState = 00,
             CellName = @"TopLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowTopPlayerATopLeft);
-        ByEnum[CellPatternCellsEnum.TwoInARowTopPlayerATopLeft] = TwoInARowTopPlayerATopLeft;
+        List.Add(TwoInARowTopPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.TwoInARowTopPlayerTopLeft] = TwoInARowTopPlayerTopLeft;
         
             
         var TwoInARowTopNoPlayerTopRight = new CellPatternCell()
@@ -313,23 +351,23 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoInARowTopNoPlayerTopRight] = TwoInARowTopNoPlayerTopRight;
         
             
-        var EdgeWinPlayerATop = new CellPatternCell()
+        var EdgeWinPlayerTop = new CellPatternCell()
         {
             CellPatternCellId = @"recf1uu1YY0iPps8E",
             createdTime = DateTime.Parse("2020-11-26T20:38:12Z"),
             Cell = new string[] { @"recpPYOZtnp3lTOua" },
             CellPattern = new string[] { @"recBDK2nzNlGSJNgJ" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"EdgeWin:PlayerA:Top",
+            Name = @"EdgeWin:Player:Top",
             CellIndex = 1,
             CellStateId = 0,
             CellCellState = 10,
             CellName = @"Top",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(EdgeWinPlayerATop);
-        ByEnum[CellPatternCellsEnum.EdgeWinPlayerATop] = EdgeWinPlayerATop;
+        List.Add(EdgeWinPlayerTop);
+        ByEnum[CellPatternCellsEnum.EdgeWinPlayerTop] = EdgeWinPlayerTop;
         
             
         var TwoInARowMiddleNoPlayerMiddleRight = new CellPatternCell()
@@ -351,42 +389,42 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoInARowMiddleNoPlayerMiddleRight] = TwoInARowMiddleNoPlayerMiddleRight;
         
             
-        var MiddleWinPlayerAMiddleLeft = new CellPatternCell()
+        var MiddleWinPlayerMiddleLeft = new CellPatternCell()
         {
             CellPatternCellId = @"reckcKNNnyDSWpFrH",
             createdTime = DateTime.Parse("2020-11-26T20:35:31Z"),
             Cell = new string[] { @"recxIf3GoDzEtonFU" },
             CellPattern = new string[] { @"recodVK2HKbzC26Db" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"MiddleWin:PlayerA:MiddleLeft",
+            Name = @"MiddleWin:Player:MiddleLeft",
             CellIndex = 3,
             CellStateId = 0,
             CellCellState = 30,
             CellName = @"MiddleLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(MiddleWinPlayerAMiddleLeft);
-        ByEnum[CellPatternCellsEnum.MiddleWinPlayerAMiddleLeft] = MiddleWinPlayerAMiddleLeft;
+        List.Add(MiddleWinPlayerMiddleLeft);
+        ByEnum[CellPatternCellsEnum.MiddleWinPlayerMiddleLeft] = MiddleWinPlayerMiddleLeft;
         
             
-        var TwoOutsideDiagonalPlayerABottomRight = new CellPatternCell()
+        var TwoOutsideDiagonalPlayerBottomRight = new CellPatternCell()
         {
             CellPatternCellId = @"reclDV8jky7y1JNzH",
             createdTime = DateTime.Parse("2020-11-26T20:42:19Z"),
             Cell = new string[] { @"recczW2Y4WMv9buZ8" },
             CellPattern = new string[] { @"recg1ttw7l3n96PDG" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideDiagonal:PlayerA:BottomRight",
+            Name = @"TwoOutsideDiagonal:Player:BottomRight",
             CellIndex = 8,
             CellStateId = 0,
             CellCellState = 80,
             CellName = @"BottomRight",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideDiagonalPlayerABottomRight);
-        ByEnum[CellPatternCellsEnum.TwoOutsideDiagonalPlayerABottomRight] = TwoOutsideDiagonalPlayerABottomRight;
+        List.Add(TwoOutsideDiagonalPlayerBottomRight);
+        ByEnum[CellPatternCellsEnum.TwoOutsideDiagonalPlayerBottomRight] = TwoOutsideDiagonalPlayerBottomRight;
         
             
         var TwoOutsideTopNoPlayerTop = new CellPatternCell()
@@ -408,61 +446,80 @@ public static partial class CellPatternCells
         ByEnum[CellPatternCellsEnum.TwoOutsideTopNoPlayerTop] = TwoOutsideTopNoPlayerTop;
         
             
-        var TwoInARowDiagonalPlayerAMiddle = new CellPatternCell()
+        var DiagonalWinPlayerTopLeft = new CellPatternCell()
+        {
+            CellPatternCellId = @"recqMa5gtwmjYgF2X",
+            createdTime = DateTime.Parse("2020-12-11T20:01:38Z"),
+            Name = @"DiagonalWin:Player:TopLeft",
+            CellCellState = 00,
+            CellPattern = new string[] { @"recg6YsAgLEBikQ3F" },
+            CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
+            CellStateId = 0,
+            CellStateName = @"Player",
+            Cell = new string[] { @"rec50MWM91QHzlEzO" },
+            CellIndex = 0,
+            CellName = @"TopLeft"
+        };
+
+        List.Add(DiagonalWinPlayerTopLeft);
+        ByEnum[CellPatternCellsEnum.DiagonalWinPlayerTopLeft] = DiagonalWinPlayerTopLeft;
+        
+            
+        var TwoInARowDiagonalPlayerMiddle = new CellPatternCell()
         {
             CellPatternCellId = @"recwQ3ZI5MBVHPKgl",
             createdTime = DateTime.Parse("2020-11-26T20:43:44Z"),
             Cell = new string[] { @"rec35HZOaRy6ge0jk" },
             CellPattern = new string[] { @"recZCV8dlP1pNK9kK" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowDiagonal:PlayerA:Middle",
+            Name = @"TwoInARowDiagonal:Player:Middle",
             CellIndex = 4,
             CellStateId = 0,
             CellCellState = 40,
             CellName = @"Middle",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowDiagonalPlayerAMiddle);
-        ByEnum[CellPatternCellsEnum.TwoInARowDiagonalPlayerAMiddle] = TwoInARowDiagonalPlayerAMiddle;
+        List.Add(TwoInARowDiagonalPlayerMiddle);
+        ByEnum[CellPatternCellsEnum.TwoInARowDiagonalPlayerMiddle] = TwoInARowDiagonalPlayerMiddle;
         
             
-        var TwoInARowMiddlePlayerAMiddleLeft = new CellPatternCell()
+        var TwoInARowMiddlePlayerMiddleLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recxWA16nieZY83Sv",
             createdTime = DateTime.Parse("2020-11-26T20:37:58Z"),
             Cell = new string[] { @"recxIf3GoDzEtonFU" },
             CellPattern = new string[] { @"recqn6vuQrx71nQii" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoInARowMiddle:PlayerA:MiddleLeft",
+            Name = @"TwoInARowMiddle:Player:MiddleLeft",
             CellIndex = 3,
             CellStateId = 0,
             CellCellState = 30,
             CellName = @"MiddleLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoInARowMiddlePlayerAMiddleLeft);
-        ByEnum[CellPatternCellsEnum.TwoInARowMiddlePlayerAMiddleLeft] = TwoInARowMiddlePlayerAMiddleLeft;
+        List.Add(TwoInARowMiddlePlayerMiddleLeft);
+        ByEnum[CellPatternCellsEnum.TwoInARowMiddlePlayerMiddleLeft] = TwoInARowMiddlePlayerMiddleLeft;
         
             
-        var TwoOutsideMiddlePlayerAMiddleLeft = new CellPatternCell()
+        var TwoOutsideMiddlePlayerMiddleLeft = new CellPatternCell()
         {
             CellPatternCellId = @"recyZobcdc9yOkGuC",
             createdTime = DateTime.Parse("2020-11-26T20:37:58Z"),
             Cell = new string[] { @"recxIf3GoDzEtonFU" },
             CellPattern = new string[] { @"recobCShOEyZjP8bY" },
             CellState = new string[] { @"rec0xQjo4VL3DFTXg" },
-            Name = @"TwoOutsideMiddle:PlayerA:MiddleLeft",
+            Name = @"TwoOutsideMiddle:Player:MiddleLeft",
             CellIndex = 3,
             CellStateId = 0,
             CellCellState = 30,
             CellName = @"MiddleLeft",
-            CellStateName = @"PlayerA"
+            CellStateName = @"Player"
         };
 
-        List.Add(TwoOutsideMiddlePlayerAMiddleLeft);
-        ByEnum[CellPatternCellsEnum.TwoOutsideMiddlePlayerAMiddleLeft] = TwoOutsideMiddlePlayerAMiddleLeft;
+        List.Add(TwoOutsideMiddlePlayerMiddleLeft);
+        ByEnum[CellPatternCellsEnum.TwoOutsideMiddlePlayerMiddleLeft] = TwoOutsideMiddlePlayerMiddleLeft;
         
     }
 

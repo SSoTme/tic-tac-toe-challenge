@@ -9,38 +9,38 @@ public static partial class CellStates
         // setup each one...
         
             
-        var PlayerA = new CellState()
+        var Player = new CellState()
         {
             CellStateId = @"rec0xQjo4VL3DFTXg",
             createdTime = DateTime.Parse("2020-11-26T20:04:48Z"),
-            Name = @"PlayerA",
+            Name = @"Player",
             Code = @"P",
             Description = @"This cell has been marked by the active player",
-            Color = @"yellow",
-            FontColor = @"black",
-            DefaultMark = @"A",
+            Color = @"blue",
+            FontColor = @"white",
+            DefaultMark = @"X",
             Cursor = @"Default",
             SortOrder = 1,
             Id = 0,
-            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recf1uu1YY0iPps8E", "recPHA9ppFH8cjenC", "reckcKNNnyDSWpFrH", "recGP80BxFCLlmgw7", "recAy4XNSSKRZGZsh", "recYR4cE90EOVnYD5", "reclDV8jky7y1JNzH", "rec91aKNdkT2cw93v", "recwQ3ZI5MBVHPKgl", "recxWA16nieZY83Sv", "recPmKMMNhYSxBWJ0", "recclaJuN3LJWLC4N", "recFITGoLxBQs1ocD", "recyZobcdc9yOkGuC", "rec6RGGCG5ORVBnA3", "recKj18pU9k6V6MAx", "rec8bt4pVcy9OY8XO" },
+            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recf1uu1YY0iPps8E", "recPHA9ppFH8cjenC", "reckcKNNnyDSWpFrH", "recGP80BxFCLlmgw7", "recAy4XNSSKRZGZsh", "recYR4cE90EOVnYD5", "reclDV8jky7y1JNzH", "rec91aKNdkT2cw93v", "recwQ3ZI5MBVHPKgl", "recxWA16nieZY83Sv", "recPmKMMNhYSxBWJ0", "recclaJuN3LJWLC4N", "recFITGoLxBQs1ocD", "recyZobcdc9yOkGuC", "rec6RGGCG5ORVBnA3", "recKj18pU9k6V6MAx", "rec8bt4pVcy9OY8XO", "recqMa5gtwmjYgF2X", "recEX4e2JD90yYDDr", "recJzgHATmFMUyW7E" },
             CurrentStateCells = new string[] { @"rec50MWM91QHzlEzO", "rec35HZOaRy6ge0jk" },
             
         };
 
-        List.Add(PlayerA);
-        ByEnum[CellStatesEnum.PlayerA] = PlayerA;
+        List.Add(Player);
+        ByEnum[CellStatesEnum.Player] = Player;
         
             
-        var PlayerB = new CellState()
+        var Opponent = new CellState()
         {
             CellStateId = @"recw0SsqNfCk96xZs",
             createdTime = DateTime.Parse("2020-11-26T20:04:48Z"),
-            Name = @"PlayerB",
+            Name = @"Opponent",
             Code = @"O",
             Description = @"This cell has been marked by thhe active player's opponent.",
-            Color = @"black",
+            Color = @"red",
             FontColor = @"white",
-            DefaultMark = @"B",
+            DefaultMark = @"O",
             Cursor = @"Default",
             SortOrder = 2,
             Id = 1,
@@ -48,8 +48,8 @@ public static partial class CellStates
             
         };
 
-        List.Add(PlayerB);
-        ByEnum[CellStatesEnum.PlayerB] = PlayerB;
+        List.Add(Opponent);
+        ByEnum[CellStatesEnum.Opponent] = Opponent;
         
             
         var NoPlayer = new CellState()

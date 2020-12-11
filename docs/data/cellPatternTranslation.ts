@@ -8,15 +8,15 @@ export interface cellPatternTranslation
 {
     CellPatternTranslationId : string;
     createdTime? : Date;
-    Translation? : string[];
-    CellPattern? : string[];
-    Count? : number;
-    SortOrder? : number;
     Name? : string;
-    TranslationId? : number;
     CPTCode? : number;
+    CellPattern? : string[];
     CellPatternName? : string;
+    Count? : number;
+    Translation? : string[];
+    TranslationId? : number;
     TranslationName? : string;
+    SortOrder? : number;
     
     Users_AILevels : aILevel[];
     CellPatternTranslations_CellPatterns : cellPattern[];
