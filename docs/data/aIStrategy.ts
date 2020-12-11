@@ -1,5 +1,6 @@
 // Auto Generated Typescript Model interface
 
+import { aILevel } from "./aILevel";
 
 export interface aIStrategy 
 {
@@ -11,6 +12,9 @@ export interface aIStrategy
     IsDefensive? : boolean;
     StrategyRank? : number;
     SortOrder? : number;
+    AILevels? : string[];
+    AILevelNames? : string;
     
+    AIStrategies_AILevels : aILevel[];
     
 }
