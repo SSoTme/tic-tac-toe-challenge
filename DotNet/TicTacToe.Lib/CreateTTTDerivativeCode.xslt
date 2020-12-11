@@ -6,6 +6,7 @@
 
     <xsl:param name="output-filename" select="'output.txt'" />
     <xsl:variable name="win-patterns" select="//CellPatterns/CellPattern[normalize-space(IsWinPattern) = 'true']" />
+    <xsl:variable name="cell-states" select="//CellStates/CellState" />
     <xsl:template match="@* | node()">
         <xsl:copy>
             <xsl:apply-templates select="@* | node()"/>
@@ -130,7 +131,7 @@ namespace DotNet.Lib.CellPatterns
             if (<xsl:for-each select="$cpcs">
                 <xsl:sort select="CellIndex" data-type="number" />
                 (ticTacToeBoard.BoardCells[(int)CellsEnum.<xsl:value-of select="CellName" />].CurrentState == <xsl:choose>
-                    <xsl:when test="CellStateName = 'PlayerA'">this.CurrentPlayerState</xsl:when>
+                    <xsl:when test="CellStateName = $cell-states[position() = 1]/Name">this.CurrentPlayerState</xsl:when>
                     <xsl:otherwise>"NoPlayer"</xsl:otherwise>
                 </xsl:choose> ) <xsl:if test="position() &lt; count($cpcs)">&amp;&amp;</xsl:if>
                 </xsl:for-each>)
@@ -170,7 +171,7 @@ namespace DotNet.Lib.CellPatterns
             if (<xsl:for-each select="$cpcs">
                 <xsl:sort select="CellIndex" data-type="number" />
                 (ticTacToeBoard.BoardCells[(int)CellsEnum.<xsl:value-of select="CellName" />].CurrentState == <xsl:choose>
-                    <xsl:when test="CellStateName = 'PlayerA'">this.CurrentPlayerState</xsl:when>
+                    <xsl:when test="CellStateName = $cell-states[position() = 1]/Name">this.CurrentPlayerState</xsl:when>
                     <xsl:otherwise>"NoPlayer"</xsl:otherwise>
                 </xsl:choose> ) <xsl:if test="position() &lt; count($cpcs)">&amp;&amp;</xsl:if>
                 </xsl:for-each>)

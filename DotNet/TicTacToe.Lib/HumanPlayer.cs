@@ -45,7 +45,7 @@ namespace TicTacToe.DotNet.Lib
                     }
                     else if (cmdKey == "f")
                     {
-                        board.Rotate();
+                        board.Flip();
                     }
                     else Console.WriteLine("\r\nInvalid selection...");
                     board.PrintConsoleBoard();
