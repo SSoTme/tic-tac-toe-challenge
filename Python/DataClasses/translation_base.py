@@ -10,6 +10,7 @@ class TranslationBase:
     name: str = None
     custom_description: str = None
     id: int = None
+    is_clockwise: bool = None
     cells: str = None
     cell_pattern_translations: str = None
     description: str = None

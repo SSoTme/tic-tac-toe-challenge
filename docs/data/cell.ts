@@ -25,19 +25,21 @@ export interface cell
     CurrentCellState? : string[];
     DefaultCellState? : string[];
     CellKey? : number;
+    IsClockwise? : boolean;
+    ClockwiseRotateFrom? : string;
+    CounterClockwiseRotateFrom? : string;
+    RotateFrom? : string;
     RotateDescription? : string;
+    ClockwiseRotateFromIndex? : number;
+    CounterClockwiseRotateFromIndex? : number;
     RotateIndex? : number;
     DefaultState? : string;
     CurrentState? : string;
-    RotateFrom? : string;
-    ClockwiseRotateFrom? : string;
-    CounterClockwiseRotateFrom? : string;
-    FlipFromName? : string;
     FlipIndex? : number;
-    ClockwiseRotateFromIndex? : number;
-    CounterClockwiseRotateFromIndex? : number;
+    FlipFromName? : string;
     FlipDescription? : string;
     SortOrder? : number;
+    IsDailyDouble? : boolean;
     
     TargetCell_CellPatterns : cellPattern[];
     Cell_CellPatternCells : cellPatternCell[];

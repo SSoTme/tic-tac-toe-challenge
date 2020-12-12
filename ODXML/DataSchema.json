@@ -58,6 +58,7 @@
                       },
                       "IDRefs": {
                         "REF": [
+                          "recQ0PgyWBky0wm32",
                           "recgdoYW4iJ8gaAha",
                           "recgdoYW4iJ8gaAha",
                           "recgdoYW4iJ8gaAha",
@@ -92,6 +93,7 @@
                       },
                       "IDRefs": {
                         "REF": [
+                          "recg6YsAgLEBikQ3F",
                           "recZCV8dlP1pNK9kK",
                           "recBDK2nzNlGSJNgJ",
                           "recqn6vuQrx71nQii",
@@ -143,30 +145,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "18",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "TranslationName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "6",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "TranslationId",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -185,6 +163,30 @@
                     "Length": "",
                     "MaxLength": "2",
                     "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "18",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "TranslationName",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "6",
+                    "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -242,7 +244,7 @@
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
                     "Length": "150",
-                    "MaxLength": "22",
+                    "MaxLength": "23",
                     "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
@@ -401,6 +403,7 @@
                       "IDRefs": {
                         "REF": [
                           "recHAHw4jlVpSUYNo",
+                          "reciqoIN0xBrbCPsy",
                           "recWpIDbiWQXKUBEA",
                           "reczDCJCYSs4dIML4"
                         ]
@@ -568,6 +571,9 @@
                           "recYR4cE90EOVnYD5",
                           "recWoh5Qk0b1xBV67",
                           "reclDV8jky7y1JNzH",
+                          "recqMa5gtwmjYgF2X",
+                          "recEX4e2JD90yYDDr",
+                          "recJzgHATmFMUyW7E",
                           "recyZobcdc9yOkGuC",
                           "recaPLycHtpRQfWnE",
                           "rec6RGGCG5ORVBnA3",
@@ -608,6 +614,7 @@
                           "reczr6h68ZUdkDIZb",
                           "rec9PRnE4xpUCcMit",
                           "recoPtQQ8QZtClJK0",
+                          "rec7MeKnHind7FhXd",
                           "recafoRwqvCh5HZOd",
                           "recNz0LuN77HIXjmB",
                           "recJjgKw24kaBFH0i"
@@ -688,18 +695,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "TargetCellIndex",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "TargetCellStateId",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -712,7 +707,7 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternTranslationCodes",
+                    "Name": "CellPatternCellStates",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
                     "Length": "",
@@ -736,16 +731,16 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "CellPatternCellStates",
+                    "Name": "TargetCellIndex",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
                     "Length": "",
-                    "MaxLength": "2",
+                    "MaxLength": "1",
                     "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
-                    "IsCollection": "1"
+                    "IsCollection": "0"
                   },
                   {
                     "Name": "Target",
@@ -758,6 +753,18 @@
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
                     "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CellPatternTranslationCodes",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "1"
                   },
                   {
                     "Name": "Translations",
@@ -993,8 +1000,10 @@
                           "recTGnKjXTE8LfT3C",
                           "rec50MWM91QHzlEzO",
                           "recfSe8zeEdCAtcGq",
+                          "rec35HZOaRy6ge0jk",
                           "recpPYOZtnp3lTOua",
                           "rec35HZOaRy6ge0jk",
+                          "recczW2Y4WMv9buZ8",
                           "rec50MWM91QHzlEzO",
                           "recTGnKjXTE8LfT3C",
                           "rec35HZOaRy6ge0jk",
@@ -1009,6 +1018,7 @@
                           "recxIf3GoDzEtonFU",
                           "recczW2Y4WMv9buZ8",
                           "recpPYOZtnp3lTOua",
+                          "rec50MWM91QHzlEzO",
                           "rec35HZOaRy6ge0jk",
                           "recxIf3GoDzEtonFU",
                           "recxIf3GoDzEtonFU"
@@ -1041,8 +1051,10 @@
                           "recYmKv2dBpnAA1gs",
                           "recZCV8dlP1pNK9kK",
                           "recodVK2HKbzC26Db",
+                          "recg6YsAgLEBikQ3F",
                           "rec55PqGhtUYK5Rcb",
                           "recodVK2HKbzC26Db",
+                          "recg6YsAgLEBikQ3F",
                           "recYmKv2dBpnAA1gs",
                           "recBDK2nzNlGSJNgJ",
                           "recqn6vuQrx71nQii",
@@ -1057,6 +1069,7 @@
                           "recodVK2HKbzC26Db",
                           "recg1ttw7l3n96PDG",
                           "recYmKv2dBpnAA1gs",
+                          "recg6YsAgLEBikQ3F",
                           "recZCV8dlP1pNK9kK",
                           "recqn6vuQrx71nQii",
                           "recobCShOEyZjP8bY"
@@ -1095,6 +1108,8 @@
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
+                          "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
@@ -1105,6 +1120,7 @@
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "recJAi8YoTOQmzhfH",
+                          "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg",
                           "rec0xQjo4VL3DFTXg"
@@ -1448,16 +1464,19 @@
                           "recwQ3ZI5MBVHPKgl",
                           "recPmKMMNhYSxBWJ0",
                           "recaPLycHtpRQfWnE",
+                          "recEX4e2JD90yYDDr",
                           "recU9O3yxyMeQ1eU4",
                           "recYR4cE90EOVnYD5",
                           "rec91aKNdkT2cw93v",
                           "recclaJuN3LJWLC4N",
                           "recKj18pU9k6V6MAx",
+                          "recqMa5gtwmjYgF2X",
                           "recPHA9ppFH8cjenC",
                           "reccnHG0Yfk8tgTt6",
                           "rec8bt4pVcy9OY8XO",
                           "reclDV8jky7y1JNzH",
                           "rec5D3fwk2h5GzjIB",
+                          "recJzgHATmFMUyW7E",
                           "recAy4XNSSKRZGZsh",
                           "rechiocdDSSkR1IFz",
                           "rec6RGGCG5ORVBnA3",
@@ -1580,12 +1599,84 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "IsClockwise",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "RotateFrom",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "RotateDescription",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
                     "Length": "150",
                     "MaxLength": "30",
                     "Text": "100",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "ClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "CounterClockwiseRotateFromIndex",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "INT32",
+                    "Length": "",
+                    "MaxLength": "1",
+                    "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -1628,54 +1719,6 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "RotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "ClockwiseRotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "CounterClockwiseRotateFrom",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "FlipFromName",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "TEXT",
-                    "Length": "150",
-                    "MaxLength": "11",
-                    "Text": "100",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
                     "Name": "FlipIndex",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "INT32",
@@ -1688,24 +1731,12 @@
                     "IsCollection": "0"
                   },
                   {
-                    "Name": "ClockwiseRotateFromIndex",
+                    "Name": "FlipFromName",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
-                    "IsNullable": "1",
-                    "IsPrimaryKey": "0",
-                    "IsAttribute": "0",
-                    "IsCollection": "0"
-                  },
-                  {
-                    "Name": "CounterClockwiseRotateFromIndex",
-                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
-                    "DataType": "INT32",
-                    "Length": "",
-                    "MaxLength": "1",
-                    "Text": "",
+                    "DataType": "TEXT",
+                    "Length": "150",
+                    "MaxLength": "11",
+                    "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
                     "IsAttribute": "0",
@@ -1729,6 +1760,18 @@
                     "DataType": "INT32",
                     "Length": "",
                     "MaxLength": "2",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
+                    "Name": "IsDailyDouble",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
                     "Text": "",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
@@ -2177,6 +2220,18 @@
                     "IsCollection": "0"
                   },
                   {
+                    "Name": "IsClockwise",
+                    "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
+                    "DataType": "BOOLEAN",
+                    "Length": "",
+                    "MaxLength": "4",
+                    "Text": "",
+                    "IsNullable": "1",
+                    "IsPrimaryKey": "0",
+                    "IsAttribute": "0",
+                    "IsCollection": "0"
+                  },
+                  {
                     "Name": "Cells",
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
@@ -2230,6 +2285,7 @@
                       "IDRefs": {
                         "REF": [
                           "recwuYqQZ0iCw2WfQ",
+                          "rec7MeKnHind7FhXd",
                           "recD87U0swUjjhnTj",
                           "recNz0LuN77HIXjmB",
                           "recqJB1goFBhhsIVZ",
@@ -2462,7 +2518,7 @@
                     "Namespace": "com.anabstractlevel.Schemas.ODXMLSchema.",
                     "DataType": "TEXT",
                     "Length": "150",
-                    "MaxLength": "6",
+                    "MaxLength": "5",
                     "Text": "100",
                     "IsNullable": "1",
                     "IsPrimaryKey": "0",
@@ -2567,6 +2623,9 @@
                           "rec6RGGCG5ORVBnA3",
                           "recKj18pU9k6V6MAx",
                           "rec8bt4pVcy9OY8XO",
+                          "recqMa5gtwmjYgF2X",
+                          "recEX4e2JD90yYDDr",
+                          "recJzgHATmFMUyW7E",
                           "recWoh5Qk0b1xBV67",
                           "rec5D3fwk2h5GzjIB",
                           "rechiocdDSSkR1IFz",

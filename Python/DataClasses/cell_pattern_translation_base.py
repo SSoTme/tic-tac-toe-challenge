@@ -12,7 +12,7 @@ class CellPatternTranslationBase:
     count: int = None
     sort_order: int = None
     name: str = None
-    cell_pattern_name: str = None
-    translation_name: str = None
     translation_id: int = None
     c_p_t_code: int = None
+    cell_pattern_name: str = None
+    translation_name: str = None

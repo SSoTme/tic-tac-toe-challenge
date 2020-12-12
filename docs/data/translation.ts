@@ -10,6 +10,7 @@ export interface translation
     Name? : string;
     CustomDescription? : string;
     Id? : number;
+    IsClockwise? : boolean;
     Cells? : string[];
     CellPatternTranslations? : string[];
     Description? : string;
