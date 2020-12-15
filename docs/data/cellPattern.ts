@@ -11,12 +11,13 @@ export interface cellPattern
     createdTime? : Date;
     Name? : string;
     Description? : string;
-    IsWinPattern? : boolean;
     CellPatternCells? : string[];
     CellPatternTranslations? : string[];
     TargetCell? : string[];
     TargetCellState? : string[];
     SortOrder? : number;
+    CellPatternType? : string;
+    IsWinPattern? : boolean;
     TargetCellIndex? : number;
     TargetCellStateId? : number;
     CellPatternTranslationCodes? : number[];
@@ -24,10 +25,18 @@ export interface cellPattern
     CellPatternCellStates? : number[];
     Target? : number;
     Translations? : string;
+    CellPatternCelICellIndexes? : number[];
+    CellPatternCellCells? : string[];
+    CellPatternCellCellNames? : string[];
+    TranslationNames? : string[];
+    TargetDescription? : string;
+    TargetCellName? : string;
+    TargetCellStateName? : string;
     
     CellPattern_CellPatternTranslations : cellPatternTranslation[];
     CellPattern_CellPatternCells : cellPatternCell[];
-    CellPatterns_Cells : cell[];
+    TargetCellForCellPatterns_Cells : cell[];
+    NamedSetPatterns_Cells : cell[];
     CellPatterns_CellStates : cellState[];
     
 }

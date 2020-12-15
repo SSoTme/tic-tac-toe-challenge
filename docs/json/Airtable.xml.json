@@ -98,10 +98,11 @@
           "Count": "3",
           "SortOrder": "1",
           "Name": "T1-TwoInARowDiagonal:Rotate:3",
-          "CellPatternName": "TwoInARowDiagonal",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "TwoInARowDiagonal",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recD87U0swUjjhnTj",
@@ -111,10 +112,11 @@
           "Count": "3",
           "SortOrder": "1",
           "Name": "T1-EdgeWin:Rotate:3",
-          "CellPatternName": "EdgeWin",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "EdgeWin",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recJjgKw24kaBFH0i",
@@ -124,10 +126,11 @@
           "Count": "3",
           "SortOrder": "1",
           "Name": "T1-TwoInARowMiddle:Rotate:3",
-          "CellPatternName": "TwoInARowMiddle",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "TwoInARowMiddle",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recNz0LuN77HIXjmB",
@@ -137,10 +140,11 @@
           "Count": "1",
           "SortOrder": "1",
           "Name": "T1-MiddleWin:Rotate:1",
-          "CellPatternName": "MiddleWin",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "10"
+          "CPTCode": "10",
+          "DisplayName": "Rotate Once",
+          "CellPatternName": "MiddleWin",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recUD9c7vXgkNLQi9",
@@ -150,10 +154,11 @@
           "Count": "3",
           "SortOrder": "3",
           "Name": "T3-TwoInARowTop:Rotate:3",
-          "CellPatternName": "TwoInARowTop",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recafoRwqvCh5HZOd",
@@ -163,10 +168,11 @@
           "Count": "1",
           "SortOrder": "1",
           "Name": "T1-TwoOutsideMiddle:Rotate:1",
-          "CellPatternName": "TwoOutsideMiddle",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "10"
+          "CPTCode": "10",
+          "DisplayName": "Rotate Once",
+          "CellPatternName": "TwoOutsideMiddle",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recoPtQQ8QZtClJK0",
@@ -176,10 +182,11 @@
           "Count": "1",
           "SortOrder": "1",
           "Name": "T1-TwoOutsideDiagonal:Rotate:1",
-          "CellPatternName": "TwoOutsideDiagonal",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "10"
+          "CPTCode": "10",
+          "DisplayName": "Rotate Once",
+          "CellPatternName": "TwoOutsideDiagonal",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recqJB1goFBhhsIVZ",
@@ -189,10 +196,11 @@
           "Count": "3",
           "SortOrder": "1",
           "Name": "T1-TwoInARowTop:Rotate:3",
-          "CellPatternName": "TwoInARowTop",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Rotate"
         },
         {
           "CellPatternTranslationId": "recwuYqQZ0iCw2WfQ",
@@ -202,10 +210,11 @@
           "Count": "1",
           "SortOrder": "2",
           "Name": "T2-TwoInARowTop:Flip:1",
-          "CellPatternName": "TwoInARowTop",
-          "TranslationName": "Flip",
           "TranslationId": "1",
-          "CPTCode": "11"
+          "CPTCode": "11",
+          "DisplayName": "Flip Once",
+          "CellPatternName": "TwoInARowTop",
+          "TranslationName": "Flip"
         },
         {
           "CellPatternTranslationId": "reczr6h68ZUdkDIZb",
@@ -215,10 +224,11 @@
           "Count": "3",
           "SortOrder": "1",
           "Name": "T1-TwoOutsideTop:Rotate:3",
-          "CellPatternName": "TwoOutsideTop",
-          "TranslationName": "Rotate",
           "TranslationId": "0",
-          "CPTCode": "30"
+          "CPTCode": "30",
+          "DisplayName": "Rotate 3 times",
+          "CellPatternName": "TwoOutsideTop",
+          "TranslationName": "Rotate"
         }
       ]
     },
@@ -252,7 +262,7 @@
           "LanguageTokenId": "recOqDsQXph2jV645",
           "createdTime": "2020-11-26T20:01:30Z",
           "Name": "TheyWon",
-          "DisplayName": "Loser",
+          "DisplayName": "You Lost",
           "SortOrder": "7",
           "Token": "TheyWon"
         },
@@ -260,7 +270,7 @@
           "LanguageTokenId": "recPamDrUmmMfoUtj",
           "createdTime": "2020-11-26T20:01:30Z",
           "Name": "YouWon",
-          "DisplayName": "Winner",
+          "DisplayName": "You Won",
           "SortOrder": "6",
           "Token": "YouWon"
         },
@@ -339,6 +349,15 @@
           "AIStrategyNames": "WinIfPossible, PlayInMiddleIfAvailable, Random, PreventWinIfPossible, ForceWinNextTurn, PreventForceWinNextTurn"
         },
         {
+          "AILevelId": "recdlefLPaE9CcnZr",
+          "createdTime": "2020-12-15T00:43:54Z",
+          "Name": "God",
+          "PlayerType": "AI",
+          "AILevelIndex": "9",
+          "SortOrder": "5",
+          "Users": "reciqoIN0xBrbCPsy"
+        },
+        {
           "AILevelId": "recmMBaevl2jHl0hC",
           "createdTime": "2020-11-26T20:02:01Z",
           "Name": "Beginner",
@@ -376,44 +395,296 @@
           ],
           "TargetCell": "recTGnKjXTE8LfT3C",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "3",
-          "TargetCellIndex": "2",
+          "SortOrder": "103",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": [
-            "30",
-            "11",
-            "30"
-          ],
-          "Cells": "00;10;22",
           "CellPatternCellStates": [
             "00",
             "10",
             "22"
           ],
+          "Cells": "00;10;22",
+          "TargetCellIndex": "2",
           "Target": "22",
-          "Translations": "30;11;30"
+          "CellPatternTranslationCodes": [
+            "30",
+            "11",
+            "30"
+          ],
+          "Translations": "30;11;30",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "1",
+            "2"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recTGnKjXTE8LfT3C"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Top",
+            "TopRight"
+          ],
+          "TranslationNames": [
+            "Rotate 3 times",
+            "Flip Once",
+            "Rotate 3 times"
+          ],
+          "TargetDescription": "TopRight is NoPlayer",
+          "TargetCellName": "TopRight",
+          "TargetCellStateName": "NoPlayer"
         },
         {
           "CellPatternId": "recBDK2nzNlGSJNgJ",
           "createdTime": "2020-11-26T20:06:43Z",
           "Name": "EdgeWin",
           "Description": "Starting with the top row, 3 additional rotates will find all edge wins.",
-          "IsWinPattern": "true",
           "CellPatternCells": [
             "recU9O3yxyMeQ1eU4",
             "recf1uu1YY0iPps8E",
             "recPHA9ppFH8cjenC"
           ],
           "CellPatternTranslations": "recD87U0swUjjhnTj",
-          "SortOrder": "1",
-          "CellPatternTranslationCodes": "30",
-          "Cells": "00;10;20",
+          "SortOrder": "75",
+          "CellPatternType": "Win",
+          "IsWinPattern": "true",
           "CellPatternCellStates": [
             "00",
             "10",
             "20"
           ],
-          "Translations": "30"
+          "Cells": "00;10;20",
+          "CellPatternTranslationCodes": "30",
+          "Translations": "30",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "1",
+            "2"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recTGnKjXTE8LfT3C"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Top",
+            "TopRight"
+          ],
+          "TranslationNames": "Rotate 3 times"
+        },
+        {
+          "CellPatternId": "recHqX6LLAZZAo1RQ",
+          "createdTime": "2020-12-12T00:45:52Z",
+          "Name": "Row3",
+          "Description": "The 3rd (bottom) row in the puzzle.",
+          "CellPatternCells": [
+            "rec7NXPxQPU4PzKX0",
+            "recmHFemnt2tO9Q5u",
+            "recc99ZERSFi8OZgJ"
+          ],
+          "SortOrder": "32",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "60",
+            "70",
+            "80"
+          ],
+          "Cells": "60;70;80",
+          "CellPatternCelICellIndexes": [
+            "6",
+            "7",
+            "8"
+          ],
+          "CellPatternCellCells": [
+            "recmjtZPRUfoCU2sr",
+            "rec3OzG8nTAkUhjVn",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "CellPatternCellCellNames": [
+            "BottomLeft",
+            "Bottom",
+            "BottomRight"
+          ]
+        },
+        {
+          "CellPatternId": "recJ1wDRP5taMg2Tj",
+          "createdTime": "2020-12-12T00:45:58Z",
+          "Name": "Column1",
+          "Description": "The 1st (leftmost)column in the puzzle.",
+          "CellPatternCells": [
+            "rec1hqH6Ty1vueu48",
+            "recmEXEqSbCsI5kUB",
+            "recShopv0fRnIWAbr"
+          ],
+          "SortOrder": "40",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "00",
+            "30",
+            "60"
+          ],
+          "Cells": "00;30;60",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "3",
+            "6"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "recxIf3GoDzEtonFU",
+            "recmjtZPRUfoCU2sr"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "MiddleLeft",
+            "BottomLeft"
+          ]
+        },
+        {
+          "CellPatternId": "recNW9KXsm9KvWa7B",
+          "createdTime": "2020-12-12T00:46:00Z",
+          "Name": "Column3",
+          "Description": "The 3rd (rightmost) column in the puzzle.",
+          "CellPatternCells": [
+            "recO1aArEBMEvWxoD",
+            "recvjeyFh2sWFF8us",
+            "reczQDKs6sXAjFvhP"
+          ],
+          "SortOrder": "42",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "20",
+            "50",
+            "80"
+          ],
+          "Cells": "20;50;80",
+          "CellPatternCelICellIndexes": [
+            "2",
+            "5",
+            "8"
+          ],
+          "CellPatternCellCells": [
+            "recTGnKjXTE8LfT3C",
+            "recfSe8zeEdCAtcGq",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "CellPatternCellCellNames": [
+            "TopRight",
+            "MiddleRight",
+            "BottomRight"
+          ]
+        },
+        {
+          "CellPatternId": "recWQyBlj7xHrYNPx",
+          "createdTime": "2020-12-12T00:46:19Z",
+          "Name": "RightLeftDiagonal",
+          "Description": "The Diagonal from top right to bottom left.",
+          "CellPatternCells": [
+            "recrfBGkdzZ67jeLa",
+            "rec1Gsh1wvAQ3BO0w",
+            "recTk43h9Sd9Qw1aQ"
+          ],
+          "SortOrder": "51",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "20",
+            "40",
+            "60"
+          ],
+          "Cells": "20;40;60",
+          "CellPatternCelICellIndexes": [
+            "2",
+            "4",
+            "6"
+          ],
+          "CellPatternCellCells": [
+            "recTGnKjXTE8LfT3C",
+            "rec35HZOaRy6ge0jk",
+            "recmjtZPRUfoCU2sr"
+          ],
+          "CellPatternCellCellNames": [
+            "TopRight",
+            "Middle",
+            "BottomLeft"
+          ]
+        },
+        {
+          "CellPatternId": "recXBksm5DIUqOfDn",
+          "createdTime": "2020-12-12T00:45:59Z",
+          "Name": "Column2",
+          "Description": "The 2nd (middle) column in the puzzle.",
+          "CellPatternCells": [
+            "rec3K2fxtqlgu5oeA",
+            "recy5CwlzxHvsubBr",
+            "recVxUYMsnvGIqGZ2"
+          ],
+          "SortOrder": "41",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "10",
+            "40",
+            "70"
+          ],
+          "Cells": "10;40;70",
+          "CellPatternCelICellIndexes": [
+            "1",
+            "4",
+            "7"
+          ],
+          "CellPatternCellCells": [
+            "recpPYOZtnp3lTOua",
+            "rec35HZOaRy6ge0jk",
+            "rec3OzG8nTAkUhjVn"
+          ],
+          "CellPatternCellCellNames": [
+            "Top",
+            "Middle",
+            "Bottom"
+          ]
+        },
+        {
+          "CellPatternId": "recYQei900zbRIFTw",
+          "createdTime": "2020-12-12T00:45:13Z",
+          "Name": "Row1",
+          "Description": "The firist (top) row in the puzzle",
+          "CellPatternCells": [
+            "recLcTgsFF8EuGUz3",
+            "recJtIPt56a61dAFz",
+            "recD2BUDpoknNF4Lh"
+          ],
+          "SortOrder": "30",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "00",
+            "10",
+            "20"
+          ],
+          "Cells": "00;10;20",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "1",
+            "2"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recTGnKjXTE8LfT3C"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Top",
+            "TopRight"
+          ]
         },
         {
           "CellPatternId": "recYmKv2dBpnAA1gs",
@@ -428,18 +699,39 @@
           "CellPatternTranslations": "reczr6h68ZUdkDIZb",
           "TargetCell": "recpPYOZtnp3lTOua",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "6",
-          "TargetCellIndex": "1",
+          "SortOrder": "106",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": "30",
-          "Cells": "00;12;20",
           "CellPatternCellStates": [
             "00",
             "12",
             "20"
           ],
+          "Cells": "00;12;20",
+          "TargetCellIndex": "1",
           "Target": "12",
-          "Translations": "30"
+          "CellPatternTranslationCodes": "30",
+          "Translations": "30",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "1",
+            "2"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "recpPYOZtnp3lTOua",
+            "recTGnKjXTE8LfT3C"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Top",
+            "TopRight"
+          ],
+          "TranslationNames": "Rotate 3 times",
+          "TargetDescription": "Top is NoPlayer",
+          "TargetCellName": "Top",
+          "TargetCellStateName": "NoPlayer"
         },
         {
           "CellPatternId": "recZCV8dlP1pNK9kK",
@@ -454,18 +746,74 @@
           "CellPatternTranslations": "rec9PRnE4xpUCcMit",
           "TargetCell": "recczW2Y4WMv9buZ8",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "5",
-          "TargetCellIndex": "8",
+          "SortOrder": "105",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": "30",
-          "Cells": "00;40;82",
           "CellPatternCellStates": [
             "00",
             "40",
             "82"
           ],
+          "Cells": "00;40;82",
+          "TargetCellIndex": "8",
           "Target": "82",
-          "Translations": "30"
+          "CellPatternTranslationCodes": "30",
+          "Translations": "30",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "4",
+            "8"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "rec35HZOaRy6ge0jk",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Middle",
+            "BottomRight"
+          ],
+          "TranslationNames": "Rotate 3 times",
+          "TargetDescription": "BottomRight is NoPlayer",
+          "TargetCellName": "BottomRight",
+          "TargetCellStateName": "NoPlayer"
+        },
+        {
+          "CellPatternId": "reccf6U6b21xlIOh7",
+          "createdTime": "2020-12-12T00:46:07Z",
+          "Name": "LeftRightDiagonal",
+          "Description": "The diagonal from top left to bottom right.",
+          "CellPatternCells": [
+            "recuKKiaqoaXhFxSC",
+            "recAJ25e2uael63Kw",
+            "recfjQk3Amk3Ofo0S"
+          ],
+          "SortOrder": "50",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "00",
+            "40",
+            "80"
+          ],
+          "Cells": "00;40;80",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "4",
+            "8"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "rec35HZOaRy6ge0jk",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Middle",
+            "BottomRight"
+          ]
         },
         {
           "CellPatternId": "recg1ttw7l3n96PDG",
@@ -480,18 +828,39 @@
           "CellPatternTranslations": "recoPtQQ8QZtClJK0",
           "TargetCell": "rec35HZOaRy6ge0jk",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "8",
-          "TargetCellIndex": "4",
+          "SortOrder": "108",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": "10",
-          "Cells": "00;42;80",
           "CellPatternCellStates": [
             "00",
             "42",
             "80"
           ],
+          "Cells": "00;42;80",
+          "TargetCellIndex": "4",
           "Target": "42",
-          "Translations": "10"
+          "CellPatternTranslationCodes": "10",
+          "Translations": "10",
+          "CellPatternCelICellIndexes": [
+            "0",
+            "4",
+            "8"
+          ],
+          "CellPatternCellCells": [
+            "rec50MWM91QHzlEzO",
+            "rec35HZOaRy6ge0jk",
+            "recczW2Y4WMv9buZ8"
+          ],
+          "CellPatternCellCellNames": [
+            "TopLeft",
+            "Middle",
+            "BottomRight"
+          ],
+          "TranslationNames": "Rotate Once",
+          "TargetDescription": "Middle is NoPlayer",
+          "TargetCellName": "Middle",
+          "TargetCellStateName": "NoPlayer"
         },
         {
           "CellPatternId": "recobCShOEyZjP8bY",
@@ -506,40 +875,78 @@
           "CellPatternTranslations": "recafoRwqvCh5HZOd",
           "TargetCell": "rec35HZOaRy6ge0jk",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "7",
-          "TargetCellIndex": "4",
+          "SortOrder": "107",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": "10",
-          "Cells": "30;42;50",
           "CellPatternCellStates": [
             "30",
             "42",
             "50"
           ],
+          "Cells": "30;42;50",
+          "TargetCellIndex": "4",
           "Target": "42",
-          "Translations": "10"
+          "CellPatternTranslationCodes": "10",
+          "Translations": "10",
+          "CellPatternCelICellIndexes": [
+            "3",
+            "4",
+            "5"
+          ],
+          "CellPatternCellCells": [
+            "recxIf3GoDzEtonFU",
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq"
+          ],
+          "CellPatternCellCellNames": [
+            "MiddleLeft",
+            "Middle",
+            "MiddleRight"
+          ],
+          "TranslationNames": "Rotate Once",
+          "TargetDescription": "Middle is NoPlayer",
+          "TargetCellName": "Middle",
+          "TargetCellStateName": "NoPlayer"
         },
         {
           "CellPatternId": "recodVK2HKbzC26Db",
           "createdTime": "2020-11-26T20:06:43Z",
           "Name": "MiddleWin",
           "Description": "Starting with the middle row selected, a single rotations finds both middle wins",
-          "IsWinPattern": "true",
           "CellPatternCells": [
             "reckcKNNnyDSWpFrH",
             "recGP80BxFCLlmgw7",
             "recAy4XNSSKRZGZsh"
           ],
           "CellPatternTranslations": "recNz0LuN77HIXjmB",
-          "SortOrder": "2",
-          "CellPatternTranslationCodes": "10",
-          "Cells": "30;40;50",
+          "SortOrder": "76",
+          "CellPatternType": "Win",
+          "IsWinPattern": "true",
           "CellPatternCellStates": [
             "30",
             "40",
             "50"
           ],
-          "Translations": "10"
+          "Cells": "30;40;50",
+          "CellPatternTranslationCodes": "10",
+          "Translations": "10",
+          "CellPatternCelICellIndexes": [
+            "3",
+            "4",
+            "5"
+          ],
+          "CellPatternCellCells": [
+            "recxIf3GoDzEtonFU",
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq"
+          ],
+          "CellPatternCellCellNames": [
+            "MiddleLeft",
+            "Middle",
+            "MiddleRight"
+          ],
+          "TranslationNames": "Rotate Once"
         },
         {
           "CellPatternId": "recqn6vuQrx71nQii",
@@ -554,18 +961,74 @@
           "CellPatternTranslations": "recJjgKw24kaBFH0i",
           "TargetCell": "recfSe8zeEdCAtcGq",
           "TargetCellState": "recJAi8YoTOQmzhfH",
-          "SortOrder": "4",
-          "TargetCellIndex": "5",
+          "SortOrder": "104",
+          "CellPatternType": "PossibleWin",
+          "IsWinPattern": "false",
           "TargetCellStateId": "2",
-          "CellPatternTranslationCodes": "30",
-          "Cells": "30;40;52",
           "CellPatternCellStates": [
             "30",
             "40",
             "52"
           ],
+          "Cells": "30;40;52",
+          "TargetCellIndex": "5",
           "Target": "52",
-          "Translations": "30"
+          "CellPatternTranslationCodes": "30",
+          "Translations": "30",
+          "CellPatternCelICellIndexes": [
+            "3",
+            "4",
+            "5"
+          ],
+          "CellPatternCellCells": [
+            "recxIf3GoDzEtonFU",
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq"
+          ],
+          "CellPatternCellCellNames": [
+            "MiddleLeft",
+            "Middle",
+            "MiddleRight"
+          ],
+          "TranslationNames": "Rotate 3 times",
+          "TargetDescription": "MiddleRight is NoPlayer",
+          "TargetCellName": "MiddleRight",
+          "TargetCellStateName": "NoPlayer"
+        },
+        {
+          "CellPatternId": "recqpmR7MAtp5afiM",
+          "createdTime": "2020-12-12T00:45:33Z",
+          "Name": "Row2",
+          "Description": "The 2nd (middle) row in the puzzle",
+          "CellPatternCells": [
+            "recpAYbzVjDRhc1L4",
+            "recUNdmTwmeITNGEZ",
+            "recBi8mtXhiWj7TJH"
+          ],
+          "SortOrder": "31",
+          "CellPatternType": "NamedSet",
+          "IsWinPattern": "true",
+          "CellPatternCellStates": [
+            "30",
+            "40",
+            "50"
+          ],
+          "Cells": "30;40;50",
+          "CellPatternCelICellIndexes": [
+            "3",
+            "4",
+            "5"
+          ],
+          "CellPatternCellCells": [
+            "recxIf3GoDzEtonFU",
+            "rec35HZOaRy6ge0jk",
+            "recfSe8zeEdCAtcGq"
+          ],
+          "CellPatternCellCellNames": [
+            "MiddleLeft",
+            "Middle",
+            "MiddleRight"
+          ]
         }
       ]
     },
@@ -576,7 +1039,7 @@
           "createdTime": "2020-11-26T20:02:26Z",
           "Name": "PreventWinIfPossible",
           "Description": "Prevent opponent from using WinIfPossible strategy",
-          "PlayerLevel": "2",
+          "PlayerLevel": "1",
           "IsDefensive": "true",
           "StrategyRank": "5",
           "SortOrder": "5",
@@ -722,12 +1185,55 @@
     "CellPatternCells": {
       "CellPatternCell": [
         {
+          "CellPatternCellId": "rec1Gsh1wvAQ3BO0w",
+          "createdTime": "2020-12-12T00:49:12Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recWQyBlj7xHrYNPx",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "RightLeftDiagonal:Player:Middle",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40",
+          "CellName": "Middle",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "rec1hqH6Ty1vueu48",
+          "createdTime": "2020-12-12T00:47:10Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recJ1wDRP5taMg2Tj",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column1:Player:TopLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00",
+          "CellName": "TopLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "rec3K2fxtqlgu5oeA",
+          "createdTime": "2020-12-12T00:47:07Z",
+          "Cell": "recpPYOZtnp3lTOua",
+          "CellPattern": "recXBksm5DIUqOfDn",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column2:Player:Top",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "1",
+          "CellStateId": "0",
+          "CellCellState": "10",
+          "CellName": "Top",
+          "CellStateName": "Player"
+        },
+        {
           "CellPatternCellId": "rec5D3fwk2h5GzjIB",
           "createdTime": "2020-11-26T20:43:48Z",
           "Cell": "recczW2Y4WMv9buZ8",
           "CellPattern": "recZCV8dlP1pNK9kK",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoInARowDiagonal:NoPlayer:BottomRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "8",
           "CellStateId": "2",
           "CellCellState": "82",
@@ -740,12 +1246,27 @@
           "Cell": "recfSe8zeEdCAtcGq",
           "CellPattern": "recobCShOEyZjP8bY",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideMiddle:PlayerA:MiddleRight",
+          "Name": "TwoOutsideMiddle:Player:MiddleRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "5",
           "CellStateId": "0",
           "CellCellState": "50",
           "CellName": "MiddleRight",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "rec7NXPxQPU4PzKX0",
+          "createdTime": "2020-12-12T00:47:14Z",
+          "Cell": "recmjtZPRUfoCU2sr",
+          "CellPattern": "recHqX6LLAZZAo1RQ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row3:Player:BottomLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "6",
+          "CellStateId": "0",
+          "CellCellState": "60",
+          "CellName": "BottomLeft",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "rec8bt4pVcy9OY8XO",
@@ -753,12 +1274,13 @@
           "Cell": "recTGnKjXTE8LfT3C",
           "CellPattern": "recYmKv2dBpnAA1gs",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideTop:PlayerA:TopRight",
+          "Name": "TwoOutsideTop:Player:TopRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "2",
           "CellStateId": "0",
           "CellCellState": "20",
           "CellName": "TopRight",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "rec91aKNdkT2cw93v",
@@ -766,12 +1288,27 @@
           "Cell": "rec50MWM91QHzlEzO",
           "CellPattern": "recZCV8dlP1pNK9kK",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowDiagonal:PlayerA:TopLeft",
+          "Name": "TwoInARowDiagonal:Player:TopLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "0",
           "CellStateId": "0",
           "CellCellState": "00",
           "CellName": "TopLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recAJ25e2uael63Kw",
+          "createdTime": "2020-12-12T00:49:01Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "reccf6U6b21xlIOh7",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "LeftRightDiagonal:Player:Middle",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40",
+          "CellName": "Middle",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recAy4XNSSKRZGZsh",
@@ -779,12 +1316,41 @@
           "Cell": "recfSe8zeEdCAtcGq",
           "CellPattern": "recodVK2HKbzC26Db",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "MiddleWin:PlayerA:MiddleRight",
+          "Name": "MiddleWin:Player:MiddleRight",
+          "CellPatternType": "Win",
           "CellIndex": "5",
           "CellStateId": "0",
           "CellCellState": "50",
           "CellName": "MiddleRight",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recBi8mtXhiWj7TJH",
+          "createdTime": "2020-12-12T00:48:52Z",
+          "Cell": "recfSe8zeEdCAtcGq",
+          "CellPattern": "recqpmR7MAtp5afiM",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row2:Player:MiddleRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "5",
+          "CellStateId": "0",
+          "CellCellState": "50",
+          "CellName": "MiddleRight",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recD2BUDpoknNF4Lh",
+          "createdTime": "2020-12-12T00:48:48Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "recYQei900zbRIFTw",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row1:Player:TopRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "2",
+          "CellStateId": "0",
+          "CellCellState": "20",
+          "CellName": "TopRight",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recFITGoLxBQs1ocD",
@@ -792,12 +1358,13 @@
           "Cell": "recpPYOZtnp3lTOua",
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowTop:PlayerA:Top",
+          "Name": "TwoInARowTop:Player:Top",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "1",
           "CellStateId": "0",
           "CellCellState": "10",
           "CellName": "Top",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recGP80BxFCLlmgw7",
@@ -805,12 +1372,27 @@
           "Cell": "rec35HZOaRy6ge0jk",
           "CellPattern": "recodVK2HKbzC26Db",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "MiddleWin:PlayerA:Middle",
+          "Name": "MiddleWin:Player:Middle",
+          "CellPatternType": "Win",
           "CellIndex": "4",
           "CellStateId": "0",
           "CellCellState": "40",
           "CellName": "Middle",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recJtIPt56a61dAFz",
+          "createdTime": "2020-12-12T00:48:48Z",
+          "Cell": "recpPYOZtnp3lTOua",
+          "CellPattern": "recYQei900zbRIFTw",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row1:Player:Top",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "1",
+          "CellStateId": "0",
+          "CellCellState": "10",
+          "CellName": "Top",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recKj18pU9k6V6MAx",
@@ -818,12 +1400,41 @@
           "Cell": "rec50MWM91QHzlEzO",
           "CellPattern": "recYmKv2dBpnAA1gs",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideTop:PlayerA:TopLeft",
+          "Name": "TwoOutsideTop:Player:TopLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "0",
           "CellStateId": "0",
           "CellCellState": "00",
           "CellName": "TopLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recLcTgsFF8EuGUz3",
+          "createdTime": "2020-12-12T00:45:27Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "recYQei900zbRIFTw",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row1:Player:TopLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00",
+          "CellName": "TopLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recO1aArEBMEvWxoD",
+          "createdTime": "2020-12-12T00:46:41Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "recNW9KXsm9KvWa7B",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column3:Player:TopRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "2",
+          "CellStateId": "0",
+          "CellCellState": "20",
+          "CellName": "TopRight",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recPHA9ppFH8cjenC",
@@ -831,12 +1442,13 @@
           "Cell": "recTGnKjXTE8LfT3C",
           "CellPattern": "recBDK2nzNlGSJNgJ",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "EdgeWin:PlayerA:TopRight",
+          "Name": "EdgeWin:Player:TopRight",
+          "CellPatternType": "Win",
           "CellIndex": "2",
           "CellStateId": "0",
           "CellCellState": "20",
           "CellName": "TopRight",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recPmKMMNhYSxBWJ0",
@@ -844,12 +1456,41 @@
           "Cell": "rec35HZOaRy6ge0jk",
           "CellPattern": "recqn6vuQrx71nQii",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowMiddle:PlayerA:Middle",
+          "Name": "TwoInARowMiddle:Player:Middle",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "4",
           "CellStateId": "0",
           "CellCellState": "40",
           "CellName": "Middle",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recShopv0fRnIWAbr",
+          "createdTime": "2020-12-12T00:48:31Z",
+          "Cell": "recmjtZPRUfoCU2sr",
+          "CellPattern": "recJ1wDRP5taMg2Tj",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column1:Player:BottomLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "6",
+          "CellStateId": "0",
+          "CellCellState": "60",
+          "CellName": "BottomLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recTk43h9Sd9Qw1aQ",
+          "createdTime": "2020-12-12T00:49:12Z",
+          "Cell": "recmjtZPRUfoCU2sr",
+          "CellPattern": "recWQyBlj7xHrYNPx",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "RightLeftDiagonal:Player:BottomLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "6",
+          "CellStateId": "0",
+          "CellCellState": "60",
+          "CellName": "BottomLeft",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recU9O3yxyMeQ1eU4",
@@ -857,12 +1498,41 @@
           "Cell": "rec50MWM91QHzlEzO",
           "CellPattern": "recBDK2nzNlGSJNgJ",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "EdgeWin:PlayerA:TopLeft",
+          "Name": "EdgeWin:Player:TopLeft",
+          "CellPatternType": "Win",
           "CellIndex": "0",
           "CellStateId": "0",
           "CellCellState": "00",
           "CellName": "TopLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recUNdmTwmeITNGEZ",
+          "createdTime": "2020-12-12T00:48:52Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recqpmR7MAtp5afiM",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row2:Player:Middle",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40",
+          "CellName": "Middle",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recVxUYMsnvGIqGZ2",
+          "createdTime": "2020-12-12T00:48:40Z",
+          "Cell": "rec3OzG8nTAkUhjVn",
+          "CellPattern": "recXBksm5DIUqOfDn",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column2:Player:Bottom",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "7",
+          "CellStateId": "0",
+          "CellCellState": "70",
+          "CellName": "Bottom",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recWoh5Qk0b1xBV67",
@@ -871,6 +1541,7 @@
           "CellPattern": "recg1ttw7l3n96PDG",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoOutsideDiagonal:NoPlayer:Middle",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "4",
           "CellStateId": "2",
           "CellCellState": "42",
@@ -883,12 +1554,13 @@
           "Cell": "rec50MWM91QHzlEzO",
           "CellPattern": "recg1ttw7l3n96PDG",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideDiagonal:PlayerA:TopLeft",
+          "Name": "TwoOutsideDiagonal:Player:TopLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "0",
           "CellStateId": "0",
           "CellCellState": "00",
           "CellName": "TopLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recaPLycHtpRQfWnE",
@@ -897,6 +1569,7 @@
           "CellPattern": "recobCShOEyZjP8bY",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoOutsideMiddle:NoPlayer:Middle",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "4",
           "CellStateId": "2",
           "CellCellState": "42",
@@ -904,17 +1577,32 @@
           "CellStateName": "NoPlayer"
         },
         {
+          "CellPatternCellId": "recc99ZERSFi8OZgJ",
+          "createdTime": "2020-12-12T00:48:55Z",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellPattern": "recHqX6LLAZZAo1RQ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row3:Player:BottomRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "8",
+          "CellStateId": "0",
+          "CellCellState": "80",
+          "CellName": "BottomRight",
+          "CellStateName": "Player"
+        },
+        {
           "CellPatternCellId": "recclaJuN3LJWLC4N",
           "createdTime": "2020-11-26T20:35:31Z",
           "Cell": "rec50MWM91QHzlEzO",
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowTop:PlayerA:TopLeft",
+          "Name": "TwoInARowTop:Player:TopLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "0",
           "CellStateId": "0",
           "CellCellState": "00",
           "CellName": "TopLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "reccnHG0Yfk8tgTt6",
@@ -923,6 +1611,7 @@
           "CellPattern": "rec55PqGhtUYK5Rcb",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoInARowTop:NoPlayer:TopRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "2",
           "CellStateId": "2",
           "CellCellState": "22",
@@ -935,12 +1624,27 @@
           "Cell": "recpPYOZtnp3lTOua",
           "CellPattern": "recBDK2nzNlGSJNgJ",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "EdgeWin:PlayerA:Top",
+          "Name": "EdgeWin:Player:Top",
+          "CellPatternType": "Win",
           "CellIndex": "1",
           "CellStateId": "0",
           "CellCellState": "10",
           "CellName": "Top",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recfjQk3Amk3Ofo0S",
+          "createdTime": "2020-12-12T00:49:01Z",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellPattern": "reccf6U6b21xlIOh7",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "LeftRightDiagonal:Player:BottomRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "8",
+          "CellStateId": "0",
+          "CellCellState": "80",
+          "CellName": "BottomRight",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "rechiocdDSSkR1IFz",
@@ -949,6 +1653,7 @@
           "CellPattern": "recqn6vuQrx71nQii",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoInARowMiddle:NoPlayer:MiddleRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "5",
           "CellStateId": "2",
           "CellCellState": "52",
@@ -961,12 +1666,13 @@
           "Cell": "recxIf3GoDzEtonFU",
           "CellPattern": "recodVK2HKbzC26Db",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "MiddleWin:PlayerA:MiddleLeft",
+          "Name": "MiddleWin:Player:MiddleLeft",
+          "CellPatternType": "Win",
           "CellIndex": "3",
           "CellStateId": "0",
           "CellCellState": "30",
           "CellName": "MiddleLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "reclDV8jky7y1JNzH",
@@ -974,12 +1680,13 @@
           "Cell": "recczW2Y4WMv9buZ8",
           "CellPattern": "recg1ttw7l3n96PDG",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideDiagonal:PlayerA:BottomRight",
+          "Name": "TwoOutsideDiagonal:Player:BottomRight",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "8",
           "CellStateId": "0",
           "CellCellState": "80",
           "CellName": "BottomRight",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recljMfqekOodaaWx",
@@ -988,6 +1695,7 @@
           "CellPattern": "recYmKv2dBpnAA1gs",
           "CellState": "recJAi8YoTOQmzhfH",
           "Name": "TwoOutsideTop:NoPlayer:Top",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "1",
           "CellStateId": "2",
           "CellCellState": "12",
@@ -995,17 +1703,102 @@
           "CellStateName": "NoPlayer"
         },
         {
+          "CellPatternCellId": "recmEXEqSbCsI5kUB",
+          "createdTime": "2020-12-12T00:48:31Z",
+          "Cell": "recxIf3GoDzEtonFU",
+          "CellPattern": "recJ1wDRP5taMg2Tj",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column1:Player:MiddleLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "3",
+          "CellStateId": "0",
+          "CellCellState": "30",
+          "CellName": "MiddleLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recmHFemnt2tO9Q5u",
+          "createdTime": "2020-12-12T00:48:55Z",
+          "Cell": "rec3OzG8nTAkUhjVn",
+          "CellPattern": "recHqX6LLAZZAo1RQ",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row3:Player:Bottom",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "7",
+          "CellStateId": "0",
+          "CellCellState": "70",
+          "CellName": "Bottom",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recpAYbzVjDRhc1L4",
+          "createdTime": "2020-12-12T00:45:41Z",
+          "Cell": "recxIf3GoDzEtonFU",
+          "CellPattern": "recqpmR7MAtp5afiM",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Row2:Player:MiddleLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "3",
+          "CellStateId": "0",
+          "CellCellState": "30",
+          "CellName": "MiddleLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recrfBGkdzZ67jeLa",
+          "createdTime": "2020-12-12T00:47:01Z",
+          "Cell": "recTGnKjXTE8LfT3C",
+          "CellPattern": "recWQyBlj7xHrYNPx",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "RightLeftDiagonal:Player:TopRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "2",
+          "CellStateId": "0",
+          "CellCellState": "20",
+          "CellName": "TopRight",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recuKKiaqoaXhFxSC",
+          "createdTime": "2020-12-12T00:46:38Z",
+          "Cell": "rec50MWM91QHzlEzO",
+          "CellPattern": "reccf6U6b21xlIOh7",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "LeftRightDiagonal:Player:TopLeft",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "0",
+          "CellStateId": "0",
+          "CellCellState": "00",
+          "CellName": "TopLeft",
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recvjeyFh2sWFF8us",
+          "createdTime": "2020-12-12T00:48:43Z",
+          "Cell": "recfSe8zeEdCAtcGq",
+          "CellPattern": "recNW9KXsm9KvWa7B",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column3:Player:MiddleRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "5",
+          "CellStateId": "0",
+          "CellCellState": "50",
+          "CellName": "MiddleRight",
+          "CellStateName": "Player"
+        },
+        {
           "CellPatternCellId": "recwQ3ZI5MBVHPKgl",
           "createdTime": "2020-11-26T20:43:44Z",
           "Cell": "rec35HZOaRy6ge0jk",
           "CellPattern": "recZCV8dlP1pNK9kK",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowDiagonal:PlayerA:Middle",
+          "Name": "TwoInARowDiagonal:Player:Middle",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "4",
           "CellStateId": "0",
           "CellCellState": "40",
           "CellName": "Middle",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recxWA16nieZY83Sv",
@@ -1013,12 +1806,27 @@
           "Cell": "recxIf3GoDzEtonFU",
           "CellPattern": "recqn6vuQrx71nQii",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoInARowMiddle:PlayerA:MiddleLeft",
+          "Name": "TwoInARowMiddle:Player:MiddleLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "3",
           "CellStateId": "0",
           "CellCellState": "30",
           "CellName": "MiddleLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "recy5CwlzxHvsubBr",
+          "createdTime": "2020-12-12T00:48:40Z",
+          "Cell": "rec35HZOaRy6ge0jk",
+          "CellPattern": "recXBksm5DIUqOfDn",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column2:Player:Middle",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "4",
+          "CellStateId": "0",
+          "CellCellState": "40",
+          "CellName": "Middle",
+          "CellStateName": "Player"
         },
         {
           "CellPatternCellId": "recyZobcdc9yOkGuC",
@@ -1026,12 +1834,27 @@
           "Cell": "recxIf3GoDzEtonFU",
           "CellPattern": "recobCShOEyZjP8bY",
           "CellState": "rec0xQjo4VL3DFTXg",
-          "Name": "TwoOutsideMiddle:PlayerA:MiddleLeft",
+          "Name": "TwoOutsideMiddle:Player:MiddleLeft",
+          "CellPatternType": "PossibleWin",
           "CellIndex": "3",
           "CellStateId": "0",
           "CellCellState": "30",
           "CellName": "MiddleLeft",
-          "CellStateName": "PlayerA"
+          "CellStateName": "Player"
+        },
+        {
+          "CellPatternCellId": "reczQDKs6sXAjFvhP",
+          "createdTime": "2020-12-12T00:48:43Z",
+          "Cell": "recczW2Y4WMv9buZ8",
+          "CellPattern": "recNW9KXsm9KvWa7B",
+          "CellState": "rec0xQjo4VL3DFTXg",
+          "Name": "Column3:Player:BottomRight",
+          "CellPatternType": "NamedSet",
+          "CellIndex": "8",
+          "CellStateId": "0",
+          "CellCellState": "80",
+          "CellName": "BottomRight",
+          "CellStateName": "Player"
         }
       ]
     },
@@ -1055,29 +1878,48 @@
             "recWoh5Qk0b1xBV67",
             "recwQ3ZI5MBVHPKgl",
             "recPmKMMNhYSxBWJ0",
-            "recaPLycHtpRQfWnE"
+            "recaPLycHtpRQfWnE",
+            "recy5CwlzxHvsubBr",
+            "recAJ25e2uael63Kw",
+            "rec1Gsh1wvAQ3BO0w",
+            "recUNdmTwmeITNGEZ"
           ],
-          "CellPatterns": [
+          "TargetCellForCellPatterns": [
             "recobCShOEyZjP8bY",
             "recg1ttw7l3n96PDG"
           ],
           "CurrentCellState": "rec0xQjo4VL3DFTXg",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "5",
-          "RotateDescription": "From Middle to Middle",
-          "RotateIndex": "4",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerA",
-          "RotateFrom": "Middle",
+          "AlexesNumber": "01001011",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "Middle",
           "CounterClockwiseRotateFrom": "Middle",
-          "FlipFromName": "Middle",
-          "FlipIndex": "4",
+          "RotateFrom": "Middle",
+          "RotateDescription": "From Middle to Middle",
           "ClockwiseRotateFromIndex": "4",
           "CounterClockwiseRotateFromIndex": "4",
+          "RotateIndex": "4",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "Player",
+          "FlipIndex": "4",
+          "FlipFromName": "Middle",
           "FlipDescription": "No Movement",
-          "SortOrder": "4"
+          "SortOrder": "4",
+          "NamedSetPatterns": [
+            "recXBksm5DIUqOfDn",
+            "reccf6U6b21xlIOh7",
+            "recWQyBlj7xHrYNPx",
+            "recqpmR7MAtp5afiM"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "1",
+          "IsInRow3": "0",
+          "IsInColumn1": "0",
+          "IsInColumn2": "1",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "1",
+          "IsInRightLeftDiagonal": "1"
         },
         {
           "CellId": "rec3OzG8nTAkUhjVn",
@@ -1092,23 +1934,40 @@
           "Y": "1",
           "RotateTranslation": "recgdoYW4iJ8gaAha",
           "CellIndex": "7",
-          "CurrentCellState": "recw0SsqNfCk96xZs",
+          "CellPatternCells": [
+            "recVxUYMsnvGIqGZ2",
+            "recmHFemnt2tO9Q5u"
+          ],
+          "CurrentCellState": "recwMqGt97gQ22PsK",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "2",
-          "RotateDescription": "From MiddleLeft to Bottom",
-          "RotateIndex": "3",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerB",
-          "RotateFrom": "MiddleLeft",
+          "AlexesNumber": "00101000",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "MiddleRight",
           "CounterClockwiseRotateFrom": "MiddleLeft",
-          "FlipFromName": "Bottom",
-          "FlipIndex": "7",
+          "RotateFrom": "MiddleLeft",
+          "RotateDescription": "From MiddleLeft to Bottom",
           "ClockwiseRotateFromIndex": "5",
           "CounterClockwiseRotateFromIndex": "3",
+          "RotateIndex": "3",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "Opponent",
+          "FlipIndex": "7",
+          "FlipFromName": "Bottom",
           "FlipDescription": "No Movement",
-          "SortOrder": "7"
+          "SortOrder": "7",
+          "NamedSetPatterns": [
+            "recXBksm5DIUqOfDn",
+            "recHqX6LLAZZAo1RQ"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "0",
+          "IsInRow3": "1",
+          "IsInColumn1": "0",
+          "IsInColumn2": "1",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "0"
         },
         {
           "CellId": "rec50MWM91QHzlEzO",
@@ -1128,25 +1987,42 @@
             "recYR4cE90EOVnYD5",
             "rec91aKNdkT2cw93v",
             "recclaJuN3LJWLC4N",
-            "recKj18pU9k6V6MAx"
+            "recKj18pU9k6V6MAx",
+            "rec1hqH6Ty1vueu48",
+            "recuKKiaqoaXhFxSC",
+            "recLcTgsFF8EuGUz3"
           ],
           "CurrentCellState": "rec0xQjo4VL3DFTXg",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "7",
-          "RotateDescription": "From TopRight to TopLeft",
-          "RotateIndex": "2",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerA",
-          "RotateFrom": "TopRight",
+          "AlexesNumber": "10010010",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "BottomLeft",
           "CounterClockwiseRotateFrom": "TopRight",
-          "FlipFromName": "TopRight",
-          "FlipIndex": "2",
+          "RotateFrom": "TopRight",
+          "RotateDescription": "From TopRight to TopLeft",
           "ClockwiseRotateFromIndex": "6",
           "CounterClockwiseRotateFromIndex": "2",
+          "RotateIndex": "2",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "Player",
+          "FlipIndex": "2",
+          "FlipFromName": "TopRight",
           "FlipDescription": "From TopRight to TopLeft",
-          "SortOrder": "0"
+          "SortOrder": "0",
+          "NamedSetPatterns": [
+            "recJ1wDRP5taMg2Tj",
+            "reccf6U6b21xlIOh7",
+            "recYQei900zbRIFTw"
+          ],
+          "IsInRow1": "1",
+          "IsInRow2": "0",
+          "IsInRow3": "0",
+          "IsInColumn1": "1",
+          "IsInColumn2": "0",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "1",
+          "IsInRightLeftDiagonal": "0"
         },
         {
           "CellId": "recTGnKjXTE8LfT3C",
@@ -1164,26 +2040,43 @@
           "CellPatternCells": [
             "recPHA9ppFH8cjenC",
             "reccnHG0Yfk8tgTt6",
-            "rec8bt4pVcy9OY8XO"
+            "rec8bt4pVcy9OY8XO",
+            "recO1aArEBMEvWxoD",
+            "recrfBGkdzZ67jeLa",
+            "recD2BUDpoknNF4Lh"
           ],
-          "CellPatterns": "rec55PqGhtUYK5Rcb",
-          "CurrentCellState": "recJAi8YoTOQmzhfH",
+          "TargetCellForCellPatterns": "rec55PqGhtUYK5Rcb",
+          "CurrentCellState": "recwMqGt97gQ22PsK",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "9",
-          "RotateDescription": "From BottomRight to TopRight",
-          "RotateIndex": "8",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
-          "RotateFrom": "BottomRight",
+          "AlexesNumber": "10000101",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "TopLeft",
           "CounterClockwiseRotateFrom": "BottomRight",
-          "FlipFromName": "TopLeft",
-          "FlipIndex": "0",
+          "RotateFrom": "BottomRight",
+          "RotateDescription": "From BottomRight to TopRight",
           "ClockwiseRotateFromIndex": "0",
           "CounterClockwiseRotateFromIndex": "8",
+          "RotateIndex": "8",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "Opponent",
+          "FlipIndex": "0",
+          "FlipFromName": "TopLeft",
           "FlipDescription": "From TopLeft to TopRight",
-          "SortOrder": "2"
+          "SortOrder": "2",
+          "NamedSetPatterns": [
+            "recNW9KXsm9KvWa7B",
+            "recWQyBlj7xHrYNPx",
+            "recYQei900zbRIFTw"
+          ],
+          "IsInRow1": "1",
+          "IsInRow2": "0",
+          "IsInRow3": "0",
+          "IsInColumn1": "0",
+          "IsInColumn2": "0",
+          "IsInColumn3": "1",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "1"
         },
         {
           "CellId": "recczW2Y4WMv9buZ8",
@@ -1200,26 +2093,43 @@
           "CellIndex": "8",
           "CellPatternCells": [
             "reclDV8jky7y1JNzH",
-            "rec5D3fwk2h5GzjIB"
+            "rec5D3fwk2h5GzjIB",
+            "reczQDKs6sXAjFvhP",
+            "recfjQk3Amk3Ofo0S",
+            "recc99ZERSFi8OZgJ"
           ],
-          "CellPatterns": "recZCV8dlP1pNK9kK",
+          "TargetCellForCellPatterns": "recZCV8dlP1pNK9kK",
           "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "3",
-          "RotateDescription": "From BottomLeft to BottomRight",
-          "RotateIndex": "6",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
-          "RotateFrom": "BottomLeft",
+          "AlexesNumber": "00100110",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "TopRight",
           "CounterClockwiseRotateFrom": "BottomLeft",
-          "FlipFromName": "BottomLeft",
-          "FlipIndex": "6",
+          "RotateFrom": "BottomLeft",
+          "RotateDescription": "From BottomLeft to BottomRight",
           "ClockwiseRotateFromIndex": "2",
           "CounterClockwiseRotateFromIndex": "6",
+          "RotateIndex": "6",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "FlipIndex": "6",
+          "FlipFromName": "BottomLeft",
           "FlipDescription": "From BottomLeft to BottomRight",
-          "SortOrder": "8"
+          "SortOrder": "8",
+          "NamedSetPatterns": [
+            "recNW9KXsm9KvWa7B",
+            "reccf6U6b21xlIOh7",
+            "recHqX6LLAZZAo1RQ"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "0",
+          "IsInRow3": "1",
+          "IsInColumn1": "0",
+          "IsInColumn2": "0",
+          "IsInColumn3": "1",
+          "IsInLeftRightDiagonal": "1",
+          "IsInRightLeftDiagonal": "0"
         },
         {
           "CellId": "recfSe8zeEdCAtcGq",
@@ -1237,26 +2147,42 @@
           "CellPatternCells": [
             "recAy4XNSSKRZGZsh",
             "rechiocdDSSkR1IFz",
-            "rec6RGGCG5ORVBnA3"
+            "rec6RGGCG5ORVBnA3",
+            "recvjeyFh2sWFF8us",
+            "recBi8mtXhiWj7TJH"
           ],
-          "CellPatterns": "recqn6vuQrx71nQii",
-          "CurrentCellState": "recw0SsqNfCk96xZs",
+          "TargetCellForCellPatterns": "recqn6vuQrx71nQii",
+          "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "6",
-          "RotateDescription": "From Bottom to MiddleRight",
-          "RotateIndex": "7",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "PlayerB",
-          "RotateFrom": "Bottom",
+          "IsDailyDouble": "true",
+          "AlexesNumber": "01000100",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "Top",
           "CounterClockwiseRotateFrom": "Bottom",
-          "FlipFromName": "MiddleLeft",
-          "FlipIndex": "3",
+          "RotateFrom": "Bottom",
+          "RotateDescription": "From Bottom to MiddleRight",
           "ClockwiseRotateFromIndex": "1",
           "CounterClockwiseRotateFromIndex": "7",
+          "RotateIndex": "7",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "FlipIndex": "3",
+          "FlipFromName": "MiddleLeft",
           "FlipDescription": "From MiddleLeft to MiddleRight",
-          "SortOrder": "5"
+          "SortOrder": "5",
+          "NamedSetPatterns": [
+            "recNW9KXsm9KvWa7B",
+            "recqpmR7MAtp5afiM"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "1",
+          "IsInRow3": "0",
+          "IsInColumn1": "0",
+          "IsInColumn2": "0",
+          "IsInColumn3": "1",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "0"
         },
         {
           "CellId": "recmjtZPRUfoCU2sr",
@@ -1271,23 +2197,42 @@
           "Y": "0",
           "RotateTranslation": "recgdoYW4iJ8gaAha",
           "CellIndex": "6",
+          "CellPatternCells": [
+            "recShopv0fRnIWAbr",
+            "recTk43h9Sd9Qw1aQ",
+            "rec7NXPxQPU4PzKX0"
+          ],
           "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "1",
-          "RotateDescription": "From TopLeft to BottomLeft",
-          "RotateIndex": "0",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
-          "RotateFrom": "TopLeft",
+          "AlexesNumber": "00110001",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "BottomRight",
           "CounterClockwiseRotateFrom": "TopLeft",
-          "FlipFromName": "BottomRight",
-          "FlipIndex": "8",
+          "RotateFrom": "TopLeft",
+          "RotateDescription": "From TopLeft to BottomLeft",
           "ClockwiseRotateFromIndex": "8",
           "CounterClockwiseRotateFromIndex": "0",
+          "RotateIndex": "0",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "FlipIndex": "8",
+          "FlipFromName": "BottomRight",
           "FlipDescription": "From BottomRight to BottomLeft",
-          "SortOrder": "6"
+          "SortOrder": "6",
+          "NamedSetPatterns": [
+            "recJ1wDRP5taMg2Tj",
+            "recWQyBlj7xHrYNPx",
+            "recHqX6LLAZZAo1RQ"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "0",
+          "IsInRow3": "1",
+          "IsInColumn1": "1",
+          "IsInColumn2": "0",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "1"
         },
         {
           "CellId": "recpPYOZtnp3lTOua",
@@ -1305,26 +2250,41 @@
           "CellPatternCells": [
             "recf1uu1YY0iPps8E",
             "recFITGoLxBQs1ocD",
-            "recljMfqekOodaaWx"
+            "recljMfqekOodaaWx",
+            "rec3K2fxtqlgu5oeA",
+            "recJtIPt56a61dAFz"
           ],
-          "CellPatterns": "recYmKv2dBpnAA1gs",
+          "TargetCellForCellPatterns": "recYmKv2dBpnAA1gs",
           "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "8",
-          "RotateDescription": "From MiddleRight to Top",
-          "RotateIndex": "5",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
-          "RotateFrom": "MiddleRight",
+          "AlexesNumber": "10001000",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "MiddleLeft",
           "CounterClockwiseRotateFrom": "MiddleRight",
-          "FlipFromName": "Top",
-          "FlipIndex": "1",
+          "RotateFrom": "MiddleRight",
+          "RotateDescription": "From MiddleRight to Top",
           "ClockwiseRotateFromIndex": "3",
           "CounterClockwiseRotateFromIndex": "5",
+          "RotateIndex": "5",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "FlipIndex": "1",
+          "FlipFromName": "Top",
           "FlipDescription": "No Movement",
-          "SortOrder": "1"
+          "SortOrder": "1",
+          "NamedSetPatterns": [
+            "recXBksm5DIUqOfDn",
+            "recYQei900zbRIFTw"
+          ],
+          "IsInRow1": "1",
+          "IsInRow2": "0",
+          "IsInRow3": "0",
+          "IsInColumn1": "0",
+          "IsInColumn2": "1",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "0"
         },
         {
           "CellId": "recxIf3GoDzEtonFU",
@@ -1342,25 +2302,40 @@
           "CellPatternCells": [
             "reckcKNNnyDSWpFrH",
             "recxWA16nieZY83Sv",
-            "recyZobcdc9yOkGuC"
+            "recyZobcdc9yOkGuC",
+            "recmEXEqSbCsI5kUB",
+            "recpAYbzVjDRhc1L4"
           ],
           "CurrentCellState": "recJAi8YoTOQmzhfH",
           "DefaultCellState": "recJAi8YoTOQmzhfH",
           "CellKey": "4",
-          "RotateDescription": "From Top to MiddleLeft",
-          "RotateIndex": "1",
-          "DefaultState": "NoPlayer",
-          "CurrentState": "NoPlayer",
-          "RotateFrom": "Top",
+          "AlexesNumber": "01010000",
           "IsClockwise": null,
           "ClockwiseRotateFrom": "Bottom",
           "CounterClockwiseRotateFrom": "Top",
-          "FlipFromName": "MiddleRight",
-          "FlipIndex": "5",
+          "RotateFrom": "Top",
+          "RotateDescription": "From Top to MiddleLeft",
           "ClockwiseRotateFromIndex": "7",
           "CounterClockwiseRotateFromIndex": "1",
+          "RotateIndex": "1",
+          "DefaultState": "NoPlayer",
+          "CurrentState": "NoPlayer",
+          "FlipIndex": "5",
+          "FlipFromName": "MiddleRight",
           "FlipDescription": "From MiddleRight to MiddleLeft",
-          "SortOrder": "3"
+          "SortOrder": "3",
+          "NamedSetPatterns": [
+            "recJ1wDRP5taMg2Tj",
+            "recqpmR7MAtp5afiM"
+          ],
+          "IsInRow1": "0",
+          "IsInRow2": "1",
+          "IsInRow3": "0",
+          "IsInColumn1": "1",
+          "IsInColumn2": "0",
+          "IsInColumn3": "0",
+          "IsInLeftRightDiagonal": "0",
+          "IsInRightLeftDiagonal": "0"
         }
       ]
     },
@@ -1786,12 +2761,12 @@
         {
           "CellStateId": "rec0xQjo4VL3DFTXg",
           "createdTime": "2020-11-26T20:04:48Z",
-          "Name": "PlayerA",
+          "Name": "Player",
           "Code": "P",
           "Description": "This cell has been marked by the active player",
-          "Color": "yellow",
-          "FontColor": "black",
-          "DefaultMark": "A",
+          "Color": "blue",
+          "FontColor": "white",
+          "DefaultMark": "X",
           "Cursor": "Default",
           "SortOrder": "1",
           "Id": "0",
@@ -1813,12 +2788,37 @@
             "recyZobcdc9yOkGuC",
             "rec6RGGCG5ORVBnA3",
             "recKj18pU9k6V6MAx",
-            "rec8bt4pVcy9OY8XO"
+            "rec8bt4pVcy9OY8XO",
+            "rec1hqH6Ty1vueu48",
+            "recmEXEqSbCsI5kUB",
+            "recShopv0fRnIWAbr",
+            "rec3K2fxtqlgu5oeA",
+            "recy5CwlzxHvsubBr",
+            "recVxUYMsnvGIqGZ2",
+            "recO1aArEBMEvWxoD",
+            "recvjeyFh2sWFF8us",
+            "reczQDKs6sXAjFvhP",
+            "recLcTgsFF8EuGUz3",
+            "recJtIPt56a61dAFz",
+            "recD2BUDpoknNF4Lh",
+            "recpAYbzVjDRhc1L4",
+            "recUNdmTwmeITNGEZ",
+            "recBi8mtXhiWj7TJH",
+            "rec7NXPxQPU4PzKX0",
+            "recmHFemnt2tO9Q5u",
+            "recc99ZERSFi8OZgJ",
+            "recuKKiaqoaXhFxSC",
+            "recAJ25e2uael63Kw",
+            "recfjQk3Amk3Ofo0S",
+            "recrfBGkdzZ67jeLa",
+            "rec1Gsh1wvAQ3BO0w",
+            "recTk43h9Sd9Qw1aQ"
           ],
           "CurrentStateCells": [
             "rec50MWM91QHzlEzO",
             "rec35HZOaRy6ge0jk"
-          ]
+          ],
+          "AlexesIndex": "1"
         },
         {
           "CellStateId": "recJAi8YoTOQmzhfH",
@@ -1850,9 +2850,9 @@
           "CurrentStateCells": [
             "recxIf3GoDzEtonFU",
             "recmjtZPRUfoCU2sr",
-            "recTGnKjXTE8LfT3C",
             "recczW2Y4WMv9buZ8",
-            "recpPYOZtnp3lTOua"
+            "recpPYOZtnp3lTOua",
+            "recfSe8zeEdCAtcGq"
           ],
           "DefaultStateCells": [
             "recxIf3GoDzEtonFU",
@@ -1864,24 +2864,30 @@
             "recTGnKjXTE8LfT3C",
             "rec35HZOaRy6ge0jk",
             "recczW2Y4WMv9buZ8"
-          ]
+          ],
+          "AlexesIndex": "0"
         },
         {
-          "CellStateId": "recw0SsqNfCk96xZs",
-          "createdTime": "2020-11-26T20:04:48Z",
-          "Name": "PlayerB",
-          "Code": "O",
-          "Description": "This cell has been marked by thhe active player's opponent.",
-          "Color": "black",
+          "CellStateId": "recSExjq5fC5PsGeg",
+          "createdTime": "2020-12-14T08:10:49Z",
+          "Name": "test"
+        },
+        {
+          "CellStateId": "recwMqGt97gQ22PsK",
+          "createdTime": "2020-12-14T08:13:23Z",
+          "Name": "Opponent",
+          "Description": "This player is not the starting player",
+          "Color": "red",
           "FontColor": "white",
-          "DefaultMark": "B",
+          "DefaultMark": "O",
           "Cursor": "Default",
           "SortOrder": "2",
           "Id": "1",
           "CurrentStateCells": [
-            "recfSe8zeEdCAtcGq",
-            "rec3OzG8nTAkUhjVn"
-          ]
+            "rec3OzG8nTAkUhjVn",
+            "recTGnKjXTE8LfT3C"
+          ],
+          "AlexesIndex": "-1"
         }
       ]
     }

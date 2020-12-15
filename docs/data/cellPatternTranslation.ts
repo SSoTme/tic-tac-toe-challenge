@@ -17,6 +17,7 @@ export interface cellPatternTranslation
     TranslationName? : string;
     TranslationId? : number;
     CPTCode? : number;
+    DisplayName? : string;
     
     Users_AILevels : aILevel[];
     CellPatternTranslations_CellPatterns : cellPattern[];

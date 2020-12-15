@@ -21,6 +21,7 @@ export interface cellState
     CellPatterns? : string[];
     CurrentStateCells? : string[];
     DefaultStateCells? : string[];
+    AlexesIndex? : number;
     
     TargetCellState_CellPatterns : cellPattern[];
     CellState_CellPatternCells : cellPatternCell[];

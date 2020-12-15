@@ -628,56 +628,43 @@ var b = jQueryBoard(function() {
                                 <xsl:variable name="winning-patterns" select="$cell-patterns[normalize-space(IsWinPattern) = 'true']" />
                                 <xsl:variable name="general-patterns" select="$cell-patterns[normalize-space(IsWinPattern) != 'true']" />
                                 <h3>Winning Patterns</h3>
-                                <p>
-                                    There are <xsl:value-of select="count($winning-patterns)"  /> winning patterns defined.
+                                <p>There are 2 ways that this specification defines winning patterns. The first is simply to list the 
+                                    <xsl:value-of select="count($winning-patterns[CellPatternType='NamedSet'])"/> sets of winning cells.  The 2nd 
+                                    method is to describe a more compact set of <xsl:value-of select="count($winning-patterns[CellPatternType='Win'])"  />
+                                    sets of 3 cells, along with transformtions (rotations and flips) to find all possible variations of those
+                                    original 3 cells specified.
                                 </p>
-                                <xsl:for-each select="$winning-patterns">
+
+                                    <h4>Specific Winning Sets: </h4>
+                                <p>
+                                    There are <xsl:value-of select="count($winning-patterns[CellPatternType='NamedSet'])"  /> winning patterns defined.
+                                </p>
+                                <xsl:for-each select="$winning-patterns[CellPatternType='NamedSet']">
                                     <xsl:sort select="SortOrder" data-type="number" />
-                                    <div style="font-size: 1.1em; font-weight: bold">
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:text>CellPattern_</xsl:text>
-                                                <xsl:value-of select="Name"/>
-                                                <xsl:text>.html</xsl:text>
-                                            </xsl:attribute>
-                                            <xsl:call-template name="camel-to-title-case">
-                                                <xsl:with-param name="text" select="Name" />
-                                            </xsl:call-template>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <xsl:value-of select="Description"/>
-                                    </p>
-
-                                    <div style="clear: both"></div>
-
+                                    <xsl:apply-templates select="." />
                                 </xsl:for-each>
 
-                                <h3>Possible Win Matching Strategies</h3>
+
+                                    <h4>Compact Sets w/ Translations: </h4>
                                 <p>
-                                    There are <xsl:value-of select="count($general-patterns)"  /> general patterns which
-                                    are useful for a variety of strategies outlined.
+                                    There are <xsl:value-of select="count($winning-patterns[CellPatternType='Win'])"  /> winning patterns defined with one
+                                    set of 3 cells, plus 1 or more transformations to find all of the related "versions" of that pattern within the baord.
+                                </p>
+
+                                <xsl:for-each select="$winning-patterns[CellPatternType='Win']">
+                                    <xsl:sort select="SortOrder" data-type="number" />
+                                    <xsl:apply-templates select="." />
+                                </xsl:for-each>
+
+
+                                <h3>Partial Win Match</h3>
+                                <p>
+                                    There are <xsl:value-of select="count($general-patterns)"  /> patterns which
+                                    match 2/3rds of a winning pattern using translations to represent all arrangements of cells on a board.
                                 </p>
                                 <xsl:for-each select="$general-patterns">
                                     <xsl:sort select="SortOrder" data-type="number" />
-                                    <div style="font-size: 1.1em; font-weight: bold">
-                                        <a>
-                                            <xsl:attribute name="href">
-                                                <xsl:text>CellPattern_</xsl:text>
-                                                <xsl:value-of select="Name"/>
-                                                <xsl:text>.html</xsl:text>
-                                            </xsl:attribute>
-                                            <xsl:call-template name="camel-to-title-case">
-                                                <xsl:with-param name="text" select="Name" />
-                                            </xsl:call-template>
-                                        </a>
-                                    </div>
-                                    <p>
-                                        <xsl:value-of select="Description"/>
-                                    </p>
-
-                                    <div style="clear: both"></div>
-
+                                    <xsl:apply-templates select="." />
                                 </xsl:for-each>
                             </body>
                         </html>
@@ -685,6 +672,7 @@ var b = jQueryBoard(function() {
                 </FileSetFile>
                 <xsl:for-each select="$cell-patterns">
                     <xsl:variable name="is-win-pattern" select="normalize-space(IsWinPattern)" />
+                    <xsl:variable name="cell-pattern" select="." />
                     <FileSetFile>
                         <RelativePath>
                             <xsl:text>../CellPattern_</xsl:text>
@@ -719,10 +707,26 @@ var b = jQueryBoard(function() {
                                     <p>
                                         
                                         <xsl:value-of select="Description"/>
-                                    </p>
+                                    </p>                                    
+                                    <xsl:if test="IsWinPattern='true'">A winning player will have played in all of these cells. </xsl:if>
+                                    <hr />
+                                        Cells - <xsl:for-each select="CellPatternCellCellNames"><xsl:if test="position() > 1">, 
+                                        </xsl:if>
+                                            <xsl:value-of select="." />
+
+                                        </xsl:for-each>
+                                        <xsl:if test="normalize-space(TargetDescription) != ''">
+                                        where <xsl:value-of select="TargetDescription" />
+                                        </xsl:if>
+                                        
+                                        <xsl:if test="count(TranslationNames) > 0">
+                                            <div style="font-weight: normal;">
+                                                Then <xsl:for-each select="TranslationNames"><xsl:if test="position() > 1">, </xsl:if><xsl:value-of select="." /></xsl:for-each> to find all variations of the pattern.
+                                            </div>
+                                        </xsl:if>
                                     <hr />
                                     <xsl:for-each select="$pp-cell-patterns[CellPattern/Name = current()/Name]">
-                                                                           <div>
+                                        <div>
                                             <xsl:choose>
                                             <xsl:when test="$is-win-pattern = 'true'">
                                             <p>
@@ -1006,6 +1010,52 @@ var b = jQueryBoard(function() {
             </xsl:otherwise>
         </xsl:choose>
 
+    </xsl:template>
+    <xsl:template match="CellPattern"><xsl:variable name="cell-pattern" select="." />
+        <div style="font-size: 1.1em; font-weight: bold; max-width: 50em;">
+        <div style="float: right; font-size: 0.7em; text-align: right;">
+            <xsl:for-each select="CellPatternCellCellNames"><xsl:if test="position() > 1">, 
+            </xsl:if>
+            <xsl:choose>
+                <xsl:when test="text() = $cell-pattern/Name"><xsl:value-of select="." /> (EMPTY)</xsl:when>
+                <xsl:otherwise><xsl:value-of select="." /></xsl:otherwise>
+            </xsl:choose>
+            </xsl:for-each>
+
+            <xsl:if test="normalize-space(TargetDescription) != ''">
+                <span style="font-weight: normal">
+                where 
+                <xsl:value-of select="TargetDescription" />
+                </span>
+            </xsl:if>
+
+            <br />            
+
+            <span style="font-weight: normal;">
+                <xsl:for-each select="TranslationNames"><xsl:if test="position() > 1">, </xsl:if><xsl:value-of select="." /></xsl:for-each>
+            </span>
+
+            <div style="font-weight: normal;">
+                Cell Indexes: <xsl:for-each select="CellPatternCelICellIndexes"><xsl:if test="position() > 1">, </xsl:if><xsl:value-of select="." /></xsl:for-each>
+            </div>
+            
+        </div>
+            <a>
+                <xsl:attribute name="href">
+                    <xsl:text>CellPattern_</xsl:text>
+                    <xsl:value-of select="Name"/>
+                    <xsl:text>.html</xsl:text>
+                </xsl:attribute>
+                <xsl:call-template name="camel-to-title-case">
+                    <xsl:with-param name="text" select="Name" />
+                </xsl:call-template>
+            </a>
+        </div>
+        <p>
+            <xsl:value-of select="Description"/>
+        </p>
+
+        <div style="clear: both"></div>
     </xsl:template>
 
 </xsl:stylesheet>
