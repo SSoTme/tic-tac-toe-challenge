@@ -9,12 +9,24 @@ public static partial class LanguageTokens
         // setup each one...
         
             
+        var testtoken = new LanguageToken()
+        {
+            LanguageTokenId = @"rec7hUrPQOlsmHWTK",
+            createdTime = DateTime.Parse("2020-12-16T00:36:17Z"),
+            Name = @"testtoken",
+            Token = @"testtoken"
+        };
+
+        List.Add(testtoken);
+        ByEnum[LanguageTokensEnum.testtoken] = testtoken;
+        
+            
         var Title = new LanguageToken()
         {
             LanguageTokenId = @"recNnnObNV1wEGXUI",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"Title",
-            DisplayName = @"Kris's 3x3 Tic-Tac-Toe",
+            DisplayName = @"Bob's 3x3 Tic-Tac-Toe",
             SortOrder = 1,
             Token = @"Title"
         };
@@ -84,7 +96,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recPamDrUmmMfoUtj",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"YouWon",
-            DisplayName = @"You won!!",
+            DisplayName = @"You Won",
             SortOrder = 6,
             Token = @"YouWon"
         };
@@ -98,7 +110,7 @@ public static partial class LanguageTokens
             LanguageTokenId = @"recOqDsQXph2jV645",
             createdTime = DateTime.Parse("2020-11-26T20:01:30Z"),
             Name = @"TheyWon",
-            DisplayName = @"You a Loooser!!!",
+            DisplayName = @"You Lost",
             SortOrder = 7,
             Token = @"TheyWon"
         };

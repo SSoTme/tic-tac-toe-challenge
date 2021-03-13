@@ -80,7 +80,61 @@ function addDerivedCode(newBoard) {
     }
     
 
-    newBoard.checkDiagonalWinStep = function (testBoard, cellStateToFind) {
+    newBoard.checkRow3Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[BottomLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkColumn1Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomLeftCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkColumn3Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopRightCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleRightCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkRightLeftDiagonalStep = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopRightCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomLeftCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkColumn2Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkRow1Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[TopCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[TopRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkLeftRightDiagonalStep = function (testBoard, cellStateToFind) {
         
         if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
         else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
@@ -94,6 +148,24 @@ function addDerivedCode(newBoard) {
         if ((testBoard.values[MiddleLeftCell].CurrentState !== cellStateToFind)) return false;
         else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
         else if ((testBoard.values[MiddleRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkRow2Step = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[MiddleLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleRightCell].CurrentState !== cellStateToFind)) return false;
+        else return true;
+    }
+    
+
+    newBoard.checkDiagonalWinStep = function (testBoard, cellStateToFind) {
+        
+        if ((testBoard.values[TopLeftCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[MiddleCell].CurrentState !== cellStateToFind)) return false;
+        else if ((testBoard.values[BottomRightCell].CurrentState !== cellStateToFind)) return false;
         else return true;
     }
     
@@ -118,16 +190,66 @@ function addDerivedCode(newBoard) {
         return false;
     }
     
-    newBoard.checkDiagonalWin = function () {
+    newBoard.checkRow3 = function () {
         var testBoard = this;
         var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
         
         // Check for a match...
-        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
-        // Flip the test board to try another test...
-        testBoard.flip();
+        if (testBoard.checkRow3Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkColumn1 = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
         // Check for a match...
-        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
+        if (testBoard.checkColumn1Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkColumn3 = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkColumn3Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkRightLeftDiagonal = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkRightLeftDiagonalStep(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkColumn2 = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkColumn2Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkRow1 = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkRow1Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkLeftRightDiagonal = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkLeftRightDiagonalStep(testBoard, cellStateToFind)) return true;
         return false;
     }
     
@@ -144,14 +266,44 @@ function addDerivedCode(newBoard) {
         return false;
     }
     
+    newBoard.checkRow2 = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkRow2Step(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
+    newBoard.checkDiagonalWin = function () {
+        var testBoard = this;
+        var cellStateToFind = testBoard.cellStates[testBoard.myTurn ? 0 : 1].Name;
+        
+        // Check for a match...
+        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
+        // Flip the test board to try another test...
+        testBoard.flip();
+        // Check for a match...
+        if (testBoard.checkDiagonalWinStep(testBoard, cellStateToFind)) return true;
+        return false;
+    }
+    
 
     newBoard.checkForWin = function () {
         console.log(newBoard);
         var testBoard = jQuery.extend(true, {}, newBoard);
 
         if (testBoard.checkEdgeWin()) return true;
-        else if (testBoard.checkDiagonalWin()) return true;
+        else if (testBoard.checkRow3()) return true;
+        else if (testBoard.checkColumn1()) return true;
+        else if (testBoard.checkColumn3()) return true;
+        else if (testBoard.checkRightLeftDiagonal()) return true;
+        else if (testBoard.checkColumn2()) return true;
+        else if (testBoard.checkRow1()) return true;
+        else if (testBoard.checkLeftRightDiagonal()) return true;
         else if (testBoard.checkMiddleWin()) return true;
+        else if (testBoard.checkRow2()) return true;
+        else if (testBoard.checkDiagonalWin()) return true;
         
         else return false;
     }

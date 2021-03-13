@@ -17,7 +17,9 @@ namespace TicTacToeChallenge.Lib.DataClasses
             
                 this.CellPatternCellsExpanded = new BindingList<CellPatternCell>();
             
-                this.CellPatterns_CellsExpanded = new BindingList<Cell>();
+                this.TargetCellForCellPatterns_CellsExpanded = new BindingList<Cell>();
+            
+                this.NamedSetPatterns_CellsExpanded = new BindingList<Cell>();
             
                 this.CellPatterns_CellStatesExpanded = new BindingList<CellState>();
             
@@ -45,9 +47,6 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Description")]
         public String Description { get; set; }
     
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsWinPattern")]
-        public Nullable<Boolean> IsWinPattern { get; set; }
-    
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCells")]
         public String[] CellPatternCells { get; set; }
     
@@ -62,6 +61,12 @@ namespace TicTacToeChallenge.Lib.DataClasses
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "SortOrder")]
         public Nullable<Int32> SortOrder { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternType")]
+        public String CellPatternType { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "IsWinPattern")]
+        public Nullable<Boolean> IsWinPattern { get; set; }
     
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetCellStateId")]
         public Nullable<Int32> TargetCellStateId { get; set; }
@@ -84,6 +89,27 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "Translations")]
         public String Translations { get; set; }
     
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCelICellIndexes")]
+        public Int32[] CellPatternCelICellIndexes { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCellCells")]
+        public String[] CellPatternCellCells { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCellCellNames")]
+        public String[] CellPatternCellCellNames { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TranslationNames")]
+        public String[] TranslationNames { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetDescription")]
+        public String TargetDescription { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetCellName")]
+        public String TargetCellName { get; set; }
+    
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetCellStateName")]
+        public String TargetCellStateName { get; set; }
+    
 
         
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternTranslationsExpanded")]
@@ -92,8 +118,11 @@ namespace TicTacToeChallenge.Lib.DataClasses
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatternCellsExpanded")]
         public BindingList<CellPatternCell> CellPatternCellsExpanded { get; set; }
             
-        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatterns_CellsExpanded")]
-        public BindingList<Cell> CellPatterns_CellsExpanded { get; set; }
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "TargetCellForCellPatterns_CellsExpanded")]
+        public BindingList<Cell> TargetCellForCellPatterns_CellsExpanded { get; set; }
+            
+        [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "NamedSetPatterns_CellsExpanded")]
+        public BindingList<Cell> NamedSetPatterns_CellsExpanded { get; set; }
             
         [JsonProperty(DefaultValueHandling = DefaultValueHandling.IgnoreAndPopulate, PropertyName = "CellPatterns_CellStatesExpanded")]
         public BindingList<CellState> CellPatterns_CellStatesExpanded { get; set; }

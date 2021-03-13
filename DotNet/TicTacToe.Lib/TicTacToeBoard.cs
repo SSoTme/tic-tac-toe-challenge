@@ -189,18 +189,18 @@ namespace TicTacToe.DotNet.Lib
         private void PrintCell(int i)
         {
             Console.Write(" ");
-            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.Player].Name)
+            if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerA].Name)
             {
-                var state = CellStates.ByEnum[CellStatesEnum.Player];
+                var state = CellStates.ByEnum[CellStatesEnum.PlayerA];
                 Console.ForegroundColor = this.GetConsoleColor(state.FontColor);
                 Console.BackgroundColor = this.GetConsoleColor(state.Color);
                 Console.Write(state.DefaultMark);
                 Console.ForegroundColor = ConsoleColor.White;
                 Console.BackgroundColor = ConsoleColor.Black;
             }
-            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.Opponent].Name)
+            else if (this.BoardCells[i].CurrentState == CellStates.ByEnum[CellStatesEnum.PlayerB].Name)
             {
-                var state = CellStates.ByEnum[CellStatesEnum.Opponent];
+                var state = CellStates.ByEnum[CellStatesEnum.PlayerB];
                 Console.ForegroundColor = this.GetConsoleColor(state.FontColor);
                 Console.BackgroundColor = this.GetConsoleColor(state.Color);
                 Console.Write(state.DefaultMark);

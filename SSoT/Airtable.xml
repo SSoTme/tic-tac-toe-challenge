@@ -87,19 +87,6 @@
   </Entities>
   <CellPatternTranslations>
     <CellPatternTranslation>
-      <CellPatternTranslationId>rec7MeKnHind7FhXd</CellPatternTranslationId>
-      <createdTime>2020-12-11T20:01:42Z</createdTime>
-      <Name>T1-DiagonalWin:Flip:1</Name>
-      <CPTCode>11</CPTCode>
-      <CellPattern>recg6YsAgLEBikQ3F</CellPattern>
-      <CellPatternName>DiagonalWin</CellPatternName>
-      <Count>1</Count>
-      <Translation>recQ0PgyWBky0wm32</Translation>
-      <TranslationId>1</TranslationId>
-      <TranslationName>Flip</TranslationName>
-      <SortOrder>1</SortOrder>
-    </CellPatternTranslation>
-    <CellPatternTranslation>
       <CellPatternTranslationId>rec9PRnE4xpUCcMit</CellPatternTranslationId>
       <createdTime>2020-11-26T20:39:35Z</createdTime>
       <Translation>recgdoYW4iJ8gaAha</Translation>
@@ -109,6 +96,7 @@
       <Name>T1-TwoInARowDiagonal:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>TwoInARowDiagonal</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -122,6 +110,7 @@
       <Name>T1-EdgeWin:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>EdgeWin</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -135,6 +124,7 @@
       <Name>T1-TwoInARowMiddle:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>TwoInARowMiddle</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -148,6 +138,7 @@
       <Name>T1-MiddleWin:Rotate:1</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <DisplayName>Rotate Once</DisplayName>
       <CellPatternName>MiddleWin</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -161,6 +152,7 @@
       <Name>T3-TwoInARowTop:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -174,8 +166,23 @@
       <Name>T1-TwoOutsideMiddle:Rotate:1</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <DisplayName>Rotate Once</DisplayName>
       <CellPatternName>TwoOutsideMiddle</CellPatternName>
       <TranslationName>Rotate</TranslationName>
+    </CellPatternTranslation>
+    <CellPatternTranslation>
+      <CellPatternTranslationId>recmUpophHSQKe5VF</CellPatternTranslationId>
+      <createdTime>2020-12-18T20:42:34Z</createdTime>
+      <Name>T1-DiagonalWin:Flip:1</Name>
+      <CPTCode>11</CPTCode>
+      <DisplayName>Flip Once</DisplayName>
+      <CellPattern>recuenPSYKnW2WfOH</CellPattern>
+      <CellPatternName>DiagonalWin</CellPatternName>
+      <Translation>recQ0PgyWBky0wm32</Translation>
+      <TranslationId>1</TranslationId>
+      <TranslationName>Flip</TranslationName>
+      <SortOrder>1</SortOrder>
+      <Count>1</Count>
     </CellPatternTranslation>
     <CellPatternTranslation>
       <CellPatternTranslationId>recoPtQQ8QZtClJK0</CellPatternTranslationId>
@@ -187,6 +194,7 @@
       <Name>T1-TwoOutsideDiagonal:Rotate:1</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>10</CPTCode>
+      <DisplayName>Rotate Once</DisplayName>
       <CellPatternName>TwoOutsideDiagonal</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -200,6 +208,7 @@
       <Name>T1-TwoInARowTop:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -213,6 +222,7 @@
       <Name>T2-TwoInARowTop:Flip:1</Name>
       <TranslationId>1</TranslationId>
       <CPTCode>11</CPTCode>
+      <DisplayName>Flip Once</DisplayName>
       <CellPatternName>TwoInARowTop</CellPatternName>
       <TranslationName>Flip</TranslationName>
     </CellPatternTranslation>
@@ -226,6 +236,7 @@
       <Name>T1-TwoOutsideTop:Rotate:3</Name>
       <TranslationId>0</TranslationId>
       <CPTCode>30</CPTCode>
+      <DisplayName>Rotate 3 times</DisplayName>
       <CellPatternName>TwoOutsideTop</CellPatternName>
       <TranslationName>Rotate</TranslationName>
     </CellPatternTranslation>
@@ -240,6 +251,12 @@
       <Token>GameOver</Token>
     </LanguageToken>
     <LanguageToken>
+      <LanguageTokenId>rec7hUrPQOlsmHWTK</LanguageTokenId>
+      <createdTime>2020-12-16T00:36:17Z</createdTime>
+      <Name>testtoken</Name>
+      <Token>testtoken</Token>
+    </LanguageToken>
+    <LanguageToken>
       <LanguageTokenId>recFy1FsoP1ORWYWj</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
       <Name>YourTurn</Name>
@@ -251,7 +268,7 @@
       <LanguageTokenId>recNnnObNV1wEGXUI</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
       <Name>Title</Name>
-      <DisplayName>Kris's 3x3 Tic-Tac-Toe</DisplayName>
+      <DisplayName>Bob's 3x3 Tic-Tac-Toe</DisplayName>
       <SortOrder>1</SortOrder>
       <Token>Title</Token>
     </LanguageToken>
@@ -259,7 +276,7 @@
       <LanguageTokenId>recOqDsQXph2jV645</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
       <Name>TheyWon</Name>
-      <DisplayName>You a Loooser!!!</DisplayName>
+      <DisplayName>You Lost</DisplayName>
       <SortOrder>7</SortOrder>
       <Token>TheyWon</Token>
     </LanguageToken>
@@ -267,7 +284,7 @@
       <LanguageTokenId>recPamDrUmmMfoUtj</LanguageTokenId>
       <createdTime>2020-11-26T20:01:30Z</createdTime>
       <Name>YouWon</Name>
-      <DisplayName>You won!!</DisplayName>
+      <DisplayName>You Won</DisplayName>
       <SortOrder>6</SortOrder>
       <Token>YouWon</Token>
     </LanguageToken>
@@ -322,17 +339,6 @@
       <SortOrder>-1</SortOrder>
     </AILevel>
     <AILevel>
-      <AILevelId>rec9b05vxWWpxVyoy</AILevelId>
-      <createdTime>2020-12-11T20:00:24Z</createdTime>
-      <Name>God</Name>
-      <PlayerType>AI</PlayerType>
-      <MinAILevelIndex>0</MinAILevelIndex>
-      <AILevelIndex>9</AILevelIndex>
-      <Description>Learn from mistakes.</Description>
-      <SortOrder>4</SortOrder>
-      <Users>reciqoIN0xBrbCPsy</Users>
-    </AILevel>
-    <AILevel>
       <AILevelId>recPPp5z8K4EAA2FW</AILevelId>
       <createdTime>2020-11-26T20:02:01Z</createdTime>
       <Name>Intermediate</Name>
@@ -349,6 +355,15 @@
       <AIStrategies>recGEVGA3ajKMQ2kD</AIStrategies>
       <AIStrategies>recMqBdImRECSijls</AIStrategies>
       <AIStrategyNames>WinIfPossible, PlayInMiddleIfAvailable, Random, PreventWinIfPossible, ForceWinNextTurn, PreventForceWinNextTurn</AIStrategyNames>
+    </AILevel>
+    <AILevel>
+      <AILevelId>recdlefLPaE9CcnZr</AILevelId>
+      <createdTime>2020-12-15T00:43:54Z</createdTime>
+      <Name>God</Name>
+      <PlayerType>AI</PlayerType>
+      <AILevelIndex>9</AILevelIndex>
+      <SortOrder>5</SortOrder>
+      <Users>reciqoIN0xBrbCPsy</Users>
     </AILevel>
     <AILevel>
       <AILevelId>recmMBaevl2jHl0hC</AILevelId>
@@ -380,7 +395,9 @@
       <CellPatternTranslations>recUD9c7vXgkNLQi9</CellPatternTranslations>
       <TargetCell>recTGnKjXTE8LfT3C</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>3</SortOrder>
+      <SortOrder>103</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>10</CellPatternCellStates>
@@ -392,24 +409,200 @@
       <CellPatternTranslationCodes>11</CellPatternTranslationCodes>
       <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30;11;30</Translations>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>1</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>recpPYOZtnp3lTOua</CellPatternCellCells>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Top</CellPatternCellCellNames>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+      <TranslationNames>Flip Once</TranslationNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+      <TargetDescription>TopRight is NoPlayer</TargetDescription>
+      <TargetCellName>TopRight</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recBDK2nzNlGSJNgJ</CellPatternId>
       <createdTime>2020-11-26T20:06:43Z</createdTime>
       <Name>EdgeWin</Name>
       <Description>Starting with the top row, 3 additional rotates will find all edge wins.</Description>
-      <IsWinPattern>true</IsWinPattern>
       <CellPatternCells>recU9O3yxyMeQ1eU4</CellPatternCells>
       <CellPatternCells>recf1uu1YY0iPps8E</CellPatternCells>
       <CellPatternCells>recPHA9ppFH8cjenC</CellPatternCells>
       <CellPatternTranslations>recD87U0swUjjhnTj</CellPatternTranslations>
-      <SortOrder>1</SortOrder>
+      <SortOrder>75</SortOrder>
+      <CellPatternType>Win</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>10</CellPatternCellStates>
       <CellPatternCellStates>20</CellPatternCellStates>
       <Cells>00;10;20</Cells>
       <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>1</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>recpPYOZtnp3lTOua</CellPatternCellCells>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Top</CellPatternCellCellNames>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recHqX6LLAZZAo1RQ</CellPatternId>
+      <createdTime>2020-12-12T00:45:52Z</createdTime>
+      <Name>Row3</Name>
+      <Description>The 3rd (bottom) row in the puzzle.</Description>
+      <CellPatternCells>rec7NXPxQPU4PzKX0</CellPatternCells>
+      <CellPatternCells>recmHFemnt2tO9Q5u</CellPatternCells>
+      <CellPatternCells>recc99ZERSFi8OZgJ</CellPatternCells>
+      <SortOrder>32</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>60</CellPatternCellStates>
+      <CellPatternCellStates>70</CellPatternCellStates>
+      <CellPatternCellStates>80</CellPatternCellStates>
+      <Cells>60;70;80</Cells>
+      <CellPatternCelICellIndexes>6</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>7</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recmjtZPRUfoCU2sr</CellPatternCellCells>
+      <CellPatternCellCells>rec3OzG8nTAkUhjVn</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>BottomLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Bottom</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recJ1wDRP5taMg2Tj</CellPatternId>
+      <createdTime>2020-12-12T00:45:58Z</createdTime>
+      <Name>Column1</Name>
+      <Description>The 1st (leftmost)column in the puzzle.</Description>
+      <CellPatternCells>rec1hqH6Ty1vueu48</CellPatternCells>
+      <CellPatternCells>recmEXEqSbCsI5kUB</CellPatternCells>
+      <CellPatternCells>recShopv0fRnIWAbr</CellPatternCells>
+      <SortOrder>40</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>00</CellPatternCellStates>
+      <CellPatternCellStates>30</CellPatternCellStates>
+      <CellPatternCellStates>60</CellPatternCellStates>
+      <Cells>00;30;60</Cells>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>3</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>6</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>recxIf3GoDzEtonFU</CellPatternCellCells>
+      <CellPatternCellCells>recmjtZPRUfoCU2sr</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomLeft</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recNW9KXsm9KvWa7B</CellPatternId>
+      <createdTime>2020-12-12T00:46:00Z</createdTime>
+      <Name>Column3</Name>
+      <Description>The 3rd (rightmost) column in the puzzle.</Description>
+      <CellPatternCells>recO1aArEBMEvWxoD</CellPatternCells>
+      <CellPatternCells>recvjeyFh2sWFF8us</CellPatternCells>
+      <CellPatternCells>reczQDKs6sXAjFvhP</CellPatternCells>
+      <SortOrder>42</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>20</CellPatternCellStates>
+      <CellPatternCellStates>50</CellPatternCellStates>
+      <CellPatternCellStates>80</CellPatternCellStates>
+      <Cells>20;50;80</Cells>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>5</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCells>recfSe8zeEdCAtcGq</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleRight</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recWQyBlj7xHrYNPx</CellPatternId>
+      <createdTime>2020-12-12T00:46:19Z</createdTime>
+      <Name>RightLeftDiagonal</Name>
+      <Description>The Diagonal from top right to bottom left.</Description>
+      <CellPatternCells>recrfBGkdzZ67jeLa</CellPatternCells>
+      <CellPatternCells>rec1Gsh1wvAQ3BO0w</CellPatternCells>
+      <CellPatternCells>recTk43h9Sd9Qw1aQ</CellPatternCells>
+      <SortOrder>51</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>20</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>60</CellPatternCellStates>
+      <Cells>20;40;60</Cells>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>6</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recmjtZPRUfoCU2sr</CellPatternCellCells>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomLeft</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recXBksm5DIUqOfDn</CellPatternId>
+      <createdTime>2020-12-12T00:45:59Z</createdTime>
+      <Name>Column2</Name>
+      <Description>The 2nd (middle) column in the puzzle.</Description>
+      <CellPatternCells>rec3K2fxtqlgu5oeA</CellPatternCells>
+      <CellPatternCells>recy5CwlzxHvsubBr</CellPatternCells>
+      <CellPatternCells>recVxUYMsnvGIqGZ2</CellPatternCells>
+      <SortOrder>41</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>10</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>70</CellPatternCellStates>
+      <Cells>10;40;70</Cells>
+      <CellPatternCelICellIndexes>1</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>7</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recpPYOZtnp3lTOua</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>rec3OzG8nTAkUhjVn</CellPatternCellCells>
+      <CellPatternCellCellNames>Top</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Bottom</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recYQei900zbRIFTw</CellPatternId>
+      <createdTime>2020-12-12T00:45:13Z</createdTime>
+      <Name>Row1</Name>
+      <Description>The firist (top) row in the puzzle</Description>
+      <CellPatternCells>recLcTgsFF8EuGUz3</CellPatternCells>
+      <CellPatternCells>recJtIPt56a61dAFz</CellPatternCells>
+      <CellPatternCells>recD2BUDpoknNF4Lh</CellPatternCells>
+      <SortOrder>30</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>00</CellPatternCellStates>
+      <CellPatternCellStates>10</CellPatternCellStates>
+      <CellPatternCellStates>20</CellPatternCellStates>
+      <Cells>00;10;20</Cells>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>1</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>recpPYOZtnp3lTOua</CellPatternCellCells>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Top</CellPatternCellCellNames>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recYmKv2dBpnAA1gs</CellPatternId>
@@ -422,7 +615,9 @@
       <CellPatternTranslations>reczr6h68ZUdkDIZb</CellPatternTranslations>
       <TargetCell>recpPYOZtnp3lTOua</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>6</SortOrder>
+      <SortOrder>106</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>12</CellPatternCellStates>
@@ -432,6 +627,19 @@
       <Target>12</Target>
       <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>1</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>2</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>recpPYOZtnp3lTOua</CellPatternCellCells>
+      <CellPatternCellCells>recTGnKjXTE8LfT3C</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Top</CellPatternCellCellNames>
+      <CellPatternCellCellNames>TopRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+      <TargetDescription>Top is NoPlayer</TargetDescription>
+      <TargetCellName>Top</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recZCV8dlP1pNK9kK</CellPatternId>
@@ -444,7 +652,9 @@
       <CellPatternTranslations>rec9PRnE4xpUCcMit</CellPatternTranslations>
       <TargetCell>recczW2Y4WMv9buZ8</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>5</SortOrder>
+      <SortOrder>105</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
@@ -454,6 +664,44 @@
       <Target>82</Target>
       <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+      <TargetDescription>BottomRight is NoPlayer</TargetDescription>
+      <TargetCellName>BottomRight</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>reccf6U6b21xlIOh7</CellPatternId>
+      <createdTime>2020-12-12T00:46:07Z</createdTime>
+      <Name>LeftRightDiagonal</Name>
+      <Description>The diagonal from top left to bottom right.</Description>
+      <CellPatternCells>recuKKiaqoaXhFxSC</CellPatternCells>
+      <CellPatternCells>recAJ25e2uael63Kw</CellPatternCells>
+      <CellPatternCells>recfjQk3Amk3Ofo0S</CellPatternCells>
+      <SortOrder>50</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>00</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>80</CellPatternCellStates>
+      <Cells>00;40;80</Cells>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recg1ttw7l3n96PDG</CellPatternId>
@@ -466,7 +714,9 @@
       <CellPatternTranslations>recoPtQQ8QZtClJK0</CellPatternTranslations>
       <TargetCell>rec35HZOaRy6ge0jk</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>8</SortOrder>
+      <SortOrder>108</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>00</CellPatternCellStates>
       <CellPatternCellStates>42</CellPatternCellStates>
@@ -476,24 +726,19 @@
       <Target>42</Target>
       <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
-    </CellPattern>
-    <CellPattern>
-      <CellPatternId>recg6YsAgLEBikQ3F</CellPatternId>
-      <createdTime>2020-12-11T20:01:30Z</createdTime>
-      <IsWinPattern>true</IsWinPattern>
-      <SortOrder>20</SortOrder>
-      <Cells>00;40;80</Cells>
-      <Translations>11</Translations>
-      <Name>DiagonalWin</Name>
-      <Description>Win along either diagonal</Description>
-      <CellPatternCells>recqMa5gtwmjYgF2X</CellPatternCells>
-      <CellPatternCells>recEX4e2JD90yYDDr</CellPatternCells>
-      <CellPatternCells>recJzgHATmFMUyW7E</CellPatternCells>
-      <CellPatternCellStates>00</CellPatternCellStates>
-      <CellPatternCellStates>40</CellPatternCellStates>
-      <CellPatternCellStates>80</CellPatternCellStates>
-      <CellPatternTranslations>rec7MeKnHind7FhXd</CellPatternTranslations>
-      <CellPatternTranslationCodes>11</CellPatternTranslationCodes>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate Once</TranslationNames>
+      <TargetDescription>Middle is NoPlayer</TargetDescription>
+      <TargetCellName>Middle</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recobCShOEyZjP8bY</CellPatternId>
@@ -506,7 +751,9 @@
       <CellPatternTranslations>recafoRwqvCh5HZOd</CellPatternTranslations>
       <TargetCell>rec35HZOaRy6ge0jk</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>7</SortOrder>
+      <SortOrder>107</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>42</CellPatternCellStates>
@@ -516,24 +763,48 @@
       <Target>42</Target>
       <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
+      <CellPatternCelICellIndexes>3</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>5</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recxIf3GoDzEtonFU</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recfSe8zeEdCAtcGq</CellPatternCellCells>
+      <CellPatternCellCellNames>MiddleLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate Once</TranslationNames>
+      <TargetDescription>Middle is NoPlayer</TargetDescription>
+      <TargetCellName>Middle</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recodVK2HKbzC26Db</CellPatternId>
       <createdTime>2020-11-26T20:06:43Z</createdTime>
       <Name>MiddleWin</Name>
       <Description>Starting with the middle row selected, a single rotations finds both middle wins</Description>
-      <IsWinPattern>true</IsWinPattern>
       <CellPatternCells>reckcKNNnyDSWpFrH</CellPatternCells>
       <CellPatternCells>recGP80BxFCLlmgw7</CellPatternCells>
       <CellPatternCells>recAy4XNSSKRZGZsh</CellPatternCells>
       <CellPatternTranslations>recNz0LuN77HIXjmB</CellPatternTranslations>
-      <SortOrder>2</SortOrder>
+      <SortOrder>76</SortOrder>
+      <CellPatternType>Win</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
       <CellPatternCellStates>50</CellPatternCellStates>
       <Cells>30;40;50</Cells>
       <CellPatternTranslationCodes>10</CellPatternTranslationCodes>
       <Translations>10</Translations>
+      <CellPatternCelICellIndexes>3</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>5</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recxIf3GoDzEtonFU</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recfSe8zeEdCAtcGq</CellPatternCellCells>
+      <CellPatternCellCellNames>MiddleLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate Once</TranslationNames>
     </CellPattern>
     <CellPattern>
       <CellPatternId>recqn6vuQrx71nQii</CellPatternId>
@@ -546,7 +817,9 @@
       <CellPatternTranslations>recJjgKw24kaBFH0i</CellPatternTranslations>
       <TargetCell>recfSe8zeEdCAtcGq</TargetCell>
       <TargetCellState>recJAi8YoTOQmzhfH</TargetCellState>
-      <SortOrder>4</SortOrder>
+      <SortOrder>104</SortOrder>
+      <CellPatternType>PossibleWin</CellPatternType>
+      <IsWinPattern>false</IsWinPattern>
       <TargetCellStateId>2</TargetCellStateId>
       <CellPatternCellStates>30</CellPatternCellStates>
       <CellPatternCellStates>40</CellPatternCellStates>
@@ -556,6 +829,73 @@
       <Target>52</Target>
       <CellPatternTranslationCodes>30</CellPatternTranslationCodes>
       <Translations>30</Translations>
+      <CellPatternCelICellIndexes>3</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>5</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recxIf3GoDzEtonFU</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recfSe8zeEdCAtcGq</CellPatternCellCells>
+      <CellPatternCellCellNames>MiddleLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleRight</CellPatternCellCellNames>
+      <TranslationNames>Rotate 3 times</TranslationNames>
+      <TargetDescription>MiddleRight is NoPlayer</TargetDescription>
+      <TargetCellName>MiddleRight</TargetCellName>
+      <TargetCellStateName>NoPlayer</TargetCellStateName>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recqpmR7MAtp5afiM</CellPatternId>
+      <createdTime>2020-12-12T00:45:33Z</createdTime>
+      <Name>Row2</Name>
+      <Description>The 2nd (middle) row in the puzzle</Description>
+      <CellPatternCells>recpAYbzVjDRhc1L4</CellPatternCells>
+      <CellPatternCells>recUNdmTwmeITNGEZ</CellPatternCells>
+      <CellPatternCells>recBi8mtXhiWj7TJH</CellPatternCells>
+      <SortOrder>31</SortOrder>
+      <CellPatternType>NamedSet</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <CellPatternCellStates>30</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>50</CellPatternCellStates>
+      <Cells>30;40;50</Cells>
+      <CellPatternCelICellIndexes>3</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>5</CellPatternCelICellIndexes>
+      <CellPatternCellCells>recxIf3GoDzEtonFU</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recfSe8zeEdCAtcGq</CellPatternCellCells>
+      <CellPatternCellCellNames>MiddleLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>MiddleRight</CellPatternCellCellNames>
+    </CellPattern>
+    <CellPattern>
+      <CellPatternId>recuenPSYKnW2WfOH</CellPatternId>
+      <createdTime>2020-12-18T20:42:06Z</createdTime>
+      <SortOrder>20</SortOrder>
+      <CellPatternType>Win</CellPatternType>
+      <IsWinPattern>true</IsWinPattern>
+      <Cells>00;40;80</Cells>
+      <Translations>11</Translations>
+      <Name>DiagonalWin</Name>
+      <Description>Win along either diagonal</Description>
+      <CellPatternCells>recR4dC3tW41PPZ8x</CellPatternCells>
+      <CellPatternCells>recq7x7WkznTcTKS7</CellPatternCells>
+      <CellPatternCells>recTcBwvPbWD9wMyy</CellPatternCells>
+      <CellPatternCellStates>00</CellPatternCellStates>
+      <CellPatternCellStates>40</CellPatternCellStates>
+      <CellPatternCellStates>80</CellPatternCellStates>
+      <CellPatternCelICellIndexes>0</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>4</CellPatternCelICellIndexes>
+      <CellPatternCelICellIndexes>8</CellPatternCelICellIndexes>
+      <CellPatternCellCells>rec50MWM91QHzlEzO</CellPatternCellCells>
+      <CellPatternCellCells>rec35HZOaRy6ge0jk</CellPatternCellCells>
+      <CellPatternCellCells>recczW2Y4WMv9buZ8</CellPatternCellCells>
+      <CellPatternCellCellNames>TopLeft</CellPatternCellCellNames>
+      <CellPatternCellCellNames>Middle</CellPatternCellCellNames>
+      <CellPatternCellCellNames>BottomRight</CellPatternCellCellNames>
+      <CellPatternTranslations>recmUpophHSQKe5VF</CellPatternTranslations>
+      <CellPatternTranslationCodes>11</CellPatternTranslationCodes>
+      <TranslationNames>Flip Once</TranslationNames>
     </CellPattern>
   </CellPatterns>
   <AIStrategies>
@@ -564,7 +904,7 @@
       <createdTime>2020-11-26T20:02:26Z</createdTime>
       <Name>PreventWinIfPossible</Name>
       <Description>Prevent opponent from using WinIfPossible strategy</Description>
-      <PlayerLevel>2</PlayerLevel>
+      <PlayerLevel>1</PlayerLevel>
       <IsDefensive>true</IsDefensive>
       <StrategyRank>5</StrategyRank>
       <SortOrder>5</SortOrder>
@@ -696,12 +1036,55 @@
   </AIStrategies>
   <CellPatternCells>
     <CellPatternCell>
+      <CellPatternCellId>rec1Gsh1wvAQ3BO0w</CellPatternCellId>
+      <createdTime>2020-12-12T00:49:12Z</createdTime>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellPattern>recWQyBlj7xHrYNPx</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>RightLeftDiagonal:PlayerA:Middle</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>4</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>40</CellCellState>
+      <CellName>Middle</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>rec1hqH6Ty1vueu48</CellPatternCellId>
+      <createdTime>2020-12-12T00:47:10Z</createdTime>
+      <Cell>rec50MWM91QHzlEzO</Cell>
+      <CellPattern>recJ1wDRP5taMg2Tj</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column1:PlayerA:TopLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>0</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>00</CellCellState>
+      <CellName>TopLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>rec3K2fxtqlgu5oeA</CellPatternCellId>
+      <createdTime>2020-12-12T00:47:07Z</createdTime>
+      <Cell>recpPYOZtnp3lTOua</Cell>
+      <CellPattern>recXBksm5DIUqOfDn</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column2:PlayerA:Top</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>1</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>10</CellCellState>
+      <CellName>Top</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
       <CellPatternCellId>rec5D3fwk2h5GzjIB</CellPatternCellId>
       <createdTime>2020-11-26T20:43:48Z</createdTime>
       <Cell>recczW2Y4WMv9buZ8</Cell>
       <CellPattern>recZCV8dlP1pNK9kK</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoInARowDiagonal:NoPlayer:BottomRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>8</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>82</CellCellState>
@@ -714,12 +1097,27 @@
       <Cell>recfSe8zeEdCAtcGq</Cell>
       <CellPattern>recobCShOEyZjP8bY</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideMiddle:Player:MiddleRight</Name>
+      <Name>TwoOutsideMiddle:PlayerA:MiddleRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>5</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>50</CellCellState>
       <CellName>MiddleRight</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>rec7NXPxQPU4PzKX0</CellPatternCellId>
+      <createdTime>2020-12-12T00:47:14Z</createdTime>
+      <Cell>recmjtZPRUfoCU2sr</Cell>
+      <CellPattern>recHqX6LLAZZAo1RQ</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row3:PlayerA:BottomLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>6</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>60</CellCellState>
+      <CellName>BottomLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>rec8bt4pVcy9OY8XO</CellPatternCellId>
@@ -727,12 +1125,13 @@
       <Cell>recTGnKjXTE8LfT3C</Cell>
       <CellPattern>recYmKv2dBpnAA1gs</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideTop:Player:TopRight</Name>
+      <Name>TwoOutsideTop:PlayerA:TopRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>2</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>20</CellCellState>
       <CellName>TopRight</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>rec91aKNdkT2cw93v</CellPatternCellId>
@@ -740,12 +1139,27 @@
       <Cell>rec50MWM91QHzlEzO</Cell>
       <CellPattern>recZCV8dlP1pNK9kK</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowDiagonal:Player:TopLeft</Name>
+      <Name>TwoInARowDiagonal:PlayerA:TopLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>0</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recAJ25e2uael63Kw</CellPatternCellId>
+      <createdTime>2020-12-12T00:49:01Z</createdTime>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellPattern>reccf6U6b21xlIOh7</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>LeftRightDiagonal:PlayerA:Middle</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>4</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>40</CellCellState>
+      <CellName>Middle</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recAy4XNSSKRZGZsh</CellPatternCellId>
@@ -753,25 +1167,41 @@
       <Cell>recfSe8zeEdCAtcGq</Cell>
       <CellPattern>recodVK2HKbzC26Db</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>MiddleWin:Player:MiddleRight</Name>
+      <Name>MiddleWin:PlayerA:MiddleRight</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>5</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>50</CellCellState>
       <CellName>MiddleRight</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
-      <CellPatternCellId>recEX4e2JD90yYDDr</CellPatternCellId>
-      <createdTime>2020-12-11T20:02:08Z</createdTime>
-      <CellPattern>recg6YsAgLEBikQ3F</CellPattern>
-      <Name>DiagonalWin:Player:Middle</Name>
-      <CellCellState>40</CellCellState>
+      <CellPatternCellId>recBi8mtXhiWj7TJH</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:52Z</createdTime>
+      <Cell>recfSe8zeEdCAtcGq</Cell>
+      <CellPattern>recqpmR7MAtp5afiM</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row2:PlayerA:MiddleRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>5</CellIndex>
       <CellStateId>0</CellStateId>
-      <CellStateName>Player</CellStateName>
-      <Cell>rec35HZOaRy6ge0jk</Cell>
-      <CellIndex>4</CellIndex>
-      <CellName>Middle</CellName>
+      <CellCellState>50</CellCellState>
+      <CellName>MiddleRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recD2BUDpoknNF4Lh</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:48Z</createdTime>
+      <Cell>recTGnKjXTE8LfT3C</Cell>
+      <CellPattern>recYQei900zbRIFTw</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row1:PlayerA:TopRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>2</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>20</CellCellState>
+      <CellName>TopRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recFITGoLxBQs1ocD</CellPatternCellId>
@@ -779,12 +1209,13 @@
       <Cell>recpPYOZtnp3lTOua</Cell>
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowTop:Player:Top</Name>
+      <Name>TwoInARowTop:PlayerA:Top</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>1</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>10</CellCellState>
       <CellName>Top</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recGP80BxFCLlmgw7</CellPatternCellId>
@@ -792,25 +1223,27 @@
       <Cell>rec35HZOaRy6ge0jk</Cell>
       <CellPattern>recodVK2HKbzC26Db</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>MiddleWin:Player:Middle</Name>
+      <Name>MiddleWin:PlayerA:Middle</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>4</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>40</CellCellState>
       <CellName>Middle</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
-      <CellPatternCellId>recJzgHATmFMUyW7E</CellPatternCellId>
-      <createdTime>2020-12-11T20:02:08Z</createdTime>
-      <CellPattern>recg6YsAgLEBikQ3F</CellPattern>
-      <Name>DiagonalWin:Player:BottomRight</Name>
-      <CellCellState>80</CellCellState>
+      <CellPatternCellId>recJtIPt56a61dAFz</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:48Z</createdTime>
+      <Cell>recpPYOZtnp3lTOua</Cell>
+      <CellPattern>recYQei900zbRIFTw</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row1:PlayerA:Top</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>1</CellIndex>
       <CellStateId>0</CellStateId>
-      <CellStateName>Player</CellStateName>
-      <Cell>recczW2Y4WMv9buZ8</Cell>
-      <CellIndex>8</CellIndex>
-      <CellName>BottomRight</CellName>
+      <CellCellState>10</CellCellState>
+      <CellName>Top</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recKj18pU9k6V6MAx</CellPatternCellId>
@@ -818,12 +1251,41 @@
       <Cell>rec50MWM91QHzlEzO</Cell>
       <CellPattern>recYmKv2dBpnAA1gs</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideTop:Player:TopLeft</Name>
+      <Name>TwoOutsideTop:PlayerA:TopLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>0</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recLcTgsFF8EuGUz3</CellPatternCellId>
+      <createdTime>2020-12-12T00:45:27Z</createdTime>
+      <Cell>rec50MWM91QHzlEzO</Cell>
+      <CellPattern>recYQei900zbRIFTw</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row1:PlayerA:TopLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>0</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>00</CellCellState>
+      <CellName>TopLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recO1aArEBMEvWxoD</CellPatternCellId>
+      <createdTime>2020-12-12T00:46:41Z</createdTime>
+      <Cell>recTGnKjXTE8LfT3C</Cell>
+      <CellPattern>recNW9KXsm9KvWa7B</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column3:PlayerA:TopRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>2</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>20</CellCellState>
+      <CellName>TopRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recPHA9ppFH8cjenC</CellPatternCellId>
@@ -831,12 +1293,13 @@
       <Cell>recTGnKjXTE8LfT3C</Cell>
       <CellPattern>recBDK2nzNlGSJNgJ</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>EdgeWin:Player:TopRight</Name>
+      <Name>EdgeWin:PlayerA:TopRight</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>2</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>20</CellCellState>
       <CellName>TopRight</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recPmKMMNhYSxBWJ0</CellPatternCellId>
@@ -844,12 +1307,69 @@
       <Cell>rec35HZOaRy6ge0jk</Cell>
       <CellPattern>recqn6vuQrx71nQii</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowMiddle:Player:Middle</Name>
+      <Name>TwoInARowMiddle:PlayerA:Middle</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>4</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>40</CellCellState>
       <CellName>Middle</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recR4dC3tW41PPZ8x</CellPatternCellId>
+      <createdTime>2020-12-18T20:42:16Z</createdTime>
+      <Name>DiagonalWin:PlayerA:TopLeft</Name>
+      <CellCellState>00</CellCellState>
+      <CellPattern>recuenPSYKnW2WfOH</CellPattern>
+      <CellPatternType>Win</CellPatternType>
+      <Cell>rec50MWM91QHzlEzO</Cell>
+      <CellIndex>0</CellIndex>
+      <CellName>TopLeft</CellName>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <CellStateId>0</CellStateId>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recShopv0fRnIWAbr</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:31Z</createdTime>
+      <Cell>recmjtZPRUfoCU2sr</Cell>
+      <CellPattern>recJ1wDRP5taMg2Tj</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column1:PlayerA:BottomLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>6</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>60</CellCellState>
+      <CellName>BottomLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recTcBwvPbWD9wMyy</CellPatternCellId>
+      <createdTime>2020-12-18T20:43:33Z</createdTime>
+      <CellPattern>recuenPSYKnW2WfOH</CellPattern>
+      <Name>DiagonalWin:PlayerA:BottomRight</Name>
+      <CellPatternType>Win</CellPatternType>
+      <CellCellState>80</CellCellState>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <CellStateId>0</CellStateId>
+      <CellStateName>PlayerA</CellStateName>
+      <Cell>recczW2Y4WMv9buZ8</Cell>
+      <CellIndex>8</CellIndex>
+      <CellName>BottomRight</CellName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recTk43h9Sd9Qw1aQ</CellPatternCellId>
+      <createdTime>2020-12-12T00:49:12Z</createdTime>
+      <Cell>recmjtZPRUfoCU2sr</Cell>
+      <CellPattern>recWQyBlj7xHrYNPx</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>RightLeftDiagonal:PlayerA:BottomLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>6</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>60</CellCellState>
+      <CellName>BottomLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recU9O3yxyMeQ1eU4</CellPatternCellId>
@@ -857,12 +1377,41 @@
       <Cell>rec50MWM91QHzlEzO</Cell>
       <CellPattern>recBDK2nzNlGSJNgJ</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>EdgeWin:Player:TopLeft</Name>
+      <Name>EdgeWin:PlayerA:TopLeft</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>0</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recUNdmTwmeITNGEZ</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:52Z</createdTime>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellPattern>recqpmR7MAtp5afiM</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row2:PlayerA:Middle</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>4</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>40</CellCellState>
+      <CellName>Middle</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recVxUYMsnvGIqGZ2</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:40Z</createdTime>
+      <Cell>rec3OzG8nTAkUhjVn</Cell>
+      <CellPattern>recXBksm5DIUqOfDn</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column2:PlayerA:Bottom</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>7</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>70</CellCellState>
+      <CellName>Bottom</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recWoh5Qk0b1xBV67</CellPatternCellId>
@@ -871,6 +1420,7 @@
       <CellPattern>recg1ttw7l3n96PDG</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoOutsideDiagonal:NoPlayer:Middle</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>4</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>42</CellCellState>
@@ -883,12 +1433,13 @@
       <Cell>rec50MWM91QHzlEzO</Cell>
       <CellPattern>recg1ttw7l3n96PDG</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideDiagonal:Player:TopLeft</Name>
+      <Name>TwoOutsideDiagonal:PlayerA:TopLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>0</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recaPLycHtpRQfWnE</CellPatternCellId>
@@ -897,6 +1448,7 @@
       <CellPattern>recobCShOEyZjP8bY</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoOutsideMiddle:NoPlayer:Middle</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>4</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>42</CellCellState>
@@ -904,17 +1456,32 @@
       <CellStateName>NoPlayer</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
+      <CellPatternCellId>recc99ZERSFi8OZgJ</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:55Z</createdTime>
+      <Cell>recczW2Y4WMv9buZ8</Cell>
+      <CellPattern>recHqX6LLAZZAo1RQ</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row3:PlayerA:BottomRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>8</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>80</CellCellState>
+      <CellName>BottomRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
       <CellPatternCellId>recclaJuN3LJWLC4N</CellPatternCellId>
       <createdTime>2020-11-26T20:35:31Z</createdTime>
       <Cell>rec50MWM91QHzlEzO</Cell>
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowTop:Player:TopLeft</Name>
+      <Name>TwoInARowTop:PlayerA:TopLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>0</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>reccnHG0Yfk8tgTt6</CellPatternCellId>
@@ -923,6 +1490,7 @@
       <CellPattern>rec55PqGhtUYK5Rcb</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoInARowTop:NoPlayer:TopRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>2</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>22</CellCellState>
@@ -935,12 +1503,27 @@
       <Cell>recpPYOZtnp3lTOua</Cell>
       <CellPattern>recBDK2nzNlGSJNgJ</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>EdgeWin:Player:Top</Name>
+      <Name>EdgeWin:PlayerA:Top</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>1</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>10</CellCellState>
       <CellName>Top</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recfjQk3Amk3Ofo0S</CellPatternCellId>
+      <createdTime>2020-12-12T00:49:01Z</createdTime>
+      <Cell>recczW2Y4WMv9buZ8</Cell>
+      <CellPattern>reccf6U6b21xlIOh7</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>LeftRightDiagonal:PlayerA:BottomRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>8</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>80</CellCellState>
+      <CellName>BottomRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>rechiocdDSSkR1IFz</CellPatternCellId>
@@ -949,6 +1532,7 @@
       <CellPattern>recqn6vuQrx71nQii</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoInARowMiddle:NoPlayer:MiddleRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>5</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>52</CellCellState>
@@ -961,12 +1545,13 @@
       <Cell>recxIf3GoDzEtonFU</Cell>
       <CellPattern>recodVK2HKbzC26Db</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>MiddleWin:Player:MiddleLeft</Name>
+      <Name>MiddleWin:PlayerA:MiddleLeft</Name>
+      <CellPatternType>Win</CellPatternType>
       <CellIndex>3</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>30</CellCellState>
       <CellName>MiddleLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>reclDV8jky7y1JNzH</CellPatternCellId>
@@ -974,12 +1559,13 @@
       <Cell>recczW2Y4WMv9buZ8</Cell>
       <CellPattern>recg1ttw7l3n96PDG</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideDiagonal:Player:BottomRight</Name>
+      <Name>TwoOutsideDiagonal:PlayerA:BottomRight</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>8</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>80</CellCellState>
       <CellName>BottomRight</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recljMfqekOodaaWx</CellPatternCellId>
@@ -988,6 +1574,7 @@
       <CellPattern>recYmKv2dBpnAA1gs</CellPattern>
       <CellState>recJAi8YoTOQmzhfH</CellState>
       <Name>TwoOutsideTop:NoPlayer:Top</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>1</CellIndex>
       <CellStateId>2</CellStateId>
       <CellCellState>12</CellCellState>
@@ -995,17 +1582,102 @@
       <CellStateName>NoPlayer</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
-      <CellPatternCellId>recqMa5gtwmjYgF2X</CellPatternCellId>
-      <createdTime>2020-12-11T20:01:38Z</createdTime>
-      <Name>DiagonalWin:Player:TopLeft</Name>
-      <CellCellState>00</CellCellState>
-      <CellPattern>recg6YsAgLEBikQ3F</CellPattern>
+      <CellPatternCellId>recmEXEqSbCsI5kUB</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:31Z</createdTime>
+      <Cell>recxIf3GoDzEtonFU</Cell>
+      <CellPattern>recJ1wDRP5taMg2Tj</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column1:PlayerA:MiddleLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>3</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>30</CellCellState>
+      <CellName>MiddleLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recmHFemnt2tO9Q5u</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:55Z</createdTime>
+      <Cell>rec3OzG8nTAkUhjVn</Cell>
+      <CellPattern>recHqX6LLAZZAo1RQ</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row3:PlayerA:Bottom</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>7</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>70</CellCellState>
+      <CellName>Bottom</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recpAYbzVjDRhc1L4</CellPatternCellId>
+      <createdTime>2020-12-12T00:45:41Z</createdTime>
+      <Cell>recxIf3GoDzEtonFU</Cell>
+      <CellPattern>recqpmR7MAtp5afiM</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Row2:PlayerA:MiddleLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>3</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>30</CellCellState>
+      <CellName>MiddleLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recq7x7WkznTcTKS7</CellPatternCellId>
+      <createdTime>2020-12-18T20:43:31Z</createdTime>
+      <CellPattern>recuenPSYKnW2WfOH</CellPattern>
+      <Name>DiagonalWin:PlayerA:Middle</Name>
+      <CellPatternType>Win</CellPatternType>
+      <CellCellState>40</CellCellState>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
       <CellStateId>0</CellStateId>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellIndex>4</CellIndex>
+      <CellName>Middle</CellName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recrfBGkdzZ67jeLa</CellPatternCellId>
+      <createdTime>2020-12-12T00:47:01Z</createdTime>
+      <Cell>recTGnKjXTE8LfT3C</Cell>
+      <CellPattern>recWQyBlj7xHrYNPx</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>RightLeftDiagonal:PlayerA:TopRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>2</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>20</CellCellState>
+      <CellName>TopRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recuKKiaqoaXhFxSC</CellPatternCellId>
+      <createdTime>2020-12-12T00:46:38Z</createdTime>
       <Cell>rec50MWM91QHzlEzO</Cell>
+      <CellPattern>reccf6U6b21xlIOh7</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>LeftRightDiagonal:PlayerA:TopLeft</Name>
+      <CellPatternType>NamedSet</CellPatternType>
       <CellIndex>0</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>00</CellCellState>
       <CellName>TopLeft</CellName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recvjeyFh2sWFF8us</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:43Z</createdTime>
+      <Cell>recfSe8zeEdCAtcGq</Cell>
+      <CellPattern>recNW9KXsm9KvWa7B</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column3:PlayerA:MiddleRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>5</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>50</CellCellState>
+      <CellName>MiddleRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recwQ3ZI5MBVHPKgl</CellPatternCellId>
@@ -1013,12 +1685,13 @@
       <Cell>rec35HZOaRy6ge0jk</Cell>
       <CellPattern>recZCV8dlP1pNK9kK</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowDiagonal:Player:Middle</Name>
+      <Name>TwoInARowDiagonal:PlayerA:Middle</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>4</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>40</CellCellState>
       <CellName>Middle</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recxWA16nieZY83Sv</CellPatternCellId>
@@ -1026,12 +1699,27 @@
       <Cell>recxIf3GoDzEtonFU</Cell>
       <CellPattern>recqn6vuQrx71nQii</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoInARowMiddle:Player:MiddleLeft</Name>
+      <Name>TwoInARowMiddle:PlayerA:MiddleLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>3</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>30</CellCellState>
       <CellName>MiddleLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>recy5CwlzxHvsubBr</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:40Z</createdTime>
+      <Cell>rec35HZOaRy6ge0jk</Cell>
+      <CellPattern>recXBksm5DIUqOfDn</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column2:PlayerA:Middle</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>4</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>40</CellCellState>
+      <CellName>Middle</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
     <CellPatternCell>
       <CellPatternCellId>recyZobcdc9yOkGuC</CellPatternCellId>
@@ -1039,12 +1727,27 @@
       <Cell>recxIf3GoDzEtonFU</Cell>
       <CellPattern>recobCShOEyZjP8bY</CellPattern>
       <CellState>rec0xQjo4VL3DFTXg</CellState>
-      <Name>TwoOutsideMiddle:Player:MiddleLeft</Name>
+      <Name>TwoOutsideMiddle:PlayerA:MiddleLeft</Name>
+      <CellPatternType>PossibleWin</CellPatternType>
       <CellIndex>3</CellIndex>
       <CellStateId>0</CellStateId>
       <CellCellState>30</CellCellState>
       <CellName>MiddleLeft</CellName>
-      <CellStateName>Player</CellStateName>
+      <CellStateName>PlayerA</CellStateName>
+    </CellPatternCell>
+    <CellPatternCell>
+      <CellPatternCellId>reczQDKs6sXAjFvhP</CellPatternCellId>
+      <createdTime>2020-12-12T00:48:43Z</createdTime>
+      <Cell>recczW2Y4WMv9buZ8</Cell>
+      <CellPattern>recNW9KXsm9KvWa7B</CellPattern>
+      <CellState>rec0xQjo4VL3DFTXg</CellState>
+      <Name>Column3:PlayerA:BottomRight</Name>
+      <CellPatternType>NamedSet</CellPatternType>
+      <CellIndex>8</CellIndex>
+      <CellStateId>0</CellStateId>
+      <CellCellState>80</CellCellState>
+      <CellName>BottomRight</CellName>
+      <CellStateName>PlayerA</CellStateName>
     </CellPatternCell>
   </CellPatternCells>
   <Cells>
@@ -1066,12 +1769,17 @@
       <CellPatternCells>recwQ3ZI5MBVHPKgl</CellPatternCells>
       <CellPatternCells>recPmKMMNhYSxBWJ0</CellPatternCells>
       <CellPatternCells>recaPLycHtpRQfWnE</CellPatternCells>
-      <CellPatternCells>recEX4e2JD90yYDDr</CellPatternCells>
-      <CellPatterns>recobCShOEyZjP8bY</CellPatterns>
-      <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
+      <CellPatternCells>recy5CwlzxHvsubBr</CellPatternCells>
+      <CellPatternCells>recAJ25e2uael63Kw</CellPatternCells>
+      <CellPatternCells>rec1Gsh1wvAQ3BO0w</CellPatternCells>
+      <CellPatternCells>recUNdmTwmeITNGEZ</CellPatternCells>
+      <CellPatternCells>recq7x7WkznTcTKS7</CellPatternCells>
+      <TargetCellForCellPatterns>recobCShOEyZjP8bY</TargetCellForCellPatterns>
+      <TargetCellForCellPatterns>recg1ttw7l3n96PDG</TargetCellForCellPatterns>
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>5</CellKey>
+      <AlexesNumber>01001011</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Middle</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Middle</CounterClockwiseRotateFrom>
@@ -1081,11 +1789,23 @@
       <CounterClockwiseRotateFromIndex>4</CounterClockwiseRotateFromIndex>
       <RotateIndex>4</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>Player</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <FlipIndex>4</FlipIndex>
       <FlipFromName>Middle</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>4</SortOrder>
+      <NamedSetPatterns>recXBksm5DIUqOfDn</NamedSetPatterns>
+      <NamedSetPatterns>reccf6U6b21xlIOh7</NamedSetPatterns>
+      <NamedSetPatterns>recWQyBlj7xHrYNPx</NamedSetPatterns>
+      <NamedSetPatterns>recqpmR7MAtp5afiM</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>1</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>1</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>1</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>1</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>rec3OzG8nTAkUhjVn</CellId>
@@ -1100,9 +1820,12 @@
       <Y>1</Y>
       <RotateTranslation>recgdoYW4iJ8gaAha</RotateTranslation>
       <CellIndex>7</CellIndex>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CellPatternCells>recVxUYMsnvGIqGZ2</CellPatternCells>
+      <CellPatternCells>recmHFemnt2tO9Q5u</CellPatternCells>
+      <CurrentCellState>recwMqGt97gQ22PsK</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>2</CellKey>
+      <AlexesNumber>00101000</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>MiddleRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleLeft</CounterClockwiseRotateFrom>
@@ -1112,11 +1835,21 @@
       <CounterClockwiseRotateFromIndex>3</CounterClockwiseRotateFromIndex>
       <RotateIndex>5</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>Opponent</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <FlipIndex>7</FlipIndex>
       <FlipFromName>Bottom</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>7</SortOrder>
+      <NamedSetPatterns>recXBksm5DIUqOfDn</NamedSetPatterns>
+      <NamedSetPatterns>recHqX6LLAZZAo1RQ</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>1</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>1</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>rec50MWM91QHzlEzO</CellId>
@@ -1136,10 +1869,14 @@
       <CellPatternCells>rec91aKNdkT2cw93v</CellPatternCells>
       <CellPatternCells>recclaJuN3LJWLC4N</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
-      <CellPatternCells>recqMa5gtwmjYgF2X</CellPatternCells>
+      <CellPatternCells>rec1hqH6Ty1vueu48</CellPatternCells>
+      <CellPatternCells>recuKKiaqoaXhFxSC</CellPatternCells>
+      <CellPatternCells>recLcTgsFF8EuGUz3</CellPatternCells>
+      <CellPatternCells>recR4dC3tW41PPZ8x</CellPatternCells>
       <CurrentCellState>rec0xQjo4VL3DFTXg</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>7</CellKey>
+      <AlexesNumber>10010010</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>BottomLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopRight</CounterClockwiseRotateFrom>
@@ -1149,11 +1886,22 @@
       <CounterClockwiseRotateFromIndex>2</CounterClockwiseRotateFromIndex>
       <RotateIndex>6</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>Player</CurrentState>
+      <CurrentState>PlayerA</CurrentState>
       <FlipIndex>2</FlipIndex>
       <FlipFromName>TopRight</FlipFromName>
       <FlipDescription>From TopRight to TopLeft</FlipDescription>
       <SortOrder>0</SortOrder>
+      <NamedSetPatterns>recJ1wDRP5taMg2Tj</NamedSetPatterns>
+      <NamedSetPatterns>reccf6U6b21xlIOh7</NamedSetPatterns>
+      <NamedSetPatterns>recYQei900zbRIFTw</NamedSetPatterns>
+      <IsInRow1>1</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>1</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>1</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recTGnKjXTE8LfT3C</CellId>
@@ -1171,10 +1919,14 @@
       <CellPatternCells>recPHA9ppFH8cjenC</CellPatternCells>
       <CellPatternCells>reccnHG0Yfk8tgTt6</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
-      <CellPatterns>rec55PqGhtUYK5Rcb</CellPatterns>
-      <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
+      <CellPatternCells>recO1aArEBMEvWxoD</CellPatternCells>
+      <CellPatternCells>recrfBGkdzZ67jeLa</CellPatternCells>
+      <CellPatternCells>recD2BUDpoknNF4Lh</CellPatternCells>
+      <TargetCellForCellPatterns>rec55PqGhtUYK5Rcb</TargetCellForCellPatterns>
+      <CurrentCellState>recwMqGt97gQ22PsK</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>9</CellKey>
+      <AlexesNumber>10000101</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>TopLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomRight</CounterClockwiseRotateFrom>
@@ -1184,11 +1936,22 @@
       <CounterClockwiseRotateFromIndex>8</CounterClockwiseRotateFromIndex>
       <RotateIndex>0</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>NoPlayer</CurrentState>
+      <CurrentState>PlayerB</CurrentState>
       <FlipIndex>0</FlipIndex>
       <FlipFromName>TopLeft</FlipFromName>
       <FlipDescription>From TopLeft to TopRight</FlipDescription>
       <SortOrder>2</SortOrder>
+      <NamedSetPatterns>recNW9KXsm9KvWa7B</NamedSetPatterns>
+      <NamedSetPatterns>recWQyBlj7xHrYNPx</NamedSetPatterns>
+      <NamedSetPatterns>recYQei900zbRIFTw</NamedSetPatterns>
+      <IsInRow1>1</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>1</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>1</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recczW2Y4WMv9buZ8</CellId>
@@ -1205,11 +1968,15 @@
       <CellIndex>8</CellIndex>
       <CellPatternCells>reclDV8jky7y1JNzH</CellPatternCells>
       <CellPatternCells>rec5D3fwk2h5GzjIB</CellPatternCells>
-      <CellPatternCells>recJzgHATmFMUyW7E</CellPatternCells>
-      <CellPatterns>recZCV8dlP1pNK9kK</CellPatterns>
+      <CellPatternCells>reczQDKs6sXAjFvhP</CellPatternCells>
+      <CellPatternCells>recfjQk3Amk3Ofo0S</CellPatternCells>
+      <CellPatternCells>recc99ZERSFi8OZgJ</CellPatternCells>
+      <CellPatternCells>recTcBwvPbWD9wMyy</CellPatternCells>
+      <TargetCellForCellPatterns>recZCV8dlP1pNK9kK</TargetCellForCellPatterns>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>3</CellKey>
+      <AlexesNumber>00100110</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>TopRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>BottomLeft</CounterClockwiseRotateFrom>
@@ -1224,6 +1991,17 @@
       <FlipFromName>BottomLeft</FlipFromName>
       <FlipDescription>From BottomLeft to BottomRight</FlipDescription>
       <SortOrder>8</SortOrder>
+      <NamedSetPatterns>recNW9KXsm9KvWa7B</NamedSetPatterns>
+      <NamedSetPatterns>reccf6U6b21xlIOh7</NamedSetPatterns>
+      <NamedSetPatterns>recHqX6LLAZZAo1RQ</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>1</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>1</IsInColumn3>
+      <IsInLeftRightDiagonal>1</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recfSe8zeEdCAtcGq</CellId>
@@ -1241,10 +2019,14 @@
       <CellPatternCells>recAy4XNSSKRZGZsh</CellPatternCells>
       <CellPatternCells>rechiocdDSSkR1IFz</CellPatternCells>
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
-      <CellPatterns>recqn6vuQrx71nQii</CellPatterns>
-      <CurrentCellState>recw0SsqNfCk96xZs</CurrentCellState>
+      <CellPatternCells>recvjeyFh2sWFF8us</CellPatternCells>
+      <CellPatternCells>recBi8mtXhiWj7TJH</CellPatternCells>
+      <TargetCellForCellPatterns>recqn6vuQrx71nQii</TargetCellForCellPatterns>
+      <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>6</CellKey>
+      <IsDailyDouble>true</IsDailyDouble>
+      <AlexesNumber>01000100</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Top</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Bottom</CounterClockwiseRotateFrom>
@@ -1254,11 +2036,21 @@
       <CounterClockwiseRotateFromIndex>7</CounterClockwiseRotateFromIndex>
       <RotateIndex>1</RotateIndex>
       <DefaultState>NoPlayer</DefaultState>
-      <CurrentState>Opponent</CurrentState>
+      <CurrentState>NoPlayer</CurrentState>
       <FlipIndex>3</FlipIndex>
       <FlipFromName>MiddleLeft</FlipFromName>
       <FlipDescription>From MiddleLeft to MiddleRight</FlipDescription>
       <SortOrder>5</SortOrder>
+      <NamedSetPatterns>recNW9KXsm9KvWa7B</NamedSetPatterns>
+      <NamedSetPatterns>recqpmR7MAtp5afiM</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>1</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>1</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recmjtZPRUfoCU2sr</CellId>
@@ -1273,9 +2065,13 @@
       <Y>0</Y>
       <RotateTranslation>recgdoYW4iJ8gaAha</RotateTranslation>
       <CellIndex>6</CellIndex>
+      <CellPatternCells>recShopv0fRnIWAbr</CellPatternCells>
+      <CellPatternCells>recTk43h9Sd9Qw1aQ</CellPatternCells>
+      <CellPatternCells>rec7NXPxQPU4PzKX0</CellPatternCells>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>1</CellKey>
+      <AlexesNumber>00110001</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>BottomRight</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>TopLeft</CounterClockwiseRotateFrom>
@@ -1290,6 +2086,17 @@
       <FlipFromName>BottomRight</FlipFromName>
       <FlipDescription>From BottomRight to BottomLeft</FlipDescription>
       <SortOrder>6</SortOrder>
+      <NamedSetPatterns>recJ1wDRP5taMg2Tj</NamedSetPatterns>
+      <NamedSetPatterns>recWQyBlj7xHrYNPx</NamedSetPatterns>
+      <NamedSetPatterns>recHqX6LLAZZAo1RQ</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>1</IsInRow3>
+      <IsInColumn1>1</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>1</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recpPYOZtnp3lTOua</CellId>
@@ -1307,10 +2114,13 @@
       <CellPatternCells>recf1uu1YY0iPps8E</CellPatternCells>
       <CellPatternCells>recFITGoLxBQs1ocD</CellPatternCells>
       <CellPatternCells>recljMfqekOodaaWx</CellPatternCells>
-      <CellPatterns>recYmKv2dBpnAA1gs</CellPatterns>
+      <CellPatternCells>rec3K2fxtqlgu5oeA</CellPatternCells>
+      <CellPatternCells>recJtIPt56a61dAFz</CellPatternCells>
+      <TargetCellForCellPatterns>recYmKv2dBpnAA1gs</TargetCellForCellPatterns>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>8</CellKey>
+      <AlexesNumber>10001000</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>MiddleLeft</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>MiddleRight</CounterClockwiseRotateFrom>
@@ -1325,6 +2135,16 @@
       <FlipFromName>Top</FlipFromName>
       <FlipDescription>No Movement</FlipDescription>
       <SortOrder>1</SortOrder>
+      <NamedSetPatterns>recXBksm5DIUqOfDn</NamedSetPatterns>
+      <NamedSetPatterns>recYQei900zbRIFTw</NamedSetPatterns>
+      <IsInRow1>1</IsInRow1>
+      <IsInRow2>0</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>0</IsInColumn1>
+      <IsInColumn2>1</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
     <Cell>
       <CellId>recxIf3GoDzEtonFU</CellId>
@@ -1342,9 +2162,12 @@
       <CellPatternCells>reckcKNNnyDSWpFrH</CellPatternCells>
       <CellPatternCells>recxWA16nieZY83Sv</CellPatternCells>
       <CellPatternCells>recyZobcdc9yOkGuC</CellPatternCells>
+      <CellPatternCells>recmEXEqSbCsI5kUB</CellPatternCells>
+      <CellPatternCells>recpAYbzVjDRhc1L4</CellPatternCells>
       <CurrentCellState>recJAi8YoTOQmzhfH</CurrentCellState>
       <DefaultCellState>recJAi8YoTOQmzhfH</DefaultCellState>
       <CellKey>4</CellKey>
+      <AlexesNumber>01010000</AlexesNumber>
       <IsClockwise>true</IsClockwise>
       <ClockwiseRotateFrom>Bottom</ClockwiseRotateFrom>
       <CounterClockwiseRotateFrom>Top</CounterClockwiseRotateFrom>
@@ -1359,6 +2182,16 @@
       <FlipFromName>MiddleRight</FlipFromName>
       <FlipDescription>From MiddleRight to MiddleLeft</FlipDescription>
       <SortOrder>3</SortOrder>
+      <NamedSetPatterns>recJ1wDRP5taMg2Tj</NamedSetPatterns>
+      <NamedSetPatterns>recqpmR7MAtp5afiM</NamedSetPatterns>
+      <IsInRow1>0</IsInRow1>
+      <IsInRow2>1</IsInRow2>
+      <IsInRow3>0</IsInRow3>
+      <IsInColumn1>1</IsInColumn1>
+      <IsInColumn2>0</IsInColumn2>
+      <IsInColumn3>0</IsInColumn3>
+      <IsInLeftRightDiagonal>0</IsInLeftRightDiagonal>
+      <IsInRightLeftDiagonal>0</IsInRightLeftDiagonal>
     </Cell>
   </Cells>
   <TargetPlatforms>
@@ -1637,7 +2470,7 @@
       <CustomDescription>Flip the board along the vertical axis</CustomDescription>
       <Id>1</Id>
       <CellPatternTranslations>recwuYqQZ0iCw2WfQ</CellPatternTranslations>
-      <CellPatternTranslations>rec7MeKnHind7FhXd</CellPatternTranslations>
+      <CellPatternTranslations>recmUpophHSQKe5VF</CellPatternTranslations>
       <Description>Flip the board along the vertical axis</Description>
     </Translation>
     <Translation>
@@ -1772,12 +2605,12 @@
     <CellState>
       <CellStateId>rec0xQjo4VL3DFTXg</CellStateId>
       <createdTime>2020-11-26T20:04:48Z</createdTime>
-      <Name>Player</Name>
+      <Name>PlayerA</Name>
       <Code>P</Code>
       <Description>This cell has been marked by the active player</Description>
-      <Color>blue</Color>
-      <FontColor>white</FontColor>
-      <DefaultMark>X</DefaultMark>
+      <Color>yellow</Color>
+      <FontColor>black</FontColor>
+      <DefaultMark>A</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>1</SortOrder>
       <Id>0</Id>
@@ -1799,11 +2632,36 @@
       <CellPatternCells>rec6RGGCG5ORVBnA3</CellPatternCells>
       <CellPatternCells>recKj18pU9k6V6MAx</CellPatternCells>
       <CellPatternCells>rec8bt4pVcy9OY8XO</CellPatternCells>
-      <CellPatternCells>recqMa5gtwmjYgF2X</CellPatternCells>
-      <CellPatternCells>recEX4e2JD90yYDDr</CellPatternCells>
-      <CellPatternCells>recJzgHATmFMUyW7E</CellPatternCells>
+      <CellPatternCells>rec1hqH6Ty1vueu48</CellPatternCells>
+      <CellPatternCells>recmEXEqSbCsI5kUB</CellPatternCells>
+      <CellPatternCells>recShopv0fRnIWAbr</CellPatternCells>
+      <CellPatternCells>rec3K2fxtqlgu5oeA</CellPatternCells>
+      <CellPatternCells>recy5CwlzxHvsubBr</CellPatternCells>
+      <CellPatternCells>recVxUYMsnvGIqGZ2</CellPatternCells>
+      <CellPatternCells>recO1aArEBMEvWxoD</CellPatternCells>
+      <CellPatternCells>recvjeyFh2sWFF8us</CellPatternCells>
+      <CellPatternCells>reczQDKs6sXAjFvhP</CellPatternCells>
+      <CellPatternCells>recLcTgsFF8EuGUz3</CellPatternCells>
+      <CellPatternCells>recJtIPt56a61dAFz</CellPatternCells>
+      <CellPatternCells>recD2BUDpoknNF4Lh</CellPatternCells>
+      <CellPatternCells>recpAYbzVjDRhc1L4</CellPatternCells>
+      <CellPatternCells>recUNdmTwmeITNGEZ</CellPatternCells>
+      <CellPatternCells>recBi8mtXhiWj7TJH</CellPatternCells>
+      <CellPatternCells>rec7NXPxQPU4PzKX0</CellPatternCells>
+      <CellPatternCells>recmHFemnt2tO9Q5u</CellPatternCells>
+      <CellPatternCells>recc99ZERSFi8OZgJ</CellPatternCells>
+      <CellPatternCells>recuKKiaqoaXhFxSC</CellPatternCells>
+      <CellPatternCells>recAJ25e2uael63Kw</CellPatternCells>
+      <CellPatternCells>recfjQk3Amk3Ofo0S</CellPatternCells>
+      <CellPatternCells>recrfBGkdzZ67jeLa</CellPatternCells>
+      <CellPatternCells>rec1Gsh1wvAQ3BO0w</CellPatternCells>
+      <CellPatternCells>recTk43h9Sd9Qw1aQ</CellPatternCells>
+      <CellPatternCells>recR4dC3tW41PPZ8x</CellPatternCells>
+      <CellPatternCells>recq7x7WkznTcTKS7</CellPatternCells>
+      <CellPatternCells>recTcBwvPbWD9wMyy</CellPatternCells>
       <CurrentStateCells>rec50MWM91QHzlEzO</CurrentStateCells>
       <CurrentStateCells>rec35HZOaRy6ge0jk</CurrentStateCells>
+      <AlexesIndex>1</AlexesIndex>
     </CellState>
     <CellState>
       <CellStateId>recJAi8YoTOQmzhfH</CellStateId>
@@ -1830,9 +2688,9 @@
       <CellPatterns>recg1ttw7l3n96PDG</CellPatterns>
       <CurrentStateCells>recxIf3GoDzEtonFU</CurrentStateCells>
       <CurrentStateCells>recmjtZPRUfoCU2sr</CurrentStateCells>
-      <CurrentStateCells>recTGnKjXTE8LfT3C</CurrentStateCells>
       <CurrentStateCells>recczW2Y4WMv9buZ8</CurrentStateCells>
       <CurrentStateCells>recpPYOZtnp3lTOua</CurrentStateCells>
+      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
       <DefaultStateCells>recxIf3GoDzEtonFU</DefaultStateCells>
       <DefaultStateCells>recfSe8zeEdCAtcGq</DefaultStateCells>
       <DefaultStateCells>recmjtZPRUfoCU2sr</DefaultStateCells>
@@ -1842,21 +2700,22 @@
       <DefaultStateCells>recTGnKjXTE8LfT3C</DefaultStateCells>
       <DefaultStateCells>rec35HZOaRy6ge0jk</DefaultStateCells>
       <DefaultStateCells>recczW2Y4WMv9buZ8</DefaultStateCells>
+      <AlexesIndex>0</AlexesIndex>
     </CellState>
     <CellState>
-      <CellStateId>recw0SsqNfCk96xZs</CellStateId>
-      <createdTime>2020-11-26T20:04:48Z</createdTime>
-      <Name>Opponent</Name>
-      <Code>O</Code>
-      <Description>This cell has been marked by thhe active player's opponent.</Description>
-      <Color>red</Color>
+      <CellStateId>recwMqGt97gQ22PsK</CellStateId>
+      <createdTime>2020-12-14T08:13:23Z</createdTime>
+      <Name>PlayerB</Name>
+      <Description>This player is not the starting player</Description>
+      <Color>black</Color>
       <FontColor>white</FontColor>
-      <DefaultMark>O</DefaultMark>
+      <DefaultMark>B</DefaultMark>
       <Cursor>Default</Cursor>
       <SortOrder>2</SortOrder>
       <Id>1</Id>
-      <CurrentStateCells>recfSe8zeEdCAtcGq</CurrentStateCells>
       <CurrentStateCells>rec3OzG8nTAkUhjVn</CurrentStateCells>
+      <CurrentStateCells>recTGnKjXTE8LfT3C</CurrentStateCells>
+      <AlexesIndex>-1</AlexesIndex>
     </CellState>
   </CellStates>
 </Airtable>

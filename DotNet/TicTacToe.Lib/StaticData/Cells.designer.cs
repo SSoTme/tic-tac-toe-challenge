@@ -23,10 +23,11 @@ public static partial class Cells
             Y = 0,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 0,
-            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recYR4cE90EOVnYD5", "rec91aKNdkT2cw93v", "recclaJuN3LJWLC4N", "recKj18pU9k6V6MAx", "recqMa5gtwmjYgF2X" },
+            CellPatternCells = new string[] { @"recU9O3yxyMeQ1eU4", "recYR4cE90EOVnYD5", "rec91aKNdkT2cw93v", "recclaJuN3LJWLC4N", "recKj18pU9k6V6MAx", "rec1hqH6Ty1vueu48", "recuKKiaqoaXhFxSC", "recLcTgsFF8EuGUz3", "recR4dC3tW41PPZ8x" },
             CurrentCellState = new string[] { @"rec0xQjo4VL3DFTXg" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 7,
+            AlexesNumber = 10010010,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"BottomLeft",
             CounterClockwiseRotateFrom = @"TopRight",
@@ -36,11 +37,20 @@ public static partial class Cells
             CounterClockwiseRotateFromIndex = 2,
             RotateIndex = 6,
             DefaultState = @"NoPlayer",
-            CurrentState = @"Player",
+            CurrentState = @"PlayerA",
             FlipIndex = 2,
             FlipFromName = @"TopRight",
             FlipDescription = @"From TopRight to TopLeft",
-            SortOrder = 0
+            SortOrder = 0,
+            NamedSetPatterns = new string[] { @"recJ1wDRP5taMg2Tj", "reccf6U6b21xlIOh7", "recYQei900zbRIFTw" },
+            IsInRow1 = 1,
+            IsInRow2 = 0,
+            IsInRow3 = 0,
+            IsInColumn1 = 1,
+            IsInColumn2 = 0,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 1,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(TopLeft);
@@ -61,11 +71,12 @@ public static partial class Cells
             Y = 1,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 1,
-            CellPatternCells = new string[] { @"recf1uu1YY0iPps8E", "recFITGoLxBQs1ocD", "recljMfqekOodaaWx" },
-            CellPatterns = new string[] { @"recYmKv2dBpnAA1gs" },
+            CellPatternCells = new string[] { @"recf1uu1YY0iPps8E", "recFITGoLxBQs1ocD", "recljMfqekOodaaWx", "rec3K2fxtqlgu5oeA", "recJtIPt56a61dAFz" },
+            TargetCellForCellPatterns = new string[] { @"recYmKv2dBpnAA1gs" },
             CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 8,
+            AlexesNumber = 10001000,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"MiddleLeft",
             CounterClockwiseRotateFrom = @"MiddleRight",
@@ -79,7 +90,16 @@ public static partial class Cells
             FlipIndex = 1,
             FlipFromName = @"Top",
             FlipDescription = @"No Movement",
-            SortOrder = 1
+            SortOrder = 1,
+            NamedSetPatterns = new string[] { @"recXBksm5DIUqOfDn", "recYQei900zbRIFTw" },
+            IsInRow1 = 1,
+            IsInRow2 = 0,
+            IsInRow3 = 0,
+            IsInColumn1 = 0,
+            IsInColumn2 = 1,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(Top);
@@ -100,11 +120,12 @@ public static partial class Cells
             Y = 2,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 2,
-            CellPatternCells = new string[] { @"recPHA9ppFH8cjenC", "reccnHG0Yfk8tgTt6", "rec8bt4pVcy9OY8XO" },
-            CellPatterns = new string[] { @"rec55PqGhtUYK5Rcb" },
-            CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
+            CellPatternCells = new string[] { @"recPHA9ppFH8cjenC", "reccnHG0Yfk8tgTt6", "rec8bt4pVcy9OY8XO", "recO1aArEBMEvWxoD", "recrfBGkdzZ67jeLa", "recD2BUDpoknNF4Lh" },
+            TargetCellForCellPatterns = new string[] { @"rec55PqGhtUYK5Rcb" },
+            CurrentCellState = new string[] { @"recwMqGt97gQ22PsK" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 9,
+            AlexesNumber = 10000101,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"TopLeft",
             CounterClockwiseRotateFrom = @"BottomRight",
@@ -114,11 +135,20 @@ public static partial class Cells
             CounterClockwiseRotateFromIndex = 8,
             RotateIndex = 0,
             DefaultState = @"NoPlayer",
-            CurrentState = @"NoPlayer",
+            CurrentState = @"PlayerB",
             FlipIndex = 0,
             FlipFromName = @"TopLeft",
             FlipDescription = @"From TopLeft to TopRight",
-            SortOrder = 2
+            SortOrder = 2,
+            NamedSetPatterns = new string[] { @"recNW9KXsm9KvWa7B", "recWQyBlj7xHrYNPx", "recYQei900zbRIFTw" },
+            IsInRow1 = 1,
+            IsInRow2 = 0,
+            IsInRow3 = 0,
+            IsInColumn1 = 0,
+            IsInColumn2 = 0,
+            IsInColumn3 = 1,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 1
         };
 
         List.Add(TopRight);
@@ -139,10 +169,11 @@ public static partial class Cells
             Y = 0,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 3,
-            CellPatternCells = new string[] { @"reckcKNNnyDSWpFrH", "recxWA16nieZY83Sv", "recyZobcdc9yOkGuC" },
+            CellPatternCells = new string[] { @"reckcKNNnyDSWpFrH", "recxWA16nieZY83Sv", "recyZobcdc9yOkGuC", "recmEXEqSbCsI5kUB", "recpAYbzVjDRhc1L4" },
             CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 4,
+            AlexesNumber = 01010000,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"Bottom",
             CounterClockwiseRotateFrom = @"Top",
@@ -156,7 +187,16 @@ public static partial class Cells
             FlipIndex = 5,
             FlipFromName = @"MiddleRight",
             FlipDescription = @"From MiddleRight to MiddleLeft",
-            SortOrder = 3
+            SortOrder = 3,
+            NamedSetPatterns = new string[] { @"recJ1wDRP5taMg2Tj", "recqpmR7MAtp5afiM" },
+            IsInRow1 = 0,
+            IsInRow2 = 1,
+            IsInRow3 = 0,
+            IsInColumn1 = 1,
+            IsInColumn2 = 0,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(MiddleLeft);
@@ -177,11 +217,12 @@ public static partial class Cells
             Y = 1,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 4,
-            CellPatternCells = new string[] { @"recGP80BxFCLlmgw7", "recWoh5Qk0b1xBV67", "recwQ3ZI5MBVHPKgl", "recPmKMMNhYSxBWJ0", "recaPLycHtpRQfWnE", "recEX4e2JD90yYDDr" },
-            CellPatterns = new string[] { @"recobCShOEyZjP8bY", "recg1ttw7l3n96PDG" },
+            CellPatternCells = new string[] { @"recGP80BxFCLlmgw7", "recWoh5Qk0b1xBV67", "recwQ3ZI5MBVHPKgl", "recPmKMMNhYSxBWJ0", "recaPLycHtpRQfWnE", "recy5CwlzxHvsubBr", "recAJ25e2uael63Kw", "rec1Gsh1wvAQ3BO0w", "recUNdmTwmeITNGEZ", "recq7x7WkznTcTKS7" },
+            TargetCellForCellPatterns = new string[] { @"recobCShOEyZjP8bY", "recg1ttw7l3n96PDG" },
             CurrentCellState = new string[] { @"rec0xQjo4VL3DFTXg" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 5,
+            AlexesNumber = 01001011,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"Middle",
             CounterClockwiseRotateFrom = @"Middle",
@@ -191,11 +232,20 @@ public static partial class Cells
             CounterClockwiseRotateFromIndex = 4,
             RotateIndex = 4,
             DefaultState = @"NoPlayer",
-            CurrentState = @"Player",
+            CurrentState = @"PlayerA",
             FlipIndex = 4,
             FlipFromName = @"Middle",
             FlipDescription = @"No Movement",
-            SortOrder = 4
+            SortOrder = 4,
+            NamedSetPatterns = new string[] { @"recXBksm5DIUqOfDn", "reccf6U6b21xlIOh7", "recWQyBlj7xHrYNPx", "recqpmR7MAtp5afiM" },
+            IsInRow1 = 0,
+            IsInRow2 = 1,
+            IsInRow3 = 0,
+            IsInColumn1 = 0,
+            IsInColumn2 = 1,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 1,
+            IsInRightLeftDiagonal = 1
         };
 
         List.Add(Middle);
@@ -216,11 +266,13 @@ public static partial class Cells
             Y = 2,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 5,
-            CellPatternCells = new string[] { @"recAy4XNSSKRZGZsh", "rechiocdDSSkR1IFz", "rec6RGGCG5ORVBnA3" },
-            CellPatterns = new string[] { @"recqn6vuQrx71nQii" },
-            CurrentCellState = new string[] { @"recw0SsqNfCk96xZs" },
+            CellPatternCells = new string[] { @"recAy4XNSSKRZGZsh", "rechiocdDSSkR1IFz", "rec6RGGCG5ORVBnA3", "recvjeyFh2sWFF8us", "recBi8mtXhiWj7TJH" },
+            TargetCellForCellPatterns = new string[] { @"recqn6vuQrx71nQii" },
+            CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 6,
+            IsDailyDouble = Boolean.Parse("true"),
+            AlexesNumber = 01000100,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"Top",
             CounterClockwiseRotateFrom = @"Bottom",
@@ -230,11 +282,20 @@ public static partial class Cells
             CounterClockwiseRotateFromIndex = 7,
             RotateIndex = 1,
             DefaultState = @"NoPlayer",
-            CurrentState = @"Opponent",
+            CurrentState = @"NoPlayer",
             FlipIndex = 3,
             FlipFromName = @"MiddleLeft",
             FlipDescription = @"From MiddleLeft to MiddleRight",
-            SortOrder = 5
+            SortOrder = 5,
+            NamedSetPatterns = new string[] { @"recNW9KXsm9KvWa7B", "recqpmR7MAtp5afiM" },
+            IsInRow1 = 0,
+            IsInRow2 = 1,
+            IsInRow3 = 0,
+            IsInColumn1 = 0,
+            IsInColumn2 = 0,
+            IsInColumn3 = 1,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(MiddleRight);
@@ -255,9 +316,11 @@ public static partial class Cells
             Y = 0,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 6,
+            CellPatternCells = new string[] { @"recShopv0fRnIWAbr", "recTk43h9Sd9Qw1aQ", "rec7NXPxQPU4PzKX0" },
             CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 1,
+            AlexesNumber = 00110001,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"BottomRight",
             CounterClockwiseRotateFrom = @"TopLeft",
@@ -271,7 +334,16 @@ public static partial class Cells
             FlipIndex = 8,
             FlipFromName = @"BottomRight",
             FlipDescription = @"From BottomRight to BottomLeft",
-            SortOrder = 6
+            SortOrder = 6,
+            NamedSetPatterns = new string[] { @"recJ1wDRP5taMg2Tj", "recWQyBlj7xHrYNPx", "recHqX6LLAZZAo1RQ" },
+            IsInRow1 = 0,
+            IsInRow2 = 0,
+            IsInRow3 = 1,
+            IsInColumn1 = 1,
+            IsInColumn2 = 0,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 1
         };
 
         List.Add(BottomLeft);
@@ -292,9 +364,11 @@ public static partial class Cells
             Y = 1,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 7,
-            CurrentCellState = new string[] { @"recw0SsqNfCk96xZs" },
+            CellPatternCells = new string[] { @"recVxUYMsnvGIqGZ2", "recmHFemnt2tO9Q5u" },
+            CurrentCellState = new string[] { @"recwMqGt97gQ22PsK" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 2,
+            AlexesNumber = 00101000,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"MiddleRight",
             CounterClockwiseRotateFrom = @"MiddleLeft",
@@ -304,11 +378,20 @@ public static partial class Cells
             CounterClockwiseRotateFromIndex = 3,
             RotateIndex = 5,
             DefaultState = @"NoPlayer",
-            CurrentState = @"Opponent",
+            CurrentState = @"PlayerB",
             FlipIndex = 7,
             FlipFromName = @"Bottom",
             FlipDescription = @"No Movement",
-            SortOrder = 7
+            SortOrder = 7,
+            NamedSetPatterns = new string[] { @"recXBksm5DIUqOfDn", "recHqX6LLAZZAo1RQ" },
+            IsInRow1 = 0,
+            IsInRow2 = 0,
+            IsInRow3 = 1,
+            IsInColumn1 = 0,
+            IsInColumn2 = 1,
+            IsInColumn3 = 0,
+            IsInLeftRightDiagonal = 0,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(Bottom);
@@ -329,11 +412,12 @@ public static partial class Cells
             Y = 2,
             RotateTranslation = new string[] { @"recgdoYW4iJ8gaAha" },
             CellIndex = 8,
-            CellPatternCells = new string[] { @"reclDV8jky7y1JNzH", "rec5D3fwk2h5GzjIB", "recJzgHATmFMUyW7E" },
-            CellPatterns = new string[] { @"recZCV8dlP1pNK9kK" },
+            CellPatternCells = new string[] { @"reclDV8jky7y1JNzH", "rec5D3fwk2h5GzjIB", "reczQDKs6sXAjFvhP", "recfjQk3Amk3Ofo0S", "recc99ZERSFi8OZgJ", "recTcBwvPbWD9wMyy" },
+            TargetCellForCellPatterns = new string[] { @"recZCV8dlP1pNK9kK" },
             CurrentCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             DefaultCellState = new string[] { @"recJAi8YoTOQmzhfH" },
             CellKey = 3,
+            AlexesNumber = 00100110,
             IsClockwise = Boolean.Parse("true"),
             ClockwiseRotateFrom = @"TopRight",
             CounterClockwiseRotateFrom = @"BottomLeft",
@@ -347,7 +431,16 @@ public static partial class Cells
             FlipIndex = 6,
             FlipFromName = @"BottomLeft",
             FlipDescription = @"From BottomLeft to BottomRight",
-            SortOrder = 8
+            SortOrder = 8,
+            NamedSetPatterns = new string[] { @"recNW9KXsm9KvWa7B", "reccf6U6b21xlIOh7", "recHqX6LLAZZAo1RQ" },
+            IsInRow1 = 0,
+            IsInRow2 = 0,
+            IsInRow3 = 1,
+            IsInColumn1 = 0,
+            IsInColumn2 = 0,
+            IsInColumn3 = 1,
+            IsInLeftRightDiagonal = 1,
+            IsInRightLeftDiagonal = 0
         };
 
         List.Add(BottomRight);

@@ -12,6 +12,7 @@ export interface cellPatternCell
     CellPattern? : string[];
     CellState? : string[];
     Name? : string;
+    CellPatternType? : string;
     CellIndex? : number;
     CellStateId? : number;
     CellCellState? : number;

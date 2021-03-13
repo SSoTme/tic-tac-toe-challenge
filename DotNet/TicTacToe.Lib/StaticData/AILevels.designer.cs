@@ -84,13 +84,11 @@ public static partial class AILevels
             
         var God = new AILevel()
         {
-            AILevelId = @"rec9b05vxWWpxVyoy",
-            createdTime = DateTime.Parse("2020-12-11T20:00:24Z"),
+            AILevelId = @"recdlefLPaE9CcnZr",
+            createdTime = DateTime.Parse("2020-12-15T00:43:54Z"),
             Name = @"God",
             PlayerType = @"AI",
-            MinAILevelIndex = null,
             AILevelIndex = null,
-            Description = @"Learn from mistakes.",
             SortOrder = null,
             Users = new string[] { @"reciqoIN0xBrbCPsy" }
         };

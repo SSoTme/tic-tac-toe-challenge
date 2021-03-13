@@ -16,7 +16,7 @@ public static partial class Translations
             Name = @"Flip",
             CustomDescription = @"Flip the board along the vertical axis",
             Id = 1,
-            CellPatternTranslations = new string[] { @"recwuYqQZ0iCw2WfQ", "rec7MeKnHind7FhXd" },
+            CellPatternTranslations = new string[] { @"recwuYqQZ0iCw2WfQ", "recmUpophHSQKe5VF" },
             Description = @"Flip the board along the vertical axis"
         };
 

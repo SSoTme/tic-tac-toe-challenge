@@ -9,25 +9,6 @@ public static partial class CellPatternTranslations
         // setup each one...
         
             
-        var T1_DiagonalWinFlip1 = new CellPatternTranslation()
-        {
-            CellPatternTranslationId = @"rec7MeKnHind7FhXd",
-            createdTime = DateTime.Parse("2020-12-11T20:01:42Z"),
-            Name = @"T1-DiagonalWin:Flip:1",
-            CPTCode = 11,
-            CellPattern = new string[] { @"recg6YsAgLEBikQ3F" },
-            CellPatternName = @"DiagonalWin",
-            Count = 1,
-            Translation = new string[] { @"recQ0PgyWBky0wm32" },
-            TranslationId = 1,
-            TranslationName = @"Flip",
-            SortOrder = 1
-        };
-
-        List.Add(T1_DiagonalWinFlip1);
-        ByEnum[CellPatternTranslationsEnum.T1_DiagonalWinFlip1] = T1_DiagonalWinFlip1;
-        
-            
         var T1_TwoInARowDiagonalRotate3 = new CellPatternTranslation()
         {
             CellPatternTranslationId = @"rec9PRnE4xpUCcMit",
@@ -39,6 +20,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoInARowDiagonal:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"TwoInARowDiagonal",
             TranslationName = @"Rotate"
         };
@@ -58,6 +40,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-EdgeWin:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"EdgeWin",
             TranslationName = @"Rotate"
         };
@@ -77,6 +60,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoInARowMiddle:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"TwoInARowMiddle",
             TranslationName = @"Rotate"
         };
@@ -96,6 +80,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-MiddleWin:Rotate:1",
             TranslationId = 0,
             CPTCode = 10,
+            DisplayName = @"Rotate Once",
             CellPatternName = @"MiddleWin",
             TranslationName = @"Rotate"
         };
@@ -115,12 +100,33 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoOutsideMiddle:Rotate:1",
             TranslationId = 0,
             CPTCode = 10,
+            DisplayName = @"Rotate Once",
             CellPatternName = @"TwoOutsideMiddle",
             TranslationName = @"Rotate"
         };
 
         List.Add(T1_TwoOutsideMiddleRotate1);
         ByEnum[CellPatternTranslationsEnum.T1_TwoOutsideMiddleRotate1] = T1_TwoOutsideMiddleRotate1;
+        
+            
+        var T1_DiagonalWinFlip1 = new CellPatternTranslation()
+        {
+            CellPatternTranslationId = @"recmUpophHSQKe5VF",
+            createdTime = DateTime.Parse("2020-12-18T20:42:34Z"),
+            Name = @"T1-DiagonalWin:Flip:1",
+            CPTCode = 11,
+            DisplayName = @"Flip Once",
+            CellPattern = new string[] { @"recuenPSYKnW2WfOH" },
+            CellPatternName = @"DiagonalWin",
+            Translation = new string[] { @"recQ0PgyWBky0wm32" },
+            TranslationId = 1,
+            TranslationName = @"Flip",
+            SortOrder = 1,
+            Count = 1
+        };
+
+        List.Add(T1_DiagonalWinFlip1);
+        ByEnum[CellPatternTranslationsEnum.T1_DiagonalWinFlip1] = T1_DiagonalWinFlip1;
         
             
         var T1_TwoOutsideDiagonalRotate1 = new CellPatternTranslation()
@@ -134,6 +140,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoOutsideDiagonal:Rotate:1",
             TranslationId = 0,
             CPTCode = 10,
+            DisplayName = @"Rotate Once",
             CellPatternName = @"TwoOutsideDiagonal",
             TranslationName = @"Rotate"
         };
@@ -153,6 +160,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoInARowTop:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"TwoInARowTop",
             TranslationName = @"Rotate"
         };
@@ -172,6 +180,7 @@ public static partial class CellPatternTranslations
             Name = @"T1-TwoOutsideTop:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"TwoOutsideTop",
             TranslationName = @"Rotate"
         };
@@ -191,6 +200,7 @@ public static partial class CellPatternTranslations
             Name = @"T2-TwoInARowTop:Flip:1",
             TranslationId = 1,
             CPTCode = 11,
+            DisplayName = @"Flip Once",
             CellPatternName = @"TwoInARowTop",
             TranslationName = @"Flip"
         };
@@ -210,6 +220,7 @@ public static partial class CellPatternTranslations
             Name = @"T3-TwoInARowTop:Rotate:3",
             TranslationId = 0,
             CPTCode = 30,
+            DisplayName = @"Rotate 3 times",
             CellPatternName = @"TwoInARowTop",
             TranslationName = @"Rotate"
         };
